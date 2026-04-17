@@ -1,7 +1,8 @@
 ---
 title: "Nepal"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do sul da Ásia com cobertura de SHITCAM (câmera de baixa qualidade com cores acastanhadas), script DEVANAGARI com números nativos visíveis, bollards de concreto PRETO E BRANCO com marcação vermelha no topo, stupas budistas BRANCAS com olhos pintados (exclusivas), e múltiplos tipos de carros por região. Sul plano, norte montanhoso com trekker perto do Everest. Trânsito pela esquerda."
 tags: [país, ásia, sul-asiático]
 type: country
@@ -14,14 +15,17 @@ status: draft
 O **Nepal** fica no sul da Ásia, fazendo fronteira com a China (Tibet) e a Índia. Idioma: **nepalês** (script Devanagari). Capital: **Catmandu**. Trânsito: **pela esquerda**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
-- Cobertura de estrada em **shitcam** — câmera de baixa qualidade com cores acastanhadas; blur grande circular frequente mas nem sempre presente
+- Cobertura de estrada em **shitcam** — câmera de baixa qualidade montada na traseira de uma **moto** (motorbike); cores acastanhadas; blur grande circular frequente mas nem sempre presente
 - Vários tipos de carros por região (detalhes na seção de regiões)
 - Trekker Gen 3 no **nordeste** (área ao sudoeste do Monte Everest)
 
 ## 3. Pistas Visuais Principais
 
-### SHITCAM (câmera de qualidade baixa + tons acastanhados) (confiança: **alta**)
-Cobertura de estrada toda em **shitcam** — ⚠️ também muito comum na Índia; raramente no Bangladesh e Sri Lanka.
+### SHITCAM em MOTO (câmera de qualidade baixa + tons acastanhados) (confiança: **alta**)
+Cobertura de estrada em **shitcam montada em moto** — câmera de baixa resolução; ⚠️ também muito comum na Índia; raramente no Bangladesh e Sri Lanka.
+
+### Placas com Texto e Borda VERMELHO (confiança: **alta**)
+Placas de veículo **brancas** com texto **vermelho** e borda **vermelha** — design característico do Nepal.
 
 ### Script DEVANAGARI com Números Nativos (confiança: **alta**)
 **Devanagari**: linha horizontal no topo de cada palavra + linhas verticais na maioria das letras — ⚠️ Nepal tem números nativos devanagari nos sinais (muito raro na Índia). Caracteres ङ e ङ्ग muito mais comuns em nepalês que em hindi.

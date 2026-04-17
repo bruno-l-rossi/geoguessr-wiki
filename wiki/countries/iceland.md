@@ -1,11 +1,12 @@
 ---
 title: "Islândia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "País insular nórdico com bollards AMARELOS únicos, placas totalmente brancas com caracteres azuis (sem faixa EU), paisagem vulcânica árida e sem árvores (única na Europa), sinal de pedestre amarelo (único na Europa) e letras Þ/Ð exclusivas do islandês."
 tags: [país, europa, europa-norte, ilhas]
 type: country
 status: draft
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 ---
 
 # Islândia
@@ -24,7 +25,7 @@ A **Islândia** é uma ilha no Atlântico Norte. Idioma: **islandês** — germ�
 Bollards **amarelos** com refletor branco — **exclusivos da Islândia**; extremamente comuns em quase todo trecho de estrada rural.
 
 ### Placas Totalmente BRANCAS com Caracteres AZUIS (sem faixa EU) (confiança: **alta**)
-Placas **totalmente brancas** com **caracteres azuis**; **sem faixa europeia azul** à esquerda — distinto de quase toda a Europa.
+Placas **totalmente brancas** com **caracteres azuis**; **sem faixa europeia azul** à esquerda — distinto de quase toda a Europa. Nas Gen 4 mais recentes: **adesivo de inspeção amarelo-neon** visível na placa traseira — exclusivo da Islândia no contexto nórdico.
 
 ### Paisagem Vulcânica ÁRIDA e SEM ÁRVORES (confiança: **alta**)
 Solo de **rocha e cascalho vulcânico escuro**; quase sem árvores — completamente diferente do resto do norte da Europa. Campos de lava, lagos geotérmicos, vales de rift, formações rochosas.
@@ -70,6 +71,7 @@ Sem linhas amarelas nas estradas — se vir linhas amarelas em ambiente nórdico
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas totalmente brancas com caracteres azuis; sem faixa europeia
+- Postos de combustível: **N1, Orkan** (exclusivos da Islândia); também Skeljungur, AO
 
 ## 8. Regiões Distintas
 

@@ -1,7 +1,8 @@
 ---
 title: "Peru"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País andino com postes de sinalização listrados preto-e-branco (únicos na América do Sul), tuk-tuks nas cidades e paisagem de montanhas semi-áridas. Carro Google preto ou branco em Gen 3."
 tags: [país, américas, sul-america]
 type: country
@@ -45,6 +46,12 @@ Marcadores concretos pintados preto-e-branco; às vezes com número da rodovia.
 ### Moeda Sol (S/) (confiança: **alta** se visível)
 Símbolo **S/** em letreiros de preços confirma Peru.
 
+### Placas Antigas AMARELAS Ainda em Circulação (confiança: **média**)
+Veículos mais antigos ainda usam **placas amarelas** — além das brancas mais modernas.
+
+### Sinais de Cidade AZUIS (confiança: **média**)
+Sinais de entrada/nome de **cidade/vila azuis** — visíveis nas estradas peruanas.
+
 ## 4. Vegetação e Paisagem
 - **Costa (oeste)**: deserto árido e semi-árido; montanhas sem vegetação ao fundo
 - **Andes centrais**: montanhas semi-áridas com vales; afloramentos rochosos em altitude; **líquen verde-claro** em rochas de altitude central/sul
@@ -55,6 +62,7 @@ Símbolo **S/** em letreiros de preços confirma Peru.
 - Solo **vermelho-escuro** em: Cusco, Ayacucho, Cajamarca, Tarapoto
 
 ### Agricultura
+- **Eucalipto**: **extremamente comum** entre 2000–3500m de altitude — presente em quase toda a área habitada andina (mais comum que no Brasil ou Argentina)
 - **Cana-de-açúcar**: costa norte (Chiclayo, Trujillo) — campos grandes
 - **Bananas**: norte costeiro (metade norte do país)
 - **Oliveiras**: extremo sul em Tacna
@@ -72,6 +80,7 @@ Símbolo **S/** em letreiros de preços confirma Peru.
 ## 6. Sinais e Textos
 - Espanhol (com quéchua/aimará em sinais rurais em algumas regiões)
 - **Sol (S/)**: moeda exclusiva do Peru
+- **Números de celular**: sempre começam com **9** (formato: 9xx-xxx-xxx, 9 dígitos); fixos em Lima/Callao = 7 dígitos; resto do país = 6 dígitos
 - Rodovias numeradas: 1-5 são as mais longas; números aumentam de norte para sul na costa
 - Logos de partidos políticos nas paredes — únicos do Peru
 - Adesivos vermelhos e brancos largos em táxis e veículos comerciais
@@ -81,6 +90,7 @@ Símbolo **S/** em letreiros de preços confirma Peru.
 - Gen 3: preto (também ⚠️ Argentina/Uruguai) ou branco (também ⚠️ Chile/Bolívia)
 - Gen 4: standard ou smallcam
 - Carro branco especial: Cusco → Machu Picchu (trekker de trem)
+- Postos de combustível: **PetroPeru, Primax, Pecsa** (exclusivos do Peru); também Repsol, GrifoMapco
 
 ## 8. Regiões Distintas
 

@@ -2,6 +2,7 @@
 title: "Biomas e Vegetação — Identificação por Zona Climática"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com, somerandomstuff1.wordpress.com]
 summary: "Referência de biomas e vegetação típica por região geográfica: tipos de árvore, cor do solo, cobertura vegetal, e quais países associar a cada padrão visual. Vegetação é frequentemente a primeira pista disponível num round."
 tags: [conceito, vegetação, bioma, paisagem, identificação]
 type: concept

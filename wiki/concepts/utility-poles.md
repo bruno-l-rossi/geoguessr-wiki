@@ -2,6 +2,7 @@
 title: "Postes de Energia e Fiação Elétrica por País"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geohints.com, geodummy.com]
 summary: "Referência de tipos de poste por país e região: material, forma, topo, isoladores, fiação. Postes são uma das pistas mais consistentes pois aparecem em quase toda imagem de estrada."
 tags: [conceito, postes, infraestrutura, identificação]
 type: concept

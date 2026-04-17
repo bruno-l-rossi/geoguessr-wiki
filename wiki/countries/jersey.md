@@ -1,7 +1,8 @@
 ---
 title: "Jersey"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Ilha britânica (conta como UK) com cobertura apenas Gen 2, placas brancas+amarelas SEM FAIXA AZUL (não era EU) com brasão VERMELHO à esquerda e 'J' inicial, CABINES TELEFÔNICAS AMARELAS (UK = vermelhas), nomes de ruas em FRANCÊS, linhas de dar-preferência AMARELAS (UK = brancas tracejadas), e paredes e casas de GRANITO VERMELHO."
 tags: [país, europa, territorio-britanico, ilhas, ilhas-britanicas]
 type: country
@@ -30,6 +31,9 @@ Nomes de ruas e localidades com **palavras francesas** — resultado da influên
 
 ### Linhas de Dar-Preferência AMARELAS (confiança: **alta**)
 Linhas de dar-preferência nas interseções em **amarelo** — ⚠️ UK = linhas brancas tracejadas duplas.
+
+### Linhas de Estrada: AMARELO EXTERNO + BRANCO INTERNO TRACEJADO (confiança: **alta**)
+Padrão de marcação de estrada: linhas externas **amarelas sólidas** + linha interna **branca tracejada** — lembra o padrão sul-africano; incomum na Europa.
 
 ### Paredes e Casas de GRANITO VERMELHO (confiança: **alta**)
 Muros e casas construídos com **granito vermelho** local — material de construção muito característico de Jersey.
@@ -64,6 +68,7 @@ Paredes de cores pastéis e telhados de ardósia escura (influência normanda/fr
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (como UK)
 - Placas brancas+amarelas sem faixa azul; brasão vermelho à esquerda
+- Postos de combustível: Total, Esso, **Rubis**
 
 ## 8. Regiões Distintas
 

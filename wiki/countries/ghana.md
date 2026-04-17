@@ -1,11 +1,12 @@
 ---
 title: "Gana"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "País da África Ocidental identificável pelo carro Google com fita preta no rack (3 variantes), táxis multicoloridos com para-lamas laranja-amarelos, solo vermelho e postes de madeira com 3 isoladores. Placas brancas e amarelas."
 tags: [país, áfrica, áfrica-ocidental]
 type: country
 status: draft
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 ---
 
 # Gana
@@ -25,7 +26,10 @@ status: draft
 ## 3. Pistas Visuais Principais
 
 ### Carro Google com Fita Preta (confiança: **alta**)
-**Rack no teto + fita preta** no lado direito da barra frontal + capô com retângulo vermelho no wrapping — único de Gana. Normalmente suficiente para identificar o país.
+**Rack no teto + fita preta** na **barra frontal direita** do rack + capô com retângulo vermelho no wrapping — único de Gana. Normalmente suficiente para identificar o país. ⚠️ Variante **sem fita** existe, mas apenas em **Boabeng** (vilarejo ao norte de Techiman) — única exceção documentada.
+
+### Tro-Tros como Transporte Dominante (confiança: **média**)
+**Tro-tros** (minivans sobrelotadas, frequentemente Toyota HiAce) são o transporte público mais comum — muito visíveis nas estradas de médio porte.
 
 ### Táxis com Para-Lamas LARANJA-AMARELOS (confiança: **alta**)
 Táxis com painéis multicoloridos; para-lamas e quarto-traseiro sempre **laranja-amarelos** — muito característico de Gana.
@@ -48,6 +52,9 @@ Objetos pintados nas cores da bandeira: **vermelho, amarelo, verde** e às vezes
 ### Postes de Sinalização B+W nas Cidades (confiança: **média**)
 Postes de sinalização **preto e branco** em cidades; metal não pintado em estradas rurais.
 
+### Bollards Estilo UK (confiança: **média**)
+Bollards cilíndricos brancos com banda refletora — estilo herdado do Commonwealth britânico; presentes em estradas pavimentadas principais.
+
 ## 4. Vegetação e Paisagem
 - **Sul** (floresta densa): SW e leste; palmeiras naturais abundantes
 - **Norte** (savana): solo seco, vegetação menos densa
@@ -68,6 +75,7 @@ Postes de sinalização **preto e branco** em cidades; metal não pintado em est
 - Trânsito pela **direita**
 - Táxis multicoloridos com para-lamas laranja-amarelos
 - Placas: brancas (pessoais) e amarelas (comerciais)
+- Postos de combustível: **Goil, AlliedOil** (exclusivos de Gana); também Total, Puma, Engen, StarOil
 
 ## 8. Regiões Distintas
 

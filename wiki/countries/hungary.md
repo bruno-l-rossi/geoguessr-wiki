@@ -1,7 +1,8 @@
 ---
 title: "Hungria"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Europa Central com idioma único (Ő/Ű com acento agudo duplo), sufixos de rua 'utca'/'út' exclusivos, bollards brancos com refletor VERMELHO e postes extremamente altos. Gen 3 em cobertura de inverno. Dácia dominante."
 tags: [país, europa, europa-central]
 type: country
@@ -28,8 +29,8 @@ Sufixos "**utca**" (rua) e "**út**" (via maior) — **exclusivos do húngaro**.
 ### Bollards BRANCOS em Cunha com Refletor VERMELHO (confiança: **alta**)
 Bollards em forma de cunha preto+branco com refletor **vermelho** na frente e branco atrás; refletores azuis também comuns. ⚠️ Croácia = muito similar mas refletor mais próximo do topo e levemente mais fino.
 
-### Postes de Concreto com BURACOS até o Chão (confiança: **alta**)
-Postes de concreto "holey" com buracos relativamente finos **descendo até o chão** — ⚠️ Polônia = buracos não chegam à base, postes mais finos; Romênia = buracos mais largos ou mais altos.
+### Postes de Concreto com BURACOS até o Chão — SEM Marcador Amarelo (confiança: **alta**)
+Postes de concreto "holey" com buracos relativamente finos **descendo até o chão** — ⚠️ Polônia = buracos não chegam à base, postes mais finos; Romênia = buracos mais largos/altos E com **marcadores amarelos de tensão** (Hungria raramente tem). Postes húngaros: **finos, sem pintura amarela**.
 
 ### Postes de Sinalização ANORMALMENTE ALTOS (confiança: **alta**)
 Postes de sinalização frequentemente **mais altos do que a câmera** do Street View — incomum em outros países da Europa do Leste.
@@ -70,6 +71,7 @@ Marcadores quilométricos **verdes** ao longo das estradas — números nas rodo
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa azul europeia + brasão de armas no novo formato (desde 2022); taxis = **amarelo**; VEs = **verde**
+- Postos de combustível: **MOL** (exclusivo da Hungria — empresa estatal); também Lukoil, OMV, Avia
 
 ## 8. Regiões Distintas
 

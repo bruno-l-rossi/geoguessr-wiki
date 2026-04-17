@@ -1,7 +1,8 @@
 ---
 title: "Sri Lanka"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País insular do sul da Ásia com Gen 3 (frente do carro visível como manchas AZUL-BRANCO-VERMELHO — exclusiva) e Gen 4 LOW-CAM (blur muito maior), script SINHALA (arredondado, exclusivo) + tâmil, bollards de pedra CURTOS E LARGOS com base PRETA (exclusivos), postes de concreto com buracos grandes ('holey poles' — exclusivos), placas longas BRANCAS na frente e curtas AMARELAS atrás. Trânsito pela esquerda."
 tags: [país, ásia, sul-asiático]
 type: country
@@ -60,9 +61,12 @@ Tuk-tuks com **formato robusto/bulky** e **teto preto** — geralmente verdes, a
 ## 6. Sinais e Textos
 - **Sinhala** em todo o país; **tâmil** mais limitado regionalmente (norte e leste + arredores de Nuwara Eliya)
 - Inglês também presente
+- **Placas de licença**: placa dianteira longa e branca; traseira curta e amarela. **Primeiras 2 letras = código de província**: WP (Western), SP (Southern), CP (Central), NP (Northern), EP (Eastern), UP (Uva), NW (North Western), SG (Sabaragamuwa), NC (North Central)
+- **Celulares**: sempre começam com **07** (formato 07X-XXX-XXXX)
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
+- Postos de combustível: **Ceylon Petroleum Corporation, Lanka IOC** (redes locais dominantes); também Laugfs, Litro Gas Lanka
 
 ## 8. Regiões Distintas
 

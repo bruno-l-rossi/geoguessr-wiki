@@ -1,7 +1,8 @@
 ---
 title: "Senegal"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da África Ocidental com placas TOTALMENTE AZUIS (único na África) ou brancas europeia no Gen 4, caminhão PRATEADO/BRANCO (Gen 4) ou carro com rack e espelho direito visível (Gen 3 — único no Senegal), infraestrutura FRANCESA, marcadores km BRANCOS com topo VERMELHO, táxis AMARELO-LARANJA com para-lamas PRETOS, e sinais de entrada de cidade brancos com contorno ROSA GROSSO. Francês como idioma. Trânsito pela direita."
 tags: [país, áfrica, africa-ocidental]
 type: country
@@ -25,7 +26,10 @@ O **Senegal** fica na África Ocidental, fazendo fronteira com Mauritânia, Mali
 Placas **completamente azuis** — ⚠️ **único país africano** com placas inteiramente azuis. Gen 4 mais recente usa placas **brancas europeias** com faixa azul à esquerda.
 
 ### Carro Gen 3 com RACK e ESPELHO DIREITO Visível (confiança: **alta**)
-Carro Gen 3 com rack e **espelho lateral direito** visível — ⚠️ exclusivo do Senegal; também tem rifts no céu.
+Carro Gen 3 com rack e **espelho lateral direito** visível — ⚠️ exclusivo do Senegal; também tem rifts no céu e na **superfície da estrada** (costuras de stitching ruins visíveis no asfalto).
+
+### Formato de Telefone Visível nos Sinais (confiança: **baixa**)
+Números de telefone: **7X-XXX-XX-XX** = celular; **3X-XXX-XX-XX** = fixo. Prefixos regionais: **DK** = Dakar; **KD** = Kolda. Útil para confirmar localização por texto.
 
 ### Infraestrutura FRANCESA (confiança: **alta**)
 Bollards, postes, sinais e marcações de estrada no padrão **francês** — ex-colônia francesa.
@@ -64,6 +68,7 @@ Postes de luz **pretos simples** com **painel solar** no topo — comuns em toda
 - Trânsito pela **direita** — ⚠️ no contexto africano com cobertura, diferencia de Quênia (esquerda)
 - Gen 4 com antena longa na frente esquerda = muitas estradas, mas nenhuma além da borda leste da região de Diourbel
 - Gen 4 carro branco = principalmente ao sul da Gâmbia + costa NE + região entre Kaolack e Saly
+- Postos de combustível: **Petrosen** (estatal do Senegal); também Total, Puma, OiLibya, Elton
 
 ## 8. Regiões Distintas
 

@@ -1,7 +1,8 @@
 ---
 title: "Áustria"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País de língua alemã com APENAS Gen 3 e Gen 4 (Alemanha = só Gen 4; Suíça = low-cam), bollards brancos com topo PRETO e refletor escuro, sinal de pedestre com 2 linhas TRACEJADAS horizontais (único entre vizinhos) e postes de gás AMARELOS únicos."
 tags: [país, europa, europa-central]
 type: country
@@ -77,12 +78,17 @@ Alguns sinais de trânsito presos por **quatro clipes metálicos** — único na
 - Trânsito pela **direita**
 - Placas brancas longas com faixa europeia azul (vs. Itália = duas faixas azuis, placa mais curta; Suíça = sem faixa azul)
 
+### Sinais de Bairro AZUL-MARINHO em Viena (confiança: **alta** para pinpoint)
+Em **Viena**, praticamente cada rua tem sinais de bairro com **fundo azul-marinho** e texto branco indicando o bairro — 23 distritos municipais identificáveis por esses sinais. Útil para pinpoint dentro de Viena.
+
+- Postos de combustível: **OMV** (empresa estatal austríaca — dominante); também Esso, Jet, Eni/Agip, Avanti
+
 ## 8. Regiões Distintas
 
 | Região/Estado | Pistas Visuais |
 |---|---|
 | **Tirol/Salzburgo/Caríntia** | Mais montanhoso; arquitetura alpina clássica |
-| **Viena** | Capital; urbano denso; B-roads 222-230 |
+| **Viena** | Capital; urbano denso; B-roads 222-230; sinais de bairro azul-marinho (23 distritos) |
 | **Burgenland** | Leste; mais plano; fronteiriço com Hungria |
 | **Vorarlberg** | Extremo oeste; postes neon-amarelo; listras amarelo+branco nos postes |
 | **Alta/Baixa Áustria** | Central; misto montanhoso+agrícola |

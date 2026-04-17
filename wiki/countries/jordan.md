@@ -1,7 +1,8 @@
 ---
 title: "Jordânia"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do Oriente Médio com carro Google PRETO sem antena ou luz de freio vermelha (único no Oriente Médio assim), placas BRANCAS (táxis têm faixa VERDE à esquerda — exclusivo no Oriente Médio), chevrons BRANCOS COM SETAS VERMELHAS, árabe nos sinais, paisagem muito árida, e cobertura apenas no extremo oeste do país. Petra é ponto de referência icônico."
 tags: [país, ásia, oriente-médio]
 type: country
@@ -40,6 +41,9 @@ Postes de concreto arredondados com suporte diagonal OU topo em Y triplo; às ve
 ### Edifícios de ARENITO CLARO (confiança: **média**)
 Edifícios de **tijolos de arenito claro/brilhante** com teto plano — ⚠️ similar à Cisjordânia e Jerusalém.
 
+### Tanques de Água BRANCOS no Topo dos Edifícios (confiança: **média**)
+**Tanques de água brancos** visíveis no topo de edifícios — ⚠️ compartilhados com UAE mas não com a Tunísia.
+
 ### Estradas RACHADAS com Asfalto Deformado (confiança: **média**)
 Qualidade das estradas reflete a idade; calor causa **rachaduras e deformações** no asfalto — geralmente pior que Israel.
 
@@ -59,6 +63,8 @@ Qualidade das estradas reflete a idade; calor causa **rachaduras e deformações
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Táxis: **amarelos e verdes** em Amã; **verde-oliva e preto** em Aqaba; **amarelos com para-choque branco** em Madaba
+- Táxis frequentemente têm parte inferior (funilaria) em **verde ou prateado** — detalhe útil para confirmar Jordânia em contexto árabe
+- Postos de combustível: **Manaseer Oil Gas, JoPetro** (redes jordanianas); também Total
 
 ## 8. Regiões Distintas
 

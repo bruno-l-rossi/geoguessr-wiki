@@ -1,7 +1,8 @@
 ---
 title: "Espanha"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Europa Ocidental com bollards de refletor laranja-amarelo, postes de escada ('ladder poles'), sinais de caça 'coto/caza' exclusivos e chevrons preto+branco ou azul+branco. Paisagem muito diversa."
 tags: [país, europa, europa-ocidental]
 type: country
@@ -14,6 +15,7 @@ status: draft
 A **Espanha** é o segundo maior país da Europa Ocidental, na Península Ibérica. Idioma: **espanhol** (castelhano) + línguas regionais (catalão, galego, basco, valenciano). Capital: **Madrid**. Trânsito: **pela direita**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
+- **Gen 2**: disponível em partes do país
 - **Gen 3**: antena longa, curta ou sem antena; parte traseira pode ser preta ou branca
 - **Gen 4**: azul (comum) ou preto (menos comum); carro pode estar completamente oculto
 - **Gen 4 Smallcam**: montada mais baixa, desfoque circular relativamente grande com pequena protuberância frontal
@@ -70,6 +72,7 @@ Quase todos os sinais de trânsito, chevrons e marcadores de KM usam **suporte p
 - Carros europeus comuns; motos frequentes em cidades
 - Gen 3: antena variável (longa/curta/ausente)
 - Gen 4: azul ou preto
+- Postos de combustível: **Repsol, Cepsa** (dominantes na Espanha); **Disa** (exclusivo nas Ilhas Canárias); também Avia, Tamoil, Carrefour, AS24, Galp
 
 ## 8. Regiões Distintas
 

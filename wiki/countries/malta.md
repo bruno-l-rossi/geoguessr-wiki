@@ -1,7 +1,8 @@
 ---
 title: "Malta"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Ilha mediterrânea com condução pela ESQUERDA (único na Europa junto com CY), muros de pedra calcária típicos (quase confirma Malta), arquitetura branca/bege com varandas cobertas coloridas, duplas linhas amarelas de estacionamento (como UK/IE) e palavra 'triq' nos sinais de rua."
 tags: [país, europa, europa-sul, ilhas, mediterrâneo]
 type: country
@@ -14,6 +15,7 @@ status: draft
 **Malta** é um arquipélago no Mediterrâneo, ao sul da Sicília (Itália). Idiomas: **maltês** (língua semítica única com script latino) e **inglês** — ambos oficiais. Capital: **Valletta**. Trânsito: **pela esquerda**. Sistema de medidas: **métrico** (mistura com imperial britânico).
 
 ## 2. Câmera e Cobertura
+- **Gen 3**: cobertura principal — carro **branco** (distinto dos carros coloridos típicos da Gen 4)
 - Cobertura disponível na ilha principal e em **Gozo** (ilha menor a noroeste)
 - Entre as ilhas: **trekker em barco** branco e azul
 
@@ -64,6 +66,7 @@ Placas de veículo **curtas** com faixa europeia azul à esquerda — incomum no
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (herança britânica)
 - Placas **curtas** com faixa europeia azul
+- Postos de combustível: **Enemed** (exclusivo de Malta — rede estatal)
 
 ## 8. Regiões Distintas
 

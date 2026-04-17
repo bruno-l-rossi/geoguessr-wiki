@@ -1,11 +1,12 @@
 ---
 title: "Liechtenstein"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Microestado alpino com LOW-CAM SEMPRE (apenas CH e JP também), placas PRETAS com letras brancas e emblema amarelo+vermelho (únicas na Europa), bollards preto+branco cilíndricos (quase idênticos ao CH), sinal de pedestre com 7 LISTRAS (= CH), paradas de ônibus LIEMOBIL verde+branco e separadores de estrada amarelo+preto com topo em BOTÃO LEGO."
 tags: [país, europa, europa-central, alpina]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Liechtenstein

@@ -1,7 +1,8 @@
 ---
 title: "Camboja"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do SE Asiático com script KHMER único (curvilíneo e intricado), chevrons PRETO sobre AMARELO (inverso dos outros países do SE Asiático), casas de madeira em palafitas com esquema de cores característico (marrom-escuro/azul claro/laranja-ocre), postes de concreto tipo 'escada' ou com buracos, marcadores de estrada com base branca e topo vermelho arredondado, e carro listrado único em Gen 3."
 tags: [país, ásia, sudeste-asiatico]
 type: country
@@ -40,6 +41,9 @@ Dois tipos de poste comuns:
 ### Marcadores de Estrada BRANCOS com Topo VERMELHO Arredondado (confiança: **alta**)
 Marcos de estrada de pedra com base **branca** e topo **vermelho arredondado** — lado estreito = número da estrada; lado principal = nome de cidade + distância.
 
+### Bollards de Pedra VERMELHO+BRANCO Baixos (confiança: **alta**)
+Bollards de pedra baixos com metade inferior **branca** e metade superior **vermelha** — distintos dos marcadores de estrada mais altos; comuns nas bordas das vias.
+
 ### Linhas Centrais AMARELAS (tracejadas ou sólidas) (confiança: **média**)
 Linhas centrais **amarelas**; linhas externas brancas quando presentes — ⚠️ similar à Tailândia.
 
@@ -66,11 +70,13 @@ Placas **brancas** com letras azuis — ⚠️ pode parecer totalmente branca pe
 - Casas tradicionais em palafitas com cores características
 - Templos budistas muito comuns — arquitetura decorativa com telhados ornamentados
 - Anúncios de cerveja e sinais azuis do CPP em abundância
+- Postes com **medidores de eletricidade** visíveis fixados externamente — característico do Camboja
+- Sinais montados em **postes com listras branco+vermelho** — detalhe de infraestrutura distinto
 
 ## 6. Sinais e Textos
 - **Khmer**: script principal dos sinais
 - Preah Sihanouk: sinais bilíngues com **chinês** (cidade com forte presença chinesa)
-- Estradas numeradas: Road 4, Road 6, Road 7 etc.
+- Estradas numeradas: **8 rodovias principais de 1 dígito** saindo de Phnom Penh em sentido horário; rodovias de 2 dígitos alimentam as de 1 dígito. Ex: Rota 1 = leste; Rota 4 = sudoeste (Sihanoukville); Rota 6 = noroeste (Siem Reap); Rota 7 = nordeste.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita** (⚠️ Tailândia = esquerda; Laos = direita)

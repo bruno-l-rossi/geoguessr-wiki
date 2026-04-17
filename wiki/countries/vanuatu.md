@@ -1,7 +1,8 @@
 ---
 title: "Vanuatu"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Nação insular do Pacífico com cobertura exclusivamente em trekker Gen 3 na Ilha Ambrym, com solo vulcânico escuro, floresta tropical densa, vulcão único, planalto com solo marrom-escuro, praia de AREIA PRETA, e aldeia com cabanas de palha. Cobertura muito limitada — memorizar cada área da ilha."
 tags: [país, oceania, pacífico]
 type: country

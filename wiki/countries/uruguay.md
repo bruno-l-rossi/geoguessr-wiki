@@ -1,7 +1,8 @@
 ---
 title: "Uruguai"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Pequeno país sul-americano com paisagem de colinas gramadas e tempo nublado característico. Gen 3 exclusivo com carro preto. Linhas triplas de estrada (dupla amarela + branca no meio) são únicas nas Américas."
 tags: [país, américas, sul-america]
 type: country
@@ -77,6 +78,7 @@ Placas brancas sem elementos adicionais (⚠️ Argentina tem ponto preto ou bar
 ## 7. Veículos e Transporte
 - Gen 3 apenas, carro preto
 - Carros especiais: Cabo Polônio (carro com alça laranja); Valle del Lunarejo (carro branco/preto com alça marrom)
+- Postos de combustível: **ANCAP, DUCSA** (exclusivos do Uruguai — estatais); também Petrobras, Esso
 
 ## 8. Regiões Distintas
 

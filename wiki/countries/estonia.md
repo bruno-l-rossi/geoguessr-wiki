@@ -1,7 +1,8 @@
 ---
 title: "Estônia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País Báltico com bollards em formato de BASTÃO REDONDO (único entre Bálticos), sinal de pedestre com 3 listras + pessoa DETALHADA com sapatos (único), chevrons VERMELHO+BRANCO (Latvia/Lituânia = invertido) e idioma Finougríco com Õ e Ü exclusivos. Gen 3 às vezes com 'green blur'."
 tags: [país, europa, europa-norte, balticos]
 type: country
@@ -69,6 +70,7 @@ Leve **tonalidade esverdeada** em parte do panorama Gen 3 — não ocorre normal
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas longas com faixa europeia azul
+- Postos de combustível: **Alexela, Olerex** (exclusivos da Estônia); também Neste
 
 ## 8. Regiões Distintas
 
@@ -78,7 +80,7 @@ Leve **tonalidade esverdeada** em parte do panorama Gen 3 — não ocorre normal
 | **Sudeste** | Partes mais colinas do país; mais rural |
 | **Ida-Viru (NE, Narva)** | Maioria russa; sinais bilíngues estoniano+russo |
 | **Lääne-Viru (sul)** | Partes relativamente colinas |
-| **Estradas muito rurais Gen 3** | Maior cobertura de estradas rurais entre os 3 Bálticos |
+| **Estradas muito rurais Gen 3** | Maior cobertura de estradas rurais entre os 3 Bálticos; **estradas de terra tendem a ser mais estreitas** que Letônia e Lituânia |
 
 ## 9. Pegadinhas Comuns
 - ⚠️ **Letônia**: também Báltico — verificar bollards (EE = bastão redondo, LV = diferente), chevrons (EE = vermelho+branco, LV = branco+vermelho), sinal pedestre (EE = 3+detalhado, LV = 5), idioma (EE = finougríco com Õ, LV = indo-europeu)

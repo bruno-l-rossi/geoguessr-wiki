@@ -1,7 +1,8 @@
 ---
 title: "Marcações de Estrada — Cores e Padrões por País"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-17
+sources: [plonkit.net, geodummy.com, somerandomstuff1.wordpress.com]
 summary: "Referência de linhas de estrada por país: cor das linhas externas (branca vs. amarela), padrões centrais, designs exclusivos (Linha-Z da França, tripla da África do Sul, etc.). Uma das pistas mais consistentes no GeoGuessr pois aparece em quase todo round em estrada."
 tags: [conceito, estradas, linhas, infraestrutura, identificação]
 type: concept
@@ -21,13 +22,21 @@ A presença de **linha externa amarela** (na borda da pista, não no centro) é 
 ### África Austral
 | País | Nota |
 |---|---|
-| [[south-africa]] | Linha externa amarela + linhas centrais brancas; tripla central exclusiva (2 sólidas + 1 tracejada) |
+| [[south-africa]] | Linha externa amarela + linhas centrais brancas; tripla central exclusiva (2 sólidas + 1 tracejada) ⚠️ Algumas zonas urbanas especiais: linhas externas **vermelhas** |
+| [[croatia]] | Em algumas vias: linhas externas **vermelhas** (Red Outside - White Inside) — incomum na Europa |
 | [[botswana]] | Linha externa amarela — igual à África do Sul |
 | [[lesotho]] | Linha externa amarela — igual à África do Sul |
 | [[eswatini]] | Linha externa amarela |
 | [[namibia]] | Linha externa amarela |
 
 > ⚠️ [[australia]] praticamente **nunca** usa linha externa amarela — confirma África Austral (ou Oriente Médio) se amarela aparecer.
+
+### Europa — Linhas Amarelas Laterais (Contexto de Estacionamento)
+Não são linhas de demarcação de faixa, mas indicam **proibição de estacionamento**:
+| País | Nota |
+|---|---|
+| [[united-kingdom]] | **Dupla amarela** na borda = proibição total de estacionamento; **simples** = proibição parcial — pista visual na lateral da via |
+| [[spain]] | Linha amarela na beira = proibição de estacionamento em zonas urbanas |
 
 ### Oriente Médio
 | País | Nota |
@@ -52,13 +61,15 @@ Muito comum nas **Américas**:
 | [[canada]] | Dupla amarela |
 | [[brazil]] | Dupla amarela sólida nas estradas principais |
 | [[argentina]] | Amarela central |
-| [[mexico]] | Amarela central |
+| [[mexico]] | Amarela central — frequentemente **desbotada/apagada** (mais que nos vizinhos americanos) |
 | [[colombia]] | Amarela central |
 | [[chile]] | Amarela central |
 | [[peru]] | Amarela central |
 | [[new-zealand]] | **Dupla amarela** — diferencia da Austrália (que usa branca) |
 | [[norway]] | Linha central amarela com leve **tom alaranjado** |
 | [[greece]] | Linhas amarelas mais comuns que em qualquer outro país do sul europeu |
+| [[rwanda]] | Linha central amarela + externa branca |
+| [[uganda]] | Misto: branca/branca e branca/amarela (linhas variam por estrada) |
 
 ### Linha Central BRANCA (Europa padrão)
 [[germany]], [[france]], [[spain]], [[italy]], [[austria]], [[switzerland]], [[sweden]], [[finland]], [[denmark]] e maioria da Europa usa centro branco.

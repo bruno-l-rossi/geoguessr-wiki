@@ -1,7 +1,8 @@
 ---
 title: "Mongólia"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Ásia Central com carro PICKUP GRANDE com rack, barraca e espelhos vermelhos laterais (único nessa paisagem), placas brancas com toque VERMELHO à esquerda (símbolo Soyombo), bollards em forma de PINO DE BOLICHE brancos com 2 listras vermelhas, stop sign 'ЗОГС', yurts brancas redondas, e paisagem de ESTEPE ABERTA com ausência marcante de árvores. Cirílico mongol com Ɵ e Ү exclusivos."
 tags: [país, ásia, ásia-central]
 type: country
@@ -68,6 +69,7 @@ Bairros residenciais separados por **cercas de madeira** e vielas de terra.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: **MagnaiTrade, Petrovis** (redes locais dominantes); também Shunkhlai, SodMongolGroup
 
 ## 8. Regiões Distintas
 

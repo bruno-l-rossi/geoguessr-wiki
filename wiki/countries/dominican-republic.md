@@ -1,7 +1,8 @@
 ---
 title: "República Dominicana"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País caribenho com carro do Google único (barras metálicas com LISTRAS PRETAS GROSSAS + capô branco), postes de eletricidade QUADRADOS de concreto com topo em L invertido (único na América Latina junto com Porto Rico e Uruguai), placas AMARELA no topo + BRANCA embaixo, stop sign com 'PARE' (não 'ALTO'), e cobertura MUITO LIMITADA (apenas Santo Domingo e Santiago)."
 tags: [país, caribe, americas]
 type: country
@@ -52,13 +53,14 @@ Estradas frequentemente com asfalto **muito liso** de cor **notavelmente mais es
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: Total, Esso, Texaco, **Isla, Sunix** (redes locais dominicanas)
 
 ## 8. Regiões Distintas
 
 | Cidade | Pistas Visuais |
 |---|---|
 | **Santo Domingo** | Capital; centro mais desenvolvido; sinais com "ADN"; postes marcados preto+roxo; parte da cobertura feita à noite |
-| **Santiago de los Caballeros** | Montanhas ao **norte** sempre visíveis; postes de semáforo amarelos |
+| **Santiago de los Caballeros** | Montanhas ao **norte** sempre visíveis; postes de semáforo amarelos; postes de utilidade com **base pintada em cinza fosco** |
 
 ## 9. Pegadinhas Comuns
 - ⚠️ **Porto Rico**: também usa "PARE" e postes quadrados — verificar carro (RD = listras pretas grossas, PR = diferente), placa (RD = amarela+branca, PR = diferente)

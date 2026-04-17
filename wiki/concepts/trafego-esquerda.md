@@ -2,6 +2,7 @@
 title: "Trânsito pela Esquerda"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net]
 summary: "Países onde o trânsito circula pela esquerda — identificável pelo posicionamento do carro de Street View e reflexos nos espelhos. Muito útil para descartar regiões."
 tags: [conceito, trânsito, identificação]
 type: concept

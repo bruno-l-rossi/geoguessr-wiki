@@ -1,7 +1,8 @@
 ---
 title: "Equador"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País equatorial da América do Sul com câmera 'shitcam' exclusiva e placas com mistura de tamanhos (único na América Latina). Bollards com duas listras vermelhas e chevron spam nas curvas."
 tags: [país, américas, sul-america]
 type: country
@@ -61,7 +62,8 @@ O verso das placas de sinalização pintado de **azul-teal** — único país da
 - Calçadas urbanas com **tijolos hexagonais** — às vezes visíveis
 - Marcadores de KM: verdes com **escudos de rodovia ecuatorianos**
 - Postes com buracos ovais e transparentes: predominantes na província de Loja
-- Guardrails na Guayas: pintados preto-e-amarelo (outras províncias: prata ou amarelo sólido)
+- Guardrails na Guayas: pintados preto-e-amarelo ("**bee guardrail**") — visual característico; outras províncias: prata ou amarelo sólido
+- **Mototaxis** (veículos de três rodas): comuns especialmente fora das capitais
 - Sinais de rua: quadrados com fundo branco
 - Sinais de mão-única/dupla com texto dentro da seta (igual à ⚠️ República Dominicana e ⚠️ Porto Rico)
 
@@ -76,6 +78,7 @@ O verso das placas de sinalização pintado de **azul-teal** — único país da
 - Gen 4: **pickup truck branco com bagageira preta**
 - Táxis: placas laranja sólido (antigas) ou com barra laranja no topo (novas); **cor amarela** similar à ⚠️ Colômbia mas mais saturada
 - Taxis com primeira letra do nome da província
+- Postos de combustível: **Petroecuador** (exclusivo do Equador — estatal); também Puma, Terpel, Petromas
 
 ## 8. Regiões Distintas
 

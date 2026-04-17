@@ -1,7 +1,8 @@
 ---
 title: "Chéquia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [geomastr.com]
 summary: "País da Europa Central com bollards de DUPLO REFLETOR LARANJA (único com Eslováquia), guardrails tipo B ALARGADO exclusivos (CZ+SK), sinais de rua VERMELHO BRILHANTE e sinais direcionais em FORMA DE SETA com ponta preenchida. Ř, Ě, Ů exclusivos do tcheco."
 tags: [país, europa, europa-central]
 type: country

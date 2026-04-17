@@ -1,7 +1,8 @@
 ---
 title: "Antártida"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Continente polar coberto de neve e gelo com solo sempre ESCURO, pinguins visíveis, cobertura apenas por TREKKER/TRIPÉ, locais distintos incluindo Estação McMurdo (americana, maior), Polo Sul, e várias ilhas (Half Moon, Deception, Cuverville, Danco, Petermann)."
 tags: [país, antártida, polar]
 type: country

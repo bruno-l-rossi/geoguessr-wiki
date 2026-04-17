@@ -1,7 +1,8 @@
 ---
 title: "Qatar"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do Oriente Médio com carro PICKUP BRANCO embaçado (antena à esquerda visível, clipes enferrujados na barra), placas longas BRANCAS com faixa MARROM à esquerda (privados) ou quadradas PRETAS (caminhões), chevrons BRANCO no VERMELHO e BRANCO no AZUL, postes redondos com 3 isoladores em Y, sinal de pedestre com homem em thobe, e paisagem DESÉRTICA muito plana. Menor e mais plano que Omã/UAE."
 tags: [país, ásia, oriente-médio]
 type: country
@@ -65,6 +66,7 @@ Qatar dividido em municípios com **zonas numeradas** visíveis nos sinais de ru
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Pickup branco (às vezes com caixa de papelão ou caixa preta no rack — útil para localização)
+- Postos de combustível: **Woqod** (exclusivo do Qatar — rede estatal nacional)
 
 ## 8. Regiões Distintas
 

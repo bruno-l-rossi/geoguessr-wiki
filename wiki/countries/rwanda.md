@@ -1,7 +1,8 @@
 ---
 title: "Ruanda"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da África Central com carro Gen 4 PICKUP BRANCO/PRETO/MARROM (cobertura com tom AZULADO/NEBULOSO), placas BRANCAS na frente e AMARELAS atrás, bollards CILÍNDRICOS VERMELHO E BRANCO, motociclistas com COLETES E CAPACETES VERMELHOS obrigatórios, solo AVERMELHADO, e ruas muito LIMPAS. Cobertura limitada principalmente a Kigali."
 tags: [país, áfrica, africa-central]
 type: country
@@ -71,6 +72,7 @@ Muitas casas com **tijolos de ventilação** decorativos nas fachadas — elemen
 - Pickup **preto** = principalmente Kigali
 - Pickup **marrom** = Parque Nacional Akagera
 - Pickup **branco** = outras áreas
+- Postos de combustível: **MountMeru** (exclusivo da África Oriental — Ruanda/Uganda/Tanzania); também Engen, SP, KenolKobil, HashiEnergy
 
 ## 8. Regiões Distintas
 

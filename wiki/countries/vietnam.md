@@ -1,7 +1,8 @@
 ---
 title: "Vietnã"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País asiático com MUITA COBERTURA DE MOTO (mais do mundo), postes com buracos (holey poles), bollards BRANCOS com topo VERMELHO, postes de sinalização listrados VERMELHO+BRANCO, sinais de aviso em FUNDO LARANJA-AMARELO (único no SE Asiático), idioma vietnamita com MUITOS DIACRÍTICOS e monossilábico. Endereços em fachadas facilitam muito o pinpoint."
 tags: [país, ásia, sudeste-asiatico]
 type: country
@@ -77,6 +78,7 @@ Postes frequentemente com **caixas de eletricidade cinza claro** com 1-4 janelas
 - Trânsito pela **direita**
 - Placas brancas com texto preto (curtas e longas)
 - **Muitas motos** por toda parte — cobertura de moto predominante em zonas rurais
+- Postos de combustível: **Petrolimex** (dominante/estatal do Vietnã), **PVOil** (estatal); também Binh Son, VNGAS
 
 ## 8. Regiões Distintas
 

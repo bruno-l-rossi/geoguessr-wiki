@@ -1,7 +1,8 @@
 ---
 title: "Sérvia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País dos Bálcãs com Gen 3 SEM antena (quase exclusivo — apenas Macedônia do Norte também), bollards com refletor DESCENTRADO, guardrails B-Profile exclusivos e chevrons seta preta sobre fundo branco. Idioma usa tanto cirílico quanto latino."
 tags: [país, europa, europa-leste, balcas]
 type: country
@@ -39,6 +40,7 @@ Chevrons com **seta preta** em fundo branco — ⚠️ também em Eslovênia, Mo
 Placas brancas com faixa azul à esquerda — ⚠️ Croácia e Macedônia do Norte geralmente NÃO têm faixa azul.
 
 ## 4. Vegetação e Paisagem
+- Fora das cidades: muitas **casas isoladas de estilo chalé/cabana** com aparência relativamente envelhecida — visual rural característico
 - **Norte (Voivodina)**: absolutamente plano; sem colinas; agrícola
 - **Centro-norte**: colinas levemente onduladas
 - **Bacia do Morava (sul)**: paisagem ondulada com colinas/montanhas maiores visíveis
@@ -58,6 +60,7 @@ Placas brancas com faixa azul à esquerda — ⚠️ Croácia e Macedônia do No
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa azul; placas agrícolas (tratores etc.) = **verdes**
+- Postos de combustível: **NIS** (exclusivo da Sérvia — Naftna Industrija Srbije); também Lukoil, OMV, EKO, Gazprom
 
 ## 8. Regiões Distintas
 

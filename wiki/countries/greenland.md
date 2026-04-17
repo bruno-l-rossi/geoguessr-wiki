@@ -1,7 +1,8 @@
 ---
 title: "Groenlândia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Território autônomo da Dinamarca com cobertura exclusivamente por trekker Gen 3 (frequentemente em veículos únicos por cidade: ATV, snowmobile, trator, carro redondo), casas coloridas de madeira esparsas, paisagem ÁRIDA sem árvores, fjords e montanhas costeiras, e trekkers de barco muito comuns. Estratégia: memorizar os veículos únicos por localidade."
 tags: [país, ártico, dinamarca, território]
 type: country
@@ -52,6 +53,7 @@ Muitos **trekkers de barco** — barcos muito distintos por área.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Placas: **brancas** com texto preto e **borda vermelha fina** — visíveis quando não borradas
 
 ## 8. Regiões Distintas
 

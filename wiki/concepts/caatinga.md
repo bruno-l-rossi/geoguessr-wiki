@@ -2,6 +2,7 @@
 title: "Caatinga"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Bioma semiárido exclusivo do nordeste brasileiro — pista diagnóstica de alta confiança para CE, RN, PB, PE, AL, SE, BA (interior) e PI. Vegetação espinhosa, solo branco/cinza-claro e luz intensa."
 tags: [conceito, vegetação, bioma, brasil, nordeste]
 type: concept

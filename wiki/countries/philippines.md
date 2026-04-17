@@ -1,7 +1,8 @@
 ---
 title: "Filipinas"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Arquipélago do Sudeste Asiático com estradas de CONCRETO comuns, postes OCTAGONAIS metálicos, pedras viárias QUADRADAS AMARELAS (únicas), linhas de centro AMARELO+BRANCO combinadas (únicas no Leste Asiático), triciclos/tuk-tuks extremamente comuns, INGLÊS nos sinais (único na região) e postes coloridos (vermelho/laranja/amarelo)."
 tags: [país, ásia, sudeste-asiatico]
 type: country
@@ -50,6 +51,12 @@ Chevrons tipicamente **vermelhos sobre fundo branco** — ⚠️ incomum na regi
 ### Grãos Secando na ESTRADA (confiança: **média**)
 É relativamente comum ver **grãos espalhados na estrada** para secar ao sol — ⚠️ também no Vietnã.
 
+### Quadras de BASQUETE nas Comunidades (confiança: **média**)
+Quadras de **basquete** ao ar livre são extremamente comuns em praticamente toda comunidade, vila ou bairro — o basquete é o esporte nacional das Filipinas.
+
+### Pôsteres de ELEIÇÃO nas Paredes e Postes (confiança: **média**)
+Anúncios de **eleição/campanhas políticas** em formato de poster são muito frequentes — visíveis em postes, muros e fachadas por todo o país.
+
 ### Caixas PRETAS ou BRANCAS com Abreviatura Municipal nos Postes (confiança: **alta**)
 Caixas **pretas ou brancas** em postes de eletricidade com abreviatura de 3 letras do município — muito úteis para pinpoint.
 
@@ -81,6 +88,7 @@ Caixas **pretas ou brancas** em postes de eletricidade com abreviatura de 3 letr
 - Placas brancas padrão; placas antigas (série 2002) com **tom esverdeado**
 - **Tuk-tuks/triciclos**: design varia por região (mapa de distribuição por ilha)
 - **Kuliglig** (trator improvisado): principalmente nas planícies de Cauayan, norte de Luzon
+- Postos de combustível: **Petron, Phoenix Petroleum, Seaoil** (dominantes nas Filipinas); também Caltex, Unioil, PTT
 
 ## 8. Regiões Distintas
 

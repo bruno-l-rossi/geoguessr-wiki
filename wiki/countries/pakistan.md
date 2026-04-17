@@ -1,7 +1,8 @@
 ---
 title: "Paquistão"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do sul da Ásia com cobertura quase exclusivamente de TREKKER Gen 3 em jardins mughal e atrações turísticas de Punjab, script URDU (árabe curvado e suave), placas CURTAS com faixa VERDE à esquerda (região Punjab), e calças largas coloridas típicas dos locais. Cobertura extremamente limitada ao Punjab."
 tags: [país, ásia, sul-asiático]
 type: country

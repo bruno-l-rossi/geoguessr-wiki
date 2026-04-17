@@ -1,7 +1,8 @@
 ---
 title: "Samoa Americana"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Território americano no Pacífico Sul com paisagem tropical de MONTANHAS VERDES e palmeiras, pequenas estradas de CONCRETO, casas simples com telhado de CHAPA METÁLICA, e diferentes carros do Google por ilha (caminhão enferrujado preto em Tutuila, caminhão prateado em Manu'a/Olosega, caminhão preto brilhante em Tau). Conta como EUA no GeoGuessr."
 tags: [país, oceania, pacífico, estados-unidos, território]
 type: country
@@ -45,6 +46,10 @@ Cada ilha tem um carro distinto do Google — identificar o carro ajuda a determ
 
 ## 6. Sinais e Textos
 - **Inglês**: idioma dos sinais (território americano)
+- Placas de veículo com **fundo azulado** (tom azul visível) — ⚠️ distinto dos territórios americanos do Pacífico Norte (Guam, CNMI)
+
+## Linhas de Estrada
+- Linhas externas **brancas contínuas** + linhas internas **duplas amarelas** — padrão americano.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**

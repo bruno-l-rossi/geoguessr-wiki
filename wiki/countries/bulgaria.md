@@ -1,7 +1,8 @@
 ---
 title: "Bulgária"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País dos Bálcãs com cirílico + latino nos sinais (dois idiomas visíveis), topo de poste com 3 isoladores em GANCHO VIRADO PARA CIMA (provavelmente único), sinal de pedestre com 4 listras + pessoa de CHAPÉU (único no leste europeu) e gen 3 morta de março/abril."
 tags: [país, europa, europa-leste, balcas]
 type: country
@@ -52,9 +53,10 @@ Estradas geralmente com muitas rachaduras e buracos — das piores da Europa.
 ## 5. Arquitetura e Infraestrutura
 - Casas com telhados de telha **laranja**; **manchas de argamassa** nas telhas das quinas — telhados frequentemente aparentando má construção
 - Subúrbios: entre os mais pobres da Europa; casas pequenas e densas; aspecto degradado
-- Lixeiras metálicas de formato característico — também Turquia e outros Bálcãs (Serbia, Albania, NMK)
+- Lixeiras metálicas de formato característico — também Turquia e outros Bálcãs (Serbia, Albania, NMK); lixeira com **topo convexo de metal arredondado** ("Bulgarian dumpster") — visual inconfundível
 - Chevrons: **vermelho sobre branco** — ⚠️ também Romênia, Turquia, Macedônia do Norte
 - Sinais de direção: azuis, em forma de seta, com cirílico + latim
+- **Sinais de entrada de cidade maiores** com **fundo azul** e cirílico + latim — cidades grandes; **sinais de aldeia** com fundo **branco** — diferença útil para localização
 - Entrada de cidade: simples, branca, com cirílico + latim
 
 ## 6. Sinais e Textos
@@ -65,6 +67,8 @@ Estradas geralmente com muitas rachaduras e buracos — das piores da Europa.
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
+- **Todos os táxis devem ser amarelos** por lei — ⚠️ diferente de países vizinhos onde as cores variam
+- Postos de combustível: **Lukoil, OMV, EKO** (dominantes na Bulgária); também Rompetrol, NIS, Astra
 
 ## 8. Regiões Distintas
 

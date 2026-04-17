@@ -1,7 +1,8 @@
 ---
 title: "Montenegro"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Pequeno país montanhoso com bollards BRANCO+TOPO PRETO+refletor VERMELHO (igual Eslovênia), placas com CÍRCULO VERMELHO na faixa azul (único), guardrails ENFERRUJADOS (A e B-type ambos presentes), e 'rifts' frequentes no interior (não na costa). Único país dos Bálcãs com A e B-type simultaneamente."
 tags: [país, europa, balcas, europa-sul]
 type: country
@@ -41,6 +42,9 @@ País muito **montanhoso** — interior = montanhas verdes e luxuriantes; costa 
 ### Chevrons PRETO sobre BRANCO (confiança: **média**)
 Chevrons com fundo branco e setas pretas (ou vermelho sobre amarelo) — ⚠️ AL = branco sobre preto (invertido).
 
+### Sinais Marrons de Pontos de Interesse (confiança: **média**)
+Sinais **marrons** para pontos de interesse turístico — ajuda a diferenciar do Montenegro da Albânia, que não tem esta sinalização marrom.
+
 ## 4. Vegetação e Paisagem
 - **Interior norte**: vales agrícolas verdes com colinas desmatadas para lavoura
 - **Costa/Baía de Kotor**: estilo turístico mediterrâneo; rocha exposta nas montanhas costeiras; turistas em trajes de banho
@@ -60,6 +64,7 @@ Chevrons com fundo branco e setas pretas (ou vermelho sobre amarelo) — ⚠️ 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas europeias com faixa azul + círculo vermelho com brasão nacional
+- Postos de combustível: **Lukoil, EKO, Petrol** (dominantes); também INA, Teboil, EuroPetrol
 
 ## 8. Regiões Distintas
 

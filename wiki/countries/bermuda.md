@@ -1,11 +1,12 @@
 ---
 title: "Bermudas"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Território britânico no Atlântico Norte com arquitetura de casas de pedra em CORES PASTÉIS com telhados TOTALMENTE BRANCOS (único), linha central AMARELA sólida única sem linhas externas, carro do Google PRETO, oceano de água azul-clara, vegetação densa baixa e palmeiras. Condução pela esquerda. Conta como Reino Unido."
 tags: [país, atlântico, território-britânico, ilhas]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Bermudas
@@ -54,6 +55,7 @@ Vegetação de **árvores pequenas e arbustos densos** combinada com palmeiras �
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (herança britânica)
 - Placas **brancas**, bastante compridas, com dígitos pretos concentrados no centro
+- Postos de combustível: Esso, **Rubis**
 
 ## 8. Regiões Distintas
 

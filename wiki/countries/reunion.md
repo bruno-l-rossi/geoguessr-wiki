@@ -1,7 +1,8 @@
 ---
 title: "Reunião (Réunion)"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Departamento ultramarino francês no Oceano Índico (leste de Madagascar) com carro de rack e FITA PRETA na BARRA TRASEIRA DIREITA (distingue de Gana), infraestrutura FRANCESA, ilha vulcânica montanhosa com vegetação tropical, 6 tipos de paradas de ônibus por região, e Route du Volcan com paisagem marciana. Conta como França."
 tags: [país, áfrica, oceano-índico, frança, território]
 type: country
@@ -25,6 +26,9 @@ Carro com rack + **fita preta** na ponta da barra **traseira direita** — ⚠�
 
 ### Infraestrutura FRANCESA (confiança: **alta**)
 Sinais, bollards e postes de estilo **francês** — idênticos à França metropolitana — ⚠️ conta como França no GeoGuessr.
+
+### Placas EU com às Vezes Segunda Faixa Azul à DIREITA (confiança: **média**)
+Placas europeias padrão com faixa azul à esquerda; **às vezes uma segunda faixa azul à direita** — distingue de placas da França metropolitana.
 
 ### Ilha Vulcânica MONTANHOSA com Vegetação Tropical (confiança: **alta**)
 Ilha montanhosa vulcânica no Oceano Índico; estradas principalmente na costa; **montanhas verdes** sempre próximas; palmeiras, samambaias, pinheiros em altitude e plantas floridas.

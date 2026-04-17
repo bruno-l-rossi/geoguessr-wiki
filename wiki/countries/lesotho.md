@@ -1,7 +1,8 @@
 ---
 title: "Lesoto"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Pequeno país africano completamente rodeado pela África do Sul com montanhas CARACTERÍSTICAS (topo plano/tabletop, sem árvores, com cristas rochosas horizontais), carro branco Gen 3 sem antena, placas BRANCAS COM TEXTO AZUL, grama CURTA (vs. Essuatíni = grama alta), choupanas tradicionais REDONDAS com teto de palha, e agave (planta) comum. Trânsito pela esquerda. Cobertura muito esparsa."
 tags: [país, áfrica, sul-africano]
 type: country
@@ -23,8 +24,8 @@ O **Lesoto** é um pequeno país completamente rodeado pela África do Sul. Idio
 ### Montanhas "Tabletop" sem Árvores com Cristas Rochosas Horizontais (confiança: **alta**)
 Montanhas características do Lesoto: **sem árvores**, frequentemente em formato **tabletop** (topo plano), com cristas rochosas horizontais reconhecíveis — no interior sueste, mais como colinas verdes onduladas (mas cristas horizontais ainda visíveis).
 
-### Grama CURTA (confiança: **alta**)
-Pastagens com **grama curta** — ⚠️ Essuatíni tem grama dourada alta como característica marcante.
+### Grama CURTA e QUASE SEM ÁRVORES (confiança: **alta**)
+Pastagens com **grama curta** e **quase sem árvores** — ⚠️ Essuatíni tem grama dourada alta e abundância de árvores como característica marcante; diferença clara entre os dois países.
 
 ### Placas Brancas com Texto AZUL (confiança: **alta**)
 Placas longas **brancas com texto azul** — símbolo do chapéu Mokorotlo visível quando não totalmente embaçado.
@@ -65,6 +66,7 @@ Sociedade muito rural; **gado, cavalos, burros** frequentemente soltos nas estra
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
+- Postos de combustível: Total, Engen, Excel, Shell
 
 ## 8. Regiões Distintas
 

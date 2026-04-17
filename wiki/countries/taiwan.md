@@ -1,7 +1,8 @@
 ---
 title: "Taiwan"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Ilha do Leste Asiático com CHINÊS TRADICIONAL (caracteres complexos), postes com listras PRETO+AMARELO ATÉ O CHÃO (únicas), linhas VERMELHAS externas nas bordas (únicas), espelhos com capuz LARANJA em curvas, bollards com refletores circulares em retângulo preto, e placas azuis de coordenadas nos postes."
 tags: [país, ásia, leste-asiatico]
 type: country
@@ -84,6 +85,7 @@ Chevrons em Taiwan são sempre **preto sobre amarelo**.
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Gen 3: carro preto com antena longa + luz vermelha central; OU blur enorme cobrindo todo o carro
+- Postos de combustível: **CPC Corporation, Formosa Petrochemical** (redes taiwanesas dominantes); também Taiwan Sugar, Uni-President
 
 ## 8. Regiões Distintas
 

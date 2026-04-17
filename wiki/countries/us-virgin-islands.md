@@ -1,7 +1,8 @@
 ---
 title: "Ilhas Virgens Americanas (USVI)"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geomastr.com]
 summary: "Território americano no Caribe com 3 carros Google distintos (caminhonete VERMELHA em St. Croix, branca sem antena em St. Croix, branca com antena em St. Thomas/John), placas AZUL BRILHANTE ou AZUL ESCURO, arquitetura única de influência europeia com arcos grandes, e topônimos/sinais em DINAMARQUÊS ainda presentes. Conta como EUA."
 tags: [país, américas, caribe, estados-unidos, território]
 type: country
@@ -51,7 +52,10 @@ Nomes de ruas com "*gade*" (dinamarquês) e sinais bilíngues em áreas históri
 - **Inglês**; topônimos dinamarqueses em áreas históricas (*gade* = rua em dinamarquês)
 
 ## 7. Veículos e Transporte
-- Trânsito pela **esquerda** — ⚠️ território americano que dirige pela esquerda
+- Trânsito pela **esquerda** — ⚠️ território americano que dirige pela esquerda; código de área **340**
+- Táxis: **caminhonetes de caçamba aberta** (open-back trucks) em várias cores — design distinto no contexto americano
+- **Guardrails pintados de amarelo** em áreas de risco — ⚠️ não é padrão em outros territórios americanos
+- Postos de combustível: Total
 
 ## 8. Regiões Distintas
 

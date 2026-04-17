@@ -1,7 +1,8 @@
 ---
 title: "Países Baixos"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Europa Ocidental com placas AMARELAS (único com Luxemburgo na Europa), sem postes de utilidade (quase único), país extremamente plano com canais e diques, ciclovias vermelhas ubíquas e casas de tijolo em fileira. 'IJ' maiúsculo exclusivo do neerlandês."
 tags: [país, europa, europa-ocidental]
 type: country
@@ -85,6 +86,7 @@ Moinhos de vento tradicionais E turbinas eólicas modernas — muito comuns.
 - Trânsito pela **direita**
 - **Bicicletas** muito mais comuns do que em qualquer outro país
 - Placas amarelas para carros; azuis para taxis
+- Postos de combustível: **Tango, Argos** (exclusivos dos Países Baixos); também Esso, Total, Q8, Shell
 
 ## 8. Regiões Distintas
 

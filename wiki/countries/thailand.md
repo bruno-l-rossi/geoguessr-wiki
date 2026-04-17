@@ -1,7 +1,8 @@
 ---
 title: "Tailândia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do sudeste asiático com script tailandês (círculos minúsculos), trânsito pela esquerda, linhas de centro amarelas, postes quadrados com buracos verticais e sinais verdes únicos. Stop sign em tailandês (3 caracteres)."
 tags: [país, ásia, sudeste-asiático]
 type: country
@@ -64,11 +65,15 @@ Muitas bandeiras enfileiradas ao longo das ruas; além da bandeira nacional, fre
 - **Centro-Norte**: montanhas baixas, suaves e florestadas
 - **Oeste e Península**: montanhas íngremes com **rocha exposta** visível
 - Estradas de cascalho em áreas remotas
+- **Plantações de borracha** (seringueira): comuns no sul e partes do centro
+- **Plantações de dendê** (palma de óleo): principalmente sul da Tailândia
 
 ## 5. Arquitetura e Infraestrutura
 - Templos budistas (Wat) em quase todas as cidades — estrutura distinta com telhados dourados
 - Mesquitas no **sul** (maioria muçulmana nas 4 províncias mais ao sul); texto em **Jawi** (árabe) nos sinais
 - Construção típica: concreto/tijolos; estilo tropical com ventilação
+- Postes de eletricidade com **cabos envoltos em tela/malha** (netted poles) — comuns em áreas rurais
+- Postes com sequência de cores **preto+laranja** (ou preto+laranja+branco) — encontrados no norte e nordeste
 
 ## 6. Sinais e Textos
 - **Tailandês**: script compacto, círculos minúsculos; muito reconhecível
@@ -84,13 +89,14 @@ Muitas bandeiras enfileiradas ao longo das ruas; além da bandeira nacional, fre
 - Trânsito pela **esquerda**
 - Placas **brancas** (passageiros); **amarelas** (comerciais — único no SE asiático)
 - Motos e tuk-tuks muito comuns
+- Postos de combustível: **PTT, Bangchak** (redes tailandesas dominantes); também PTGEnergy, Susco
 
 ## 8. Regiões Distintas
 
 | Região | Pistas Visuais |
 |---|---|
 | **Norte (Chiang Mai)** | Montanhas; florestal; relativamente frio |
-| **Nordeste (Isaan)** | Solo vermelho; plano; seco; menos turístico |
+| **Nordeste (Isaan)** | Solo vermelho; plano; seco; menos turístico; **muros de pedra** nas zonas rurais |
 | **Centro (Bangkok)** | Urbano denso; mistura de tudo |
 | **Oeste** | Montanhas com rocha exposta; fronteira com Myanmar |
 | **Sul (Península)** | Costão; mesquitas; Jawi; montanhas; turístico |

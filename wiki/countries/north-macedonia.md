@@ -1,7 +1,8 @@
 ---
 title: "Macedônia do Norte"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País dos Bálcãs com cobertura exclusivamente Gen 3 SEM ANTENA (único da Europa), sinais direcionais AMARELOS com texto BILÍNGUE latino+cirílico, placas brancas com bloco VERMELHO à esquerda e sinais de aviso com FUNDO AMARELO (raro na Europa). Cobertura muito esparsa: principalmente autoestradas e algumas cidades."
 tags: [país, europa, balcas, europa-sul]
 type: country
@@ -64,6 +65,7 @@ Costuras ruins de panorama (linhas pretas verticais na imagem) — também comun
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas; algumas com faixa europeia azul, outras sem — mas com bloco vermelho característico
+- Postos de combustível: **Makpetrol, OKTA** (redes locais); também Lukoil, Gazprom
 
 ## 8. Regiões Distintas
 

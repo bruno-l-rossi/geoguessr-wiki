@@ -1,7 +1,8 @@
 ---
 title: "França"
 date_created: 2026-04-09
-date_modified: 2026-04-10
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País europeu com cobertura total. Identificável por postes com PLACA AZUL (99%), 3 variantes de bollard, postes escada/waffle, LINHA-Z exclusiva, marcadores estrada bandeira austríaca (exclusivos), e 6 idiomas regionais com sufixos diagnósticos."
 tags: [país, europa, ocidental]
 type: country
@@ -114,6 +115,7 @@ Placas de rota departamental começando com "**D**" em fundo amarelo — exclusi
 ## 7. Veículos e Transporte
 - Veículos europeus padrão; marcas francesas **Renault** e **Peugeot** muito comuns
 - Supermercados **Système U / Hyper U** visíveis (cooperativa exclusivamente francesa)
+- Postos de combustível: **Total, Esso, Carrefour, E.Leclerc** (Total e E.Leclerc são especialmente comuns na França)
 - Placas de veículos: padrão EU com **faixa azul à esquerda** e código de departamento (2 dígitos) na faixa azul à direita (sistema antigo) ou sem código no novo sistema
 
 ## 8. Regiões Distintas

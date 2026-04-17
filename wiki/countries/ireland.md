@@ -1,7 +1,8 @@
 ---
 title: "Irlanda"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País único na Europa com sinais de aviso LOSANGULARES AMARELOS, chevrons AMARELO sobre PRETO (UK = branco) e sinalização bilíngue inglês+irlandês em itálico. Portões rurais com cantos ARREDONDADOS (UK = quadrados). Traços externos AMARELOS nas estradas."
 tags: [país, europa, europa-ocidental, ilhas-britanicas]
 type: country
@@ -46,6 +47,9 @@ Bollards **verde e branco** — não exclusivos mas úteis na comparação IE vs
 ### "Boreens" (Confiança: **média**)
 Estradas rurais minúsculas com **faixa de grama no meio** — forte pista em 50-50 com UK.
 
+### Muros de Pedra SECA (confiança: **média**)
+**Muros de pedra seca** (dry stone walls) e pequenos muros de pedra ao longo de estradas e campos — mais comuns na Irlanda que no UK continental (exceto Escócia/Yorkshire).
+
 ## 4. Vegetação e Paisagem
 - País **muito verde** — paisagem agrícola com muitas **sebes** (hedgerows) ao lado das estradas e dividindo os campos
 - **Costa oeste**: colinas íngremes e montanhas baixas; campos selvagens e turfeiras; tons amarronzados/amarelos na grama; rochas expostas
@@ -67,6 +71,7 @@ Estradas rurais minúsculas com **faixa de grama no meio** — forte pista em 50
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (como UK; Malta e Chipre são os outros na Europa)
 - Placas brancas com faixa europeia azul (vs UK = amarela atrás, geralmente sem faixa azul)
+- Postos de combustível: **Maxol, Applegreen** (exclusivos da Irlanda); também Esso, Texaco, Tesco, EmoOil
 
 ## 8. Regiões Distintas
 

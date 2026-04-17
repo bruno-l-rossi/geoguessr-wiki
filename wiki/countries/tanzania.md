@@ -1,7 +1,8 @@
 ---
 title: "Tanzânia"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da África Oriental com cobertura extremamente limitada: trekkers Gen 3 no Parque Nacional Gombe (floresta densa + chimpanzés + trekker de barco no Lago Tanganyika) e tripods no Monte Kilimanjaro (alta altitude + neve). Cobertura spillover na fronteira com o Quênia também presente. Memorizar cada local é mais eficaz que aprender meta geral."
 tags: [país, áfrica, africa-oriental]
 type: country
@@ -56,6 +57,7 @@ Topos das colinas de Gombe: paisagem de **gramado** com vistas do lago e paisage
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
+- Placas **amarelas** com texto preto (veículos particulares); alguns veículos comerciais com fundo diferente
 
 ## 8. Regiões Distintas
 

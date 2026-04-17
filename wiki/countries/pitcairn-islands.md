@@ -1,11 +1,12 @@
 ---
 title: "Ilhas Pitcairn"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Território britânico no Pacífico Sul com cobertura de TREKKER Gen 3 apenas na Ilha Pitcairn (trilhas de terra em floresta semitropical) e praia em Henderson Island. Solo muito VERMELHO. Conta como Reino Unido. Adamstown é o único assentamento. Cobertura extremamente limitada."
 tags: [país, oceania, pacífico, reino-unido, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Ilhas Pitcairn

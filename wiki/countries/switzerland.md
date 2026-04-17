@@ -1,7 +1,8 @@
 ---
 title: "Suíça"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País com câmera SEMPRE em low-cam (blur enorme — único com Japão e Liechtenstein), placas SEM faixa azul europeia, sinal de pedestre com 7 listras em RETÂNGULO AZUL (único na Europa) e faixas de pedestre AMARELAS exclusivas."
 tags: [país, europa, europa-central, alpes]
 type: country
@@ -78,7 +79,8 @@ Chevrons pretos com seta branca (raramente branco com seta preta) — ⚠️ Áu
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas sem faixa azul; emblema vermelho à esquerda + cantão à direita
-- Placa frontal muito curta
+- Placa frontal muito curta; placa traseira frequentemente **alta e estreita** com texto em **duas linhas horizontais**
+- Postos de combustível: **Migrol, Agrola** (redes suíças); também Esso, Eni, Avia, Tamoil, Socar
 
 ## 8. Regiões Distintas
 

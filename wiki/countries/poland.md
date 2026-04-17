@@ -1,7 +1,8 @@
 ---
 title: "Polônia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Europa Central com bollards com faixa vermelha ao redor, postes de concreto com buracos ('holey poles'), sinal de aviso triangular amarelo+borda vermelha fina (único na Europa) e chevrons branco+vermelho. Idioma com Ł e Ż exclusivos."
 tags: [país, europa, europa-central]
 type: country
@@ -68,6 +69,7 @@ Chevrons com setas **vermelhas** sobre fundo branco — ⚠️ Ucrânia também 
 ## 7. Veículos e Transporte
 - Carros europeus comuns
 - Trânsito pela **direita**
+- Postos de combustível: **Orlen, Lotos** (exclusivos da Polônia — dominantes); também BP, Circle K, Total
 
 ## 8. Regiões Distintas
 

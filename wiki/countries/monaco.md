@@ -1,7 +1,8 @@
 ---
 title: "Mônaco"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Microestado na Riviera Francesa com cobertura principalmente Gen 2, placas CURTAS SEM FAIXA AZUL (também comum ver placas francesas), arquitetura densa luxuosa mediterrânea, palmeiras plantadas, muita cobertura em TÚNEIS, trekker de barco no porto com iates e skyline, e vespas enfileiradas nas ruas."
 tags: [país, europa, europa-ocidental, mediterrâneo]
 type: country
@@ -59,6 +60,7 @@ Monaco é colindante com as colinas da Riviera — país todo em área montanhos
 - Trânsito pela **direita**
 - Placas curtas sem faixa azul (placas nacionais)
 - Muitos carros de luxo e vespas
+- Postos de combustível: Avia, Agip, Esso
 
 ## 8. Regiões Distintas
 

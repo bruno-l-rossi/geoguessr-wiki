@@ -2,6 +2,7 @@
 title: "Araucária (Pinheiro-do-Paraná)"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net, geodummy.com]
 summary: "Árvore endêmica do Sul do Brasil, altamente diagnóstica no GeoGuessr — presença confirma localização no Paraná, Santa Catarina ou Rio Grande do Sul."
 tags: [conceito, vegetação, árvore, brasil, sul]
 type: concept

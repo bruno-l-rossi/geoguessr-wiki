@@ -1,7 +1,8 @@
 ---
 title: "Líbano"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do Oriente Médio com cobertura principalmente por TREKKER Gen 3 (sem carro nas estradas) e cobertura 'shitcam' (único no Oriente Médio com shitcam), placas com faixa AZUL à esquerda (táxis = vermelho escuro), idioma árabe MAS com inglês e francês comuns, postes METÁLICOS de malha às vezes pintados de amarelo, e paisagem mediterrânea montanhosa. Cobertura limitada, concentrada no litoral norte de Beirute."
 tags: [país, ásia, oriente-médio, mediterrâneo]
 type: country

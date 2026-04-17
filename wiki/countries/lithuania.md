@@ -1,7 +1,8 @@
 ---
 title: "Lituânia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País Báltico com bollards em CUNHA + refletor LARANJA (único nos Bálticos), postes de concreto QUADRADO com suporte DIAGONAL, km marker azul em 45° e Gen 3 com BLURS ALEATÓRIOS (único). Letras Ą/Ę/Į/Ų com gancho exclusivas. 'gatvė' = rua exclusivo."
 tags: [país, europa, europa-norte, balticos]
 type: country
@@ -27,6 +28,9 @@ Postes **quadrados de concreto** com **suporte diagonal** característico — ma
 
 ### Gen 3 com BLURS ALEATÓRIOS (confiança: **alta**)
 Pequenos **blurs aleatórios** cobrindo partes aleatórias da imagem (sinais, objetos) na Gen 3 — não típico em EE ou LV; ⚠️ também em Kaliningrado (Rússia).
+
+### Estradas de Terra MAIS LARGAS e MAIS CLARAS (confiança: **média**)
+Estradas de cascalho e terra tendem a ser **mais largas** que na Estônia e com superfície **mais clara** — útil em 50/50 com outros Bálticos.
 
 ### Marcador KM Azul em 45° com Forma de L (confiança: **alta**)
 Marcador quilométrico azul em **ângulo de 45°** em relação à estrada; o sinal tem **forma de L** — ⚠️ EE = perpendicular; LV = paralelo.
@@ -68,6 +72,7 @@ Muitos nomes de lugares lituanos terminam em "**-ai**" — característica do li
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
+- Postos de combustível: **Viada** (exclusivo da Lituânia); também Orlen, Lukoil, Neste, BalticPetroleum
 
 ## 8. Regiões Distintas
 

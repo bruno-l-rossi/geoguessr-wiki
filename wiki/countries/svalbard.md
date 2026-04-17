@@ -1,11 +1,12 @@
 ---
 title: "Svalbard"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Arquipélago ártico norueguês (conta como NORUEGA no GeoGuessr). Identificável pela paisagem ÁRTICA SEM ÁRVORES com montanhas desérticas/nuas, placas PRETAS com texto AMARELO (únicas para Svalbard), possibilidade de texto RUSSO em sinais (assentamentos russos), e edifícios estilo soviético em Pyramiden e Barentsburg."
 tags: [país, europa, europa-norte, ártico, noruega, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Svalbard

@@ -1,7 +1,8 @@
 ---
 title: "Essuatíni"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Pequeno país africano rodeado pela África do Sul e Moçambique com paisagem de COLINAS VERDES ARBORIZADAS e grama dourada alta (vs. Lesoto = montanhas áridas), postes de madeira MARROM-ESCUROS com insuladores laterais, placas LONGAS com VERDE embaixo, estradas com código 'MR' (exclusivo), e abrigos de ônibus de CONCRETO. Carro Google branco sem antena. Trânsito pela esquerda."
 tags: [país, áfrica, sul-africano]
 type: country
@@ -27,8 +28,8 @@ Postes de **madeira marrom-escura** com design simples; insuladores montados na 
 ### Estradas com Código "MR" (confiança: **alta**)
 Estradas com código **"MR"** (ex: MR3, MR8, MR9) — ⚠️ **exclusivos do Essuatíni** na África Austral.
 
-### Placas LONGAS com VERDE na Base (confiança: **alta**)
-Placas **compridas** com **verde na parte inferior** — podem parecer similares a certas placas sul-africanas; verificar outras pistas.
+### Placas LONGAS com VERDE na Base + Tom AZUL-ESVERDEADO (confiança: **alta**)
+Placas **compridas** com **verde na parte inferior** e um **tom levemente azul-esverdeado** nas placas em geral — podem parecer similares a certas placas sul-africanas; verificar outras pistas.
 
 ### Linhas Externas AMARELAS + Triplas Brancas Centrais (confiança: **média**)
 Linhas externas **amarelas** e ocasionalmente **três linhas brancas** no centro — ⚠️ similar à África do Sul, Lesoto e Botswana.
@@ -53,6 +54,7 @@ Linhas externas **amarelas** e ocasionalmente **três linhas brancas** no centro
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
+- Postos de combustível: Total, Puma, Caltex, Engen, Excel
 
 ## 8. Regiões Distintas
 

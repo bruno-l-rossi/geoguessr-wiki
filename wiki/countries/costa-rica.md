@@ -1,7 +1,8 @@
 ---
 title: "Costa Rica"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da América Central com cobertura quase exclusivamente por TREKKER Gen 3 (único país com trekker e espanhol como língua principal), placas BRANCAS com texto AZUL, postes de concreto REDONDOS, stop sign com palavra 'ALTO', cobertura muito limitada concentrada em San José e costa norte. Trânsito pela direita."
 tags: [país, américas, america-central]
 type: country
@@ -28,6 +29,12 @@ status: draft
 
 ### Stop Sign com "ALTO" (confiança: **média**)
 Sinais de PARE com a palavra **"ALTO"** — ⚠️ também no México e Guatemala.
+
+### Táxis VERMELHOS com Letreiro AMARELO (confiança: **alta** se visível)
+Táxis **vermelhos** com letreiro/placa **amarela** de táxi no teto — cores exclusivas da Costa Rica no contexto centro-americano.
+
+### Celulares: Prefixos 5/6/7/8 (confiança: **baixa** se visível)
+Números de celular começam com **5, 6, 7 ou 8**; fixos começam com **2 ou 4** — formato de 8 dígitos (XXXX-XXXX).
 
 ### Placas BRANCAS com Texto AZUL (confiança: **alta**)
 Placas curtas **brancas** com texto **azul** — leve toque azul visível mesmo com blur.

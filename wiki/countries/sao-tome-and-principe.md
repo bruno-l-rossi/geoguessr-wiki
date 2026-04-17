@@ -1,11 +1,12 @@
 ---
 title: "São Tomé e Príncipe"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Arquipélago africano com shitcam (variante mais escura/nebulosa que a da Índia), português como idioma principal, postes de madeira pintados de AZUL com letras 'CST', táxis e minibus AMARELOS, antena inclinada visível no carro, floresta tropical densa com banana por toda parte. Ilha São Tomé = carro preto; Príncipe = carro azul com trilhos prateados."
 tags: [país, áfrica, golfo-da-guiné]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # São Tomé e Príncipe

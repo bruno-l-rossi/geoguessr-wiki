@@ -2,6 +2,7 @@
 title: "Bollards da Europa"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net, geodummy.com]
 summary: "Guia de bollards europeus por país — forma, cor e refletores como identificadores no GeoGuessr."
 tags: [conceito, infraestrutura, europa, bollards]
 type: concept

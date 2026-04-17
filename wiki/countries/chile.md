@@ -1,7 +1,8 @@
 ---
 title: "Chile"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País sul-americano estreito e longo com carro Google branco sem antena (Gen 3) e linhas de estrada únicas: all-white ou all-yellow (nunca mistura). Atacama ao norte, Patagônia ao sul."
 tags: [país, américas, sul-america]
 type: country
@@ -34,6 +35,9 @@ Postes de sinal com **fendas (slots)** no topo — detalhe distintivo.
 
 ### Placas de Veículos (confiança: **média**)
 Veículos comuns: placas **brancas**; comerciais e táxis: placas **laranja** (⚠️ Equador também tem laranja; placas comerciais do Brasil são vermelhas).
+
+### Refletores AMARELOS nas Bordas das Estradas de Montanha (confiança: **média**)
+Nas estradas montanhosas, os postes de borda têm **refletores amarelos** — comuns em áreas de altitude e curvas fechadas nos Andes.
 
 ### Sistema de Nomenclatura de Estradas (confiança: **alta** para localização regional)
 Letras de A a Y do norte ao sul — **A** = extremo norte (Arica), **Y** = extremo sul. Muito útil para pinpoint.
@@ -77,6 +81,7 @@ Letras de A a Y do norte ao sul — **A** = extremo norte (Arica), **Y** = extre
 - Carro Gen 4: **azul**
 - Táxis: **placas laranja** (Equador também)
 - Trailer "Outback": carro towing trailer branco/prata perto do zoológico de Santiago
+- Postos de combustível: **COPEC** (exclusivo do Chile); também Terpel, Petrobras, ENEX
 
 ## 8. Regiões Distintas
 

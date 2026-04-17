@@ -1,7 +1,8 @@
 ---
 title: "Romênia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do leste europeu com postes holey de BURACOS LARGOS/ALTOS, sinal de rendição com BORDA VERMELHA GROSSA + borda branca fina (único), adesivos AMARELOS GIGANTES nos postes, chevrons vermelho+branco com MOLDURA AMARELA e Dácia dominante (~25% dos carros)."
 tags: [país, europa, europa-leste]
 type: country
@@ -19,8 +20,11 @@ A **Romênia** fica no leste europeu. Idioma: **romeno** — língua românica c
 
 ## 3. Pistas Visuais Principais
 
-### Postes Holey com Buracos LARGOS ou ALTOS (confiança: **alta**)
-Postes de concreto com buracos que vão até o chão; buracos tipicamente muito **largos ou muito altos** — ⚠️ Polônia = buracos não chegam à base, postes mais finos; Hungria = buracos menores.
+### Postes Holey com Buracos LARGOS ou ALTOS + Marcadores Amarelos de Tensão (confiança: **alta**)
+Postes de concreto com buracos que vão até o chão; buracos tipicamente muito **largos ou muito altos** — ⚠️ Polônia = buracos não chegam à base, postes mais finos; Hungria = buracos menores. Postes romenos frequentemente têm **marcadores amarelos de aviso de tensão elétrica** na lateral — comum e diagnóstico.
+
+### Bollards "Marco" Coloridos por Tipo de Estrada (confiança: **alta**)
+Bollards de concreto tipo "marco de quilometragem" com cor codificada: **amarelo** = estrada local, **azul** = estrada de condado, **vermelho** = estrada nacional, **verde** = estrada europeia/via expressa — sistema único da Romênia.
 
 ### Adesivo AMARELO GIGANTE nos Postes (confiança: **alta**)
 Adesivos **amarelos muito grandes** nos postes, geralmente com nome da cidade/vila escrito no meio — específicos da Romênia; ⚠️ Bulgária e Hungria têm versões menores.
@@ -42,6 +46,9 @@ Fundos dos sinais de trânsito frequentemente **pretos** — ⚠️ também na I
 
 ### Palheiros com VARA ATRAVESSANDO (confiança: **alta**)
 Palheiros com uma **vara/bastão passando verticalmente** pelo centro — muito comuns na Romênia.
+
+### Postes com Listras Diagonais VERMELHO E BRANCO (confiança: **média**)
+Alguns postes de utilidade com **listras diagonais vermelhas e brancas** — visual distinto.
 
 ### Waystones GRANDES com Moldura Vermelha/Azul e Número da Rodovia (confiança: **alta**)
 Pedras indicadoras com moldura vermelha ou azul e número da rodovia na lateral; ou de pedra rústica; ou variante pequena toda branca.
@@ -71,6 +78,7 @@ Pedras indicadoras com moldura vermelha ou azul e número da rodovia na lateral;
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
 - **Dácia** extremamente dominante
+- Postos de combustível: **Petrom, Rompetrol** (exclusivos da Romênia); também Lukoil, OMV, MOL, Socar
 
 ## 8. Regiões Distintas
 

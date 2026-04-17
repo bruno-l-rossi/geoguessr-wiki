@@ -1,11 +1,12 @@
 ---
 title: "Ilhas Menores Distantes dos EUA"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Territórios americanos no Pacífico com foco no Atol de Midway (câmera Gen 2, ALBATROSES em quase todo lugar, duas pistas de pouso). Outras ilhas com trekker Gen 3, vegetação baixa/arbustiva e muitos pássaros. Conta como EUA. Memorizar cada ilha é mais eficaz que meta geral."
 tags: [país, oceania, pacífico, estados-unidos, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Ilhas Menores Distantes dos EUA (US Minor Outlying Islands)

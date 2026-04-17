@@ -1,7 +1,8 @@
 ---
 title: "Eslováquia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do centro da Europa com muitas pistas compartilhadas com a Tchéquia (bollards laranja duplos, guardrails B largo, postes de concreto arredondados em pares), mas distinguível por sinais de rua BRANCO+AZUL+borda VERMELHA (CZ = vermelho), fonte BOLD nos sinais, marcador km com LINHA HORIZONTAL PRETA e letras Ľ/Ô exclusivas."
 tags: [país, europa, europa-central]
 type: country
@@ -81,6 +82,7 @@ Placas de número de casa brancas com borda **vermelha ou preta fina** — ⚠�
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
+- Postos de combustível: **Slovnaft** (exclusivo da Eslováquia — dominante); também OMV, Orlen, Benzina, Lukoil
 
 ## 8. Regiões Distintas
 

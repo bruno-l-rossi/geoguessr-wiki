@@ -1,7 +1,8 @@
 ---
 title: "Egito"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do Norte da África com cobertura EXCLUSIVAMENTE por trekker Gen 3 em 7 locais históricos (Cairo e Alexandria). Edifícios de ARENITO, idioma árabe, e todos os locais são monumentos históricos famosos (Pirâmides, Cidadela do Cairo, Igreja Suspensa, Citadela de Qaitbay, Mosteiro de Saint Mina). Prático memorizar os 7 trekkers em vez de pistas visuais gerais."
 tags: [país, áfrica, norte-africa, oriente-médio]
 type: country

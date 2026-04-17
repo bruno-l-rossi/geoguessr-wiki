@@ -1,7 +1,8 @@
 ---
 title: "Quirguistão"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Ásia Central com carro PRATEADO com RACK DE 4 BARRAS (único no cenário montanhoso da Ásia Central), placas com FAIXA VERMELHA, marcadores de KM com triângulo VERMELHO E BRANCO (exclusivos), bollards brancos com faixa preta diagonal, cobertura apenas de INVERNO (árvores sem folhas, neve comum), e presença islâmica marcante. Paisagem predominantemente montanhosa."
 tags: [país, ásia, ásia-central]
 type: country
@@ -61,6 +62,7 @@ Cirílico com letras adicionais ao russo: **Ө, Ү, Ң** — distingue do russo 
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: **EcoPetrol** (rede local dominante)
 
 ## 8. Regiões Distintas
 

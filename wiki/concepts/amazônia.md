@@ -2,6 +2,7 @@
 title: "Amazônia"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Bioma da floresta tropical amazônica — pista diagnóstica para o norte do Brasil (AM, PA, AC, RO, AP, RR, MT) e áreas fronteiriças com Colômbia, Peru, Bolívia e Venezuela."
 tags: [conceito, vegetação, bioma, brasil, amazônia]
 type: concept

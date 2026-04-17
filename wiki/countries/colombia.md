@@ -1,7 +1,8 @@
 ---
 title: "Colômbia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País sul-americano identificável por placas de veículos amarelas (únicas na América do Sul), postes com listras preto-amarelo e táxis amarelo-pastel com placa branca lateral."
 tags: [país, américas, sul-america]
 type: country
@@ -53,6 +54,7 @@ Cercas de madeira muito comuns; versão pintada e afiada no topo quase exclusiva
 - Postes: principalmente concreto, variedade de topos. Postes **escuros** mais comuns que em países vizinhos
 - **Único país americano** (com México e Equador) com postes **octagonais**
 - Postes com listra amarela mais longa no meio: **departamento de Antioquia** (e às vezes Córdoba)
+- **Bucaramanga**: postes de sinalização com listras **preto+laranja** — específico desta cidade
 - Barranquilla: interseções com pequenos postes de concreto (*mojones*) com nomes de rua
 - Leticia (sul extremo): blocos longos de concreto na borda da estrada; veículo único da cidade
 
@@ -65,6 +67,7 @@ Cercas de madeira muito comuns; versão pintada e afiada no topo quase exclusiva
 - Gen 3: antena curta e grossa (compartilhada com México e Equador, mas em carro preto = exclusivo Colômbia)
 - Táxis **amarelo-pastel** com placa branca e nome da cidade
 - Gen 4: carro branco/prata
+- Postos de combustível: **EcoPetrol, Terpel, Biomax** (exclusivos/dominantes na Colômbia); também Puma, Esso, Texaco
 
 ## 8. Regiões Distintas
 

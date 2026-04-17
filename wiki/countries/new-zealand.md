@@ -1,7 +1,8 @@
 ---
 title: "Nova Zelândia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Oceania com bollards únicos (faixa vermelha envolvendo toda a parte traseira), sinais de give-way com texto vermelho e placas de rua azuis no interior. Paisagem verde e montanhosa."
 tags: [país, oceania, pacífico]
 type: country
@@ -43,6 +44,15 @@ Sinais de aviso: formato **losango (diamante), amarelos** sobre postes brancos �
 ### Número de Rodovia em Escudo Vermelho (confiança: **alta**)
 Placas de direção com número de rodovia em **escudo vermelho** — exclusivo da NZ.
 
+### Código de Área "02" = Celular; "03" = Ilha Sul (confiança: **média**)
+Área codes da NZ são regionais: **02** = celular (nacional); **03** = Ilha Sul; **04** = Wellington; **06** = leste da Ilha Norte; **07** = centro/oeste da Ilha Norte; **09** = norte da Ilha Norte (Auckland). Útil quando visível em anúncios.
+
+### Marcações de Bus Lane VERDES (confiança: **alta**)
+Faixas de ônibus (*bus lanes*) marcadas em **verde** na estrada — visíveis em áreas urbanas.
+
+### Palavras Maori com Macrons (traços sobre vogais) (confiança: **alta**)
+Topônimos e sinais frequentemente em **Māori** — vogais com traços horizontais (macrons): ā, ē, ī, ō, ū. Terminações comuns: -ui, -ea, -oa indicam origem maori.
+
 ### Samambaias (ferns) em Florestas (confiança: **média**)
 Samambaias muito comuns em áreas florestadas — parte da identidade vegetal da NZ.
 
@@ -83,6 +93,7 @@ Samambaias muito comuns em áreas florestadas — parte da identidade vegetal da
 - Trânsito pela **esquerda**
 - Chevrons: preto sobre amarelo com **borda preta fina** (⚠️ Austrália = mesmas cores mas sem borda)
 - Linha exterior: branca (padrão); amarela tracejada em áreas populadas; sem linha em estradas pequenas
+- Postos de combustível: **Z Energy** (exclusivo da Nova Zelândia); também Caltex, Mobil, Gull
 
 ## 8. Regiões Distintas
 Ver tabela em Vegetação. Adicionalmente:

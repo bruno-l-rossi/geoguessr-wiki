@@ -1,11 +1,12 @@
 ---
 title: "Cazaquistão"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Grande país da Ásia Central com carro PICKUP BRANCO (único país com esse veículo), idioma CAZAQUE em cirílico e latim com letras únicas (Ә,Ғ,Қ,Ң,Ő,Ű,Ü,Һ,І), chevrons AMARELOS E PRETOS (exceto em T: vermelho e branco), sinais de rua AZUIS com padrão ornamental, e paisagem de estepe aberta muito vasta. Infraestrutura similar à Rússia mas com troncos de árvores PINTADOS DE BRANCO."
 tags: [país, ásia, ásia-central]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Cazaquistão

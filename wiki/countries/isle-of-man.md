@@ -1,7 +1,8 @@
 ---
 title: "Ilha de Man"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Dependência britânica (conta como UK) com cobertura apenas Gen 2, placas BRANCAS+AMARELAS com FAIXA VERMELHA à esquerda (único), bollards AZUIS em áreas urbanas, plantas de gorse com FLORES AMARELAS, fazendas colinas com casas de PAREDES CAIADAS. Lâmpadas com base azul e adesivo azul pequeno como meta geoespacial."
 tags: [país, europa, territorio-britanico, ilhas, ilhas-britanicas]
 type: country
@@ -52,6 +53,7 @@ Lâmpadas com base **azul** e pequeno **adesivo azul** — presentes na maioria 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (como UK)
 - Placas brancas+amarelas com faixa vermelha à esquerda
+- Postos de combustível: Total
 
 ## 8. Regiões Distintas
 

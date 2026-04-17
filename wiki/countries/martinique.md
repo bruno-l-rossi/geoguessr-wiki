@@ -1,7 +1,8 @@
 ---
 title: "Martinica"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Departamento ultramarino francês no Caribe com cobertura APENAS em 3 trekkers Gen 3 (destilaria de rum, trekker costeiro sul, Jardin de Balata). Conta como França para streaks. Estratégia: memorizar os 3 trekkers."
 tags: [país, américas, caribe, frança, território]
 type: country
@@ -24,6 +25,9 @@ Toda cobertura por trekker — sem carro nas estradas.
 
 ### FRANCÊS nos Sinais (confiança: **alta**)
 Idioma: **francês** (departamento francês).
+
+### Placas com Faixa Azul à DIREITA (confiança: **média**)
+Placas com faixa europeia azul posicionada à **direita** (em vez da esquerda usual) — distintiva se um carro for visível.
 
 ### Vegetação Tropical ÚMIDA e Exuberante (confiança: **alta**)
 Vegetação tropical caribeña — especialmente evidente no Jardin de Balata.

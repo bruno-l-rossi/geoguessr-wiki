@@ -6,6 +6,8 @@ summary: "País da África Austral com carro PICKUP BRANCO com antena curta semp
 tags: [país, áfrica, africano-austral]
 type: country
 status: draft
+date_modified: 2026-04-14
+sources: [geomastr.com]
 ---
 
 # Namíbia

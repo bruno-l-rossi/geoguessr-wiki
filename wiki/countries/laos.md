@@ -1,7 +1,8 @@
 ---
 title: "Laos"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Ásia Sudeste com cobertura em apenas 5 cidades, carro PRATEADO com rack de 2 barras e espelhos pretos (similar à Guatemala), placas AMARELAS (curtas), script LAO compacto e curvilíneo, postes de CONCRETO QUADRADOS com furos, bollards de concreto PRETO E BRANCO quadrados, e stop sign com script lao de 2 caracteres. Cada cidade tem aparência distinta. Trânsito pela direita."
 tags: [país, ásia, sudeste-asiático]
 type: country
@@ -30,8 +31,8 @@ Placas **amarelas** e curtas — ⚠️ Tailândia e Camboja usam brancas para v
 ### Script LAO Compacto e Curvilíneo (confiança: **alta**)
 **Script lao**: compacto e curvilíneo, com diacríticos acima e abaixo dos caracteres — ⚠️ muito similar ao tailandês mas com menos linhas retas.
 
-### Stop Sign com 2 CARACTERES em Lao (confiança: **alta**)
-Stop sign com **2 caracteres** em script lao — ⚠️ Tailândia usa 3 caracteres.
+### Stop Sign com 2 CARACTERES em Lao + Inglês (confiança: **alta**)
+Stop sign com **2 caracteres** em script lao e também texto em **inglês** (bilíngue) — ⚠️ Tailândia usa 3 caracteres somente em tailandês.
 
 ### Postes de CONCRETO QUADRADOS com Furos (confiança: **alta**)
 Postes de concreto **quadrados** com pequenos furos alinhados de cima a baixo nas laterais — ⚠️ similares na Tailândia, Sri Lanka e raramente Camboja.
@@ -68,9 +69,11 @@ Meio-fios listrados de várias cores (vermelho, amarelo, preto e branco) por tod
 - **Lao** (script compacto e curvilíneo)
 - Stop sign: 2 caracteres em lao (vs. tailandês = 3 caracteres)
 - **Luang Prabang**: verso dos sinais **azuis** (exclusivo desta cidade no Laos)
+- **Telefone**: prefixo de área com **0** antes; celulares: começam com **02** — útil se visível em anúncios
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita** — ⚠️ útil para diferenciar da Tailândia (que dirige pela esquerda)
+- Postos de combustível: **Lao State Fuel Company** (estatal); também PTT
 
 ## 8. Regiões Distintas
 

@@ -2,6 +2,7 @@
 title: "Chevrons — Setas de Curva por País"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geohints.com, geodummy.com]
 summary: "Catálogo de chevrons (setas de curva laterais de estrada) por país. Cor de fundo e cor da seta são os elementos diagnósticos. Alguns países têm combinações exclusivas que confirmam localização com alta confiança."
 tags: [conceito, chevrons, infraestrutura, identificação]
 type: concept

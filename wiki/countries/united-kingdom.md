@@ -1,7 +1,8 @@
 ---
 title: "Reino Unido"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da Europa Ocidental com placas BRANCAS na frente e AMARELAS atrás (único no mundo), trânsito pela esquerda, olhos de gato no centro da via e bollards arredondados com topo vermelho. 'GIVE WAY' nos sinais de ceda."
 tags: [país, europa, europa-ocidental]
 type: country
@@ -34,8 +35,11 @@ Linhas duplas amarelas nas **bordas laterais** (não no centro) — indicam rest
 ### Bollards Arredondados: Vermelho na Frente, Branco Atrás (confiança: **alta**)
 Bollards com topo **arredondado**, face **vermelha** e traseira **branca**, base **preta**, faixa branca horizontal — design característico do UK. ⚠️ NZ tem bollard diferente (faixa vermelha envolve toda a traseira).
 
-### Postes de Madeira com Degraus Metálicos Horizontais (confiança: **alta**)
-Postes de madeira com **hastes metálicas horizontais** em forma de degraus — exclusivo do UK dentro da Europa.
+### Postes de Madeira com Degraus Metálicos + Adesivo de RAIO AMARELO (confiança: **alta**)
+Postes de madeira com **hastes metálicas horizontais** em forma de degraus — exclusivo do UK dentro da Europa. Postes frequentemente têm **adesivos de aviso de raio/relâmpago amarelos** fixados na lateral — diferencia do estilo de poste de madeira irelandês.
+
+### Faixas de Pedestre "Zebra" com Luzes Globulares LARANJA (Belisha Beacons) (confiança: **alta**)
+Travessias de pedestres tipo "zebra" com postes de **globo laranja piscante** no topo dos postes laterais (**Belisha beacons**) — design exclusivo do UK; Austrália e NZ têm faixas zebra mas sem esses globos laranja.
 
 ### "GIVE WAY" nos Sinais de Ceda (confiança: **alta**)
 Triângulo invertido com texto "**GIVE WAY**" — ⚠️ Austrália/NZ usam "GIVE WAY" também, mas Irlanda usa sem texto ou com formato diferente.
@@ -72,6 +76,7 @@ Portões de fazenda rurais com **cantos quadrados/retos** — ⚠️ Irlanda usa
 - Carros europeus e japoneses comuns; marcas britânicas (Land Rover, Jaguar, Mini)
 - **Ônibus de dois andares** ("double-decker") vermelhos em Londres
 - Trens com livery variada por operadora; trilhos eletrificados no sul
+- Postos de combustível: **Tesco, Morrisons, Asda, Sainsbury's** (supermercados britânicos com postos — exclusivos UK); também Esso, Texaco, Jet
 
 ## 8. Regiões Distintas
 

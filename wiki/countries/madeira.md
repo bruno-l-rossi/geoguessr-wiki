@@ -1,11 +1,12 @@
 ---
 title: "Madeira"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Ilha portuguesa muito MONTANHOSA (vs. Açores = ondulante), com bollards de PEDRA (cúbicos/cilíndricos) com refletor vermelho, agricutura em TERRAÇOS, cobertura frequentemente NUBLADA/ENEVOADA, shitcam com carro BRANCO visível, muitos TÚNEIS, guardrails amarelo+preto, guarda-corpos de pontes VERDE ESCURO e lírios africanos."
 tags: [país, europa, portugal, ilhas, atlântico]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Madeira

@@ -1,7 +1,8 @@
 ---
 title: "Bollards — Balizadores de Estrada por País"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geohints.com, geodummy.com]
 summary: "Catálogo visual de bollards (balizadores de beira de estrada) por país e região. Inclui forma, cor, tipo de refletor e pares de países que se confundem. Bollards são uma das pistas mais confiáveis da Europa e de vários países isolados."
 tags: [conceito, bollard, balizador, infraestrutura, identificação]
 type: concept
@@ -140,6 +141,10 @@ Ver também: [[bollards-europa]]
 
 ### Turquia ([[turkey]])
 - **Retangulares brancos** com refletor vermelho — design mais retangular/achatado que o europeu cilíndrico
+
+### Indonésia ([[indonesia]])
+- **Vermelho+branco listrado** — faixas diagonais vermelhas e brancas (design exclusivo)
+- Também: preto+branco e amarelo+preto (outros tipos comuns)
 
 ---
 

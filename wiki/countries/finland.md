@@ -1,7 +1,8 @@
 ---
 title: "Finlândia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País nórdico com sinais de aviso AMARELOS com borda extra amarela (único), Gen 3 em cores de outono (único nórdico), chevrons PRETO+AMARELO, sinal de pedestre com 5 listras e redes de supermercados K-Market/S-Market exclusivas. Idioma não indo-europeu com palavras longas e vogais duplas."
 tags: [país, europa, europa-norte, escandinavia]
 type: country
@@ -72,6 +73,7 @@ Dois estilos de sinais de parada de ônibus: **azul+branco** ou **amarelo+preto*
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas curtas com faixa europeia azul; **Åland = totalmente brancas com texto azul**
+- Postos de combustível: **Neste** (dominante na Finlândia), **ABC** (cooperativa finlandesa); também Teboil, Tango, SEO
 
 ## 8. Regiões Distintas
 

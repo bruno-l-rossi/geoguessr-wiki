@@ -1,7 +1,8 @@
 ---
 title: "Japão"
 date_created: 2026-04-09
-date_modified: 2026-04-10
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País insular da Ásia Oriental com câmera BAIXÍSSIMA (low-cam), carro preto e branco, escrita japonesa inconfundível, postes com transformadores distintos por região (10 regiões), escudos hexagonais de prefeitura, e refletores de poste verticais (vs. diagonais de Taiwan/Coreia)."
 tags: [país, ásia, oriental]
 type: country
@@ -49,7 +50,7 @@ Semáforos dispostos **horizontalmente** (não verticalmente como na maioria dos
 Placas de rotas estaduais com formato **hexagonal** — número da prefeitura (em kanji) abaixo do número da rota. Únicas no mundo com esse design.
 
 ## 4. Vegetação e Paisagem
-- **Hokkaido (norte)**: paisagem aberta, pastagens, sem telhas (neve); tanques brancos de **querosene** para aquecimento
+- **Hokkaido (norte)**: paisagem aberta, pastagens, sem telhas (neve); tanques brancos de **querosene** para aquecimento; folhas largas de **abóbora/squash** (Cucurbita) características dos campos agrícolas — visíveis na temporada de verão
 - **Tohoku (NE de Honshu)**: montanhoso, clima frio, tanques de querosene
 - **Kanto (Tokyo)**: urbanizado, planícies, densa malha urbana
 - **Shizuoka**: plantações de **chá** em fileiras curvadas nas colinas (próximo ao Monte Fuji)
@@ -109,6 +110,7 @@ Muros de contenção de pedra/concreto em áreas rurais montanhosas — pista au
 - Veículos normais: placas brancas com texto verde
 - Trânsito pela **esquerda**
 - ⚠️ Hong Kong também dirige pela esquerda; Coreia do Sul e Taiwan pela direita
+- Postos de combustível: **ENEOS, Idemitsu, CosmoOil** — todas exclusivas do Japão
 
 ## 8. Regiões Distintas
 

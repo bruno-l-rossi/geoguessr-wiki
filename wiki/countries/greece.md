@@ -1,7 +1,8 @@
 ---
 title: "Grécia"
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 date_created: 2026-04-09
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do sul dos Bálcãs com alfabeto grego único, postes de madeira marrom-escuro com topo de 'harpa', igrejas em miniatura à beira da estrada e sinal de pedestres com duas linhas pontilhadas. Muito montanhoso; terra vermelha."
 tags: [país, europa, balcãs, europa-sul]
 type: country
@@ -72,8 +73,10 @@ Muitos postes têm **5 isoladores verticais** — podem estar presos ao poste ou
 
 ## 7. Veículos e Transporte
 - Carros europeus comuns; motos e scooters frequentes
-- **Táxis amarelos** em Atenas
+- **Táxis amarelos** em Atenas; **Tessalônica**: táxis com aparência distinta — verificar região
 - Creta: antena Gen com pequena **protuberância na ponta** — exclusiva de Creta
+- **Tanques de água amarelos** visíveis no topo de edifícios — comuns em ilhas e áreas rurais
+- Postos de combustível: **EKO, Revoil, Elin, AegeanOil** (exclusivos/dominantes na Grécia); também Avin
 
 ## 8. Regiões Distintas
 

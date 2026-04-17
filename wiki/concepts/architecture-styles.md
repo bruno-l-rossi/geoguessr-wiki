@@ -2,6 +2,7 @@
 title: "Arquitetura e Estilo Construtivo por País"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com, somerandomstuff1.wordpress.com]
 summary: "Referência de estilos arquitetônicos regionais e como reconhecê-los no GeoGuessr. Inclui materiais, cores, formas de telhado, muros, cercas e elementos diagnósticos por país."
 tags: [conceito, arquitetura, infraestrutura, identificação]
 type: concept

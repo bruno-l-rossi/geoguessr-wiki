@@ -1,11 +1,12 @@
 ---
 title: "Omã"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "País do Oriente Médio com carro PICKUP BRANCO (antena às vezes inclinada para a DIREITA — distingue da Namíbia), placas AMARELAS (veículos privados) e VERMELHAS (comerciais), meio-fio PRETO E AMARELO, chevrons PRETO E AMARELO com muitas setas, postes de madeira com topo em TRIÂNGULO METÁLICO (exclusivo), sinais direcionais AZUIS com texto árabe e inglês, e lixeiras 'be'ah' com logotipo de 3 folhas. Árabe + inglês nos sinais. Paisagem desértica predominante."
 tags: [país, ásia, oriente-médio]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Omã

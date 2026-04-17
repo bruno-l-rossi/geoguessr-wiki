@@ -2,6 +2,7 @@
 title: "Guardrails — Barreiras de Proteção por País"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geohints.com, geodummy.com]
 summary: "Catálogo de guardrails (barreiras laterais de proteção) por país. Material do poste de suporte, cor e padrão dos refletores são os elementos diagnósticos. Alguns países têm designs exclusivos de alta confiança."
 tags: [conceito, guardrails, infraestrutura, identificação]
 type: concept

@@ -1,7 +1,8 @@
 ---
 title: "Noruega"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País nórdico extremamente montanhoso com fiordes, chevrons AMARELO sobre PRETO, sinais de aviso com fundo BRANCO (único entre nórdicos), placas comerciais VERDES e postes de guardrail de madeira. Letras Æ e Ø exclusivas do norueguês/dinamarquês."
 tags: [país, europa, europa-norte, escandinavia]
 type: country
@@ -82,6 +83,7 @@ Lâmpadas presas a postes de madeira com **um único parafuso grosso** — ⚠�
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas (pessoais) com faixa europeia azul; **verdes** para comerciais
+- Postos de combustível: **YXEnergi, BestStasjon** (exclusivos da Noruega); também St1, Esso, Uno-X
 
 ## 8. Regiões Distintas
 

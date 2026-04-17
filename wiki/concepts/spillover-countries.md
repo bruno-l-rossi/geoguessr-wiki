@@ -2,6 +2,7 @@
 title: "Spillover Countries — Países com Cobertura de Vazamento"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Países que receberam cobertura do Street View quando o carro Google cruzou a fronteira de um país vizinho com cobertura oficial. Inclui spillovers regulares (Tanzania, Gâmbia, Bielorrússia, Guiana, Venezuela) e spillovers de geração (Mônaco, Paraguai, Uruguai). Cada spill tem pistas visuais únicas e memoráveis."
 tags: [conceito, spillover, cobertura, meta, fronteira]
 type: concept

@@ -1,7 +1,8 @@
 ---
 title: "Macau"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geomastr.com]
 summary: "Região Administrativa Especial da China com cobertura apenas em GEN 2 (imagens mais desbotadas e superexpostas que o normal), placas PRETAS com texto branco (longas ou quadradas), sinais de rua BRANCOS com borda AZUL em português e chinês, presença de CASINOS extravagantes (jogo é maior fonte de renda), e português visível nos sinais. Conta como China para streaks."
 tags: [país, ásia, china, território, macau]
 type: country

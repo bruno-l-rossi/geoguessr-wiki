@@ -2,6 +2,7 @@
 title: "Altura de Câmera por País"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net]
 summary: "A posição da câmera do Street View varia por país e é uma pista de identificação imediata. Japão tem câmera muito baixa; a maioria dos países tem câmera padrão."
 tags: [conceito, câmera, identificação]
 type: concept

@@ -2,6 +2,7 @@
 title: "Postes do Brasil — Identificação Regional"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net, geodummy.com]
 summary: "Guia detalhado dos tipos de postes elétricos no Brasil por estado, incluindo formatos, isoladores, topos e códigos de identificação."
 tags: [conceito, infraestrutura, postes, brasil]
 type: concept

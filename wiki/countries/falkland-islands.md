@@ -1,11 +1,12 @@
 ---
 title: "Ilhas Malvinas (Falkland)"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Território britânico ao leste da Argentina com cobertura APENAS por trekker Gen 3 em 3 ilhas (Carcass, West Point, New Island). Paisagem de planícies abertas com grama amarela, oceano sempre próximo, solo marrom-escuro, e falésias íngremes em New Island. Sem pistas visuais de país — melhor memorizar os 3 trekkers. Conta como Reino Unido."
 tags: [país, américas, atlântico, território-britânico, ilhas]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Ilhas Malvinas (Falkland)

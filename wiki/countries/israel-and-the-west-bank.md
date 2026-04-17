@@ -1,7 +1,8 @@
 ---
 title: "Israel & Cisjordânia"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do Oriente Médio com placas AMARELAS com faixa azul à esquerda, stop sign com MÃO desenhada, postes com bases listradas PRETO E BRANCO ou com estrutura de MALHA metálica, meio-fio VERMELHO E BRANCO, linhas externas AMARELAS, e idioma HEBRAICO (exclusivo da região). Cisjordânia tem follow cars de segurança visíveis e placas brancas com texto verde."
 tags: [país, ásia, oriente-médio]
 type: country
@@ -64,6 +65,7 @@ Marcadores de quilômetro brancos com borda grossa — pode ser vermelha, verde 
 - **Pedra de Jerusalém** em Jerusalém e cidades da Cisjordânia próximas
 - Muros de pedra com cimento no norte de Israel
 - Guardrails tipos A e B comuns — ⚠️ B-type são raros no Oriente Médio, mas comuns em Israel e Turquia
+- **Tanques de água PRETO+BRANCO** no topo de edifícios — comuns em toda a região (Israel e Cisjordânia)
 
 ## 6. Sinais e Textos
 - **Hebraico** e **árabe**; às vezes também inglês
@@ -72,6 +74,7 @@ Marcadores de quilômetro brancos com borda grossa — pode ser vermelha, verde 
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: **Paz, Delek, Sonol** (redes israelenses dominantes); também Dor Alon, Ten Petroleum
 
 ## 8. Regiões Distintas
 

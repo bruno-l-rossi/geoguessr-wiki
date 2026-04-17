@@ -1,7 +1,8 @@
 ---
 title: "Croácia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País dos Bálcãs com Gen 3 em OUTONO e espelhos visíveis no carro (único), bollards brancos com retângulo preto e topo triangular, guardrails B-type e chevrons seta VERMELHA sobre fundo AMARELO/BRANCO. Sticker amarelo circular no espelho = único."
 tags: [país, europa, europa-leste, balcas]
 type: country
@@ -64,6 +65,8 @@ Hidrantes de incêndio azuis com duas protuberâncias diagonais — ⚠️ tamb�
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas: às vezes com faixa azul, às vezes sem (Gen 3 = geralmente sem; faixa azul mais comum na costa por turistas EU)
+- Postos de combustível: **INA** (exclusivo da Croácia — estatal), **Tifon, Crodux** (exclusivos); também OMV, Lukoil
+- Em algumas vias: linhas externas **VERMELHAS** (Red Outside - White Inside) — pista visual incomum
 
 ## 8. Regiões Distintas
 

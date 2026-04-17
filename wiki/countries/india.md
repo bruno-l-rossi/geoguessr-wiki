@@ -1,7 +1,8 @@
 ---
 title: "Índia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do sul da Ásia com 'shitcam' dominante, trânsito pela esquerda, múltiplos scripts regionais, postes preto+branco listrados e grande diversidade de idiomas. Sem postes de madeira. Scripts são a chave para pinpoint regional."
 tags: [país, ásia, sul-ásia]
 type: country
@@ -38,6 +39,9 @@ Placas longas e brancas como padrão; veículos comerciais = **amarelas**; elét
 ### Postes de Concreto ou Metal (sem madeira) (confiança: **média** no contexto asiático)
 Postes de utilidade quase sempre de **concreto ou metal** — postes de madeira extremamente raros. O mais comum é poste de concreto quadrado com topo tridente.
 
+### Desfoque de Veículos em BLOCOS ou RETÂNGULOS (confiança: **média**)
+Carros e veículos frequentemente borrados em **blocos grandes** ou **retângulos** — blur mais pixelado e quadrado que o de outros países, especialmente na câmera shitcam.
+
 ## 4. Vegetação e Paisagem
 - Extremamente diversa: deserto (Rajastão) → Himalaia → florestas tropicais (Kerala, nordeste) → planícies (Punjab, Gangética)
 - Palmeiras de coco em estados costeiros do sul
@@ -73,6 +77,7 @@ Postes de utilidade quase sempre de **concreto ou metal** — postes de madeira 
 - Trânsito pela **esquerda**
 - **Tuk-tuks amarelos com teto preto**: estados do sul — Telangana, Andhra Pradesh, Tamil Nadu
 - Shitcam ou Gen 4 Smallcam
+- Postos de combustível: **IndianOil, BharatPetroleum, HindustanPetroleum** (exclusivos da Índia); também Reliance, Nayara
 
 ## 8. Regiões Distintas (por polo de infraestrutura)
 

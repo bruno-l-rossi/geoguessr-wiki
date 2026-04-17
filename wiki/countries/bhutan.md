@@ -1,11 +1,12 @@
 ---
 title: "Butão"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "País montanhoso do Sul da Ásia com placas VERMELHAS (único na Ásia), carro do Google CINZA sem antena (único país com condução pela esquerda e carro cinza), script Dzongkha único, blocos de PEDRA como barreiras de segurança nas estradas, bandeiras de oração nas estradas e arquitetura tradicional com telhados de estanho e molduras de madeira pintadas."
 tags: [país, ásia, sul-asiatico]
 type: country
 status: draft
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 ---
 
 # Butão
@@ -40,8 +41,11 @@ A maioria das casas tem **telhados de estanho** e **molduras de madeira pintadas
 ### Postes de Sinalização com Faixas PRETO+BRANCO (confiança: **média**)
 Postes dos sinais com **faixas preto+branco** — ⚠️ também em Sri Lanka, Índia, Nepal, Bangladesh e Malásia.
 
-### Waystones AMARELO no topo + BRANCO na base (confiança: **alta**)
-Marcadores de estrada com **topo amarelo e base branca** — úteis para identificar localização exata em estradas rurais.
+### Waystones AMARELO no topo + BRANCO na base / Sistema SL-1 (confiança: **alta**)
+Marcadores de estrada com **topo amarelo e base branca** — úteis para identificar localização exata em estradas rurais. Sistema de postes de distância **SL-1**: postes ao longo das estradas nacionais com número da rodovia, nome do dzongkhag (distrito) e distância para cidades próximas — comuns em quase todas as estradas cobertas.
+
+### 20 Dzongkhags (Distritos) Administrativos (confiança: **baixa**)
+O Butão é dividido em **20 dzongkhags** (distritos) visíveis em mapas e placas administrativas — informação útil para pinpoint quando aparece em sinais de entrada de distrito.
 
 ### Táxis com Placa AMARELA e Teto AMARELO (confiança: **alta**)
 Táxis têm **placa amarela** e **teto amarelo** — visual distinto.
@@ -60,6 +64,8 @@ Sinais com nome da cidade frequentemente em vermelho ou azul — ⚠️ com nome
 - Arquitetura tradicional bhutanesa: telhados de estanho; molduras de madeira pintadas
 - Blocos de pedra (não guardrails) nas estradas de montanha
 - Duas linhas brancas externas sólidas: apenas no oeste do Butão, sul e próximo à capital Thimphu
+- **Bollards de pedra com ponta AMARELA** — pedras pintadas com topo amarelo marcam bordas de estradas rurais; distinto dos waystones SL-1
+- **Postes de metal ENFERRUJADO** quando presentes — infraestrutura escassa nas áreas remotas; mais comuns que postes de madeira
 
 ## 6. Sinais e Textos
 - **Dzongkha**: script único da ilha

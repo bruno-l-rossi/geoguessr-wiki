@@ -1,7 +1,8 @@
 ---
 title: "Uganda"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da África Oriental com cobertura limitada a Kampala/Entebbe e parques nacionais. Carro branco exclusivo com ESPELHOS QUADRADOS em Kampala; carro similar com BARRA PRETA na frente nos parques. Placas BRANCAS na frente e AMARELAS atrás. Solo muito VERMELHO. Ônibus de táxi com PADRÃO AZUL EM BLOCOS. Trânsito pela esquerda."
 tags: [país, áfrica, africa-oriental]
 type: country
@@ -58,6 +59,7 @@ Uganda dirige pela **esquerda** — ⚠️ importante na África onde países s�
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
 - Ônibus de táxi (matatus) com padrão azul em blocos — característicos de Kampala
+- Postos de combustível: **Hass Petroleum** (exclusivo da África Oriental); também Total, OiLibya, VivoEnergy, Oryx, Petrocity
 
 ## 8. Regiões Distintas
 

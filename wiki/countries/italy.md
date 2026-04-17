@@ -1,7 +1,8 @@
 ---
 title: "Itália"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do sul da Europa com placa curta e faixas azuis em AMBOS os lados (único com Albânia), bollards triangulares brancos com topo preto, double guardrails comuns e 'passo carrabile' exclusivo. 'Via' = rua."
 tags: [país, europa, europa-sul]
 type: country
@@ -75,6 +76,7 @@ Postes de madeira com pequenos **adesivos brancos** — ⚠️ Alemanha também 
 - Carros europeus comuns; Fiat, Alfa Romeo, Ferrari (marcas italianas)
 - Scooters/motos muito comuns em cidades
 - Gen 3 e Gen 4 standard
+- Postos de combustível: **Eni/Agip** (exclusivos da Itália — dominantes); também Q8, IP, Esso, Tamoil
 
 ## 8. Regiões Distintas
 

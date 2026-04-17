@@ -1,7 +1,8 @@
 ---
 title: "Suécia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País nórdico com chevrons AMARELOS sobre AZUL (único na Europa), marcadores de eletricidade azul+branco exclusivos, postes com tampa preta no topo e sinais de aviso fundo amarelo+borda vermelha. Volvo ~30% dos carros. Casas de madeira vermelho-escuro (Falun)."
 tags: [país, europa, europa-norte, escandinavia]
 type: country
@@ -57,6 +58,7 @@ Postes de neve **laranjas** com refletor branco posicionado levemente acima do m
 ## 5. Arquitetura e Infraestrutura
 - Casas de campo: **madeira pintada** com **vermelho Falun** (tinta escura quase exclusiva da Suécia, mas também em Noruega/Finlândia)
 - Área urbana: concreto e tijolos; subúrbios = casas isoladas de madeira ou tijolo
+- **Gotemburgo e Västra Götaland**: muitas casas de madeira **brancas** com telhados **laranja** — distinto do vermelho Falun típico
 - **Volvo** = ~30% de todos os carros (marcador regional forte)
 - **Bandeira da Igreja Sueca**: cruz vermelha em fundo amarelo com coroa — frequente perto de igrejas
 - Infraestrutura rodoviária (obras, bloqueios) pintada em **vermelho e amarelo**
@@ -75,6 +77,7 @@ Postes de neve **laranjas** com refletor branco posicionado levemente acima do m
 - Trânsito pela **direita**
 - Placas brancas padrão EU; **táxis = fundo amarelo**
 - **Volvo** ubíquo (~30%)
+- Postos de combustível: **Preem** (exclusivo da Suécia — maior rede); também Ingo, Q8, CircleK, St1
 
 ## 8. Regiões Distintas
 

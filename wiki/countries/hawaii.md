@@ -1,11 +1,12 @@
 ---
 title: "Hawaii"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Estado americano no Pacífico com placas BRANCAS com arco-íris, topônimos em havaiano (língua com apenas 8 consoantes, toda palavra termina em vogal), câmera 'smallcam' Gen 4 montada baixa, escudos de rodovia em forma de GUITARRA, e paisagem vulcânica tropical com solo vermelho. Cada ilha tem características visuais distintas."
 tags: [país, américas, estados-unidos, pacífico, ilha]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Hawaii

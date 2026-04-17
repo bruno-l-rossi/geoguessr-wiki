@@ -1,7 +1,8 @@
 ---
 title: "Luxemburgo"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Pequeno país com placas AMARELAS longas com faixa azul (como NL; diferente de BE/FR/DE), chevrons PRETO+AMARELO (únicos entre vizinhos), sinais direcionais AMARELOS com moldura RETANGULAR COMPLETA (DK tem similar mas com cantos arredondados), e postes de sinalização BRANCOS. 3 idiomas: luxemburguês/francês/alemão."
 tags: [país, europa, europa-ocidental, benelux]
 type: country
@@ -33,6 +34,9 @@ Sinais de entrada de cidade também **amarelos com moldura** — geralmente com 
 
 ### Bollards PRETO+BRANCO com Refletores CINZA (confiança: **média**)
 Bollards em formato de cunha preto+branco com refletores cinza; alguns têm recorte na metade inferior — ⚠️ DE = quase idênticos, mas LU tem **3 parafusos** no refletor e DE tem **2 parafusos**.
+
+### Bollards AMARELOS REFLEXIVOS em Curvas (confiança: **média**)
+**Bollards amarelos reflexivos** visíveis nas curvas e beiras de estrada — complementam os preto+branco padrão.
 
 ### Postes de Sinalização BRANCOS (confiança: **alta**)
 Quase todos os sinais de trânsito são suportados por **postes brancos** — incomum (FR = às vezes também, mas muito menos frequente).
@@ -69,6 +73,7 @@ Molduras retangulares com cantos mais quadrados aparecem em muita infraestrutura
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas **amarelas longas** com faixa europeia azul
+- Postos de combustível: Total, Esso, Q8, Aral, Texaco (marcas internacionais; Luxemburgo tem combustível mais barato que os países vizinhos)
 
 ## 8. Regiões Distintas
 

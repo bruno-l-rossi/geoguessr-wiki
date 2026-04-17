@@ -1,7 +1,8 @@
 ---
 title: "Rússia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Maior país do mundo, identificável por placa totalmente branca (sem faixa azul), cirílico com Ы/Э/Ё/Ъ, postes com bases de concreto, 'meias pretas' nos postes de sinalização e faixas de pedestres amarelo+branco. Casas soviéticas e cabanas de madeira decoradas."
 tags: [país, europa, ásia, europa-leste, ásia-norte]
 type: country
@@ -50,6 +51,9 @@ Grande quantidade de bollards concentrados perto de cruzamentos — interseçõe
 ### Escudos de Postes Preto+Branco nas Rodovias (confiança: **alta**)
 **Escudos preto e branco** nas rodovias, especialmente na Rússia Europeia.
 
+### Sinais Direcionais AZUIS GRANDES (confiança: **média**)
+Placas de sinalização direcional **azuis e grandes** — característico da Rússia em contexto de cirílico.
+
 ## 4. Vegetação e Paisagem
 - **Bétulas** (casca branca descamando): ampla distribuição; quase nunca no extremo sul ou norte do oeste do país
 - Floresta de bétulas densas: indica **leste dos Urais** (Chelyabinsk → Novosibirsk)
@@ -81,6 +85,7 @@ Grande quantidade de bollards concentrados perto de cruzamentos — interseçõe
 ## 7. Veículos e Transporte
 - Gen 3: carro preto ou branco com antena longa; ou antena curta sem carro
 - Carros soviéticos (Lada) ainda comuns em áreas rurais; mistura com carros europeus e asiáticos nas cidades
+- Postos de combustível: **Lukoil, Rosneft, Gazprom, Tatneft** (marcas russas exclusivas); também Surgutneftegas, Bashneft
 
 ## 8. Regiões Distintas
 

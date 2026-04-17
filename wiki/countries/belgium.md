@@ -1,7 +1,8 @@
 ---
 title: "Bélgica"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Europa Ocidental com placas de TEXTO VERMELHO (único na Europa), postes de sinalização LARANJA exclusivos, bollards brancos com refletor retangular amarelo e sinalização bilíngue/trilíngue. Fosso onipresente nas bordas das estradas."
 tags: [país, europa, europa-ocidental]
 type: country
@@ -20,8 +21,8 @@ A **Bélgica** fica na Europa Ocidental, fazendo fronteira com França, Países 
 
 ## 3. Pistas Visuais Principais
 
-### Placas com TEXTO VERMELHO (confiança: **alta**)
-Placas brancas com **texto vermelho** — **único na Europa**; a cor vermelha é visível mesmo pelo blur.
+### Placas com TEXTO VERMELHO + Blur ROSADO (confiança: **alta**)
+Placas brancas com **texto vermelho** — **único na Europa**; a cor vermelha é visível mesmo pelo blur e cria um tom **rosado/avermelhado característico** quando desfocado — distintivo a distância.
 
 ### Postes de Sinalização LARANJAS (confiança: **alta**)
 Postes de sinalização **laranja** (e fundos de sinais também às vezes laranjas) — **exclusivo da Bélgica** no mundo.
@@ -53,6 +54,7 @@ Postes **quadrados de concreto** com pequenos buracos + **envoltório metálico 
 - Ciclovias comuns (especialmente Flandres) — segunda em frequência depois dos Países Baixos
 
 ## 5. Arquitetura e Infraestrutura
+- **Brasões de províncias** visíveis em sinalética e monumentos — cada uma das 10 províncias tem brasão próprio; útil para pinpoint regional
 - **Norte/Oeste**: tijolos vermelhos característicos — similar aos Países Baixos
 - **Sul** (Valônia): pedra; tons cinzas; estilo mais próximo ao francês
 - Estradas rurais frequentemente de **lajes de concreto** (não asfalto) — ⚠️ Países Baixos quase nunca usa lajes de concreto
@@ -76,6 +78,7 @@ Postes **quadrados de concreto** com pequenos buracos + **envoltório metálico 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com **texto vermelho** — único na Europa
+- Postos de combustível: **Dats24** (exclusivo da Bélgica — Colruyt), **OCTA+** (cooperativa belga); também Total, Esso, Q8, BP
 
 ## 8. Regiões Distintas
 

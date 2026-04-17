@@ -1,7 +1,8 @@
 ---
 title: "Ilhas Cocos (Keeling)"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geomastr.com]
 summary: "Dois atóis de coral australianos no Oceano Índico com paisagem de AREIA BRANCA, muitas palmeiras e grama aparada — muito menos floresta que a Ilha Christmas. Carros distintos por ilha: West Island (carro com snorkel), Bantam (traseiras visíveis). Conta como Austrália."
 tags: [país, oceano-índico, austrália, território, ilhas]
 type: country
@@ -42,7 +43,7 @@ Calçamento de tijolos em **padrão cruzado** — exclusivo de Bantam Village.
 - Bantam Village: calçamento de tijolos cruzados
 
 ## 6. Sinais e Textos
-- **Inglês** (território australiano)
+- **Inglês** e **malaio** (bilíngue nos sinais, refletindo a população sino-malaia de Bantam) — ⚠️ único território australiano com sinais bilíngues inglês/malaio.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**

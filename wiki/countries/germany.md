@@ -1,7 +1,8 @@
 ---
 title: "Alemanha"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Europa Central identificável por bollards B+W com refletores cinza/brancos, sinal 'Einbahnstraße' exclusivo, turbinas eólicas abundantes e adesivos brancos nos postes de madeira. Gen 4 dominante."
 tags: [país, europa, europa-central]
 type: country
@@ -14,8 +15,9 @@ status: draft
 A **Alemanha** é o maior país da Europa Central. Idioma: **alemão** (Deutsch) — com caracteres especiais **Ä, Ö, Ü, ß**. Capital: **Berlim**. Trânsito: **pela direita**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
-- **Gen 4**: dominante — câmera padrão moderna
+- **Gen 4**: dominante — câmera padrão moderna; carro **preto**
 - Cobertura abrangente por todo o país, incluindo áreas rurais e autoestradas (Autobahn)
+- **Edifícios e casas frequentemente borrados** por inteiro — leis de privacidade alemãs permitem que moradores solicitem o blur de suas casas, criando ruas com muitas fachadas completamente desfocadas; único país europeu com esta prevalência
 
 ## 3. Pistas Visuais Principais
 
@@ -70,6 +72,7 @@ Caixas de correio da Deutsche Post: **amarelas** — ⚠️ Áustria também tem
 - Carros europeus comuns (VW, Mercedes, BMW, Audi — todas marcas alemãs)
 - Trens **Deutsche Bahn** (DB) com logo vermelho/branco
 - Bicicletas muito comuns em cidades; ciclovias separadas na maioria das ruas urbanas
+- Postos de combustível: **Aral** (exclusivo da Alemanha — maior rede); também Esso, Total, OMV, Orlen, Jet
 
 ## 8. Regiões Distintas
 

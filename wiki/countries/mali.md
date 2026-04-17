@@ -6,6 +6,8 @@ summary: "Cobertura extremamente limitada: apenas 10 pequenos trekkers de TRIPÉ
 tags: [país, áfrica, africano-ocidental]
 type: country
 status: draft
+date_modified: 2026-04-14
+sources: [geomastr.com]
 ---
 
 # Mali

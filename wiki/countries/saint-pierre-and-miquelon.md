@@ -1,11 +1,12 @@
 ---
 title: "Saint-Pierre e Miquelon"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Território francês ao sul de Newfoundland (Canadá) com trekker Gen 3, casas de MADEIRA com cores VIVAS e aparência quadrada, paisagem de GRAMADO plano ou ondulado com costa frequentemente visível, infraestrutura francesa, placas com faixa azul europeia. Conta como França."
 tags: [país, américas, atlântico-norte, frança, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Saint-Pierre e Miquelon

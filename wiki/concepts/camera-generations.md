@@ -2,6 +2,7 @@
 title: "Gerações de Câmera do Street View por País"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Referência de quais países têm qual geração de câmera do Google Street View. Complementa gerações-de-câmera.md com listagem por país e como identificar a geração visualmente."
 tags: [conceito, câmera, street-view, gerações, identificação]
 type: concept

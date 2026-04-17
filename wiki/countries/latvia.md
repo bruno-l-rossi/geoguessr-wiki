@@ -1,7 +1,8 @@
 ---
 title: "Letônia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País Báltico com bollards FINOS e CURVOS (único entre Bálticos), sinal de pedestre com 5 listras + pernas LONGAS (único nos Bálticos), parada de ônibus com ônibus de 5 JANELAS (único) e guardrails com refletores BRANCO/VERMELHO. Letras Ā/Ē/Ī com macron exclusivas."
 tags: [país, europa, europa-norte, balticos]
 type: country
@@ -57,6 +58,7 @@ Placas de número de casa em forma de **retângulo alto** em várias cores — n
 - Combinação de **madeira + tijolo branco**; telhados corrugados íngremes; paredes de pedra pastel
 - Sinais de direção: azul com texto branco; seta **mais estilizada** que EE e LT
 - Chevrons: **branco** com setas vermelhas (também LT e PL; EE, RU e UA = invertido)
+- Estradas geralmente **mais largas e mais escuras** que na Estônia — diferença visual útil nos Bálticos; estradas de cascalho comuns no interior
 
 ## 6. Sinais e Textos
 - **Letão**: Ā, Ē, Ī (macron), Ģ, Ķ, Ļ, Ņ (gancho) — muito diferente do estoniano (fino-úgrico)
@@ -64,6 +66,7 @@ Placas de número de casa em forma de **retângulo alto** em várias cores — n
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
+- Postos de combustível: **Dinaz, AstarteNafta** (exclusivos/dominantes da Letônia); também Lukoil, Neste
 
 ## 8. Regiões Distintas
 

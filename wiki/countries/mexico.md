@@ -1,7 +1,8 @@
 ---
 title: "México"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-17
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com, somerandomstuff1.wordpress.com]
 summary: "País da América do Norte com postes octagonais de concreto, bollards cilíndricos brancos com base preta (únicos), cactos onipresentes e stop signs com 'ALTO'. Único país latino com Gen 2 além do Brasil."
 tags: [país, américas, norte-america]
 type: country
@@ -40,6 +41,12 @@ Marcas de postos de combustível **OXXO** e **Pemex** — predominantemente mexi
 
 ### Setas Muito Grossas nos Sinais (confiança: **média**)
 Setas em placas de sinalização notavelmente **muito grossas**.
+
+### Táxis ROSA e BRANCO (exclusivos da Cidade do México) (confiança: **alta** se visível)
+Táxis **rosa e branco** existem **exclusivamente na Cidade do México** — imediatamente confirma CDMX quando vistos.
+
+### Linhas Amarelas DESBOTADAS no Centro (confiança: **média**)
+As linhas centrais amarelas das estradas tendem a ser **desbotadas e apagadas** — mais que nos EUA/Brasil. Em estradas rurais, a pintura frequentemente quase desapareceu. Pista de eliminação quando as linhas estão muito apagadas e o contexto é América do Norte.
 
 ### Amarelo em Meio-Fios e Barreiras de Pontes (confiança: **média**)
 Detalhes **amarelos** em meio-fios e barreiras de pontes — bastante comuns.
@@ -91,6 +98,7 @@ Cada estado tem design(s) único(s) — útil para pinpoint com blur parcial.
 - Pickup trucks americanas muito comuns (Ford, Chevrolet, Ram)
 - Gen 3: antena stubby com bobina diagonal (compartilhada com Brasil, Colômbia, Equador) OU luz de freio vermelha
 - Gen 4: frente visível; azul, branco+azul, ou preto
+- Postos de combustível: **Pemex** (exclusivo do México — estatal e onipresente); também Total, Arco
 
 ## 8. Regiões Distintas
 

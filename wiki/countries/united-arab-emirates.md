@@ -1,7 +1,8 @@
 ---
 title: "Emirados Árabes Unidos (UAE)"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do Oriente Médio com paisagem DESÉRTICA plana, carro branco Gen 3 (único carro branco no Oriente Médio), pickup branco Gen 4 com antena NO CENTRO (Qatar = esquerda, Omã = direita), carro preto Gen 4 (antena de freio visível), linhas de estrada externas AMARELAS, postes de madeira MARROM-ESCURA com 3 isoladores em barra horizontal metálica, e meio-fio listrado PRETO E BRANCO ou PRETO E AMARELO."
 tags: [país, ásia, oriente-médio]
 type: country
@@ -61,12 +62,14 @@ Sinais em **árabe e inglês** — ⚠️ também em Qatar e Omã; não comum no
 - **Dubai**: sinais de nome de rua **azuis** com borda metálica estreita — específicos de Dubai
 - Rifts visíveis ocasionalmente
 - Muitas **rotatórias** e **estradas divididas**
+- **Caixas d'água brancas** no topo dos edifícios — ⚠️ distingue UAE da Tunísia (que também tem caixas, mas de cor diferente)
 
 ## 6. Sinais e Textos
 - **Árabe** e **inglês** (bilíngue)
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: **ADNOC** (Abu Dhabi National Oil Company — exclusivo UAE); também ENOC, EPPCO, Emarat
 
 ## 8. Regiões Distintas
 
@@ -76,7 +79,7 @@ Sinais em **árabe e inglês** — ⚠️ também em Qatar e Omã; não comum no
 | **Nordeste (Ras al Khaimah)** | Montanhas claras a leste; mais árido |
 | **Extremo leste (Golfo de Omã)** | Montanhas a oeste; plano a leste |
 | **Al Ain** | Trekkers em fortes (Qasr Al Muwaiji, Al Jahili) e zoo; distante da cobertura de carro |
-| **Abu Dhabi** | Capital; pista de corrida ligeiramente a leste |
+| **Abu Dhabi** | Capital; placas de carro com **faixa vermelha horizontal no topo** — exclusiva de Abu Dhabi |
 | **Sir Baniyas Island** | Carro branco raro com espelhos laterais; vegetação esparsa |
 | **Sul (remoto)** | Trekkers com dunas de areia ao redor (entre Taraq e Alyhyali) |
 

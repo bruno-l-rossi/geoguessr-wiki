@@ -2,6 +2,7 @@
 title: "Cerrado"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Savana brasileira — bioma de transição com árvores tortuosas de casca grossa sobre solo vermelho-escuro. Cobre o Brasil Central (GO, TO, MT, MS, DF, MG, BA interior, SP interior). Pista diagnóstica para o interior do Brasil."
 tags: [conceito, vegetação, bioma, brasil]
 type: concept

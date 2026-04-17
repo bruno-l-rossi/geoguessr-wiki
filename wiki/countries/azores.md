@@ -1,11 +1,12 @@
 ---
 title: "Açores"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Arquipélago português no Atlântico com paisagem agrícola ONDULANTE (vs. Madeira = muito montanhosa), paredes de pedra vulcânica SECA, hortênsias abundantes, cedros japoneses (não encontrados na Europa continental), sinais de rua em AZULEJOS CERÂMICOS com letras azuis, vacas PRETO+BRANCO e infraestrutura portuguesa."
 tags: [país, europa, portugal, ilhas, atlântico]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Açores

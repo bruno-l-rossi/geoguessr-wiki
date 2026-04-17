@@ -1,7 +1,8 @@
 ---
 title: "Botswana"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do sul da África com placas BRANCAS na frente e AMARELAS atrás (estilo UK), postes de sinalização com listras PRETO+AMARELO (único na África do Sul), linhas externas AMARELAS + linhas centrais BRANCAS, carro do Google BRANCO sem antena, paisagem SECA E PLANA com solo variando de branco a vermelho, sinais direcionais VERDES e pequenos blurs aleatórios na cobertura."
 tags: [país, áfrica, áfrica-do-sul-africana]
 type: country
@@ -39,6 +40,12 @@ Sinais direcionais com **fundo verde** — compartilhado com outros países do s
 ### Sinais de Estrada Antigos com Fundo AZUL (confiança: **alta**)
 Alguns sinais de trânsito têm **fundo azul** (estilo antigo, antes da introdução dos fundos brancos) — relativamente únicos de Botswana.
 
+### Sinais de Rodovia com FUNDO VERDE e Letra "A" (confiança: **alta**)
+Sinais de direção nas rodovias principais têm **fundo verde com a letra "A"** antes do número (ex: "A2") — ⚠️ **único na região**; Namíbia usa letras B/C/D/M; África do Sul usa N/R; Eswatini usa MR. Presença de "A" + fundo verde = Botswana (ou Lesoto).
+
+### Bollards AZULADOS perto de Gabane (confiança: **alta** se visível)
+Perto da cidade de **Gabane** (sudeste de Gaborone), bollards têm tom **azulado** — únicos de Botswana.
+
 ### Meios-fios e Guardrails LISTRADOS (confiança: **alta**)
 Meios-fios e guardrails geralmente listrados: **preto+amarelo**, **vermelho+branco** ou **preto+branco**.
 
@@ -57,16 +64,19 @@ Meios-fios e guardrails geralmente listrados: **preto+amarelo**, **vermelho+bran
 - Alguns prédios com tijolos cinzas expostos
 - Ocasonalmente: palhoças redondas tradicionais
 - **Gaborone** (capital): mais rica e desenvolvida; alguns bairros mais pobres; colinas ao sul
-- **Francistown**: segunda maior cidade; colina solitária com antenas de rádio ao norte
+- **Francistown**: segunda maior cidade; colina solitária com **torres de rádio** ao norte
+- **Nata** (nordeste): **palmeiras altas** ao longo da estrada — incomum para a paisagem seca de Botswana
 - **Silos de Pandamatenga** (nordeste): silos muito distintos visíveis por toda a cidade
 
 ## 6. Sinais e Textos
-- **Inglês**: língua dos sinais
+- **Inglês**: língua dos sinais; língua nativa falada = **Setswana** (nomes de lugares em setswana)
 - Nomes de lugares derivados de línguas nativas (sem afrikaans — diferente da África do Sul)
 - Rodovias com letras: A (principais); número também nas estradas menores
+- Sinais de **travessia de elefante** — únicos da região; visíveis perto de parques e corredores de vida selvagem
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
+- Postos de combustível: Total, Puma, Caltex, Engen, Galp
 
 ## 8. Regiões Distintas
 

@@ -1,8 +1,9 @@
 ---
 title: "Ilha Christmas"
 date_created: 2026-04-09
-date_modified: 2026-04-09
-summary: "Território australiano no Oceano Índico com carro do Google único CAMINHÃO PRATEADO (a única pista necessária para identificar a ilha), floresta tropical densa, placas AMARELAS australianas, bollards australianos padrão, e caranguejos vermelhos famosos. Conta como Austrália."
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
+summary: "Território australiano no Oceano Índico com carro do Google único CAMINHÃO PRATEADO (a única pista necessária para identificar a ilha), floresta tropical densa, placas AMARELAS australianas, sinais de nome de rua com FUNDO AMARELO, bollards australianos padrão, e caranguejos vermelhos famosos. Conta como Austrália."
 tags: [país, oceano-índico, austrália, território, ilhas]
 type: country
 status: draft
@@ -29,6 +30,9 @@ A maior parte da ilha é coberta por **floresta tropical densa** — trekkers fr
 
 ### Placas AMARELAS (estilo australiano) (confiança: **alta**)
 Placas **amarelas** estilo australiano.
+
+### Sinais de Nome de Rua com FUNDO AMARELO (confiança: **alta**)
+Sinais de nome de rua têm **fundo amarelo** — ⚠️ distinto do padrão australiano continental (que usa fundos verde ou branco dependendo do estado).
 
 ### Bollards AUSTRALIANOS (confiança: **alta**)
 Bollards australianos padrão: brancos com refletor vermelho na frente e cinza atrás.

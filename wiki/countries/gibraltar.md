@@ -1,7 +1,8 @@
 ---
 title: "Gibraltar"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Território britânico na ponta sul da Península Ibérica; contado como UK no GeoGuessr. Gen 3 com ANTENA LONGA DE PONTA PRATEADA (exclusiva; também em partes da Espanha). A ROCHA DE GIBRALTAR (calcária branca, imponente) é o identificador principal. Condução pela DIREITA (diferente do UK). Placas traseiras AMARELAS como UK. Cobertura de DEZEMBRO com decorações de Natal."
 tags: [país, europa, europa-ocidental, territorio-britanico]
 type: country
@@ -14,7 +15,7 @@ status: draft
 **Gibraltar** é um Território Ultramarino Britânico na ponta sul da Península Ibérica, fazendo fronteira com a Espanha. Para fins de GeoGuessr (streaks de país), é contado como **Reino Unido**. Idioma: **inglês**. Trânsito: **pela direita** (diferente do UK). Sistema de medidas: **misto** (britânico e métrico).
 
 ## 2. Câmera e Cobertura
-- **Apenas Gen 3** — antena **longa com ponta PRATEADA** (exclusiva de Gibraltar; também aparece em partes da Espanha, mas não nas bordas com Gibraltar)
+- **Apenas Gen 3** — carro **preto** com antena **longa com ponta PRATEADA/BRANCA** (exclusiva de Gibraltar; também aparece em partes da Espanha, mas não nas bordas com Gibraltar)
 - Toda cobertura é de **dezembro** → decorações de Natal visíveis em muitas partes da cidade
 
 ## 3. Pistas Visuais Principais
@@ -59,6 +60,7 @@ Minaretes visíveis perto da ponta sul do território — mesquita mais ao sul d
 ## 7. Veículos e Transporte
 - Trânsito pela **direita** (⚠️ diferente do UK)
 - Placas: branca frontal + **amarela traseira** (como UK)
+- Postos de combustível: **Cepsa** (principal rede de Gibraltar)
 
 ## 8. Regiões Distintas
 Território muito pequeno — sem subdivisões práticas para GeoGuessr.

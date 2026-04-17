@@ -1,11 +1,12 @@
 ---
 title: "Território Britânico do Oceano Índico"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Território britânico no Oceano Índico com cobertura apenas por TREKKER Gen 3, paisagem de praias de areia e florestas de PALMEIRAS COQUEIRAS (quase exclusivamente), manguezais, e atóis pequenos no hemisfério norte do território. Conta como Reino Unido. Dificilmente aparece em mapas competitivos."
 tags: [país, oceano-índico, território-britânico, ilhas]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Território Britânico do Oceano Índico

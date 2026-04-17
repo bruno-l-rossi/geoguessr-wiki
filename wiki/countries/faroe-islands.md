@@ -1,7 +1,8 @@
 ---
 title: "Ilhas Faroé"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Arquipélago nórdico com paisagem de FIORDES COM MONTANHAS VERDES (mais verdes que IS), bollards de PALITO DE MADEIRA AMARELO (únicos), guardrails com refletores AMARELOS (único no norte da Europa), sinais direcionais AMARELOS (similar IS), casas de madeira com SÓTÃO DE PEDRA e telhados de grama. Gen 4 = pickup preto com antena frontal."
 tags: [país, europa, europa-norte, ilhas, nórdico]
 type: country

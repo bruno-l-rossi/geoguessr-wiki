@@ -1,7 +1,8 @@
 ---
 title: "Singapura"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Cidade-estado altamente desenvolvida com sinais de rua VERDES com cantos arredondados (único), placas PRETAS com texto branco, semáforos com suporte de PLACA PERFURADA, sinais de trânsito em FUNDO QUADRADO BRANCO (único), avisos escritos NO ASFALTO ('HUMP AHEAD'), ônibus VERDE-LIMÃO e bollards de concreto com faixas amarelo+preto nas paradas."
 tags: [país, ásia, sudeste-asiatico]
 type: country
@@ -67,6 +68,7 @@ Ambiente de **cidade-estado muito desenvolvida** — estradas divididas, meios-f
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda** (herança britânica)
 - Placas pretas com texto branco; às vezes estilo UK (branca+amarela)
+- Postos de combustível: **SPC** (Singapore Petroleum Company — local); também Esso, Caltex, OMV, Neste
 
 ## 8. Regiões Distintas
 

@@ -1,7 +1,8 @@
 ---
 title: "Austrália"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País/continente da Oceania com trânsito pela esquerda e eucaliptos onipresentes. Bollards brancos com refletor vermelho (distinto da NZ), linhas de estrada quase exclusivamente brancas e sinalização detalhada por estado."
 tags: [país, oceania, pacífico]
 type: country
@@ -46,6 +47,7 @@ Retângulo branco de fundo distingue de ⚠️ Nova Zelândia (sem fundo retangu
 - **Kangaroo Island (SA)**: arbustos baixos e eucaliptos compactos, solo alaranjado (lembra WA)
 - **Nullarbor Highway**: planície total, aspecto cinza, vegetação muito baixa
 - **Mount Gambier (SA)**: solo branco + plantações extensas de pinho
+- **Coober Pedy (SA)**: paisagem única de mineração de opal — terra vermelha com montes de escavação brancos/cor de areia, sem vegetação visível
 
 ## 5. Arquitetura e Infraestrutura
 
@@ -64,10 +66,28 @@ Retângulo branco de fundo distingue de ⚠️ Nova Zelândia (sem fundo retangu
 |---|---|
 | **WA** | Marrom na base; listrado preto-e-branco (exclusivo WA) |
 | **QLD** | Preto-e-amarelo (exclusivo QLD); altura menor (comum em QLD e SA) |
+| **VIC** | Variante com listras **vermelho e azul** (distinto do padrão branco+vermelho nacional) |
+| **NSW rural** | Bollards de **madeira** (menos comuns; distinto dos bollards brancos de plástico) |
+
+### Ônibus por Estado (útil para pinpoint urbano)
+| Estado | Cor dos ônibus |
+|---|---|
+| **NSW** | Parte inferior azul-escuro + designs azul-claro |
+| **QLD** | Parte inferior azul + frente/traseira amarelas |
+| **VIC** | Triângulos laranjas |
+| **SA** | Vermelho/azul/amarelo com logo "Adelaide Metro" |
+| **WA** | Cinza com listras verdes + "Transperth" |
+| **NT** | Design com parte inferior laranja |
+| **TAS** | Frente amarela |
+| **ACT (Canberra)** | Azul, verde ou amarelo |
+
+### Semáforos: Borda BRANCA por Estado (confiança: **média**)
+Semáforos com **borda branca** = WA, NSW, QLD, Tasmania, ACT. Semáforos **sem borda** = Victoria, SA, NT.
 
 ### Outros
 - **Melbourne**: stickers retangulares brancos com quadrado azul nos postes
 - Possum guards verde-oliva = **Tasmania** exclusivo (guards existem em todo país)
+- **Hungry Jack's** (fast-food amarelo): nome exclusivamente australiano para o Burger King — confirma Austrália
 
 ## 6. Sinais e Textos
 - Idioma: **inglês australiano**
@@ -85,10 +105,10 @@ Retângulo branco de fundo distingue de ⚠️ Nova Zelândia (sem fundo retangu
 - Bus stops: design único por estado
 
 ### Placas de Licença
-Designs diferentes por estado — legível pelo padrão/cor de fundo mesmo com blur.
+Designs diferentes por estado — legível pelo padrão/cor de fundo mesmo com blur. **NT**: texto vermelho visível → tom avermelhado no blur (distinto dos outros estados).
 
 ### Telefone
-8 dígitos + código de área de 2 dígitos; mapa de área por estado útil.
+8 dígitos + código de área de 2 dígitos; mapa de área por estado útil. **Celulares**: sempre começam com **04**.
 
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
@@ -96,6 +116,7 @@ Designs diferentes por estado — legível pelo padrão/cor de fundo mesmo com b
 - Sinais de direção: verdes com setas brancas e distância em km
 - Rumble strips nas linhas externas (raro no NT)
 - Gen 3: antena longa visível
+- Postos de combustível: **Caltex, ColesExpress, Woolworths Petrol, United Petroleum** (exclusivos ou dominantes na Austrália); também Puma, Liberty Oil
 
 ## 8. Regiões Distintas
 

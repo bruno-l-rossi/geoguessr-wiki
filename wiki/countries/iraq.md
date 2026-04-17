@@ -1,11 +1,12 @@
 ---
 title: "Iraq"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Cobertura extremamente limitada: apenas um trekker no Museu Nacional do Iraque em Bagdá. Câmera Gen 1.5 com blur pontudo, imagem superexposta e qualidade muito baixa. Área externa tem tamareiras. Interior tem estátuas e artefatos. Praticamente impossível de aparecer em mapas competitivos."
 tags: [país, ásia, oriente-médio]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Iraq

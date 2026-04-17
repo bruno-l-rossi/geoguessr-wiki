@@ -1,7 +1,8 @@
 ---
 title: "Nigéria"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da África Ocidental com pickup truck + carro policial seguindo, placas curtas com tom ESVERDEADO, 'shitcam' único na África continental e postes de concreto com entalhes. Paisagem varia de floresta tropical ao norte árido."
 tags: [país, áfrica, áfrica-ocidental]
 type: country
@@ -14,7 +15,7 @@ status: draft
 A **Nigéria** é o país mais populoso da África, no oeste do continente. Idioma: **inglês** (oficial) + Hausa, Iorubá, Igbo e outros. Capital: **Abuja**. Trânsito: **pela direita**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
-- **Gen 3**: pickup truck com rack no teto; carro policial (branco ou preto) quase sempre seguindo
+- **Gen 3**: pickup truck com rack no teto e **barras com padrão listrado preto e amarelo**; carro policial (branco ou preto) quase sempre seguindo
 - **Gen 4**: pickup truck (cab e bagageira visíveis)
 - **Shitcam**: agora na maioria da Nigéria — **único país da África continental** com "official ari" / shitcam; variante com tom azulado em algumas áreas
 - Cobertura **esparsa** — concentrada em cidades grandes e rodovias; pouco no noroeste e leste
@@ -24,7 +25,19 @@ A **Nigéria** é o país mais populoso da África, no oeste do continente. Idio
 ## 3. Pistas Visuais Principais
 
 ### Carro Policial Seguindo o Google Car (confiança: **alta**)
-Carro de polícia (branco ou preto) quase sempre visível seguindo o Street View car — muito característico.
+Carro de polícia (branco ou preto) quase sempre visível seguindo o Street View car — muito característico. Cor varia por região: **tan** (Lagos e leste de Benin), **preto** (Benin City), **vermelho** (subúrbios Lagos/Benin), **prata** (Lagos).
+
+### Luz de Emergência do Carro Policial: Norte vs. Sul (confiança: **média**)
+Luz vermelha na **ESQUERDA** do carro policial = **sul da Nigéria** (Lagos e região). Luz vermelha na **DIREITA** = **norte da Nigéria** (Abuja e região).
+
+### Táxis com Cores por CIDADE (confiança: **alta** para pinpoint)
+| Cidade | Cor dos Táxis |
+|---|---|
+| **Lagos** | Amarelo com 2 listras pretas perto das janelas |
+| **Abuja** | Verde (às vezes com listras brancas) |
+| **Asaba** | Azul e branco |
+| **Enugu** | Amarelo com 2 listras pretas perto do para-choque |
+| **Ibadan** | Parte inferior marrom-queimado, parte superior amarela |
 
 ### Placas Curtas com Tom ESVERDEADO (confiança: **alta**)
 Placas de veículo curtas que aparecem com tom **esverdeado** pelo desfoque — design exclusivo da Nigéria.
@@ -34,6 +47,9 @@ Placas de veículo curtas que aparecem com tom **esverdeado** pelo desfoque — 
 
 ### Postes de Concreto com Entalhes + Suportes Horizontais (confiança: **alta**)
 Postes de concreto com **entalhes** e alguns **suportes horizontais** — similar ao Brasil mas sem buracos.
+
+### Divisores de Concreto nas Cores da BANDEIRA (confiança: **média**)
+Divisores de concreto e barreiras centrais frequentemente pintados em **verde e branco** — cores da bandeira nigeriana — visíveis em rodovias e entradas de cidade.
 
 ### Estradas sem Linhas ou com Linhas Apagadas (confiança: **média**)
 Estradas frequentemente **sem marcações** ou com marcações muito apagadas; buracos, rachaduras e estradas não pavimentadas comuns.
@@ -64,6 +80,7 @@ Nomes de cidades e estados frequentemente visíveis em fachadas de lojas e faixa
 - Trânsito pela **direita**
 - Gen 3: pickup truck com rack + carro policial seguindo
 - Tuk-tuks com cores variadas por estado
+- Postos de combustível: **Oando, ForteOil, MRSOilNigeria** (exclusivos da Nigéria); também Total, Mobil, Conoil
 
 ## 8. Regiões Distintas
 

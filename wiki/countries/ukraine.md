@@ -1,7 +1,8 @@
 ---
 title: "Ucrânia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do leste europeu com carro Google vermelho (quase único), placa com faixa azul+amarela (cores da bandeira), Gen 3 exclusivo, cirílico com Є/Ї e estradas entre as piores da Europa. 'Вул.' distingue do russo."
 tags: [país, europa, europa-leste]
 type: country
@@ -67,6 +68,7 @@ Cercas, postes e outros objetos à beira da estrada pintados nas cores da bandei
 - **Gen 3 somente** — única geração disponível
 - Carro vermelho (quase exclusivo); preto, branco ou cinza menos comuns
 - Carros soviéticos ainda comuns em áreas rurais; mix com carros europeus nas cidades
+- Postos de combustível: **OKKO, WOG** (exclusivos da Ucrânia); também Socar, KLO
 
 ## 8. Regiões Distintas
 

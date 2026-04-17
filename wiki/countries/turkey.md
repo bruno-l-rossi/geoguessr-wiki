@@ -1,7 +1,8 @@
 ---
 title: "Turquia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País transcontinental identificável pelo stop sign 'DUR' (único no mundo), 'ı' sem ponto (quase exclusivo do turco), postes metálicos em escada/malha, chevrons vermelho+branco e minaretes de mesquita em quase todas as cidades."
 tags: [país, europa, ásia, oriente-médio, ásia-ocidental]
 type: country
@@ -63,6 +64,7 @@ Postes de neve com sequência de cores **preto-laranja-preto-branco** (de cima p
 ## 5. Arquitetura e Infraestrutura
 - **Blocos de apartamentos altos e quadrados**: muito comuns nas cidades — arquitetura urbana turca
 - **Pavimentação com tijolos** em áreas urbanas: tijolo de formato característico — muito presente
+- **Caixas d'água cilíndricas** (azuis ou pretas) nos telhados de edifícios — muito comuns em cidades e vilas
 - Bollards: retangulares, brancos simples com refletor **vermelho** na frente; finos vistos de lado
 - Guardrails: tanto tipo **A** (bordas arredondadas) quanto tipo **B** (bordas quadradas) — ver ambos juntos exclui a maioria dos países do Mediterrâneo e Oriente Médio
 - Marcadores de KM: O-roads (O-número), D-roads (3 dígitos sem D), provinciais (primeiros 2 dígitos = código provincial)
@@ -78,6 +80,8 @@ Postes de neve com sequência de cores **preto-laranja-preto-branco** (de cima p
 - **Gen 3**: carro sem antena (único entre países com Gen 3)
 - **Gen 4**: carro branco; pickup cinza em algumas áreas
 - Carros europeus, asiáticos e turcos (Togg) comuns
+- Placas: padrão europeu com texto em **fonte bem grossa** (negrito pronunciado)
+- Postos de combustível: **Opet, PetrolOfisi** (exclusivos da Turquia); também Lukoil, Total, BP, MOil
 
 ## 8. Regiões Distintas
 

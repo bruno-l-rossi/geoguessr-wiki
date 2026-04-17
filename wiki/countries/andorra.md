@@ -1,7 +1,8 @@
 ---
 title: "Andorra"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Minúsculo principado pirenaico com placas com PONTO LARANJA à esquerda (único na Europa), Gen 3 de OUTUBRO (cores de outono), bollards com refletor LARANJA (compartilhado com ES), guardrails com refletores AMARELOS (apenas AND/ES/BE na Europa), sinal de pedestre com 8 LISTRAS (único com ES) e língua CATALÃ."
 tags: [país, europa, europa-ocidental, pirenaica]
 type: country
@@ -20,8 +21,8 @@ status: draft
 
 ## 3. Pistas Visuais Principais
 
-### Placas com PONTO LARANJA à Esquerda (confiança: **alta**)
-Placas com **ponto laranja** no lado esquerdo — **único na Europa** exclusivo de Andorra.
+### Placas com PONTO LARANJA à Esquerda — SEM Tira EU (confiança: **alta**)
+Placas com **ponto laranja** no lado esquerdo e **brasão vermelho+amarelo** — **único na Europa** exclusivo de Andorra. ⚠️ Ausência da tira azul EU (que França e Espanha têm) reforça a identificação.
 
 ### Gen 3 com CORES DE OUTONO (confiança: **alta**)
 Toda cobertura Gen 3 foi feita em **outubro** — árvores com folhas laranja/vermelhas/amarelas bem visíveis.
@@ -67,6 +68,7 @@ Cones de tráfego nas cores **amarelo** e **turquesa** — exclusivos de Andorra
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas com ponto laranja à esquerda — único na Europa
+- Postos de combustível: Total, Esso, Repsol, Cepsa (marcas ibéricas e internacionais)
 
 ## 8. Regiões Distintas
 

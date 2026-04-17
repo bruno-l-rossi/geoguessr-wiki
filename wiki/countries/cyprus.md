@@ -1,11 +1,12 @@
 ---
 title: "Chipre"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Ilha mediterrânea com condução pela ESQUERDA (único na Europa com MT), idioma GREGO+inglês, smallcam Gen 4 (câmera mais baixa com blur circular grande e protuberância), bollards TRIANGULARES com refletor vermelho (similar Turquia mas triangular, não plano), e tanques de água horizontais BRANCOS cilíndricos nos telhados."
 tags: [país, europa, europa-sul, ilhas, mediterrâneo]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Chipre

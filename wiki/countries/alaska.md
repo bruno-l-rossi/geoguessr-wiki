@@ -1,11 +1,12 @@
 ---
 title: "Alasca"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "Estado americano com placas TOTALMENTE AMARELAS (único), escudo rodoviário com GRANDE URSA (constelação), montanhas com neve, árvores mais finas que nos outros estados, cobertura Gen 2 mais comum que no resto dos EUA, shitcam exclusivo (apenas Anchorage/Fairbanks), e Gen 4 Smallcam."
 tags: [país, américas, estados-unidos, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Alasca

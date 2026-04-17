@@ -1,7 +1,8 @@
 ---
 title: "San Marino"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Microestado encrustado na Itália com chevrons AMARELO+BORDÔ ÚNICO no mundo, placas CURTAS BRANCAS com letras azuis (sem faixa EU), Monte Titano com TRÊS TORRES visível de todo o país, passadeiras de pedestres AZUIS elaboradas exclusivas e lixeiras VERDE-LIMÃO. Infraestrutura idêntica à Itália exceto pelas características únicas."
 tags: [país, europa, europa-sul, mediterrâneo]
 type: country
@@ -14,6 +15,7 @@ status: draft
 **San Marino** é um microestado completamente encrustado na Itália, no nordeste da Península Itálica. Idioma: **italiano**. Capital: **Cidade de San Marino**. Trânsito: **pela direita**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
+- **Gen 2**: cobertura com carro **preto** — distinto do carro Gen 4 italiano; Gen 2 em San Marino é identificável pelo visual antigo
 - **Gen 3 e Gen 4** — o centro histórico tem trekker **Gen 3**
 - Paisagem de colinas agrícolas com muitas estradas sinuosas
 
@@ -54,6 +56,7 @@ Lixeiras **verde-limão** muito comuns — nas coberturas Gen 4 algumas foram su
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas curtas brancas com letras azuis
+- Postos de combustível: Tamoil, Agip, IP, Eni, Q8
 
 ## 8. Regiões Distintas
 

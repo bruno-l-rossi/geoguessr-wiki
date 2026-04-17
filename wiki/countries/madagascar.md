@@ -1,7 +1,8 @@
 ---
 title: "Madagáscar"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Grande ilha ao largo da África com cobertura APENAS por trekker Gen 3 (quase sempre com pessoas caminhando ao lado), idiomas FRANCÊS e MALGAXE (latino com palavras longas), trekkers de BARCO numerosos na costa oeste, e estratégia de reconhecimento por roupas das pessoas que acompanham o trekker por localidade. Dois veículos com rack visível são exceções raras. Paisagem árida no sul/centro, tropical no norte."
 tags: [país, áfrica, ilha, índico]
 type: country
@@ -53,6 +54,10 @@ Sul e centro: **extremamente áridos**; norte: tropical; Baobab Avenue = baobás
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Trekker Gen 3 (maioria); dois veículos com rack em locais específicos (RN8 e Manahy)
+- **Jeep-gaiola** (cage jeep) visível em algumas áreas — veículo utilitário com estrutura metálica aberta
+- **Lakana**: canoas tradicionais malgaxes visíveis na costa (distintas dos trekkers de barco)
+- Placas de veículo em cores variadas: **amarelo/preto/branco**, às vezes com faixa azul ou verde
+- Postos de combustível: **Galana, Jovena** (redes locais de Madagáscar); também Total, BunkerOil
 
 ## 8. Regiões Distintas por Localidade (roupas das pessoas)
 

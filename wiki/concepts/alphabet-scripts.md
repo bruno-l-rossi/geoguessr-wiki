@@ -2,6 +2,7 @@
 title: "Alfabetos e Scripts — Identificação Visual"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com]
 summary: "Como identificar países pelo sistema de escrita. Scripts únicos (kanji, hangul, árabe, devanagari, etc.) confirmam o país ou região imediatamente. Inclui diacríticos do alfabeto latino que diferenciam países europeus."
 tags: [conceito, idioma, script, alfabeto, identificação]
 type: concept

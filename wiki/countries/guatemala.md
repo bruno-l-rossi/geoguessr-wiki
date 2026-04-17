@@ -1,7 +1,8 @@
 ---
 title: "Guatemala"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da América Central com carro do Google CINZA com rack e espelhos visíveis, postes frequentemente pintados de ROSA e/ou VERDE (muito característico), linhas de estrada AMARELAS FINAS no centro, stop sign com 'ALTO', e paisagem variada (sul plano/agrícola, centro montanhoso, norte levemente ondulante com selva). Trânsito pela direita."
 tags: [país, américas, america-central]
 type: country
@@ -14,7 +15,7 @@ status: draft
 **Guatemala** fica na América Central, fazendo fronteira com México, Belize, Honduras e El Salvador. Idioma: **espanhol**. Capital: **Cidade da Guatemala**. Trânsito: **pela direita**. Sistema de medidas: **métrico**.
 
 ## 2. Câmera e Cobertura
-- Carro do Google **cinza** com rack visível e espelhos laterais — ⚠️ Laos tem carro similar (único outro país tropical com carro similar); República Dominicana tem barras metálicas com listras pretas grossas (diferente)
+- Carro do Google **cinza** com rack visível e espelhos laterais; **marcador pequeno redondo** visível no lado esquerdo frontal do carro — ⚠️ Laos tem carro similar (único outro país tropical com carro similar); República Dominicana tem barras metálicas com listras pretas grossas (diferente)
 - Cobertura relativamente baixa, especialmente no norte
 - Cobertura de carro e alguns trekkers (Tikal e ruínas maias)
 
@@ -33,7 +34,7 @@ Linhas amarelas no centro + linhas brancas externas — ⚠️ similar ao Méxic
 Stop sign com a palavra **"ALTO"** — ⚠️ também México, Panamá e Costa Rica.
 
 ### Placas com Toque AZUL ou VERDE à Esquerda (confiança: **média**)
-Placas curtas com blur que mostra **toque azul** ou **verde** à esquerda.
+Placas curtas com blur que mostra **toque azul** ou **verde** à esquerda. Placas pós-2021: **faixa azul horizontal no topo** da placa.
 
 ### Postes Verdes Totalmente em Determinadas Estradas (confiança: **alta**)
 Postes **completamente verdes** com placas brancas de identificação → sudeste do país e algumas estradas específicas no nordeste (código da estrada nos dois primeiros caracteres da placa).
@@ -53,11 +54,14 @@ Postes **completamente verdes** com placas brancas de identificação → sudest
 ## 6. Sinais e Textos
 - **Espanhol**: língua dos sinais
 - Stop sign = "ALTO"
-- Números de telefone: 2 = exclusivo de Cidade da Guatemala; 6 = Guatemala Department; 7 = em qualquer lugar exceto Guatemala Department; 3, 4, 5 = em qualquer lugar
+- Números de telefone: **8 dígitos**; primeiro dígito indica tipo: **2** = Cidade da Guatemala; **3/4/5** = celular; **6** = departamento; **7** = rural
+- Cidades em grade: marcações "**Una Via**" (sentido único) e "**Doble Via**" (dupla mão) — comuns nos centros urbanos
+- **Placas de licença pequenas**: apenas 15cm × 30cm — visualmente mais compactas que outros países latino-americanos
 - **Stickers com "electricista"**: exclusivos da Cidade da Guatemala (stickers retangulares brancos nos postes)
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: Texaco, **Puma, Uno** (redes comuns na Guatemala)
 
 ## 8. Regiões Distintas
 

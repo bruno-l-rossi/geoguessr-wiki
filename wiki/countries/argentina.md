@@ -1,7 +1,8 @@
 ---
 title: "Argentina"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País sul-americano com carro Google preto, chevrons branco-vermelhos exclusivos nas Américas e paisagem predominantemente plana e despovoada. Identificável por postes de concreto redondos com padrão alternado."
 tags: [país, américas, sul-america]
 type: country
@@ -29,8 +30,11 @@ Placa de licença preta com **ponto preto no centro** — exclusiva da Argentina
 ### Postes de Concreto Redondos com Padrão Alternado (confiança: **alta**)
 Postes de concreto redondos sustentando **três linhas elétricas em padrão alternado** são muito comuns. Postes **duplicados** lado a lado também indicam Argentina (raros na Bolívia).
 
-### Postes A-Frame de Madeira (confiança: **alta**)
-Postes de madeira em formato A — **exclusivos da Argentina** na América do Sul.
+### Postes A-Frame de Madeira / Concreto (confiança: **alta**)
+Postes de madeira em formato A — **exclusivos da Argentina** na América do Sul. Versão de concreto: **poste dividido em dois formando letra "A"** com segmentos horizontais — design distinto da Argentina.
+
+### Esquinas "Chanfradas" nas Grades Urbanas (confiança: **média**)
+Em cidades com layout em grade, as esquinas frequentemente têm **cantos chanfrados (cortados diagonalmente)** — chamadas localmente de "ochava"; visível no asfalto e nas calçadas de cidades como Buenos Aires e Córdoba.
 
 ### Marcadores de KM Brancos com Faixa Preta no Topo (confiança: **alta**)
 Marcadores quilométricos brancos com faixa preta exibindo o número da rodovia. RN = nacional (branco no mapa); RP = provincial (verde no mapa).
@@ -61,8 +65,9 @@ Marcadores quilométricos brancos com faixa preta exibindo o número da rodovia.
 - **Mar del Plata e arredores**: fachadas de quartzita, telhados de telha laranja, garagens integradas, pórticos em abóbada
 - **Noroeste (Jujuy)**: tijolos vermelhos, similar à ⚠️ Bolívia
 - **Salta/RN68**: montanhas **vermelhas** (exclusivas do vale sul de Salta)
-- **Tucumán**: adesivos brancos verticais nos postes com vários dígitos
+- **Tucumán**: adesivos brancos verticais nos postes com vários dígitos; **luminárias de rua VERMELHAS** únicas nesta região
 - **Córdoba**: marcadores únicos em estradas provinciais
+- **Caleta Olivia** (Santa Cruz/Patagônia): postes de sinalização **vermelhos** — exclusivos desta cidade
 - **La Pampa**: placas retangulares amarelas em T-junctions
 - **La Rioja e Mendoza**: postes de madeira estilo letão com ganchos
 - **Mendoza**: postes com isolador único lateral
@@ -76,6 +81,7 @@ Marcadores quilométricos brancos com faixa preta exibindo o número da rodovia.
 - Carro Google Gen 3: **preto** (distingue de outros países sul-americanos)
 - Carro Gen 4 smallcam: compartilhado com Peru e Brasil
 - "Carro serragem" (sawdust car): poeira arenosa visível na traseira preta — centro-sul da Argentina
+- Postos de combustível: **YPF** (exclusivo da Argentina), **Puma, Esso, AxionEnergy, Refinor**
 
 ## 8. Regiões Distintas
 

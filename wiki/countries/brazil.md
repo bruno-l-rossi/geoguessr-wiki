@@ -1,7 +1,8 @@
 ---
 title: "Brasil"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Maior país da América do Sul, identificável pelo português, solo vermelho, postes em escada, placas com fundo preto e uma grande variedade de pistas regionais detalhadas."
 tags: [país, américa-do-sul, português, gen3, gen4, smallcam]
 type: country
@@ -195,6 +196,7 @@ Postes na Ilha de Santa Catarina (Florianópolis) são pintados de **branco com 
 - Marcadores de rodovia **azuis** com número da estrada e quilômetro — muito visíveis.
 - Prefixos: **BR-** (federais), **SP-, PR-, MG-** etc. (estaduais).
 - **Chevrons de curva:** amarelo sobre preto — oposto da maioria da América do Sul (preto sobre amarelo) e da Argentina (vermelho sobre branco).
+- **Placas de STOP:** "**PARE**" — ⚠️ distinto de "ALTO" (México/América Central) e "ARRÊTE" (Québec).
 - **Linhas de pista:** dupla linha amarela no centro; linhas externas brancas. Ocasionalmente linha simples tracejada amarela.
 - **Guias brancas** pintadas são frequentes.
 - São Paulo tem muito mais **rodovias duplicadas (pistas duplas)** que qualquer outro estado.
@@ -218,6 +220,7 @@ Postes na Ilha de Santa Catarina (Florianópolis) são pintados de **branco com 
 - **Caminhões:** Abundantes; placa vermelha é marcador único.
 - **Motos:** Muito comuns, especialmente no Nordeste.
 - **Direção:** Lado direito da pista (volante à esquerda).
+- Postos de combustível: **Ipiranga, BR Distribuidora (Petrobras), Raizen (Shell)** — exclusivos do Brasil; também Ale e Esso
 
 ## 8. Regiões Distintas
 

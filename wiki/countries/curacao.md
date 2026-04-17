@@ -1,7 +1,8 @@
 ---
 title: "Curaçao"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "Ilha caribenha do Reino dos Países Baixos com clima SEMI-ÁRIDO e cactos comuns, carro do Google PRETO com rack no teto (único de Curaçao), postes de madeira com três insuladores horizontais alternados, sinais de rua azuis em postes AMARELOS, e arquitetura de bangalôs em CORES PASTÉIS. Conta como Países Baixos."
 tags: [país, caribe, países-baixos, território, ilhas]
 type: country
@@ -31,7 +32,7 @@ Sinais de rua **azuis** no topo de postes **amarelos** — visual muito caracter
 Postes de semáforo com listras **preto+branco** — em áreas urbanas.
 
 ### Postes de Madeira com Três Insuladores HORIZONTAIS ALTERNADOS (confiança: **média**)
-Postes de madeira com **três insuladores horizontais alternados** — ⚠️ também no Brasil, África do Sul e Essuatíni.
+Postes de madeira com **três insuladores horizontais alternados**; base dos postes geralmente **pintada de branco** — ⚠️ também no Brasil, África do Sul e Essuatíni.
 
 ### Arquitetura de Bangalôs em CORES PASTÉIS (confiança: **alta**)
 Bangalôs simples de **um andar** em **cores pastéis** — telhados de metal (casas simples) ou telhas (casas mais ricas).

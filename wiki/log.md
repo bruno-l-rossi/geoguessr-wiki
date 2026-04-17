@@ -6,6 +6,346 @@ title: "GeoGuessr Wiki — Log de Operações"
 
 ---
 
+## 2026-04-17 — MANUTENÇÃO: campo sources adicionado a todos os conceitos
+
+**Operação:** Manutenção de frontmatter (20 arquivos)  
+**Escopo:** Todos os arquivos em `wiki/concepts/` sem campo `sources`
+
+**Fontes inferidas por arquivo:**
+
+| Arquivo | Sources adicionadas |
+|---|---|
+| `bollards.md` | plonkit.net, geohints.com, geodummy.com |
+| `guardrails.md` | plonkit.net, geohints.com, geodummy.com |
+| `utility-poles.md` | plonkit.net, geohints.com, geodummy.com |
+| `chevrons.md` | plonkit.net, geohints.com, geodummy.com |
+| `camera-generations.md` | plonkit.net, geodummy.com |
+| `spillover-countries.md` | plonkit.net, geodummy.com |
+| `caatinga.md` | plonkit.net, geodummy.com |
+| `postes-brasil.md` | plonkit.net, geodummy.com |
+| `alphabet-scripts.md` | plonkit.net, geodummy.com |
+| `cerrado.md` | plonkit.net, geodummy.com |
+| `araucária.md` | plonkit.net, geodummy.com |
+| `amazônia.md` | plonkit.net, geodummy.com |
+| `gerações-de-câmera.md` | plonkit.net, geodummy.com |
+| `palmeiras-brasil.md` | plonkit.net, geodummy.com |
+| `bollards-europa.md` | plonkit.net, geodummy.com |
+| `architecture-styles.md` | plonkit.net, geodummy.com, somerandomstuff1.wordpress.com |
+| `vegetation-zones.md` | plonkit.net, geodummy.com, somerandomstuff1.wordpress.com |
+| `driving-side.md` | plonkit.net, geodummy.com, somerandomstuff1.wordpress.com |
+| `camera-altura.md` | plonkit.net |
+| `trafego-esquerda.md` | plonkit.net |
+
+**Resultado:** Todos os 22 arquivos de conceito agora possuem campo `sources` no frontmatter. Campo pendente do LINT de 2026-04-17 resolvido.
+
+---
+
+## 2026-04-17 — INGEST: united-states.md — seção Regiões Distintas completa
+
+**Operação:** INGEST (expansão de conteúdo existente)  
+**Fonte:** `raw/countries/United States of America.md` (plonkit.net/united-states)  
+**Arquivo atualizado:** `wiki/countries/united-states.md`
+
+**Conteúdo adicionado:** Seção `## 9. Regiões Distintas` completamente reescrita com clues específicos por região e estado:
+- Nova Inglaterra: paredes de pedra, shingle walls, three-deckers, brownstones, sinais de ponte
+- Meio Atlântico / Apalachias: WV fração-em-círculo, NC setas em sinais, SC sinais pretos, PA/NH sinais de rota, Pittsburgh pontes amarelas
+- Sul (Deep South): southern pines, solo vermelho, Spanish moss, shotgun houses, pilotis costeiros, telhados de metal vermelho, gramado bege no inverno
+- Texas: asfalto granulado, bandas amarelas/vermelhas nos postes, Hill Country, Rio Grande Valley, H-E-B, Whataburger, Buc-ee's
+- Meio-Oeste: corn belt, canola no Dakota, Iowa concreto, Wisconsin/Michigan pistas específicas, Minnesota triângulos amarelos, lettering system WI/MO
+- Grandes Planícies: Nebraska Sandhills, Kansas refletores brancos, Oklahoma números verdes no verso de STOP
+- Sudoeste / Quatro Cantos: mesas vermelhas, Pueblo Revival NM, Saguaro cactus AZ, Utah/Idaho ruas numéricas, I-19 em km
+- Grande Bacia / Rochosas: sagebrush, bollards por estado (NV, SD/MT, WY, WA)
+- Costa do Pacífico: Douglas firs, rainforests, Oregon "Speed" apenas, California listras amarelas em postes + faixa preta nas linhas + Central Valley
+- Tabela de territórios não-contíguos (Alaska, Hawaii, Puerto Rico, Guam, USVI)
+
+---
+
+## 2026-04-17 — LINT: verificação completa de qualidade
+
+**Operação:** LINT (auditoria de qualidade completa)  
+**Escopo:** 136 arquivos em `wiki/countries/`, 22 em `wiki/concepts/`, `wiki/index.md`  
+**Relatório:** `wiki/outputs/lint-report-2026-04-17.md`
+
+**Problemas encontrados:** 2 (ambos corrigidos automaticamente)
+
+**Corrigido automaticamente:**
+- `canada.md` — adicionada seção `## 4. Vegetação e Paisagem` (biomas: boreal, pradarias, BC, Ontario/Québec, PEI solo vermelho, ártico); seções subsequentes renumeradas
+- `united-states.md` — seção 5 (Vegetação) limpa e focada; adicionada seção `## 6. Arquitetura e Infraestrutura` dedicada; seções subsequentes renumeradas
+
+**Resultado das verificações:**
+- Frontmatter países: OK (todos 136 com campos obrigatórios + sources)
+- Wikilinks quebrados: nenhum ativo encontrado (falsos positivos do lint-report-2026-04-10 verificados e descartados)
+- Páginas órfãs: nenhuma
+- Contradições: nenhuma
+- Índice: OK
+- Nomes de arquivo: OK
+- Conceitos sem sources: 20 arquivos — baixa prioridade (CLAUDE.md não exige)
+
+**Atenção manual identificada:**
+- Seção de regiões em `united-states.md` marcada como `*(Muito vasto — ver raw)*` — conteúdo pendente de expansão
+- 20 arquivos de conceito sem campo `sources`
+
+---
+
+## 2026-04-17 — INGEST: somerandomstuff1.wordpress.com — guia geral 2019
+
+**Operação:** INGEST (fonte externa: guia geral de técnicas GeoGuessr)  
+**Fonte:** https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/  
+**Resultado:** Conteúdo amplamente já coberto pelo wiki em maior detalhe. Apenas 2 itens genuinamente novos identificados.
+
+**Conteúdo incorporado:**
+- `concepts/guia-iniciante.md` — **Antenas parabólicas como indicador de latitude**: apontam em direção ao equador; ângulo mais vertical = perto do equador; ângulo mais horizontal = latitude alta. Adicionado à seção "Tipos de Pistas → Sol"
+- `countries/mexico.md` — **Linhas amarelas desbotadas**: linhas centrais do México tendem a ser mais apagadas que nos EUA/Brasil — pista de eliminação em contexto norte-americano
+- `concepts/road-lines.md` — nota "desbotada" adicionada à entrada do México
+
+**Conteúdo já documentado (não requereram edição):**
+- Direção do sol/sombra → hemisfério (já em guia-iniciante seção 4)
+- Placa amarela em Colômbia, Namíbia, Kenya, Uganda, Ruanda (já em todos os arquivos)
+- Linhas de estrada Escandinávia (já em norway.md, sweden.md, finland.md, denmark.md)
+- Chile → linhas brancas excepcionais nas Américas (já em chile.md)
+- Linha externa amarela na África Austral (já em road-lines.md)
+- "Sem placa dianteira → 17 estados americanos" (já em united-states.md)
+- Postes preto+amarelo no Japão (já documentado)
+
+**Arquivos atualizados:** `guia-iniciante.md`, `road-lines.md`, `mexico.md`  
+**Fonte adicionada ao frontmatter:** `somerandomstuff1.wordpress.com`
+
+---
+
+## 2026-04-17 — INGEST: geomastr.com — territórios e microestados (varredura real de conteúdo)
+
+**Operação:** INGEST (busca efetiva de conteúdo geomastr para todos os territórios)  
+**Escopo:** ~35 territórios/microestados/ilhas verificados via WebFetch; conteúdo incorporado onde disponível
+
+**Conteúdo incorporado:**
+- `monaco.md` — postos: Avia, Agip, Esso
+- `san-marino.md` — postos: Tamoil, Agip, IP, Eni, Q8
+- `montenegro.md` — postos: Lukoil, EKO, Petrol, INA, Teboil, EuroPetrol
+- `isle-of-man.md` — postos: Total (road lines: Yellow outside / White inside)
+- `jersey.md` — postos: Total, Esso, Rubis (road lines: Yellow outside / White inside)
+- `bermuda.md` — postos: Esso, Rubis
+- `gibraltar.md` — postos: Cepsa (road lines: Yellow outside / White inside)
+- `us-virgin-islands.md` — postos: Total
+- `puerto-rico.md` — postos: Total, Puma (road lines: White outside / Yellow inside)
+
+**Já tinham conteúdo (não requereram edição):**
+- `greece.md` — combustível já presente (EKO, Revoil, Elin, AegeanOil)
+- `iceland.md` — combustível já presente (N1, Orkan, Skeljungur)
+
+**Páginas geomastr vazias confirmadas (sem dados textuais):**
+Cyprus, Liechtenstein, Svalbard, Macau, Réunion, Martinica, Alaska, Hawaii, Açores, Madeira, Ilhas Malvinas, Ilhas Pitcairn, Saint-Pierre e Miquelon, São Tomé e Príncipe, Antártida, Ilhas Cocos, Ilhas Marianas do Norte, Samoa Americana, Ilha Christmas, Groenlândia, Curaçao
+
+**Atualizado:** `wiki/log.md`
+
+---
+
+## 2026-04-17 — INGEST: geomastr.com — VARREDURA COMPLETA (todos os 136 arquivos)
+
+**Operação:** INGEST (finalização da varredura geomastr.com)  
+**Escopo:** Todos os arquivos restantes — territórios, microestados, ilhas e países perdidos na primeira passagem  
+**Resultado:** 100% dos 136 arquivos de países têm `geomastr.com` no frontmatter `sources`
+
+**Países/territórios com conteúdo novo incorporado:**
+- `united-arab-emirates.md` — postos: ADNOC (exclusivo UAE), ENOC, EPPCO, Emarat
+
+**Países atualizados (frontmatter apenas — geomastr sem dados úteis ou fuel já presente):**
+- Frontmatter + sources adicionados: Peru, Ecuador, Ghana, Pakistan, Nepal, Lebanon, Bhutan, Hong Kong, China, Iraq, Oman
+- Territórios europeus: Faroe Islands, Gibraltar, Greenland, Monaco, San Marino, Cyprus, Liechtenstein, Svalbard, Montenegro, Andorra
+- Territórios das Américas: Puerto Rico, Curacao, Alaska, Bermuda, Falkland Islands, Hawaii, Martinique, Saint-Pierre and Miquelon, South Georgia, US Minor Outlying Islands, US Virgin Islands
+- Territórios asiáticos/Oceania: Macau, Northern Mariana Islands, Guam, Cocos Islands, Christmas Island, American Samoa, Pitcairn Islands, British Indian Ocean Territory
+- África: Sao Tome and Principe
+- Antártida
+- Passagem perdida anterior: Greece, Iceland
+
+**Atualizado:** `wiki/index.md` (data → 2026-04-17); `wiki/log.md`
+
+---
+
+## 2026-04-14 — INGEST: geomastr.com — postos de combustível + dados de estrada (~35 países)
+
+**Operação:** INGEST (complementação quad-source: + geomastr.com)  
+**Fonte:** geomastr.com/country/{slug} — dados de road lines, bollards, fuel stations, domínio, prefixo  
+**Escopo:** ~35 países atualizados; `geomastr.com` adicionado ao frontmatter `sources` de todos
+
+**Países processados e conteúdo incorporado:**
+
+- `south-africa.md` — linhas externas vermelhas em zonas urbanas especiais; postos: Total, Puma, Caltex, BP, Sasol, Engen, Shell
+- `indonesia.md` — bollards vermelho+branco listrado; postos: Pertamina (exclusivo), Caltex
+- `japan.md` — postos: ENEOS, Idemitsu, CosmoOil (exclusivos)
+- `south-korea.md` — postos: SK Energy, GS Caltex, Hyundai Oilbank, S-Oil, E1
+- `brazil.md` — postos: Ipiranga, BR Distribuidora, Raizen/Shell
+- `argentina.md` — postos: YPF (exclusivo), Puma, Esso, AxionEnergy
+- `russia.md` — postos: Lukoil, Rosneft, Gazprom, Tatneft
+- `india.md` — postos: IndianOil, BharatPetroleum, HindustanPetroleum
+- `turkey.md` — postos: Opet, PetrolOfisi (exclusivos)
+- `mexico.md` — postos: Pemex (exclusivo estatal)
+- `kenya.md` — postos: KenolKobil (exclusivo Quênia/África Oriental)
+- `nigeria.md` — postos: Oando, ForteOil, MRSOilNigeria
+- `ghana.md` — postos: Goil, AlliedOil
+- `chile.md` — postos: COPEC (exclusivo do Chile)
+- `colombia.md` — postos: EcoPetrol, Terpel, Biomax
+- `peru.md` — postos: PetroPeru, Primax, Pecsa
+- `ecuador.md` — postos: Petroecuador (exclusivo estatal)
+- `australia.md` — postos: Caltex, ColesExpress, Woolworths Petrol, United Petroleum
+- `new-zealand.md` — postos: Z Energy (exclusivo NZ)
+- `france.md` — postos: Total, Esso, Carrefour, E.Leclerc
+- `germany.md` — postos: Aral (exclusivo Alemanha)
+- `italy.md` — postos: Eni/Agip (exclusivos Itália)
+- `poland.md` — postos: Orlen, Lotos (exclusivos Polônia)
+- `romania.md` — postos: Petrom, Rompetrol (exclusivos Romênia)
+- `portugal.md` — postos: Galp (exclusivo Portugal/Ibéria)
+- `canada.md` — postos: Petro-Canada (exclusivo Canadá), Irving (leste)
+- `vietnam.md` — postos: Petrolimex, PVOil (estatais Vietnã)
+- `malaysia.md` — postos: Petronas (exclusivo Malásia)
+- `philippines.md` — postos: Petron, Phoenix Petroleum, Seaoil
+- `senegal.md` — postos: Petrosen (estatal Senegal)
+- `rwanda.md` — postos: MountMeru (África Oriental); linhas centrais amarelas confirmadas
+- `tunisia.md` — postos: Agil (exclusivo Tunísia)
+- `uganda.md` — postos: Hass Petroleum (África Oriental); bollards vermelho+branco
+- `spain.md` — postos: Repsol, Cepsa (dominantes), Disa (exclusivo Canárias)
+- `united-kingdom.md` — postos: Tesco, Morrisons, Asda, Sainsbury's (exclusivos UK)
+- `united-states.md` — sources atualizado (fuel já documentado na sessão anterior)
+
+**Conceitos atualizados:**
+- `wiki/concepts/bollards.md` — Indonésia: bollards vermelho+branco listrado adicionados
+- `wiki/concepts/road-lines.md` — África do Sul linhas externas vermelhas em zonas urbanas; Ruanda/Uganda adicionados à tabela de linha central amarela; nota sobre UK/Espanha linhas amarelas laterais de estacionamento
+
+**Metodologia:**
+- Hub/category pages do geomastr (continent, bollards, alphabets) retornam apenas galerias de imagens sem texto útil
+- Dados textuais obtidos exclusivamente de páginas individuais de país: geomastr.com/country/{slug}/
+- Rate limit atingido em 2026-04-12 para lote de 8 países; retomado em 2026-04-14
+
+**Atualizado:** `wiki/index.md` (data → 2026-04-14); `wiki/log.md`
+
+---
+
+## 2026-04-11 — INGEST: geodummy.com — varredura completa (~120 países)
+
+**Operação:** INGEST (complementação tri-source: plonkit.net + geotips.net + geodummy.com)  
+**Fonte:** geodummy.com/{country-slug} para todos os países com página wiki existente  
+**Escopo:** ~120 países verificados; `geodummy.com` adicionado ao frontmatter `sources` de todos os países com resposta 200
+
+**Países com conteúdo novo incorporado:**
+
+- `madagascar.md` — jeeps de gaiola; canoas lakana; cores variadas de placa (amarela/preta/branca, às vezes tarja azul ou verde)
+- `malaysia.md` — retângulos pretos com texto nos postes; meio-fio amarelo
+- `malta.md` — Gen 3: carro branco (cobertura principal)
+- `martinique.md` — placas com faixa azul à direita
+- `nepal.md` — shitcam montada em moto; placas com texto e borda vermelha
+- `new-zealand.md` — marcações de bus lane verdes
+- `nigeria.md` — Gen 3 com barras listradas preto+amarelo
+- `peru.md` — placas antigas amarelas ainda em circulação; sinais de cidade azuis
+- `portugal.md` — pinheiro-manso (Pinus pinea); lombadas de paralelepípedo
+- `puerto-rico.md` — placa traseira com faixa verde no fundo
+- `reunion.md` — placas EU com segunda faixa azul à direita
+- `romania.md` — postes com listras diagonais vermelho e branco
+- `russia.md` — sinais direcionais azuis grandes
+- `san-marino.md` — Gen 2: carro preto
+- `serbia.md` — casas estilo cottage fora das cidades
+- `south-africa.md` — JoJo tanks (depósitos de água); árvores candelabra (Euphorbia sp.)
+- `spain.md` — Gen 2 disponível em partes do país
+- `sweden.md` — casas brancas com telhados laranja em Gotemburgo/Västra Götaland
+- `switzerland.md` — placa traseira alta e estreita com texto em duas linhas
+- `tanzania.md` — placas amarelas com texto preto
+- `thailand.md` — netted poles; postes preto+laranja; muros de pedra no NE; plantações de borracha e dendê
+- `turkey.md` — caixas d'água cilíndricas nos telhados; placas com fonte em negrito pronunciado
+- `united-arab-emirates.md` — caixas d'água brancas nos edifícios; placas de Abu Dhabi com faixa vermelha no topo
+- `united-states.md` — sinais de rua com fundo verde (vs. azul Canadá); marcadores de gasoduto amarelos/laranjas
+
+**Países com sources atualizadas, sem conteúdo novo** (informação já documentada):  
+mexico, monaco, mongolia, montenegro, netherlands, north-macedonia, norway, pakistan, philippines, poland, qatar, rwanda, senegal, singapore, slovakia, slovenia, south-korea, sri-lanka, taiwan, tunisia, ukraine, uganda, united-kingdom, uruguay, vanuatu, vietnam
+
+**Países que retornaram 404 no geodummy** (sources não atualizadas):  
+oman, panama, namibia, macau (verificados em sessão anterior)
+
+**Atualizado:** `wiki/index.md` (data); `wiki/log.md`
+
+---
+
+## 2026-04-11 — VARREDURA COMPLETA: cobertura real do geotips.net
+
+**Operação:** Verificação e complementação do INGEST geotips.net  
+**Conclusão:** geotips.net cobre apenas **~47 países** (não 100+). Países não cobertos pelo geotips ficam apenas com `plonkit.net` como fonte.
+
+**Países cobertos pelo geotips por região:**
+- Europa: Romania, Hungary, Albania, Iceland, UK, Denmark (6)
+- América do Sul: Brazil, Argentina, Peru (3)
+- Ásia: Philippines, UAE, Malaysia, Jordan, Laos, Hong Kong, Mongolia, Japan, Sri Lanka, Kyrgyzstan, Bhutan, Cambodia, Macau, Nepal, Thailand, South Korea (16)
+- América do Norte: USA, Mexico, Guatemala, Costa Rica, US Virgin Islands, Canada, Puerto Rico, Greenland (8)
+- Oceania: Australia, New Zealand, Christmas Island, Guam, Northern Mariana Islands, Cocos Islands (6)
+- África: South Africa, Botswana, Nigeria, Ghana, Senegal, Kenya (6) + Eswatini/Lesoto mencionados mas truncados
+
+**Correções e adições desta sessão:**
+- `northern-mariana-islands.md` — frontmatter sources corrigido (estava ausente)
+- `nigeria.md` — divisores de concreto nas cores da bandeira (verde+branco)
+- `ghana.md` — bollards estilo UK (herdado do Commonwealth)
+
+**Total final de arquivos com `sources: [plonkit.net, geotips.net]`:** 44 países
+
+---
+
+## 2026-04-11 — INGEST: geotips.net — todos os continentes (~44 países atualizados)
+
+**Operação:** INGEST (complementação dual-source: plonkit.net + geotips.net)  
+**Fonte:** geotips.net/south-america, /europe, /asia, /north-america, /africa, /oceania  
+**Escopo:** ~44 países atualizados; `sources: [plonkit.net, geotips.net]` adicionado ao frontmatter de todos
+
+**Conteúdo novo incorporado por região:**
+
+**Europa:**
+- `denmark.md` — refletores VERDES nos bollards (exclusivos da Dinamarca na Europa)
+- `albania.md` — veículos Dacia predominantes; táxis com placas no teto; formato de telefone (prefixo de área + "2" para fixos; 06X = celular)
+- `iceland.md` — adesivo de inspeção amarelo-neon visível na placa traseira (Gen 4 recente)
+- `bhutan.md` — sistema waystone SL-1; divisão em 20 dzongkhags
+- `senegal.md` — rachaduras longitudinais na superfície das estradas; prefixo de telefone (7x = celular, 3x = fixo; DK = Dakar, KD = Kolda)
+- `ghana.md` — fita preta não cobre sempre o rack (sem fita em Boabeng); tro-tros (vans combi coletivas) como pista
+- `romania.md` — marcadores de tensão em amarelo nos postes; bollards "marco" coloridos por tipo de estrada (amarelo=local, azul=condado, vermelho=nacional, verde=europeia/via expressa)
+- `hungary.md` — postes de concreto SEM marcador amarelo (diferencia de Romênia)
+- `united-kingdom.md` — sinais de aviso em postes de madeira com raio amarelo; Belisha beacons (globo laranja nas faixas de pedestres zebra — exclusivo UK)
+
+**América do Sul:**
+- `brazil.md` — placa de STOP "PARE" (vs. "ALTO" no México/América Central)
+- `argentina.md` — variante em concreto dos postes A-frame; esquinas chanfradas "ochava" nas cidades em grade
+- `peru.md` — eucaliptos muito comuns entre 2000–3500m; celulares sempre começam com 9 (9 dígitos); fixos: 7 dígitos Lima/Callao, 6 dígitos resto do país
+
+**Ásia:**
+- `japan.md` — folhas de abóbora/squash em Hokkaido (detalhe sazonal de vegetação)
+- `south-korea.md` — bollards brancos com listra preta e ponto amarelo (design exclusivo KR)
+- `cambodia.md` — sistema de numeração de rodovias: 8 estradas de 1 dígito saindo de Phnom Penh em sentido horário
+- `philippines.md` — quadras de basquete em todo o país; cartazes de eleição ubíquos
+- `malaysia.md` — bollards brancos com retângulos vermelhos; árvore Yellow Meranti diagnóstica
+- `laos.md` — prefixo de telefone: código de área com 0, celular começa com 02
+- `jordan.md` — táxis com fundo verde e teto prateado
+- `sri-lanka.md` — códigos de província nas placas (WP, SP, CP, NP, EP, UP, NW, SG, NC); celulares começam com 07
+
+**América do Norte:**
+- `united-states.md` — linha central dupla amarela (vs. Canadá = linha simples mais comum); ônibus escolares amarelos exclusivos; 17 estados sem placa frontal
+- `canada.md` — cobertura de snowmobile no Ártico; linha central simples amarela (mais comum que nos EUA)
+- `mexico.md` — táxis rosa+branco exclusivos da Cidade do México
+- `guatemala.md` — formato de telefone (8 dígitos, primeiro dígito = tipo); marcações Una Via/Doble Via; placas pequenas (15×30cm)
+- `costa-rica.md` — táxis vermelhos com placa amarela no teto; prefixos (5/6/7/8 = celular, 2/4 = fixo; 8 dígitos)
+- `us-virgin-islands.md` — código de área 340; taxis tipo pickup aberto; guardrails amarelos em áreas perigosas
+
+**África:**
+- `south-africa.md` — carro camuflado no Parque Nacional Kruger (único no mundo)
+- `botswana.md` — sinais de rodovia com fundo verde + letra "A" (único na região); bollards azulados perto de Gabane
+- `nigeria.md` — posição da luz de emergência do carro policial (esquerda = sul/Lagos; direita = norte/Abuja); cores de táxi por cidade (Lagos, Abuja, Asaba, Enugu, Ibadan)
+- `kenya.md` — veículo safari na Lewa Wildlife Conservancy (único nessa localidade)
+
+**Oceania:**
+- `australia.md` — cores de ônibus por estado (8 estados); semáforos com borda branca por estado (WA/NSW/QLD/TAS/ACT = com borda; VIC/SA/NT = sem); Hungry Jack's confirma Austrália
+- `new-zealand.md` — tabela de códigos de área (02/03/04/06/07/09); palavras maori com macrons
+- `christmas-island.md` — sinais de nome de rua com fundo amarelo (distinto do padrão australiano)
+- `guam.md` — painéis de acesso elétrico perto de sinais de stop; postes com bases brancas e azuis
+- `northern-mariana-islands.md` — marcadores de milha com frações; marcadores de rota com formato de copo (cup-shaped)
+- `cocos-islands.md` — sinais bilíngues inglês/malaio (único território australiano com isso)
+
+**Apenas sources atualizadas (conteúdo já completo):** UAE, Hong Kong, Thailand, Macau, Puerto Rico, Greenland, Mongolia, Kyrgyzstan
+
+**Atualizado:** `wiki/index.md` (data → 2026-04-11); `wiki/log.md`
+
+---
+
 ## 2026-04-10 — CORREÇÕES PÓS-LINT: Pendências do relatório v2
 
 **Operação:** Correção de todos os itens pendentes identificados no LINT v2

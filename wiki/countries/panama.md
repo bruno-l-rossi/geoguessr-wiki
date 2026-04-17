@@ -6,6 +6,8 @@ summary: "País da América Central com pickup BRANCO com armação metálica br
 tags: [país, américas, america-central]
 type: country
 status: draft
+date_modified: 2026-04-14
+sources: [geomastr.com]
 ---
 
 # Panamá

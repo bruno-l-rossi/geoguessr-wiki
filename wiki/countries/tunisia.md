@@ -1,7 +1,8 @@
 ---
 title: "Tunísia"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do norte da África com carro PRETO escoltado por CARRO ACOMPANHANTE (meta exclusiva — múltiplos designs por região), placas PRETAS com texto branco, stop sign com árabe + latim (exclusivo), marcadores km com topo ARREDONDADO vermelho/amarelo/verde, meio-fio VERMELHO E BRANCO, portas/janelas pintadas em AZUL TRADICIONAL, e plantações de oliveiras frequentes. Francês + árabe nos sinais. Trânsito pela direita."
 tags: [país, áfrica, norte-africano]
 type: country
@@ -62,6 +63,7 @@ Linhas de **oliveiras** em fileiras organizadas com solo sem ervas daninhas — 
 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
+- Postos de combustível: **Agil** (exclusivo da Tunísia); também Total, OiLibya, Staroil, VivoEnergy
 
 ## 8. Regiões Distintas
 

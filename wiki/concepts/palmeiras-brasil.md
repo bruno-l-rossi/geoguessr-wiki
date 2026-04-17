@@ -2,6 +2,7 @@
 title: "Palmeiras do Brasil — Identificação por Espécie e Região"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net, geodummy.com]
 summary: "Guia das principais palmeiras encontradas no Brasil no Street View, com características visuais e distribuição regional."
 tags: [conceito, vegetação, palmeiras, brasil, amazônia, nordeste]
 type: concept

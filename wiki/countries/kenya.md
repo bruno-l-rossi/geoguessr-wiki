@@ -1,7 +1,8 @@
 ---
 title: "Quênia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País da África Oriental com carro Google com 'snorkel' (único com a Mongólia), placa frontal branca e traseira AMARELA quadrada, Safaricom exclusivo, linhas amarelas internas e nome do condado nos sinais. Paisagem muito variada."
 tags: [país, áfrica, áfrica-oriental]
 type: country
@@ -22,7 +23,10 @@ O **Quênia** fica no leste da África, atravessado pela linha do equador. Idiom
 ## 3. Pistas Visuais Principais
 
 ### Carro Google com SNORKEL (confiança: **alta**)
-Carro Gen 3 com **snorkel** e rack no teto — exclusivo do Quênia e Mongólia. Em Gen 4 = pickup truck (branco ou cinza) com ou sem snorkel.
+Carro Gen 3 com **snorkel** e rack no teto — exclusivo do Quênia e Mongólia. Existem dois tipos distintos: **snorkel grande no lado DIREITO** do capô, ou **snorkel menor no lado ESQUERDO** — detalhe útil para pinpoint regional. Em Gen 4 = pickup truck (branco ou cinza) com ou sem snorkel.
+
+### Veículo SAFARI na Lewa Wildlife Conservancy (confiança: **alta** se visível)
+Na reserva **Lewa Wildlife Conservancy** (centro-norte do Quênia), o Google usa um **veículo estilo safari** com carroceria quadrada e rack off-white — único nesta localidade específica.
 
 ### Placa Frontal BRANCA + Traseira AMARELA QUADRADA (confiança: **alta**)
 Placa frontal longa e **branca**; placa traseira **quadrada** e **amarela** — combinação exclusiva do Quênia.
@@ -68,6 +72,7 @@ Sinais de direção **verdes** com borda branca e texto branco; números de rodo
 - **Gen 3**: carro com snorkel; **Gen 4**: pickup grande branco ou cinza
 - Vans repurposadas comuns
 - Motos ("boda boda") muito comuns em áreas rurais
+- Postos de combustível: **KenolKobil** (exclusivo do Quênia/África Oriental); também Total, OiLibya, VivoEnergy
 
 ## 8. Regiões Distintas
 

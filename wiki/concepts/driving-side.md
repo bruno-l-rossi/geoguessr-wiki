@@ -2,6 +2,7 @@
 title: "Lado de Condução — Esquerda vs. Direita"
 date_created: 2026-04-10
 date_modified: 2026-04-10
+sources: [plonkit.net, geodummy.com, somerandomstuff1.wordpress.com]
 summary: "Referência completa de quais países dirigem pela esquerda vs. pela direita no GeoGuessr. Inclui como identificar o lado de condução sem ver outros carros, e como diferenciar países que compartilham o mesmo lado mas parecem similares."
 tags: [conceito, condução, trânsito, identificação]
 type: concept

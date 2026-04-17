@@ -1,7 +1,8 @@
 ---
 title: "Indonésia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País insular do sudeste asiático com placas PRETAS com 3 seções brancas, marcos amarelos únicos com corte no topo, faixas vermelhas/brancas por toda parte e motos com placa FRONTAL. Indonésio influenciado pelo holandês."
 tags: [país, ásia, sudeste-asiático]
 type: country
@@ -48,7 +49,11 @@ Direção para onde aponta o prato parabólico indica hemisfério: apontando nor
 
 ## 5. Arquitetura e Infraestrutura
 - Postes: redondos, de **aço** ou **concreto**; muitos postes de aço pintados de preto com cores da bandeira indonésia
-- Bollards: preto+branco (quadrado ou circular); amarelo+preto (com possível refletor vermelho)
+- **Java Central**: postes de **bambu** — substituindo postes convencionais em áreas rurais
+- **Java Ocidental**: **tanques de água laranjas** no topo de edifícios — característicos desta região
+- Bollards: preto+branco (quadrado ou circular); amarelo+preto (com possível refletor vermelho); tipo **vermelho+branco listrado** também presente
+- **Meios-fios zebra** (listras preto+branco) nas bordas de ruas — comuns em áreas urbanas
+- **Sinais de alerta de tsunami** em zonas costeiras — principalmente em praias e vias próximas ao mar
 - **"Kabupaten"** / **"Kab"**: subdivisão de nível 2 (regência) — nome aparece em sinais e outdoors; 417 cobertos
 - Direções cardeais nos endereços: **Utara** (N), **Timur** (L), **Selatan** (S), **Barat** (O), **Tengah** (C)
 - Linhas de estrada: brancas ou amarelas no centro; externas sempre brancas
@@ -61,6 +66,7 @@ Direção para onde aponta o prato parabólico indica hemisfério: apontando nor
 - Trânsito pela **esquerda**
 - Motos com placa na **frente**
 - Motos muito comuns em todo o arquipélago
+- Postos de combustível: **Pertamina** (estatal, exclusivo da Indonésia) e **Caltex**
 
 ## 8. Regiões Distintas (por topo de poste)
 

@@ -1,7 +1,8 @@
 ---
 title: "Bielorrússia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [geomastr.com]
 summary: "Cobertura EXTREMAMENTE LIMITADA — apenas um trekker pedestre no centro histórico de Minsk. Reconhecível por sinais de rua VERDE-MARINHO, calçamento de AZULEJOS CINZAS RETANGULARES, idioma bielorrusso/russo em cirílico (ў e і exclusivos do bielorrusso), e a Catedral do Espírito Santo com duas torres visíveis ao fundo."
 tags: [país, europa, europa-leste]
 type: country

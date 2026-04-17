@@ -1,7 +1,8 @@
 ---
 title: "Hong Kong"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Região Administrativa Especial da China com trânsito pela ESQUERDA, placas BRANCAS na frente e AMARELAS atrás, sinais BILÍNGUES (inglês + chinês tradicional), arranha-céus extremamente ALTOS, postes de luz cilíndricos com base LARGA, e ausência de meio-fio listrado (ao contrário de Singapura). Conta como China para streaks."
 tags: [país, ásia, china, território]
 type: country
@@ -43,6 +44,9 @@ Faixas de pedestres **amarelas** — alguns cruzamentos têm grades amarelas.
 
 ### Ônibus DOUBLE-DECKER (confiança: **alta**)
 Ônibus principalmente de **dois andares** (double-decker) com vários esquemas de cores e anúncios laterais — ⚠️ Singapura também tem, mas com esquema verde-claro reconhecível.
+
+### Táxis VERMELHOS e VERDES (confiança: **alta**)
+Táxis em Hong Kong têm cores distintas: **vermelhos** (urbano), **verdes** (Novos Territórios) e azuis (Lantau) — divisão regional por cor.
 
 ## 4. Vegetação e Paisagem
 - Clima subtropical; vegetação verde densa

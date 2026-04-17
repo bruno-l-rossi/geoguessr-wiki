@@ -1,7 +1,8 @@
 ---
 title: "Malásia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do SE asiático com placas PRETAS e 2 seções brancas, stop sign 'BERHENTI', escudos hexagonais amarelos nas rodovias, linhas duplas brancas no centro e sinais de rua em forma de SETA exclusivos. Malay + chinês visível."
 tags: [país, ásia, sudeste-asiático]
 type: country
@@ -42,6 +43,18 @@ Letreiros e sinais com **caracteres chineses** muito comuns — 24,6% da popula�
 ### Postes de Sinalização com Listras Preto+Branco (confiança: **média**)
 Postes de sinalização com **listras preto e branco** — ⚠️ também em Sri Lanka, Butão, Índia, Nepal, Bangladesh.
 
+### Retângulos PRETOS com Texto nos Postes (confiança: **média**)
+Postes com **retângulos pretos** contendo texto (identificadores de linha elétrica/utilities) — marcador adicional da Malásia peninsular.
+
+### Meio-Fio AMARELO (confiança: **média**)
+Meio-fios **amarelos** visíveis em várias áreas — ⚠️ também em alguns países do SE asiático, mas comum na Malásia.
+
+### Bollards BRANCOS com Retângulos VERMELHOS (confiança: **alta**)
+Bollards **brancos** com retângulos **vermelhos** — design característico da Malásia; diferente do bollard indonésio.
+
+### Yellow Meranti (Árvore Tropical) (confiança: **baixa**)
+A **Yellow Meranti** (*Shorea* sp.) é uma das árvores de floresta tropical mais comuns nas estradas rurais da Malásia — tronco reto, folhagem densa verde-escura. Visível em plantações e bordas de mata.
+
 ### Marcadores de KM Branco+Azul (confiança: **alta**)
 Marcadores quilométricos com esquema de cores **branco e azul** — exclusivos da Malásia; escudo hexagonal frequentemente visível.
 
@@ -75,6 +88,7 @@ Meios-fios com listras **preto e branco** — comuns mas não exclusivos.
 ## 7. Veículos e Transporte
 - Trânsito pela **esquerda**
 - Placas pretas com 2 seções brancas
+- Postos de combustível: **Petronas** (exclusivo da Malásia — estatal e onipresente); também Caltex, Petron, BHPetrol, Neste
 
 ## 8. Regiões Distintas
 

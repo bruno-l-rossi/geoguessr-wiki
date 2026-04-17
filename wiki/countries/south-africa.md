@@ -1,7 +1,8 @@
 ---
 title: "África do Sul"
 date_created: 2026-04-09
-date_modified: 2026-04-10
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País africano com trânsito pela esquerda, linha externa AMARELA (não branca), GEN 2 EXCLUSIVO na África, postes 'bird poles' com 1-5 barras horizontais, sistema de estradas N/R exclusivo, e topos de poste distintos por cada província."
 tags: [país, áfrica, austral]
 type: country
@@ -22,7 +23,7 @@ A **África do Sul** é o país mais ao sul da África continental, com 9 proví
 ## 3. Pistas Visuais Principais
 
 ### Trânsito pela Esquerda + Linha Externa AMARELA (confiança: **alta**)
-Trânsito pela esquerda com **linhas externas amarelas** e linhas centrais brancas → África do Sul (ou Botswana, Eswatini, Lesoto, Namíbia).
+Trânsito pela esquerda com **linhas externas amarelas** e linhas centrais brancas → África do Sul (ou Botswana, Eswatini, Lesoto, Namíbia). Em algumas estradas urbanas e zonas especiais, linhas externas **vermelhas** também aparecem.
 - ⚠️ **Austrália**: praticamente nunca usa linha externa amarela → não é África do Sul
 - Linha central tripla única: 2 sólidas + 1 tracejada brancas (entre si); também 2 brancas + 1 amarela no centro
 
@@ -42,6 +43,9 @@ Sinais de direção **verdes com números amarelos**. Códigos de estrada:
 
 ### Cercas/Muros em Praticamente Todos os Edifícios (confiança: **alta**)
 Praticamente todo edifício urbano tem **muros altos, grades metálicas ou cercas elétricas** de proteção. Diferencia claramente de [[australia]] e [[new-zealand]] (trânsito esquerda, sem cercas).
+
+### Carro CAMUFLADO no Kruger National Park (confiança: **alta** se visível)
+No **Parque Nacional Kruger** (fronteira nordeste com Moçambique), o veículo do Google tem padrão de **camuflagem militar** — único em todo o mundo.
 
 ### Afrikáans nos Topônimos (confiança: **alta**)
 Sufixos Afrikáans em nomes de lugares: **-fontein, -kraal, -kop, -dorp, -nek, -berg, -burg** — presentes em todo o país (não úteis para localização regional por serem nacionais).
@@ -82,6 +86,8 @@ Triângulos brancos com borda vermelha — ⚠️ diferente de Austrália/Nova Z
 ### Infraestrutura Regional Especial
 - **Limpopo**: asfalto granulado com **toque rosado** (parecido com Texas)
 - **Northern Cape (norte)**: **ninhos de pássaros grandes** no topo dos postes
+- **Tanques JoJo** (reservatórios de água de plástico verde ou preto): muito comuns em propriedades rurais e suburbanas — identificador visual de África do Sul
+- **Árvores candelabro** (*Euphorbia* sp.): forma de candelabro com ramos que sobem verticalmente — comuns nas regiões de bushveld e áridas
 - **Mpumalanga** (entre Secunda e eMalahleni): **usinas de energia** visíveis
 
 ### Placas de Veículo por Província
@@ -103,6 +109,7 @@ Cada província tem design **diferente** de placa:
 - Placas de veículos: código provincial (GP = Gauteng, WC = Western Cape, KZN = KwaZulu-Natal, LP = Limpopo, EC = Eastern Cape, etc.)
 - Veículos de serviço público: placas **amarelas**
 - **Pickup trucks (bakkies)** muito comuns nas estradas rurais
+- Postos de combustível: **Total, Puma, Caltex, BP, Sasol, Engen, Shell** — Sasol e Engen são marcas exclusivas da África Austral
 - Trânsito pela **esquerda**
 - **Chevrons** branco e vermelho nas curvas; também chevrons pequenos e finos com uma seta ao lado das estradas
 

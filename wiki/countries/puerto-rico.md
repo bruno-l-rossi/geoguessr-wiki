@@ -1,7 +1,8 @@
 ---
 title: "Porto Rico"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Território americano no Caribe com smallcam Gen 4 (blur largo + antena visível), stop sign 'PARE', sinais de trânsito em ESPANHOL com formato americano, marcadores km VERDES ALTOS com 'km' no topo, sem placa dianteira obrigatória, e lojas americanas (Walmart) comuns. Conta como EUA. Trânsito pela direita."
 tags: [país, américas, caribe, estados-unidos, território]
 type: country
@@ -36,6 +37,9 @@ Marcadores de quilômetro **verdes**, altos, com **"km"** escrito no topo e núm
 ### Sem PLACA DIANTEIRA Obrigatória (confiança: **média**)
 Carros **sem placa dianteira** são comuns — ⚠️ ajuda a distinguir de Guam e CNMI onde placas dianteiras são mais comuns.
 
+### Placa Traseira com Faixa VERDE no Fundo (confiança: **alta**)
+Placa traseira **branca** com texto preto e **faixa verde clara** ao longo da borda inferior — design característico de Porto Rico.
+
 ### Lojas AMERICANAS (Walmart etc.) (confiança: **alta**)
 Cadeias americanas como **Walmart** muito comuns — ⚠️ distingue de países latino-americanos vizinhos onde lojas americanas são raras.
 
@@ -62,6 +66,7 @@ Casas de **concreto** com **telhados planos** + grades metálicas na frente — 
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Sem placa dianteira obrigatória
+- Postos de combustível: Total, Puma
 
 ## 8. Regiões Distintas
 

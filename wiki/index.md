@@ -1,6 +1,6 @@
 ---
 title: "GeoGuessr Wiki — Índice Mestre"
-date_modified: 2026-04-10
+date_modified: 2026-04-17
 ---
 
 # GeoGuessr Wiki — Índice Mestre
@@ -257,4 +257,4 @@ Base de conhecimento pessoal para identificação de países no GeoGuessr. Manti
 - **Países documentados:** 136
 - **Conceitos documentados:** 22
 - **Outputs gerados:** 2
-- **Última atualização:** 2026-04-10
+- **Última atualização:** 2026-04-14 (geomastr.com INGEST completo)

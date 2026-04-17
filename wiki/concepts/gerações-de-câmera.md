@@ -2,6 +2,7 @@
 title: "Gerações de Câmera do Street View"
 date_created: 2026-04-09
 date_modified: 2026-04-09
+sources: [plonkit.net, geodummy.com]
 summary: "Guia das quatro gerações de câmera do Google Street View — como identificar cada uma e o que revelam sobre localização."
 tags: [conceito, câmera, meta, street-view]
 type: concept

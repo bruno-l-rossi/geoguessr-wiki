@@ -1,7 +1,8 @@
 ---
 title: "Guia do Iniciante — GeoGuessr"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-17
+sources: [plonkit.net, somerandomstuff1.wordpress.com]
 summary: "Referência compilada do guia oficial do Plonk It para iniciantes: mecânicas do jogo, modos de jogo, tipos de pistas (sol, lado de condução, idioma, arquitetura, vegetação, infraestrutura, meta de câmera), e glossário completo de termos da comunidade."
 tags: [conceito, guia, iniciante, mecânicas, glossário]
 type: concept
@@ -130,6 +131,8 @@ Alguns países têm toda/maioria da cobertura de uma única estação — dá ao
 ### Pistas Gerais
 
 **Sol:** ao sul = Hemisfério Norte; ao norte = Hemisfério Sul. Confiável apenas quando o sol está mais próximo de N/S do que de L/O. Atenção: entre os Trópicos o sol pode aparecer do lado "errado" no verão.
+
+**Antenas parabólicas:** apontam em direção ao equador (satélites geoestacionários ficam sobre o equador). Perto do equador, a antena aponta quase verticalmente; em latitudes maiores, aponta num ângulo mais pronunciado em direção ao horizonte equatorial. Útil para estimar latitude quando outros elementos são inconclusivos.
 
 **Lado de condução:** elimina rapidamente metade dos países. Quando não há carros visíveis: sinais ficam no lado dos carros; antena do Google aparece na traseira; rastro de poeira em estradas de terra; volante fica no lado mais próximo do centro da pista.
 

@@ -1,7 +1,8 @@
 ---
 title: "Ilhas Marianas do Norte (CNMI)"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geomastr.com]
 summary: "Território americano no Pacífico com carro Google TOTALMENTE EMBAÇADO (com antena visível mais próxima da câmera que em Guam), postes de MADEIRA (vs. Guam = concreto espesso), sinais de rua AZUIS (vs. Guam = verdes), Flame Tree com flores VERMELHAS (exclusivo vs. Guam), e muitos refletores de estrada. Conta como EUA. Apenas Saipan tem cobertura de carro."
 tags: [país, oceania, pacífico, estados-unidos, território]
 type: country
@@ -38,6 +39,12 @@ Grande número de **refletores de estrada** — ⚠️ Guam também tem muitos.
 
 ### Línguas ASIÁTICAS nos Sinais Comerciais (confiança: **média**)
 Japonês, chinês, coreano e russo visíveis nos sinais comerciais — ⚠️ Guam também tem.
+
+### Marcadores de Milha com FRAÇÕES (confiança: **alta**)
+Marcadores de milha em Saipan usam **frações** (ex: "1½ MI") — sistema imperial com subdivisões fracionárias incomum em outros territórios do Pacífico.
+
+### Marcadores de Rota com Formato de COPO (confiança: **alta**)
+Sinais de rota nacional têm formato característico de **copo invertido** (cup-shaped) — ⚠️ design exclusivo das CNMI na região do Pacífico.
 
 ## 4. Vegetação e Paisagem
 - Clima **tropical** com vegetação densa e relativamente baixa

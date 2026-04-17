@@ -1,7 +1,8 @@
 ---
 title: "Portugal"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País da Península Ibérica com placa de carro branca+faixa azul E faixa AMARELA à direita (único na Europa), chevrons preto+amarelo, guardrails com refletor vermelho e casas brancas com telhado de telha laranja. Eucaliptos comuns."
 tags: [país, europa, europa-ocidental]
 type: country
@@ -53,6 +54,7 @@ Sinais de direção brancos com **seta preta que não toca as bordas** — ⚠�
 ## 4. Vegetação e Paisagem
 - **Eucaliptos**: muito comuns, especialmente no noroeste — único país da Europa com eucaliptos frequentes (⚠️ norte da Espanha/Galiza também tem)
 - **Pinheiros marítimos** (*Pinus pinaster*): casca cinza com tons avermelhados; galhos voltados para cima; norte e centro do país
+- **Pinheiro-manso** (*Pinus pinea* = stone pine): copa plana e arredondada em forma de guarda-chuva — especialmente no sul e centro
 - **Montado** (sudeste): campos abertos com **azinheiras** (*Quercus ilex*) e **sobreiros** (*Quercus suber*) esparsas — paisagem mediterrânea aberta
 - **Oliveiras**: mais comuns no leste, especialmente nordeste e sudeste
 - **Vinhedos em terraços**: região do Douro, a leste do Porto — vinhedos em terraços íngremes
@@ -64,6 +66,7 @@ Sinais de direção brancos com **seta preta que não toca as bordas** — ⚠�
 - **Azulejos** (ladrilhos decorativos de mosaico): em fachadas de casas — muito característico de Portugal
 - **Marcos quilométricos**: retângulos largos com seção colorida à esquerda dividida diagonalmente; a cada km há placa quadrada com parte superior colorida com número da rodovia
 - **Marcos de pedra pretos e brancos** (waystones): encontrados ao longo de estradas antigas
+- **Lombadas de paralelepípedo** (cobbled rumble strips): lombadas feitas de pedras de calçada, não de asfalto — características de estradas rurais portuguesas
 
 ## 6. Sinais e Textos
 - **Português**: "**Rua**" = rua (⚠️ galego usa "Rúa" com acento); Ã, Õ, Ç, Â, Ê
@@ -75,6 +78,7 @@ Sinais de direção brancos com **seta preta que não toca as bordas** — ⚠�
 ## 7. Veículos e Transporte
 - Carros europeus comuns
 - Gen 3 e Gen 4 com cobertura normal europeia
+- Postos de combustível: **Galp** (exclusivo de Portugal/Ibéria — dominante em Portugal); também Repsol, Avia, Cepsa, Intermarché
 
 ## 8. Regiões Distintas
 

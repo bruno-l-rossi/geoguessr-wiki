@@ -1,7 +1,8 @@
 ---
 title: "Eslovênia"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País alpino com bollards BRANCO+TOPO PRETO+refletor vermelho brilhante (AUT = vermelho escuro), sinais direcionais AMARELOS com borda preta (compartilhados com HR/RS/MK/ME), guardrails A-type (HR = B-type), 'kozolec' (celeiro de madeira) exclusivo, e linhas de borda LONGAS TRACEJADAS (vizinhos não usam)."
 tags: [país, europa, europa-central, balcas]
 type: country
@@ -71,6 +72,7 @@ Celeiro de madeira chamado **kozolec** — estrutura de vigas finas com espaços
 ## 7. Veículos e Transporte
 - Trânsito pela **direita**
 - Placas brancas com faixa europeia azul
+- Postos de combustível: **Petrol** (rede eslovena dominante); também MOL, OMV, Q8, Tifon
 
 ## 8. Regiões Distintas
 

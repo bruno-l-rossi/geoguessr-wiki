@@ -1,11 +1,12 @@
 ---
 title: "Geórgia do Sul e Ilhas Sandwich do Sul"
 date_created: 2026-04-10
-date_modified: 2026-04-10
+date_modified: 2026-04-14
 summary: "Território britânico no Atlântico Sul (leste das Ilhas Malvinas) com apenas poucos trekkers Gen 3: cidade abandonada de Grytviken (maquinário enferrujado + igreja de madeira branca), fjords isolados, Prion Island (focas e passarela de madeira), e trekker de barco em Hercules Bay. Conta como Reino Unido. Cobertura extremamente limitada."
 tags: [país, atlântico-sul, reino-unido, território]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # Geórgia do Sul e Ilhas Sandwich do Sul

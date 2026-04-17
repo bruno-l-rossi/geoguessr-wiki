@@ -1,7 +1,8 @@
 ---
 title: "Guam"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "Território americano no Pacífico com carro do Google com ANTENA e parte do rack visíveis (vs. Ilhas Marianas do Norte = sem rack), postes de concreto ESPESSOS (vs. CNMI = madeira), sinais de rua VERDES (vs. CNMI = azuis), e muitos refletores na estrada. Línguas asiáticas comuns nos sinais. Conta como EUA."
 tags: [país, oceania, pacífico, estados-unidos, território]
 type: country
@@ -31,8 +32,17 @@ Sinais de rua de fundo **verde** — ⚠️ CNMI = azuis.
 ### Muitos REFLETORES na Estrada (confiança: **média**)
 Quantidade muito grande de **refletores de estrada** — ⚠️ CNMI também tem muitos.
 
+### Painéis de Acesso ELÉTRICO perto de Sinais de STOP (confiança: **média**)
+Painéis de acesso elétrico (caixas metálicas) frequentemente visíveis próximos às bases dos sinais de **stop** — característica da infraestrutura de Guam.
+
+### Postes com Bases BRANCAS e AZUIS (confiança: **média**)
+Alguns postes têm bases pintadas com listras **brancas e azuis** — detalhe de infraestrutura local.
+
 ### Línguas ASIÁTICAS nos Sinais (confiança: **média**)
 Japonês, chinês, coreano e até russo visíveis nos sinais comerciais — ⚠️ CNMI também.
+
+### Ruas MAIS LARGAS e MOVIMENTADAS que CNMI (confiança: **média**)
+Guam tem ruas geralmente **mais largas e mais movimentadas** que as Ilhas Marianas do Norte — aparência mais desenvolvida/urbanizada.
 
 ## 4. Vegetação e Paisagem
 - Clima **tropical** com vegetação densa e relativamente baixa

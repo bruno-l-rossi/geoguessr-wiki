@@ -1,7 +1,8 @@
 ---
 title: "Bangladesh"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
+sources: [plonkit.net, geodummy.com, geomastr.com]
 summary: "País do Sul da Ásia com placas BRANCAS, PRETAS ou TURQUESAS (turquesa = único no mundo), script bengali com LINHA HORIZONTAL contínua no topo e formas triangulares, bollards VERMELHO+BRANCO, rickshaws verdes abundantes, postes com faixas PRETO+BRANCO, campos de arroz onipresentes e cobertura Gen 4 com 'aparência nebulosa'."
 tags: [país, ásia, sul-asiatico]
 type: country
@@ -37,6 +38,9 @@ Placas **turquesas** — ⚠️ **única no mundo**; Bangladesh também tem plac
 
 ### Postes de Sinalização com Faixas PRETO+BRANCO (confiança: **média**)
 Postes de sinais frequentemente com **faixas preto+branco** — ⚠️ também em Sri Lanka, Butão, Índia, Nepal e Malásia.
+
+### Postes com "NINHO DE FIOS" (confiança: **média**)
+Postes elétricos frequentemente com enorme **aglomerado caótico de fios** ("nest of wires") — reflexo da infraestrutura improvisada; distinto da India que tem menos densidade de cobertura.
 
 ### Corpos d'Água e Campos Agrícolas Adjacentes (confiança: **alta**)
 Frequentemente visíveis **corpos d'água** e **campos agrícolas** ao lado das estradas — Bangladesh é um delta muito plano.

@@ -1,11 +1,12 @@
 ---
 title: "Dinamarca"
 date_created: 2026-04-09
-date_modified: 2026-04-09
-summary: "País nórdico com placas 'Parrot' únicas (seção amarela à esquerda), bollards brancos com listra laranja escura (únicos), sinais de direção emoldurados por canos (únicos) e linhas de estrada externas com pequenos quadrados brancos. Letras Æ, Ø, Å compartilhadas com o norueguês."
+date_modified: 2026-04-14
+summary: "País nórdico com placas 'Parrot' únicas (seção amarela à esquerda), bollards brancos com listra laranja escura e refletores VERDES (únicos), sinais de direção emoldurados por canos (únicos) e linhas de estrada externas com pequenos quadrados brancos. Letras Æ, Ø, Å compartilhadas com o norueguês."
 tags: [país, europa, europa-norte, escandinavia]
 type: country
 status: draft
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 ---
 
 # Dinamarca
@@ -22,8 +23,8 @@ A **Dinamarca** fica no norte da Europa, na Península Jutlândia e em diversas 
 ### Placas "PARROT" com Seção AMARELA à Esquerda (confiança: **alta**)
 Placas com **seção amarela** à esquerda (além das brancas padrão) — **únicas da Dinamarca**. Placas comerciais = **amarelas** inteiramente. ⚠️ Países Baixos/Luxemburgo/UK = placas amarelas para veículos privados, não para comerciais.
 
-### Bollards BRANCOS com Listra LARANJA ESCURA (confiança: **alta**)
-Bollards brancos com refletor amarelo e **listra laranja escura** — **únicos da Dinamarca** (variante verde também existe). ⚠️ Bélgica = bollard similar mas SEM listra laranja.
+### Bollards BRANCOS com Listra LARANJA ESCURA e Refletores VERDES (confiança: **alta**)
+Bollards brancos com **listra laranja escura** — **únicos da Dinamarca** (variante verde também existe). ⚠️ Bélgica = bollard similar mas SEM listra laranja. Adicionalmente: **refletores VERDES** nos bollards — presentes em quase todas as estradas dinamarquesas e extremamente distintos (nenhum outro país europeu usa refletor verde).
 
 ### Sinais de Direção Emoldurados por CANOS (confiança: **alta**)
 Sinais de direção **baixos ao chão** e emoldurados por **tubos/canos** — vermelho+branco ou azul+branco; seta direcional incorporada no fundo; estilo **único da Dinamarca**. Poste de sinalização com cano **dobrado ao redor do sinal** = único da Dinamarca.
@@ -54,6 +55,7 @@ Postes padrão quase inexistentes — electricidade distribuída via **grandes l
 - Alguns telhados **corrugados cinzas** (similares aos Bálticos)
 - Edifícios históricos com **estrutura de madeira** (timber frame) nas paredes
 - Sinais de rua: fundo **azul** com texto branco; sufixo "**vej**"
+- **Sinais de cidade/vila com texto VERMELHO** — mais comuns em Dinamarca que nos países vizinhos
 - Paradas de ônibus: **preto+amarelo** (moderno) ou azul+branco (antigo); cada região tem sinal distinto
 - Caixas postais: estilo **PostNord** único (vermelho)
 - Postos de gasolina: **Ingo** (também SE), **Ok** (também NL), **Uno-X** e **Yx** (também NO)
@@ -87,7 +89,7 @@ Postes padrão quase inexistentes — electricidade distribuída via **grandes l
 
 ## 10. Resumo Rápido
 - **Placa "Parrot" (seção amarela à esquerda)** → exclusivo da Dinamarca
-- **Bollard branco com listra laranja escura** → exclusivo da Dinamarca
+- **Bollard branco com listra laranja escura + refletor VERDE** → exclusivo da Dinamarca
 - **Sinais de direção emoldurados por canos** → exclusivo da Dinamarca
 - **Linhas externas com pequenos quadrados brancos** → característica única da Dinamarca
 - **Guardrails tipo B sem refletores** → um dos poucos países europeus

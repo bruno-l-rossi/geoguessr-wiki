@@ -1,11 +1,12 @@
 ---
 title: "China"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-14
 summary: "País do leste asiático com toda a cobertura continental em TRIPÉ (não carro), caracteres chineses simplificados e placas AZUIS com texto branco. Cobertura muito limitada e concentrada na costa leste; parte escondida."
 tags: [país, ásia, leste-asiático]
 type: country
 status: draft
+sources: [geomastr.com]
 ---
 
 # China

@@ -1,7 +1,8 @@
 ---
 title: "Coreia do Sul"
 date_created: 2026-04-09
-date_modified: 2026-04-09
+date_modified: 2026-04-12
+sources: [plonkit.net, geotips.net, geodummy.com, geomastr.com]
 summary: "País do leste asiático com Hangul único (círculos nas letras), listras preto+amarelo diagonais nos postes, sinal de pedestres pentagonal azul e número de casa em formato de casinha azul. Gen 3 dominante, sem antena."
 tags: [país, ásia, leste-asiático]
 type: country
@@ -46,6 +47,9 @@ Sinais triangulares de aviso com fundo **amarelo** — ⚠️ circular de veloci
 ### Linhas Centrais AMARELAS (confiança: **alta**)
 Linhas do **centro da estrada** são **amarelas**; linhas externas são brancas.
 
+### Bollards BRANCOS com Listra PRETA e Ponto AMARELO (confiança: **alta**)
+Bollards coreanos têm corpo **branco**, listra **preta** horizontal no meio e **ponto/refletor amarelo** — design distinto de outros países asiáticos.
+
 ## 4. Vegetação e Paisagem
 - País predominantemente **montanhoso** — raramente sem colinas/montanhas visíveis
 - Pinheiros no inverno/outono muito característicos
@@ -70,6 +74,7 @@ Linhas do **centro da estrada** são **amarelas**; linhas externas são brancas.
 - **Gen 3**: carro preto/branco/prata, sem antena
 - Placas: pré-2006 = curtas verdes; pós-2006 = brancas (particular) ou amarelas (comercial)
 - Carros coreanos (Hyundai, Kia, Samsung) muito comuns
+- Postos de combustível: **SK Energy, GS Caltex, Hyundai Oilbank, S-Oil, E1** — exclusivos da Coreia do Sul
 
 ## 8. Regiões Distintas
 
