@@ -1,71 +1,105 @@
 # 🌍 GeoScout Wiki
 
-Base de conhecimento para identificação de países no GeoGuessr, construída para servir como material de estudo e consulta durante o jogo.
+Base de conhecimento para identificação de países no GeoGuessr, combinada com um agente interativo no estilo Akinator que faz perguntas progressivas para adivinhar onde você está no mapa.
 
 ---
 
 ## O que é
 
-Uma coleção estruturada de guias por país com foco em pistas visuais do Google Street View — o tipo de informação que você precisa para identificar rapidamente onde está no mapa. Cada página cobre câmera, vegetação, arquitetura, placas, bollards, regiões e pegadinhas comuns.
+Dois produtos complementares:
 
-O wiki alimenta o **GeoScout**, um agente de IA que, dado o que você descreve na tela, consulta a base e indica o país mais provável com raciocínio e alternativas.
+**1. Wiki de países** — 136 países documentados com foco em pistas visuais do Google Street View: câmera, vegetação, arquitetura, placas, bollards, linhas de pista, scripts e muito mais.
 
----
-
-## Cobertura
-
-- **+140 países** com guias individuais
-- **Conceitos transversais**: gerações de câmera, lado de direção, tipos de bollards, alfabetos, vegetação por bioma, estilos arquitetônicos regionais
-- **Guias gerais**: introdução ao GeoGuessr, países de spillover
+**2. GeoScout App** — aplicativo web estático que faz perguntas progressivas ao usuário e vai eliminando países até chegar numa previsão com nível de confiança. Zero API, zero backend, 100% gratuito.
 
 ---
 
-## Metodologia
+## GeoScout App
 
-O conteúdo foi construído em três etapas:
+O app roda inteiramente no navegador — sem servidor, sem API key, sem custo. Basta abrir o arquivo `geoscout-akinator.html`.
 
-**1. Coleta de fontes**
-Páginas de referência da comunidade GeoGuessr foram capturadas via [Obsidian Web Clipper](https://obsidian.md/clipper) e armazenadas em `raw/countries/`. A fonte primária é o [Plonk It](https://www.plonkit.net), principal guia colaborativo da comunidade.
+**Como funciona:**
+- 28 perguntas organizadas em 2 fases: geral (10 perguntas) e específica (18 perguntas)
+- Cada resposta pontua todos os 136 países simultaneamente via sistema de scoring
+- A previsão e o nível de confiança atualizam em tempo real após cada resposta
+- Os países candidatos ainda em jogo ficam visíveis abaixo da previsão
+- Alertas automáticos para combinações de altíssima confiança (ex: "DUR = Turquia 99%")
+- Botão de desfazer em cada resposta e reset para nova rodada
 
-**2. Compilação automatizada**
-Os arquivos brutos foram processados pelo [Claude Code](https://claude.ai/code) usando um schema de instruções (`CLAUDE.md`) que define a estrutura de cada página, convenções de nomenclatura e operações de ingestão. O agente lê as fontes, extrai as informações relevantes e gera páginas padronizadas em Markdown com wikilinks entre países e conceitos relacionados.
+**Fase geral** cobre os atributos mais eliminatórios: script das placas, sinal de PARE, qualidade da câmera, lado de direção, linhas de pista, vegetação, bollards, solo.
 
-**3. Manutenção contínua**
-Novas fontes são adicionadas a `raw/` e processadas incrementalmente — sem reescrever o que já existe. Health checks periódicos identificam lacunas, contradições e conteúdo desatualizado.
+**Fase específica** aprofunda com: chevrons, postes de utilidade, guardrails, diacríticos latinos, variante cirílica, script asiático, tipo e cor do carro Google, vegetação exclusiva, contexto geográfico, postos de combustível e arquitetura.
 
 ---
 
-## Estrutura
+## Wiki — Estrutura e Cobertura
 
 ```
 wiki/
-├── countries/     # Um arquivo .md por país
-├── concepts/      # Conceitos transversais (câmera, bollards, etc.)
-├── outputs/       # Respostas a consultas e relatórios
-└── index.md       # Índice mestre
+├── countries/      # 136 países — um arquivo .md por país
+├── concepts/       # Conceitos transversais (câmera, bollards, scripts, etc.)
+├── outputs/        # Análises, relatórios e outputs do agente
+│   ├── countries-attributes.json   # Dataset com 30 atributos por país
+│   ├── questions-extended.json     # Banco de perguntas do app
+│   └── attribute-analysis.md      # Análise estratégica de atributos
+└── index.md        # Índice mestre
 raw/
-└── countries/     # Fontes brutas antes da compilação
-CLAUDE.md          # Schema de instruções para o agente
+└── countries/      # Fontes brutas antes da compilação
+CLAUDE.md           # Schema de instruções para o agente
 ```
+
+**Campos por país no dataset:**
+`driving_side` · `scripts` · `latin_diacritics` · `stop_sign` · `camera_special` · `camera_blur` · `google_car_type` · `google_car_color` · `road_line_outside` · `road_line_center` · `road_line_exclusive` · `bollard_type` · `chevron` · `utility_pole_type` · `guardrail_color` · `vegetation_dominant` · `vegetation_exclusive` · `soil_color` · `continent` · `is_island` · `is_microstate` · `is_spillover` · `exclusive_features` · `confusable_with` · `fuel_brands_exclusive` · `confidence_score`
 
 ---
 
-## Como usar com o GeoScout
+## Metodologia de construção
+
+**1. Coleta de fontes**
+Páginas de referência capturadas via Obsidian Web Clipper e armazenadas em `raw/countries/`.
+
+**2. Compilação automatizada**
+Processamento via [Claude Code](https://claude.ai/code) usando o schema `CLAUDE.md` — o agente lê as fontes, extrai informações e gera páginas padronizadas em Markdown com wikilinks entre países e conceitos.
+
+**3. Extração de atributos**
+Script de varredura que lê todos os arquivos `wiki/countries/*.md` e gera o `countries-attributes.json` com atributos estruturados por país, priorizados por poder de eliminação.
+
+**4. Manutenção contínua**
+Novas fontes são adicionadas a `raw/` e processadas incrementalmente. Health checks periódicos identificam lacunas e contradições.
+
+---
+
+## Usar com Claude Projects (alternativa ao app)
+
+Para uma experiência de chat livre com o wiki como contexto:
 
 1. Acesse [claude.ai](https://claude.ai) e crie um **Project** chamado `GeoScout`
-2. Cole o prompt do agente nas instruções do Project
-3. Faça upload dos arquivos de `wiki/countries/`, `wiki/concepts/` e `wiki/index.md`
-4. Inicie uma nova conversa e descreva o que você vê na tela
+2. Cole nas instruções do projeto:
 
-O Claude consulta apenas os arquivos do wiki — sem conhecimento externo.
+```
+Você é o GeoScout, um especialista em GeoGuessr. Sua ÚNICA fonte de conhecimento são os arquivos do wiki anexados a este projeto — não use conhecimento externo.
+
+Quando o usuário descrever o que vê na tela do GeoGuessr, responda SEMPRE neste formato:
+
+🌍 **País mais provável:** [Nome] — confiança: alta / média / baixa
+**Por quê:** [quais pistas do wiki confirmam essa escolha]
+**Alternativas:** [2-3 outros candidatos e o que os diferencia]
+**Para confirmar:** [1-2 pistas adicionais que resolveriam a dúvida]
+
+Responda sempre em português.
+```
+
+3. Faça upload dos arquivos de `wiki/countries/`, `wiki/concepts/` e `wiki/index.md`
 
 ---
 
 ## Fontes
 
-- [Plonk It](https://www.plonkit.net) — guia principal por país
+- [Plonk It](https://www.plonkit.net) — guia principal por país (fonte primária)
 - [GeoTips](https://geotips.net) — dicas da comunidade competitiva
 - [GeoHints](https://geohints.com) — referência de metas visuais
+- [Geomastr](https://geomastr.com) — dados factuais por país
+- [GeoDummy](https://geodummy.com) — repositório histórico
 
 ---
 

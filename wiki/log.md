@@ -6,6 +6,36 @@ title: "GeoGuessr Wiki — Log de Operações"
 
 ---
 
+## 2026-04-18 — EXTRAÇÃO: countries-attributes.json — dataset estruturado completo
+
+**Operação:** Extração de atributos estruturados de todos os 136 países do wiki para JSON  
+**Método:** 5 agentes em paralelo (lotes), cada um lendo ~27-31 arquivos de `wiki/countries/`  
+**Saída:** `wiki/outputs/countries-attributes.json`
+
+**Conteúdo:**
+- 136 países, 30 campos por país
+- Campos: driving_side, scripts, latin_diacritics, stop_sign, camera_dominant/special, gen2_abundant, road_line_outside/center/exclusive, bollard_type, chevron, utility_pole_type, guardrail_color, vegetation_dominant/exclusive, soil_color, continent, is_island, is_microstate, is_spillover, exclusive_features, confusable_with, fuel_brands_exclusive, confidence_score
+- Distribuição: 21 países Europa Oeste, 17 África, 11 Oceania, 10 América do Sul, 9 Oriente Médio
+
+---
+
+## 2026-04-17 — ANÁLISE: attribute-analysis.md — sistema Akinator
+
+**Operação:** Análise estratégica de atributos para sistema de identificação estilo Akinator  
+**Método:** Varredura de ~90 arquivos de países + 22 conceitos via agente Explore; síntese manual  
+**Saída:** `wiki/outputs/attribute-analysis.md`
+
+**Conteúdo produzido:**
+- Ranking global de 33 atributos em 3 tiers (PE > 95%, PE 70-95%, PE 40-70%)
+- Tabelas detalhadas: bollards (17 tipos), chevrons (9 combinações), vegetação (17 zonas)
+- Árvore de decisão de 5 níveis baseada em dados reais do wiki
+- Atributos por continente com pares confusos e discriminadores
+- Schema JSON completo (`countries-data.json`) com 25 atributos tipados
+- Ranking de prioridade de implementação (1-25)
+- Combinações de alta sinergia e lacunas identificadas no wiki
+
+---
+
 ## 2026-04-17 — MANUTENÇÃO: campo sources adicionado a todos os conceitos
 
 **Operação:** Manutenção de frontmatter (20 arquivos)  

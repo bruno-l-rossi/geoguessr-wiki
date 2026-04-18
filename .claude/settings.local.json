@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:www.plonkit.net)",
+      "Bash(grep -oP '\\\\[\\\\[\\([^\\\\]]+\\)\\\\]\\\\]' /Users/bruno-l-rossi/Documents/geoguessr-wiki/wiki/countries/*.md /Users/bruno-l-rossi/Documents/geoguessr-wiki/wiki/concepts/*.md)",
+      "Bash(python3:*)",
+      "Bash(zip -r geoscout-wiki.zip countries/ concepts/ index.md)",
+      "WebFetch(domain:geotips.net)",
+      "WebFetch(domain:geodummy.com)",
+      "WebFetch(domain:geomastr.com)",
+      "Bash(ls /Users/bruno-l-rossi/Documents/geoguessr-wiki/wiki/countries/*.md)",
+      "WebFetch(domain:somerandomstuff1.wordpress.com)",
+      "Bash(find /Users/bruno-l-rossi/Documents/geoguessr-wiki/wiki/countries -type f -name '*.md' -exec bash -c ':*)",
+      "Bash(sort -u echo \"Total files: $\\(wc -l < /tmp/all_files.txt\\)\" echo \"Total referenced: $\\(wc -l < /tmp/referenced_files.txt\\)\")",
+      "Bash(grep -v \"^$\")",
+      "Bash(sort -u echo \"Total country files: $\\(wc -l < /tmp/all_country_files.txt\\)\" echo \"Total country refs in index: $\\(wc -l < /tmp/index_country_refs.txt\\)\" echo \"\" echo \"Files NOT in index:\" comm -23 /tmp/all_country_files.txt /tmp/index_country_refs.txt)",
+      "Bash(grep -l \"Resumo Rápido\" /Users/bruno-l-rossi/Documents/geoguessr-wiki/wiki/countries/*.md)",
+      "Bash(grep:*)"
+    ]
+  }
+}

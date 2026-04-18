@@ -3,657 +3,632 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GeoScout — GeoGuessr Wiki Agent</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<title>GeoScout</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --bg: #0a0e14;
-    --surface: #111820;
-    --surface2: #161e28;
-    --border: #1e2d3d;
-    --accent: #00d4aa;
-    --accent2: #ff6b35;
-    --accent3: #4fc3f7;
-    --text: #e8f0fe;
-    --text-muted: #5a7a8a;
-    --text-dim: #2a4a5a;
-  }
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#0a0e14;--s1:#111820;--s2:#161e28;--border:#1e2d3d;
+  --acc:#00d4aa;--acc2:#ff6b35;--acc3:#4fc3f7;
+  --text:#e8f0fe;--muted:#5a7a8a;--dim:#2a4a5a;
+}
+body{font-family:'Syne',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,212,170,.012) 2px,rgba(0,212,170,.012) 4px);pointer-events:none;z-index:1000}
 
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+/* LAYOUT */
+#app{max-width:600px;margin:0 auto;padding:1rem 1rem 4rem}
 
-  body {
-    font-family: 'Syne', sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
+/* HEADER */
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:1rem 0 1.5rem}
+.logo{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;letter-spacing:-.3px}
+.logo-dot{width:8px;height:8px;border-radius:50%;background:var(--acc);box-shadow:0 0 8px var(--acc);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.logo span{color:var(--acc)}
+.reset-btn{font-size:12px;color:var(--muted);background:none;border:.5px solid var(--border);border-radius:8px;padding:5px 12px;cursor:pointer;font-family:'Syne',sans-serif}
+.reset-btn:hover{border-color:var(--acc);color:var(--acc)}
 
-  body::before {
-    content: '';
-    position: fixed;
-    inset: 0;
-    background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,212,170,0.012) 2px, rgba(0,212,170,0.012) 4px);
-    pointer-events: none;
-    z-index: 1000;
-  }
+/* PREDICTION CARD */
+.pred-card{background:var(--s1);border:.5px solid var(--border);border-radius:14px;padding:1.25rem;margin-bottom:1rem}
+.pred-label{font-size:11px;color:var(--dim);letter-spacing:.06em;margin-bottom:6px;font-family:'JetBrains Mono',monospace;text-transform:uppercase}
+.pred-name{font-size:26px;font-weight:800;letter-spacing:-1px;margin-bottom:12px;line-height:1}
+.pred-name.empty{font-size:15px;color:var(--muted);font-weight:400}
+.conf-row{display:flex;align-items:center;gap:10px}
+.conf-bg{flex:1;height:3px;background:var(--s2);border-radius:2px;overflow:hidden}
+.conf-fill{height:100%;background:linear-gradient(90deg,var(--acc),var(--acc3));border-radius:2px;transition:width .5s ease}
+.conf-pct{font-size:13px;font-weight:500;color:var(--acc);min-width:36px;text-align:right;font-family:'JetBrains Mono',monospace}
 
-  /* HEADER */
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 16px 32px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
+/* ALIVE */
+.alive-wrap{margin-top:10px;padding-top:10px;border-top:.5px solid var(--border)}
+.alive-label{font-size:11px;color:var(--dim);margin-bottom:6px;font-family:'JetBrains Mono',monospace}
+.alive-chips{display:flex;flex-wrap:wrap;gap:5px}
+.chip{font-size:11px;color:var(--muted);background:var(--s2);border-radius:99px;padding:3px 9px;border:.5px solid var(--border)}
+.chip.top{border-color:rgba(0,212,170,.3);color:var(--acc)}
+.show-more-btn{font-size:11px;color:var(--acc);cursor:pointer;background:none;border:none;font-family:'Syne',sans-serif;padding:4px 0 0;display:block}
 
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
+/* PHASE BADGE */
+.phase-badge{display:inline-flex;align-items:center;gap:6px;font-size:11px;color:var(--muted);font-family:'JetBrains Mono',monospace;margin-bottom:1rem}
+.phase-dot{width:6px;height:6px;border-radius:50%;background:var(--acc3)}
 
-  .logo-icon {
-    width: 38px;
-    height: 38px;
-    background: linear-gradient(135deg, var(--accent), var(--accent3));
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 20px;
-  }
+/* QUESTION CARD */
+.q-card{background:var(--s1);border:.5px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:.75rem}
+.q-head{padding:1rem 1.25rem .75rem}
+.q-num{font-size:11px;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-bottom:5px}
+.q-text{font-size:16px;font-weight:500;line-height:1.45;color:var(--text)}
+.q-opts{padding:0 .75rem .75rem;display:flex;flex-direction:column;gap:6px}
+.opt{display:flex;align-items:center;gap:10px;padding:10px 12px;background:var(--s2);border:.5px solid var(--border);border-radius:10px;cursor:pointer;font-size:13px;color:var(--text);transition:border-color .15s;width:100%;text-align:left;font-family:'Syne',sans-serif}
+.opt:hover{border-color:var(--acc)}
+.opt.skip{color:var(--muted)}
+.opt-icon{font-size:15px;flex-shrink:0;width:22px;text-align:center}
+.opt-count{font-size:10px;color:var(--dim);font-family:'JetBrains Mono',monospace;margin-left:auto;flex-shrink:0}
 
-  .logo-name {
-    font-size: 20px;
-    font-weight: 800;
-    letter-spacing: -0.5px;
-  }
+/* DONE */
+.done-wrap{text-align:center;padding:2rem 1rem}
+.done-sub{font-size:12px;color:var(--muted);margin-bottom:8px;font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+.done-country{font-size:32px;font-weight:800;letter-spacing:-1.5px;margin-bottom:6px}
+.done-conf{font-size:14px;color:var(--acc);margin-bottom:1.5rem}
+.done-btn{padding:12px 28px;background:linear-gradient(135deg,var(--acc),#00b894);color:#000;border:none;border-radius:10px;font-family:'Syne',sans-serif;font-size:14px;font-weight:700;cursor:pointer}
 
-  .logo-name span { color: var(--accent); }
+/* HISTORY */
+.hist-wrap{display:flex;flex-direction:column;gap:5px;margin-top:.5rem}
+.hist-item{display:flex;align-items:center;justify-content:space-between;padding:7px 12px;background:var(--s2);border-radius:8px;border:.5px solid var(--border)}
+.hist-q{font-size:11px;color:var(--muted);flex:1;margin-right:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hist-a{font-size:11px;font-weight:500;color:var(--text);white-space:nowrap}
+.hist-undo{font-size:11px;color:var(--dim);cursor:pointer;background:none;border:none;padding:0 0 0 8px;flex-shrink:0}
+.hist-undo:hover{color:var(--acc)}
 
-  .header-badge {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    padding: 4px 10px;
-    border-radius: 20px;
-  }
+/* COMBO ALERT */
+.combo-alert{background:rgba(0,212,170,.08);border:.5px solid rgba(0,212,170,.3);border-radius:10px;padding:10px 14px;margin-bottom:.75rem;font-size:13px;line-height:1.5}
+.combo-alert strong{color:var(--acc)}
 
-  /* HERO */
-  .hero {
-    text-align: center;
-    padding: 64px 32px 48px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 700px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(0,212,170,0.07) 0%, transparent 70%);
-    pointer-events: none;
-  }
-
-  .hero-globe {
-    font-size: 64px;
-    display: block;
-    margin-bottom: 20px;
-    filter: drop-shadow(0 0 28px rgba(0,212,170,0.5));
-    animation: float 4s ease-in-out infinite;
-  }
-
-  @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(-5deg); }
-    50% { transform: translateY(-12px) rotate(5deg); }
-  }
-
-  .hero h1 {
-    font-size: 44px;
-    font-weight: 800;
-    letter-spacing: -2px;
-    margin-bottom: 12px;
-    line-height: 1.05;
-  }
-
-  .hero h1 span { color: var(--accent); }
-
-  .hero-sub {
-    font-size: 16px;
-    color: var(--text-muted);
-    max-width: 500px;
-    margin: 0 auto 32px;
-    line-height: 1.7;
-  }
-
-  .hero-pills {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 0;
-  }
-
-  .pill {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 14px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    font-size: 13px;
-    color: var(--text-muted);
-  }
-
-  .pill-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
-
-  /* MAIN */
-  .main {
-    flex: 1;
-    max-width: 860px;
-    margin: 0 auto;
-    padding: 48px 32px 80px;
-    width: 100%;
-  }
-
-  /* SECTION LABEL */
-  .section-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .section-label::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-
-  /* STEPS */
-  .steps {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 56px;
-  }
-
-  .step {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: hidden;
-    transition: border-color 0.2s;
-  }
-
-  .step:hover { border-color: rgba(0,212,170,0.3); }
-
-  .step-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 24px 28px;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .step-num {
-    width: 40px;
-    height: 40px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, var(--accent), var(--accent3));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 800;
-    color: #000;
-    flex-shrink: 0;
-  }
-
-  .step-info { flex: 1; }
-
-  .step-title {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 4px;
-    letter-spacing: -0.3px;
-  }
-
-  .step-desc {
-    font-size: 14px;
-    color: var(--text-muted);
-    line-height: 1.5;
-  }
-
-  .step-time {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--accent);
-    background: rgba(0,212,170,0.1);
-    border: 1px solid rgba(0,212,170,0.2);
-    padding: 4px 10px;
-    border-radius: 20px;
-    white-space: nowrap;
-    flex-shrink: 0;
-    margin-top: 2px;
-  }
-
-  .step-body {
-    padding: 0 28px 24px 88px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  /* Sub-steps */
-  .substep {
-    display: flex;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 14px 16px;
-    background: var(--surface2);
-    border-radius: 10px;
-    border: 1px solid var(--border);
-  }
-
-  .substep-icon {
-    font-size: 18px;
-    flex-shrink: 0;
-    margin-top: 1px;
-  }
-
-  .substep-text {
-    font-size: 14px;
-    line-height: 1.6;
-    color: var(--text);
-  }
-
-  .substep-text strong { color: var(--accent); }
-  .substep-text code {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    background: rgba(0,212,170,0.1);
-    color: var(--accent);
-    padding: 2px 7px;
-    border-radius: 4px;
-  }
-
-  /* Prompt box */
-  .prompt-box {
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .prompt-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 16px;
-    background: var(--surface2);
-    border-bottom: 1px solid var(--border);
-  }
-
-  .prompt-label {
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .copy-btn {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    padding: 5px 12px;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 11px;
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: all 0.2s;
-  }
-
-  .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
-  .copy-btn.copied { border-color: var(--accent); color: var(--accent); }
-
-  .prompt-content {
-    padding: 16px;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 12px;
-    color: var(--text-muted);
-    line-height: 1.7;
-    white-space: pre-wrap;
-    max-height: 180px;
-    overflow-y: auto;
-  }
-
-  /* Download section */
-  .download-area {
-    background: var(--surface2);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-  }
-
-  .download-info { flex: 1; }
-
-  .download-title {
-    font-size: 14px;
-    font-weight: 700;
-    margin-bottom: 3px;
-  }
-
-  .download-sub {
-    font-size: 12px;
-    color: var(--text-muted);
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  .download-btn {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 10px 20px;
-    background: linear-gradient(135deg, var(--accent), #00b894);
-    color: #000;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Syne', sans-serif;
-    font-size: 13px;
-    font-weight: 700;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-    white-space: nowrap;
-  }
-
-  .download-btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0,212,170,0.3);
-  }
-
-  /* CTA final */
-  .cta-section {
-    background: linear-gradient(135deg, rgba(0,212,170,0.08), rgba(79,195,247,0.05));
-    border: 1px solid rgba(0,212,170,0.2);
-    border-radius: 20px;
-    padding: 48px 40px;
-    text-align: center;
-  }
-
-  .cta-section h2 {
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: -1px;
-    margin-bottom: 12px;
-  }
-
-  .cta-section h2 span { color: var(--accent); }
-
-  .cta-section p {
-    font-size: 15px;
-    color: var(--text-muted);
-    margin-bottom: 28px;
-    line-height: 1.6;
-  }
-
-  .cta-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 16px 36px;
-    background: linear-gradient(135deg, var(--accent), #00b894);
-    color: #000;
-    border: none;
-    border-radius: 12px;
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 800;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-    letter-spacing: -0.3px;
-  }
-
-  .cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(0,212,170,0.35);
-  }
-
-  /* FOOTER */
-  footer {
-    text-align: center;
-    padding: 24px;
-    border-top: 1px solid var(--border);
-    font-size: 12px;
-    color: var(--text-dim);
-    font-family: 'JetBrains Mono', monospace;
-  }
-
-  footer a { color: var(--accent); text-decoration: none; }
-
-  @media (max-width: 640px) {
-    .hero h1 { font-size: 32px; }
-    .main { padding: 32px 16px 60px; }
-    header { padding: 14px 20px; }
-    .step-header { padding: 20px; }
-    .step-body { padding: 0 20px 20px 20px; }
-    .step-num { width: 34px; height: 34px; font-size: 15px; }
-    .download-area { flex-direction: column; text-align: center; }
-    .cta-section { padding: 32px 24px; }
-  }
+@media(max-width:480px){
+  .pred-name{font-size:22px}
+  .q-text{font-size:15px}
+}
 </style>
 </head>
 <body>
-
-<header>
-  <div class="logo">
-    <div class="logo-icon">🌍</div>
-    <div class="logo-name">Geo<span>Scout</span></div>
+<div id="app">
+  <div class="hdr">
+    <div class="logo"><div class="logo-dot"></div>Geo<span>Scout</span></div>
+    <button class="reset-btn" onclick="reset()">↺ Nova rodada</button>
   </div>
-  <div class="header-badge">powered by @rideblan33</div>
-</header>
 
-<!-- HERO -->
-<div class="hero">
-  <span class="hero-globe">🗺️</span>
-  <h1>Seu agente<br><span>GeoGuessr</span> pessoal</h1>
-  <p class="hero-sub">Configure uma vez e use para sempre — o GeoScout consulta uma base de conhecimento com mais de 140 países para te ajudar a identificar onde você está no mapa.</p>
-  <div class="hero-pills">
-    <div class="pill"><div class="pill-dot"></div> 100% gratuito</div>
-    <div class="pill"><div class="pill-dot"></div> Configuração em 5 minutos</div>
-    <div class="pill"><div class="pill-dot"></div> +140 países</div>
-    <div class="pill"><div class="pill-dot"></div> Sem limite de uso</div>
+  <div class="pred-card">
+    <div class="pred-label">previsão atual</div>
+    <div class="pred-name empty" id="pred-name">Responda a primeira pergunta...</div>
+    <div class="conf-row">
+      <div class="conf-bg"><div class="conf-fill" id="conf-fill" style="width:0%"></div></div>
+      <div class="conf-pct" id="conf-pct">—</div>
+    </div>
+    <div class="alive-wrap" id="alive-wrap" style="display:none">
+      <div class="alive-label" id="alive-label"></div>
+      <div class="alive-chips" id="alive-chips"></div>
+      <button class="show-more-btn" id="show-more-btn" onclick="toggleMore()" style="display:none"></button>
+    </div>
   </div>
+
+  <div id="combo-area"></div>
+  <div id="q-area"></div>
+  <div id="hist-area"></div>
 </div>
-
-<!-- MAIN -->
-<div class="main">
-
-  <div class="section-label">como configurar</div>
-
-  <div class="steps">
-
-    <!-- STEP 1 -->
-    <div class="step">
-      <div class="step-header">
-        <div class="step-num">1</div>
-        <div class="step-info">
-          <div class="step-title">Crie uma conta gratuita no Claude.ai</div>
-          <div class="step-desc">O GeoScout roda dentro do Claude.ai — você vai precisar de uma conta para usar.</div>
-        </div>
-        <div class="step-time">~1 min</div>
-      </div>
-      <div class="step-body">
-        <div class="substep">
-          <div class="substep-icon">🌐</div>
-          <div class="substep-text">Acesse <strong>claude.ai</strong> e clique em <strong>"Sign up"</strong>. Você pode criar conta com Google, Apple ou e-mail — é gratuito.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">✅</div>
-          <div class="substep-text">O plano gratuito é suficiente para usar o GeoScout normalmente.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- STEP 2 -->
-    <div class="step">
-      <div class="step-header">
-        <div class="step-num">2</div>
-        <div class="step-info">
-          <div class="step-title">Crie um novo Project chamado "GeoScout"</div>
-          <div class="step-desc">Os Projects guardam o contexto do wiki permanentemente — sem precisar colar nada a cada uso.</div>
-        </div>
-        <div class="step-time">~1 min</div>
-      </div>
-      <div class="step-body">
-        <div class="substep">
-          <div class="substep-icon">📁</div>
-          <div class="substep-text">Na barra lateral esquerda, clique em <strong>"Projects"</strong> → <strong>"New Project"</strong>. Nomeie como <code>GeoScout</code>.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">⚙️</div>
-          <div class="substep-text">Clique em <strong>"Set project instructions"</strong> e cole o prompt abaixo — ele transforma o Claude no agente GeoScout.</div>
-        </div>
-        <div class="prompt-box">
-          <div class="prompt-header">
-            <div class="prompt-label">Prompt do agente — copie e cole nas instruções do Project</div>
-            <button class="copy-btn" onclick="copyPrompt(this)">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-              Copiar
-            </button>
-          </div>
-          <div class="prompt-content" id="agent-prompt">Você é o GeoScout, um especialista em GeoGuessr. Sua ÚNICA fonte de conhecimento são os arquivos do wiki anexados a este projeto — não use conhecimento externo.
-
-Quando o usuário descrever o que vê na tela do GeoGuessr, responda SEMPRE neste formato:
-
-🌍 **País mais provável:** [Nome] — confiança: alta / média / baixa
-**Por quê:** [quais pistas do wiki confirmam essa escolha]
-**Alternativas:** [2-3 outros candidatos e o que os diferencia]
-**Para confirmar:** [1-2 pistas adicionais que resolveriam a dúvida]
-
-Se as pistas forem insuficientes, pergunte o que mais o usuário pode observar.
-Responda sempre em português.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- STEP 3 -->
-    <div class="step">
-      <div class="step-header">
-        <div class="step-num">3</div>
-        <div class="step-info">
-          <div class="step-title">Baixe e importe a base de conhecimento</div>
-          <div class="step-desc">O wiki com +140 países é o cérebro do GeoScout — você vai fazer upload uma única vez.</div>
-        </div>
-        <div class="step-time">~3 min</div>
-      </div>
-      <div class="step-body">
-        <div class="download-area">
-          <div class="download-info">
-            <div class="download-title">📦 Wiki GeoScout — base completa</div>
-            <div class="download-sub">+140 países · conceitos · guias gerais · ~15MB</div>
-          </div>
-          <a class="download-btn" href="https://github.com/bruno-l-rossi/geoguessr-wiki/archive/refs/heads/main.zip" download>
-            ⬇️ Baixar wiki
-          </a>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">📂</div>
-          <div class="substep-text">Após baixar, descompacte o arquivo. Dentro da pasta, navegue até <code>geoguessr-wiki-main/wiki/</code>.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">📤</div>
-          <div class="substep-text">No seu Project no Claude.ai, clique em <strong>"Add content"</strong> → <strong>"Upload files"</strong>. Selecione todos os arquivos <code>.md</code> das pastas <code>countries/</code>, <code>concepts/</code> e o arquivo <code>index.md</code>.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">⏳</div>
-          <div class="substep-text">Aguarde o upload terminar. O Claude.ai vai processar os arquivos automaticamente — isso pode levar alguns segundos.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- STEP 4 -->
-    <div class="step">
-      <div class="step-header">
-        <div class="step-num">4</div>
-        <div class="step-info">
-          <div class="step-title">Comece a usar!</div>
-          <div class="step-desc">Abra uma nova conversa dentro do Project e descreva o que você vê na tela do GeoGuessr.</div>
-        </div>
-        <div class="step-time">pronto 🎉</div>
-      </div>
-      <div class="step-body">
-        <div class="substep">
-          <div class="substep-icon">💬</div>
-          <div class="substep-text">Dentro do Project <code>GeoScout</code>, clique em <strong>"New chat"</strong> e descreva o que você vê: vegetação, placas, arquitetura, postes, tipo de câmera, idioma, clima — qualquer detalhe ajuda.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">🔁</div>
-          <div class="substep-text">A cada nova partida, basta abrir um <strong>novo chat dentro do mesmo Project</strong> — o wiki já está lá, não precisa configurar nada de novo.</div>
-        </div>
-        <div class="substep">
-          <div class="substep-icon">💡</div>
-          <div class="substep-text">Dica: quanto mais detalhes você descrever, mais precisa será a análise. Tente mencionar pelo menos 3 pistas diferentes.</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-</div>
-
-<footer>
-  Wiki baseado no <a href="https://www.plonkit.net" target="_blank">Plonk It</a> ·
-  Repositório: <a href="https://github.com/bruno-l-rossi/geoguessr-wiki" target="_blank">github.com/bruno-l-rossi/geoguessr-wiki</a>
-</footer>
 
 <script>
-  function copyPrompt(btn) {
-    const text = document.getElementById('agent-prompt').textContent;
-    navigator.clipboard.writeText(text).then(() => {
-      btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Copiado!`;
-      btn.classList.add('copied');
-      setTimeout(() => {
-        btn.innerHTML = `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg> Copiar`;
-        btn.classList.remove('copied');
-      }, 2500);
-    });
+const COUNTRIES = [{"slug":"alaska","name":"Alasca","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"white_black","utility_pole_type":"wood_north_america","guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"normal","continent":"north_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_plates_alaska","ursa_major_shield","alaska_pipeline","shitcam_usa"],"confusable_with":["canada"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"albania","name":"Albânia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ë","ç"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"black_white","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"red_pink","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["rruga_street_sign","red_stripe_plate_left","rifts_albania"],"confusable_with":["montenegro","italy","greece"],"fuel_brands_exclusive":["Kastrati"],"confidence_score":8,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"american-samoa","name":"Samoa Americana","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["rusted_black_truck_tutuila","different_car_per_island"],"confusable_with":["samoa"],"fuel_brands_exclusive":[],"confidence_score":6,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"andorra","name":"Andorra","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"spain_wedge_yellow","chevron":"blue_white","utility_pole_type":null,"guardrail_color":"yellow_reflectors","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":true,"is_spillover":false,"exclusive_features":["orange_dot_plate","cg_cs_road_markers","gen3_autumn_colors","yellow_turquoise_cones","cg_cs_signs"],"confusable_with":["spain","france"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"antarctica","name":"Antártida","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"dark_volcanic","continent":"oceania","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["penguins","trekker_only","dark_soil","south_pole_sign"],"confusable_with":[],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"argentina","name":"Argentina","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":"double_concrete_argentina","guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_red_chevron_americas","black_center_dot_plate","ypf_fuel","a_frame_poles"],"confusable_with":["brazil","uruguay","bolivia","chile"],"fuel_brands_exclusive":["YPF"],"confidence_score":9,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"australia","name":"Austrália","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"grey_snorkel_truck","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"black_white","utility_pole_type":"stobie_sa_aus","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"red_intense","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["eucalyptus_dominant","white_bollard_red_reflector_stops_middle","stobie_poles_sa","termite_mounds_nt","hungry_jacks"],"confusable_with":["new-zealand","south-africa"],"fuel_brands_exclusive":["Caltex","Hungry Jacks"],"confidence_score":9,"google_car_color":"grey","camera_blur":"sharp","google_car_type":"snorkel_truck"},{"slug":"austria","name":"Áustria","driving_side":"right","scripts":["latin"],"latin_diacritics":["ä","ö","ü","ß"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_gas_poles","einbahn_sign","dashed_pedestrian_crossing_2lines","gen3_german_language","blue_road_markers_comma"],"confusable_with":["germany","switzerland","slovenia"],"fuel_brands_exclusive":["OMV"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"azores","name":"Açores","driving_side":"right","scripts":["latin"],"latin_diacritics":["ã","ô","ê","ç"],"stop_sign":"pare","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"black_yellow_portugal","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":["cryptomeria_japonica"],"soil_color":"dark_volcanic","continent":"europe_west","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["ceramic_tile_street_signs","dry_stone_walls_volcanic","japanese_cedar_trees","holstein_cows","ondulating_agricultural_landscape"],"confusable_with":["madeira","portugal"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"bangladesh","name":"Bangladesh","driving_side":"left","scripts":["bengali"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_south","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["turquoise_plates","red_white_bollards","hazy_gen4","wire_nest_poles"],"confusable_with":["india","sri-lanka"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"belarus","name":"Bielorrússia","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":true,"exclusive_features":["teal_street_signs_minsk","grey_rectangular_tiles","holy_spirit_cathedral_towers","pedestrian_only_coverage"],"confusable_with":["russia","ukraine"],"fuel_brands_exclusive":[],"confidence_score":6,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"belgium","name":"Bélgica","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":null,"guardrail_color":"yellow_reflectors","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["red_text_plates","orange_signposts","yellow_rectangular_bollard_reflector","roadside_gutters","orange_priority_diamond"],"confusable_with":["netherlands","france","germany"],"fuel_brands_exclusive":["Dats24","OCTA+"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"bermuda","name":"Bermudas","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":"black_gen3","road_line_outside":"absent","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"caribbean","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["white_rooftops_pastel_houses","single_yellow_center_line_no_outside","black_google_car"],"confusable_with":["caribbean"],"fuel_brands_exclusive":["Rubis"],"confidence_score":8,"google_car_color":"black","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"bhutan","name":"Butão","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_south","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["red_plates_asia","dzongkha_script","stone_block_barriers","tin_roof_painted_wood_architecture","grey_car_left_drive"],"confusable_with":["nepal","philippines"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"bolivia","name":"Bolívia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["curved_wooden_poles","mas_evo_graffiti","wiphala_flag","cobblestone_pattern_specific","tigo_telecom"],"confusable_with":["peru","chile","argentina"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"botswana","name":"Botswana","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":"botswana_double","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"africa_austral","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_yellow_signposts_africa","blue_old_road_signs","a_road_prefix_green","random_small_blurs","elephant_crossing_signs"],"confusable_with":["south-africa","namibia"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"brazil","name":"Brasil","driving_side":"right","scripts":["latin"],"latin_diacritics":["ã","õ","ô","ê","ç"],"stop_sign":"pare","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":"linha_z","bollard_type":null,"chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":["araucaria"],"soil_color":"red_intense","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["ladder_poles","black_background_street_signs","araucaria_south","blue_road_markers","pare_stop_sign","transparent_parabolic_antennas"],"confusable_with":["paraguay","argentina","colombia","portugal"],"fuel_brands_exclusive":["Ipiranga","BR Distribuidora"],"confidence_score":10,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"british-indian-ocean-territory","name":"Território Britânico do Oceano Índico","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"asia_south","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["trekker_only","coconut_palm_forests","mangroves_atolls"],"confusable_with":[],"fuel_brands_exclusive":[],"confidence_score":4,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"bulgaria","name":"Bulgária","driving_side":"right","scripts":["cyrillic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["hook_up_isolators_pole_top","cyrillic_plus_latin_signs","pedestrian_sign_4stripes_hat","thin_road_lines"],"confusable_with":["romania","russia","turkey","greece"],"fuel_brands_exclusive":["EKO"],"confidence_score":8,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"cambodia","name":"Camboja","driving_side":"right","scripts":["khmer"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"asia_southeast","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["khmer_script","black_yellow_chevron_inverted_sea","striped_gen3_car","red_white_road_markers","stilt_house_colors_brown_blue_orange"],"confusable_with":["thailand","laos","vietnam"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"canada","name":"Canadá","driving_side":"right","scripts":["latin"],"latin_diacritics":["é","à","è","ê","î","ô","û","ç"],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"white_black","utility_pole_type":"wood_north_america","guardrail_color":null,"vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"red_pink","continent":"north_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["maximum_speed_sign","diamond_t_junction","gen2_north_america","two_peak_mirror_gen3","no_text_yield_sign"],"confusable_with":["usa"],"fuel_brands_exclusive":["Petro-Canada","Irving"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"chile","name":"Chile","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["all_yellow_road_lines_americas","red_bridge_balustrades","letter_road_system_north_south","white_car_black_section_gen3","copec_fuel"],"confusable_with":["argentina","peru","bolivia"],"fuel_brands_exclusive":["COPEC"],"confidence_score":8,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"china","name":"China","driving_side":"right","scripts":["chinese_simplified"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["tripod_only_no_car","blue_plates_white_text","simplified_chinese_characters","motion_blur_objects"],"confusable_with":["taiwan","hong-kong"],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"christmas-island","name":"Ilha Christmas","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["silver_pickup_truck_google","red_crabs","yellow_street_signs","dense_tropical_forest"],"confusable_with":["cocos-islands","australia"],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"cocos-islands","name":"Ilhas Cocos (Keeling)","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"grey_snorkel_truck","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"oceania","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["snorkel_car_west_island","cross_brick_pavement_bantam","white_sand_open_atoll","bilingual_english_malay_signs"],"confusable_with":["christmas-island"],"fuel_brands_exclusive":[],"confidence_score":6,"google_car_color":"grey","camera_blur":"slight_blur","google_car_type":"snorkel_truck"},{"slug":"colombia","name":"Colômbia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"octagonal_mexico","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_vehicle_plates_south_america","pr_km_markers","black_yellow_signpost_stripes","pastel_yellow_taxis"],"confusable_with":["ecuador","mexico","brazil"],"fuel_brands_exclusive":["EcoPetrol","Terpel","Biomax"],"confidence_score":8,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"costa-rica","name":"Costa Rica","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"alto","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"central_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_spanish_unique","red_taxis_yellow_sign","white_blue_plates"],"confusable_with":["mexico","guatemala","panama"],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"croatia","name":"Croácia","driving_side":"right","scripts":["latin"],"latin_diacritics":["č","ć","đ","š","ž"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"red","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"red_pink","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["gen3_autumn_mirrors_visible","yellow_sticker_mirror","triangular_bollard_black_rectangle","yellow_directional_signs_ex_yugo","pedestrian_sign_5stripes_belt"],"confusable_with":["slovenia","hungary","serbia","montenegro"],"fuel_brands_exclusive":["INA"],"confidence_score":8,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"curacao","name":"Curaçao","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"normal","continent":"caribbean","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_car_roof_rack","blue_street_signs_yellow_poles","bw_striped_traffic_poles","cactus_caribbean","pastel_bungalows"],"confusable_with":["aruba","bonaire"],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"cyprus","name":"Chipre","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"red_pink","continent":"middle_east","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["left_drive_europe","greek_english_bilingual_signs","triangular_bollards","yellow_red_border_city_signs","horizontal_white_water_tanks_rooftops"],"confusable_with":["greece","malta","turkey"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"czechia","name":"Chéquia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ř","ě","š","č","ž","ů"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"black_white","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["double_orange_bollard_reflector","widened_type_b_guardrail","bright_red_street_signs","filled_arrow_directional_signs","r_with_caron_unique"],"confusable_with":["slovakia","poland","germany","hungary"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"denmark","name":"Dinamarca","driving_side":"right","scripts":["latin"],"latin_diacritics":["æ","ø","å"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":"square_denmark","bollard_type":"white_orange_stripe_green_reflector","chevron":"red_white_denmark","utility_pole_type":"rare_high_tension_only","guardrail_color":"silver","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["square_denmark_lines","parrot_plate_yellow_section","pipe_framed_direction_signs","green_bollard_reflectors"],"confusable_with":["norway","netherlands","sweden","belgium"],"fuel_brands_exclusive":["ok","uno_x","yx"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"dominican-republic","name":"República Dominicana","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"pare","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"square_concrete_inverted_L","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"white_grey","continent":"caribbean","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["metal_bars_black_thick_stripes_car","yellow_top_white_bottom_plates","square_concrete_poles_inverted_L"],"confusable_with":["puerto_rico","south_america","guatemala","curacao"],"fuel_brands_exclusive":["isla","sunix"],"confidence_score":8,"google_car_color":"black","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"ecuador","name":"Equador","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"alto","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"round_two_red_stripes","chevron":null,"utility_pole_type":"ladder_concrete","guardrail_color":"mixed","vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"red_pink","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["shitcam_latin_america","gen4_pickup_black_bed_no_antenna","mixed_plate_sizes","teal_blue_sign_backs"],"confusable_with":["colombia","panama","costa_rica","peru","bolivia"],"fuel_brands_exclusive":["petroecuador"],"confidence_score":9,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"egypt","name":"Egito","driving_side":"right","scripts":["arabic"],"latin_diacritics":[],"stop_sign":"other","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"africa_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["only_7_trekkers","pyramids","sandstone_monuments"],"confusable_with":["turkey"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"estonia","name":"Estônia","driving_side":"right","scripts":["latin"],"latin_diacritics":["õ","ä","ö","ü"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"cylindrical_round_baton","chevron":"red_white_estonia","utility_pole_type":"wooden_round_trident_top","guardrail_color":"silver","vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["gen3_green_blur","tanav_tee_street_suffix","oval_blue_house_numbers","pedestrian_sign_3_stripes_detailed"],"confusable_with":["latvia","lithuania","finland","russia"],"fuel_brands_exclusive":["alexela","olerex"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"eswatini","name":"Essuatíni","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"dark_brown_wood_side_insulators","guardrail_color":"silver","vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"normal","continent":"africa_austral","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["MR_road_codes","long_plates_green_base","concrete_bus_shelters"],"confusable_with":["lesotho","south_africa"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"falkland-islands","name":"Ilhas Malvinas (Falkland)","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"dark_volcanic","continent":"south_america","is_island":true,"is_microstate":false,"is_spillover":true,"exclusive_features":["only_3_trekker_islands","subantarctic_open_plains","yellow_grass"],"confusable_with":["faroe_islands"],"fuel_brands_exclusive":[],"confidence_score":7,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"faroe-islands","name":"Ilhas Faroé","driving_side":"right","scripts":["latin"],"latin_diacritics":["æ","ø"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"yellow_wooden_stick","chevron":"black_yellow","utility_pole_type":null,"guardrail_color":"yellow_reflectors","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_wooden_stick_bollards","yellow_guardrail_reflectors","yellow_direction_signs_black_border","turf_roof_stone_base_houses","fjords_green_mountains"],"confusable_with":["iceland","norway"],"fuel_brands_exclusive":[],"confidence_score":9,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"finland","name":"Finlândia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ä","ö"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"black_white_diagonal_rectangular_reflector","chevron":"black_yellow","utility_pole_type":"wooden_black_cap_top","guardrail_color":"silver","vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["warning_sign_yellow_extra_border","gen3_autumn_foliage","k_market_s_market","road_lines_always_solid","snow_pole_orange_thin_top_band"],"confusable_with":["sweden","norway","estonia"],"fuel_brands_exclusive":["neste","abc_finland"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"france","name":"França","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":"ligne_z","bollard_type":"france_cone","chevron":"blue_white","utility_pole_type":"concrete_ladder_waffle","guardrail_color":"silver","vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["ligne_z","france_cone_bollard","pole_blue_plate","austrian_flag_road_markers","pole_arrow_isolator_top","ladder_waffle_pole"],"confusable_with":["spain","belgium","switzerland","italy"],"fuel_brands_exclusive":["systeme_u","e_leclerc"],"confidence_score":10,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"germany","name":"Alemanha","driving_side":"right","scripts":["latin"],"latin_diacritics":["ä","ö","ü","ß"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"germany_wedge","chevron":"black_white","utility_pole_type":"wooden_white_stickers","guardrail_color":"silver","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["germany_wedge_bollard","einbahnstrasse_sign","white_stickers_wooden_poles","H_yellow_green_bus_stop","blurred_buildings_privacy"],"confusable_with":["austria","switzerland","poland","netherlands"],"fuel_brands_exclusive":["aral"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"ghana","name":"Gana","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"uk_style_cylindrical_white","chevron":null,"utility_pole_type":"wooden_3_insulators","guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"red_intense","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["google_car_black_tape_rack","taxi_orange_yellow_fenders","gen3_black_tape_regional_variants"],"confusable_with":["nigeria","togo","benin","ivory_coast"],"fuel_brands_exclusive":["goil","alliedoil"],"confidence_score":9,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"gibraltar","name":"Gibraltar","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"white_grey","continent":"europe_west","is_island":false,"is_microstate":true,"is_spillover":true,"exclusive_features":["rock_of_gibraltar","gen3_long_silver_tip_antenna","christmas_decorations_coverage","barbary_macaques"],"confusable_with":["spain","malta","united_kingdom"],"fuel_brands_exclusive":["cepsa"],"confidence_score":8,"google_car_color":"black","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"greece","name":"Grécia","driving_side":"right","scripts":["greek"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"black_white","utility_pole_type":"dark_brown_wood_tall_harp_top","guardrail_color":"silver","vegetation_dominant":"mediterranean","vegetation_exclusive":["olive_trees","citrus_south"],"soil_color":"red_pink","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["harp_top_poles","roadside_miniature_churches","pedestrian_sign_two_dotted_lines","warning_sign_yellow_background","direction_sign_yellow_toponym"],"confusable_with":["cyprus","albania","bulgaria","north_macedonia","italy"],"fuel_brands_exclusive":["eko","revoil","elin","aegeanoil"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"greenland","name":"Groenlândia","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"normal","continent":"north_america","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_unique_vehicle_per_locality","colored_wooden_houses_sparse","many_boat_trekkers","grey_car_nuuk"],"confusable_with":["svalbard","norway"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"guam","name":"Guam","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"thick_concrete","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":true,"exclusive_features":["antenna_rack_visible_car","green_street_signs","thick_concrete_poles","many_road_reflectors"],"confusable_with":["northern_mariana_islands"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"guatemala","name":"Guatemala","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"alto","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"white_two_black_stripes","chevron":null,"utility_pole_type":"painted_pink_green","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"central_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["pink_green_painted_poles","grey_car_rack_mirrors","thin_yellow_center_lines"],"confusable_with":["mexico","laos"],"fuel_brands_exclusive":[],"confidence_score":8,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"hawaii","name":"Hawaii","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":true,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"yellow_band_poles","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"red_intense","continent":"north_america","is_island":true,"is_microstate":false,"is_spillover":true,"exclusive_features":["rainbow_license_plate","hawaiian_language_toponyms","guitar_shield_road_signs","smallcam_gen4","road_reflector_1_4_1_pattern"],"confusable_with":["california","other_us_states"],"fuel_brands_exclusive":[],"confidence_score":9,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"hong-kong","name":"Hong Kong","driving_side":"left","scripts":["latin","chinese_traditional"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"yellow_arrow_circle_blue","chevron":null,"utility_pole_type":"cylindrical_wide_base","guardrail_color":"silver","vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":false,"is_microstate":false,"is_spillover":true,"exclusive_features":["yellow_rear_white_front_plates","bilingual_english_traditional_chinese_signs","no_striped_curb","extremely_tall_residential_towers","yellow_pedestrian_crossings"],"confusable_with":["singapore","taiwan","china"],"fuel_brands_exclusive":[],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"hungary","name":"Hungria","driving_side":"right","scripts":["latin"],"latin_diacritics":["ő","ű"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_holey_no_yellow_marker","guardrail_color":"silver","vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["o_u_double_acute_accent","utca_ut_street_suffix","wedge_bollard_red_reflector","abnormally_tall_sign_poles","gen3_winter_grey"],"confusable_with":["slovakia","croatia","romania","poland"],"fuel_brands_exclusive":["mol"],"confidence_score":9,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"iceland","name":"Islândia","driving_side":"right","scripts":["latin"],"latin_diacritics":["þ","ð","æ","ö"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"iceland_yellow","chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":["volcanic_moss"],"soil_color":"dark_volcanic","continent":"europe_north","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_bollards","yellow_pedestrian_sign","no_eu_strip_white_blue_plates"],"confusable_with":["norway","finland","sweden"],"fuel_brands_exclusive":["N1","Orkan"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"india","name":"Índia","driving_side":"left","scripts":["devanagari","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_trident_top","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_south","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["shitcam","black_white_striped_poles","multiple_regional_scripts"],"confusable_with":["nepal","bangladesh","sri-lanka","cambodia"],"fuel_brands_exclusive":["IndianOil","BharatPetroleum","HindustanPetroleum"],"confidence_score":80,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"indonesia","name":"Indonésia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"black_white","chevron":null,"utility_pole_type":"steel_or_concrete_round","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_plate_3_white_sections","yellow_waystone_notched_top","motorcycle_front_plate","pertamina_fuel"],"confusable_with":["malaysia","philippines","thailand"],"fuel_brands_exclusive":["Pertamina"],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"iraq","name":"Iraq","driving_side":"right","scripts":["arabic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["museum_trekker_only","gen1_5_overexposed_camera"],"confusable_with":[],"fuel_brands_exclusive":[],"confidence_score":70,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"ireland","name":"Irlanda","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":"green_white","chevron":"black_yellow","utility_pole_type":"wood_horizontal_metal_steps","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["irish_language_signs","yellow_diamond_warning_signs","yield_sign","rounded_gate_corners"],"confusable_with":["united-kingdom","new-zealand"],"fuel_brands_exclusive":["Maxol","Applegreen"],"confidence_score":88,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"isle-of-man","name":"Ilha de Man","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"blue_urban","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":["gorse_yellow_flowers"],"soil_color":"normal","continent":"europe_west","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["red_strip_plates","blue_bollards_urban","blue_base_streetlamps"],"confusable_with":["ireland","united-kingdom"],"fuel_brands_exclusive":[],"confidence_score":80,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"israel-and-the-west-bank","name":"Israel & Cisjordânia","driving_side":"right","scripts":["hebrew","arabic","latin"],"latin_diacritics":[],"stop_sign":"symbol_only","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":"israel_checkerboard","chevron":"white_black","utility_pole_type":"mesh_framework","guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["hand_stop_sign","hebrew_script","yellow_plates_blue_strip","black_white_striped_pole_bases","red_white_curbs"],"confusable_with":["jordan","west-bank"],"fuel_brands_exclusive":["Paz","Delek","Sonol"],"confidence_score":87,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"italy","name":"Itália","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"triangular_white_black_top","chevron":"white_black","utility_pole_type":"concrete_round_trident","guardrail_color":"red_reflector","vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["passo_carrabile_sign","short_plate_double_blue_strips","double_guardrails"],"confusable_with":["albania","spain","greece","france"],"fuel_brands_exclusive":["Eni","Agip"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"japan","name":"Japão","driving_side":"left","scripts":["kanji","latin"],"latin_diacritics":[],"stop_sign":"other","camera_special":"lowcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_round_spiral","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["lowcam","triple_script_jp","horizontal_traffic_lights","hexagonal_prefecture_shields","vending_machines_everywhere"],"confusable_with":["taiwan","south-korea","hong-kong","switzerland"],"fuel_brands_exclusive":["ENEOS","Idemitsu","CosmoOil"],"confidence_score":92,"google_car_color":"white","camera_blur":"lowcam","google_car_type":"moto_trike"},{"slug":"jersey","name":"Jersey","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["yellow_phone_boxes","french_street_names","red_granite_buildings","yellow_give_way_lines"],"confusable_with":["united-kingdom","france"],"fuel_brands_exclusive":[],"confidence_score":82,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"jordan","name":"Jordânia","driving_side":"right","scripts":["arabic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":"concrete_rounded","guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_car_no_antenna_no_brake_light","white_plates_green_taxi_strip","white_red_chevrons"],"confusable_with":["israel-and-the-west-bank","uae"],"fuel_brands_exclusive":["Manaseer","JoPetro"],"confidence_score":82,"google_car_color":"black","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"kazakhstan","name":"Cazaquistão","driving_side":"right","scripts":["cyrillic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"grey_snorkel_truck","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"kazakhstan_90deg","chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_pickup_truck","blue_ornamental_street_signs","90deg_bollards","kazakh_unique_letters"],"confusable_with":["russia","kyrgyzstan"],"fuel_brands_exclusive":[],"confidence_score":85,"google_car_color":"grey","camera_blur":"slight_blur","google_car_type":"snorkel_truck"},{"slug":"kenya","name":"Quênia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"grey_snorkel_truck","road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"red_intense","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["grey_snorkel_truck","square_yellow_rear_plate","safaricom_brand"],"confusable_with":["tanzania","uganda","mongolia"],"fuel_brands_exclusive":["KenolKobil"],"confidence_score":83,"google_car_color":"grey","camera_blur":"sharp","google_car_type":"snorkel_truck"},{"slug":"kyrgyzstan","name":"Quirguistão","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"blurred_car","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"white_black_diagonal","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["silver_car_4bar_rack","red_white_triangle_km_markers","red_strip_plates","winter_only_coverage"],"confusable_with":["kazakhstan","russia"],"fuel_brands_exclusive":["EcoPetrol"],"confidence_score":82,"google_car_color":"blurred_white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"laos","name":"Laos","driving_side":"right","scripts":["lao"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"concrete_black_white_square","chevron":null,"utility_pole_type":"concrete_square_holes","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"orange","continent":"asia_southeast","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_plates","lao_script_2char_stop_sign","silver_car_2bar_rack"],"confusable_with":["thailand","cambodia","guatemala"],"fuel_brands_exclusive":["Lao State Fuel Company"],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"latvia","name":"Letônia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ā","ē","ī","ū","ļ","ķ","ņ","ģ","č","š","ž"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"latvia_thin_curved","chevron":"white_red","utility_pole_type":"alternating_hook_insulators","guardrail_color":"white_red","vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["thin_curved_bollard","5stripe_long_legs_pedestrian_sign","5window_bus_stop_sign","macron_letters"],"confusable_with":["estonia","lithuania"],"fuel_brands_exclusive":["Dinaz","AstarteNafta"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"lebanon","name":"Líbano","driving_side":"right","scripts":["arabic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"metal_mesh_yellow","guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["shitcam_middle_east","trekker_coverage","arabic_french_english_trilingual","blue_strip_plates"],"confusable_with":["israel-and-the-west-bank","jordan"],"fuel_brands_exclusive":[],"confidence_score":75,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"lesotho","name":"Lesoto","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":"triple_sa","bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"normal","continent":"africa_austral","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["tabletop_treeless_mountains","white_blue_plates","agave_plants","round_thatched_huts"],"confusable_with":["eswatini","south-africa","botswana"],"fuel_brands_exclusive":[],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"liechtenstein","name":"Liechtenstein","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"lowcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"swiss_cylindrical","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":true,"is_spillover":false,"exclusive_features":["lowcam","black_plates_yellow_red_emblem","liemobil_green_white_bus_stops","lego_button_road_dividers"],"confusable_with":["switzerland","austria"],"fuel_brands_exclusive":[],"confidence_score":85,"google_car_color":"white","camera_blur":"lowcam","google_car_type":"car"},{"slug":"lithuania","name":"Lituânia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ą","č","ę","ė","į","š","ų","ū","ž"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"lithuania_wedge_orange","chevron":"white_red","utility_pole_type":"concrete_square_diagonal_support","guardrail_color":"orange","vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["wedge_orange_bollard","random_blur_gen3","45deg_km_marker","gatve_street_word"],"confusable_with":["latvia","estonia","russia"],"fuel_brands_exclusive":["Viada"],"confidence_score":86,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"luxembourg","name":"Luxemburgo","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"black_white_wedge","chevron":"black_yellow","utility_pole_type":"inverted_trident_top","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_long_plates","yellow_directional_signs_rectangular_frame","black_yellow_chevrons","white_sign_poles","6window_bus_stop_sign"],"confusable_with":["netherlands","germany","belgium","denmark"],"fuel_brands_exclusive":[],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"macau","name":"Macau","driving_side":"left","scripts":["chinese_simplified","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"grey_cylindrical_black_base","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":true,"is_microstate":true,"is_spillover":false,"exclusive_features":["gen2_extremely_faded","black_plates_white_text","portuguese_chinese_bilingual_signs","casinos"],"confusable_with":["hong-kong","china"],"fuel_brands_exclusive":[],"confidence_score":80,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"madagascar","name":"Madagáscar","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["baobab"],"soil_color":"red_intense","continent":"africa_austral","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_with_walking_companions","boat_trekkers","malagasy_language","baobab_trees"],"confusable_with":[],"fuel_brands_exclusive":["Galana","Jovena"],"confidence_score":78,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"madeira","name":"Madeira","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"stone_cubic_cylindrical","chevron":null,"utility_pole_type":null,"guardrail_color":"yellow_black","vegetation_dominant":"mediterranean","vegetation_exclusive":["agapanthus"],"soil_color":"dark_volcanic","continent":"europe_west","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["stone_bollards","shitcam_white_car_visible","terrace_agriculture","many_tunnels","yellow_blue_taxis"],"confusable_with":["azores","portugal"],"fuel_brands_exclusive":[],"confidence_score":82,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"malaysia","name":"Malásia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"other","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"white_red_rectangle","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["berhenti_stop_sign","yellow_hexagonal_highway_shield","arrow_shaped_street_signs","blue_white_km_markers"],"confusable_with":["indonesia","thailand","singapore","brunei"],"fuel_brands_exclusive":["Petronas"],"confidence_score":86,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"mali","name":"Mali","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["tripod_camera_trekker","mud_brick_mosques","extremely_limited_coverage"],"confusable_with":[],"fuel_brands_exclusive":[],"confidence_score":72,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"malta","name":"Malta","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"white_grey","continent":"europe_west","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["limestone_walls","triq_street_word","maltese_script_letters","covered_colorful_balconies"],"confusable_with":["cyprus","united-kingdom"],"fuel_brands_exclusive":["Enemed"],"confidence_score":85,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"martinique","name":"Martinica","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"arret","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"red_pink","continent":"caribbean","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["only_3_trekkers","rum_distillery_trekker","french_caribbean_territory"],"confusable_with":["france"],"fuel_brands_exclusive":[],"confidence_score":70,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"mexico","name":"México","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"alto","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"mexico_black_base","chevron":"white_black","utility_pole_type":"octagonal_concrete","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["cactus_diverse"],"soil_color":"normal","continent":"north_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["mexico_black_base_bollard","alto_stop_sign","cacti_ubiquitous","rooftop_water_tanks"],"confusable_with":["colombia","central-america","usa"],"fuel_brands_exclusive":["Pemex","OXXO"],"confidence_score":87,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"monaco","name":"Mônaco","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"arret","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":true,"is_spillover":false,"exclusive_features":["short_plates_no_eu_strip","dense_luxury_citystate","many_tunnels","harbor_boat_trekker"],"confusable_with":["france","italy"],"fuel_brands_exclusive":[],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"mongolia","name":"Mongólia","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"other","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"mongolia_bowling","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["mongolia_bowling_bollard","zogs_stop_sign","yurts","red_mirror_pickup","snorkel_car"],"confusable_with":["kazakhstan","russia","kenya"],"fuel_brands_exclusive":["MagnaiTrade","Petrovis"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"montenegro","name":"Montenegro","driving_side":"right","scripts":["latin","cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"white_black_top_red_reflector","chevron":"black_white","utility_pole_type":"concrete_round_or_wood","guardrail_color":"rusted","vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["red_circle_on_blue_license_plate_strip","a_type_and_b_type_guardrails_both_present"],"confusable_with":["slovenia","albania","serbia","croatia"],"fuel_brands_exclusive":[],"confidence_score":72,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"namibia","name":"Namíbia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":"small_stone_bollards","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":["hyphaene_petersiana_palm"],"soil_color":"beige_sandy","continent":"africa_austral","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_pickup_antenna_leaning_left","german_toponyms","road_codes_abcdmf","pink_dunes_sossusvlei","vineyards_aussenkehr"],"confusable_with":["botswana","oman","south_africa"],"fuel_brands_exclusive":[],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"nepal","name":"Nepal","driving_side":"left","scripts":["devanagari"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"concrete_black_white_red_top","chevron":null,"utility_pole_type":"concrete_square_trident_top","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["chir_pine","areca_palm_southeast","tea_plantations_east"],"soil_color":"normal","continent":"asia_south","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_stupas_with_painted_eyes","concrete_trident_top_poles","devanagari_native_numerals_on_signs"],"confusable_with":["india","bangladesh","sri_lanka"],"fuel_brands_exclusive":[],"confidence_score":80,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"netherlands","name":"Países Baixos","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"none_underground","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_license_plates_europe","no_utility_poles","red_cycling_lanes","IJ_capital_dutch","canals_everywhere","brick_row_houses"],"confusable_with":["belgium","luxembourg","germany","denmark"],"fuel_brands_exclusive":["tango","argos"],"confidence_score":90,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"new-zealand","name":"Nova Zelândia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":true,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":"nz_red_rear","chevron":null,"utility_pole_type":"concrete_single_long_notch","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":["silver_fern"],"soil_color":"normal","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["nz_red_rear_bollard","silver_fern","give_way_red_text","blue_street_signs_rural","red_highway_shield"],"confusable_with":["australia","chile","tasmania","ireland"],"fuel_brands_exclusive":["z_energy"],"confidence_score":88,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"nigeria","name":"Nigéria","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_with_notches_horizontal_supports","guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"normal","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["police_car_following_streetview","shitcam_only_african_continental","short_plates_greenish_tint","flag_colored_concrete_dividers"],"confusable_with":["ghana","cameroon","brazil"],"fuel_brands_exclusive":["oando","forteoil","mrsoilnigeria"],"confidence_score":82,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"north-macedonia","name":"Macedônia do Norte","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_cylindrical_or_wood","guardrail_color":null,"vegetation_dominant":"steppe","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["gen3_no_antenna","white_plates_red_block","bilingual_yellow_directional_signs_cyrillic_latin","cyrillic_gje_kje_letters","yellow_warning_signs"],"confusable_with":["serbia","bulgaria","greece","albania"],"fuel_brands_exclusive":["makpetrol","okta"],"confidence_score":80,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"northern-mariana-islands","name":"Ilhas Marianas do Norte (CNMI)","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"blurred_car","road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"wood_with_crossbar","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":["flame_tree_red_flowers"],"soil_color":"normal","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["fully_blurred_car_no_rack","wood_utility_poles","blue_street_signs","flame_tree_red_flowers_vs_guam","cup_shaped_route_markers"],"confusable_with":["guam"],"fuel_brands_exclusive":[],"confidence_score":75,"google_car_color":"blurred_white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"norway","name":"Noruega","driving_side":"right","scripts":["latin"],"latin_diacritics":["æ","ø","å"],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"parallelogram_black_reflector","chevron":"black_yellow","utility_pole_type":"wood_with_black_metal_cap","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_background_warning_signs_nordic","grass_roof_houses","guardrails_wood_posts","fjords","yellow_orange_center_lines"],"confusable_with":["sweden","finland","denmark","iceland"],"fuel_brands_exclusive":["yxenergi","beststasjon"],"confidence_score":83,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"oman","name":"Omã","driving_side":"right","scripts":["arabic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"black_yellow_many_arrows","utility_pole_type":"wood_triangle_metal_top","guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":["date_palm_north_coast","coconut_palm_salalah"],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["wood_pole_metal_triangle_top","beah_3leaf_bins","orange_panel_taxis","white_pickup_antenna_right","black_yellow_curbs"],"confusable_with":["uae","namibia","qatar"],"fuel_brands_exclusive":[],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"pakistan","name":"Paquistão","driving_side":"left","scripts":["arabic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["tall_pines_patriata"],"soil_color":"normal","continent":"asia_south","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_mughal_gardens_fortresses","urdu_script_soft_curves","short_plates_green_strip_left","mughal_architecture_red_brick"],"confusable_with":["india","bangladesh"],"fuel_brands_exclusive":[],"confidence_score":72,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"panama","name":"Panamá","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"alto","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"concrete_round_with_isolators","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"orange","continent":"central_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["eye_sign_ocular_octagon","white_pickup_white_metal_frame","turquoise_stripe_plates","checkered_yellow_taxis","alto_thick_font"],"confusable_with":["costa_rica","ecuador","mexico","guatemala"],"fuel_brands_exclusive":[],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"peru","name":"Peru","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"pare","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"peru_triangular","chevron":null,"utility_pole_type":"metal_with_concrete_base_black_white_stripes","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["eucalyptus_andean_abundant"],"soil_color":"red_pink","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_white_striped_signal_poles","concrete_base_signal_poles","tuk_tuks_south_america","orange_bridges","sol_currency_symbol"],"confusable_with":["bolivia","argentina","uruguay","chile"],"fuel_brands_exclusive":["petroperu","primax","pecsa"],"confidence_score":84,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"philippines","name":"Filipinas","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"mixed","road_line_exclusive":null,"bollard_type":null,"chevron":"red_white","utility_pole_type":"octagonal_metal","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["concrete_roads","orange_yellow_lines","square_yellow_road_markers","english_signs_southeast_asia","colored_signal_poles_red_orange_yellow","municipal_abbreviation_black_box_poles"],"confusable_with":["thailand","vietnam","indonesia"],"fuel_brands_exclusive":["petron","phoenix_petroleum","seaoil"],"confidence_score":86,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"pitcairn-islands","name":"Ilhas Pitcairn","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"red_intense","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_only_dirt_trails_dense_forest","intense_red_soil","atv_landing_cais","counts_as_uk"],"confusable_with":[],"fuel_brands_exclusive":[],"confidence_score":65,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"poland","name":"Polônia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ą","ć","ę","ł","ń","ó","ś","ź","ż"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"red_band_around","chevron":"white_red","utility_pole_type":"concrete_holey_thin","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_warning_sign_thin_red_border_unique_europe","holey_poles_thin","red_band_bollard","b_type_guardrails_circular_red_reflectors"],"confusable_with":["germany","czech_republic","slovakia","ukraine"],"fuel_brands_exclusive":["orlen","lotos"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"portugal","name":"Portugal","driving_side":"right","scripts":["latin"],"latin_diacritics":["ã","ô","ê","â"],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"portugal_diamond","chevron":"black_yellow_portugal","utility_pole_type":"ladder_high_steps_holes","guardrail_color":"red_reflectors","vegetation_dominant":"mediterranean","vegetation_exclusive":["eucalyptus_northwest","stone_pine_umbrella","cork_oak_montado"],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_yellow_portugal_chevron","portugal_diamond_bollard","yellow_stripe_right_license_plate","red_guardrail_reflectors","decorative_chimneys_algarve","azulejos_tile_facades"],"confusable_with":["spain","brazil","galicia_spain"],"fuel_brands_exclusive":["galp"],"confidence_score":88,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"puerto-rico","name":"Porto Rico","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"pare","camera_special":"smallcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"caribbean","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["american_signs_in_spanish","tall_green_km_markers_km_top","green_bottom_stripe_license_plate","smallcam_blur_antenna","counts_as_usa"],"confusable_with":["guam","cnmi","dominican_republic"],"fuel_brands_exclusive":[],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"qatar","name":"Qatar","driving_side":"right","scripts":["arabic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"mixed","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red_white_blue","utility_pole_type":"round_poles_3_y_isolators","guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["long_white_plate_brown_stripe","pedestrian_sign_thobe_man","rusted_clips_rack","numbered_zones_street_signs"],"confusable_with":["uae","oman","saudi_arabia"],"fuel_brands_exclusive":["woqod"],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"reunion","name":"Reunião","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"dark_volcanic","continent":"africa_austral","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_tape_rear_right_bar","french_infrastructure_tropical_island","volcanic_mountainous_island","route_du_volcan_martian_landscape","6_bus_stop_types","counts_as_france"],"confusable_with":["ghana","madagascar","mauritius"],"fuel_brands_exclusive":[],"confidence_score":78,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"romania","name":"Romênia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ă","â","î","ș","ț"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red_yellow_romania","utility_pole_type":"concrete_holey_wide_tall_holes","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_red_yellow_chevron","yield_sign_very_thick_red_border","giant_yellow_sticker_poles","color_coded_marco_bollards","dacia_dominant_car","haystack_with_stick"],"confusable_with":["bulgaria","hungary","ukraine","turkey"],"fuel_brands_exclusive":["petrom","rompetrol"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"russia","name":"Rússia","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"mixed","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"wood_with_concrete_base_blocks","guardrail_color":"black_white","vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["cyrillic_exclusive_chars","black_gen3_car","white_plates_no_blue_strip","yellow_white_crosswalks","black_socks_signal_poles","black_white_guardrails"],"confusable_with":["kazakhstan","ukraine","bulgaria","belarus","mongolia"],"fuel_brands_exclusive":["lukoil","rosneft","gazprom","tatneft"],"confidence_score":85,"google_car_color":"black","camera_blur":"sharp","google_car_type":"car"},{"slug":"rwanda","name":"Ruanda","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"cylindrical_red_white","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"red_intense","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["red_motorcycle_vest_helmet","white_front_yellow_rear_plate","red_white_cylindrical_bollards","very_clean_streets"],"confusable_with":["senegal","uganda"],"fuel_brands_exclusive":["MountMeru"],"confidence_score":72,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"saint-pierre-and-miquelon","name":"Saint-Pierre e Miquelon","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"north_america","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["trekker_only","colorful_wooden_houses","atlantic_subarctic_landscape","counts_as_france"],"confusable_with":["canada","france"],"fuel_brands_exclusive":[],"confidence_score":65,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"san-marino","name":"San Marino","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"italian_rounded_concrete","chevron":"yellow_bordeaux_sanmarino","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":true,"is_spillover":false,"exclusive_features":["monte_titano_three_towers","yellow_bordeaux_chevrons","short_blue_letter_plates","blue_pedestrian_crossings","lime_green_bins"],"confusable_with":["italy"],"fuel_brands_exclusive":[],"confidence_score":80,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"sao-tome-and-principe","name":"São Tomé e Príncipe","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"shitcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"wooden_blue_base_cst","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"africa_sub","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["shitcam_dark_variant","blue_cst_wooden_poles","yellow_taxis_minibuses","blue_roof_car_principe"],"confusable_with":["india","nigeria","angola"],"fuel_brands_exclusive":[],"confidence_score":70,"google_car_color":"white","camera_blur":"shitcam","google_car_type":"car"},{"slug":"senegal","name":"Senegal","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":["baobab"],"soil_color":"beige_sandy","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["all_blue_plates","gen3_rack_right_mirror","pink_outline_city_signs","white_red_top_km_markers","orange_yellow_taxis_black_fenders"],"confusable_with":["rwanda","morocco","algeria"],"fuel_brands_exclusive":["Petrosen"],"confidence_score":75,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"serbia","name":"Sérvia","driving_side":"right","scripts":["latin","cyrillic"],"latin_diacritics":["č","ć","đ","š","ž"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"offcenter_reflector","chevron":"black_white","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["gen3_no_antenna","b_profile_guardrails","offcenter_reflector_bollard","nis_fuel_brand"],"confusable_with":["montenegro","north_macedonia","croatia","bulgaria"],"fuel_brands_exclusive":["NIS"],"confidence_score":78,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"singapore","name":"Singapura","driving_side":"left","scripts":["latin","chinese_simplified"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":"concrete_yellow_black_stripes","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["green_rounded_street_signs","square_white_background_traffic_signs","perforated_plate_traffic_lights","hump_ahead_asphalt_text","lime_green_buses"],"confusable_with":["malaysia","indonesia"],"fuel_brands_exclusive":["SPC"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"slovakia","name":"Eslováquia","driving_side":"right","scripts":["latin"],"latin_diacritics":["á","é","í","ó","ú","ý","č","š","ž","ľ","ŕ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"double_orange_reflector","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["bold_font_signs","white_blue_red_border_street_signs","km_marker_black_horizontal_line","ľ_ô_letters"],"confusable_with":["czechia","hungary","poland"],"fuel_brands_exclusive":["Slovnaft"],"confidence_score":78,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"slovenia","name":"Eslovênia","driving_side":"right","scripts":["latin"],"latin_diacritics":["č","š","ž"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"white_black_top_bright_red_reflector","chevron":"white_red","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_central","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["kozolec_wooden_barn","long_dashed_edge_lines","a_type_guardrails","yellow_rectangle_km_marker"],"confusable_with":["croatia","austria","serbia"],"fuel_brands_exclusive":["Petrol"],"confidence_score":78,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"south-africa","name":"África do Sul","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"smallcam","gen2_abundant":true,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"mixed","road_line_exclusive":"triple_sa","bollard_type":"bird_poles","chevron":"white_red","utility_pole_type":"bird_poles_sa","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":["fynbos"],"soil_color":"red_pink","continent":"africa_austral","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["bird_poles_sa","gen2_africa","yellow_outside_line","triple_sa_lines","n_r_road_codes","camouflage_car_kruger"],"confusable_with":["botswana","lesotho","eswatini","namibia"],"fuel_brands_exclusive":["Engen","Sasol"],"confidence_score":88,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"south-georgia-and-sandwich-islands","name":"Geórgia do Sul e Ilhas Sandwich do Sul","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"normal","continent":"south_america","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["grytviken_abandoned_machinery","seals_prion_island","boat_trekker_hercules_bay","counts_as_uk"],"confusable_with":["falkland_islands"],"fuel_brands_exclusive":[],"confidence_score":65,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"south-korea","name":"Coreia do Sul","driving_side":"right","scripts":["hangul"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"white_black_stripe_yellow_dot","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["hangul_script","yellow_center_line","diagonal_black_yellow_pole_stripes","pentagonal_blue_pedestrian_sign","blue_house_address_plates"],"confusable_with":["taiwan","japan"],"fuel_brands_exclusive":["SK Energy","GS Caltex","Hyundai Oilbank","S-Oil"],"confidence_score":85,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"spain","name":"Espanha","driving_side":"right","scripts":["latin"],"latin_diacritics":["ñ"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"spain_wedge_yellow","chevron":"black_white","utility_pole_type":"ladder_pole_concrete","guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["coto_caza_hunting_signs","8_stripe_pedestrian_crossing","spain_wedge_bollard","ladder_poles"],"confusable_with":["portugal","france","andorra"],"fuel_brands_exclusive":["Repsol","Cepsa"],"confidence_score":80,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"sri-lanka","name":"Sri Lanka","driving_side":"left","scripts":["sinhala","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"lowcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"absent","road_line_exclusive":null,"bollard_type":"short_wide_stone_black_base","chevron":null,"utility_pole_type":"holey_poles","guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"red_pink","continent":"asia_south","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["sinhala_script","lowcam_gen4","blue_white_red_car_front_gen3","holey_poles","short_wide_stone_bollards"],"confusable_with":["india","ghana","thailand"],"fuel_brands_exclusive":[],"confidence_score":83,"google_car_color":"white","camera_blur":"lowcam","google_car_type":"car"},{"slug":"svalbard","name":"Svalbard","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["black_yellow_text_plates","arctic_treeless_landscape","russian_settlement_signs","counts_as_norway"],"confusable_with":["norway","iceland"],"fuel_brands_exclusive":[],"confidence_score":75,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"sweden","name":"Suécia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ä","ö","å"],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":"black_white_wedge_grey_reflector","chevron":"blue_yellow_sweden","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"boreal_taiga","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["yellow_blue_chevrons","blue_white_electricity_markers","falun_red_wooden_houses","volvo_30pct"],"confusable_with":["norway","finland","denmark"],"fuel_brands_exclusive":["Preem"],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"switzerland","name":"Suíça","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"lowcam","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"swiss_cylindrical","chevron":"black_white","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["lowcam_always","yellow_pedestrian_crossings","7_stripe_blue_rectangle_pedestrian_sign","plates_no_eu_stripe","round_grey_metal_border_signs"],"confusable_with":["austria","germany","liechtenstein"],"fuel_brands_exclusive":["Migrol","Agrola"],"confidence_score":85,"google_car_color":"white","camera_blur":"lowcam","google_car_type":"car"},{"slug":"taiwan","name":"Taiwan","driving_side":"right","scripts":["chinese_simplified"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"red","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":"circular_reflectors_black_rectangle","chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_east","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["chinese_traditional_script","black_yellow_pole_stripes_to_ground","red_edge_lines","orange_cap_traffic_mirrors","blue_coordinate_plates_on_poles"],"confusable_with":["hong_kong","japan","china"],"fuel_brands_exclusive":["CPC Corporation","Formosa Petrochemical"],"confidence_score":83,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"tanzania","name":"Tanzânia","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":["baobab"],"soil_color":"red_intense","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":true,"exclusive_features":["gombe_chimps_forest","lake_tanganyika_boat_trekker","kilimanjaro_tripods"],"confusable_with":["kenya","madagascar"],"fuel_brands_exclusive":[],"confidence_score":60,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"thailand","name":"Tailândia","driving_side":"left","scripts":["thai"],"latin_diacritics":[],"stop_sign":"other","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"square_pointed_black_white","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["thai_script","thai_stop_3_chars","white_black_base_signposts","yellow_center_line","unique_green_village_signs"],"confusable_with":["laos","cambodia","malaysia"],"fuel_brands_exclusive":["PTT","Bangchak"],"confidence_score":83,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"tunisia","name":"Tunísia","driving_side":"right","scripts":["arabic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"mediterranean","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"africa_north","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["follow_car_escort","black_plates_white_text","arabic_latin_stop_sign","rounded_top_km_markers","traditional_blue_doors"],"confusable_with":["morocco","algeria","jordan"],"fuel_brands_exclusive":["Agil"],"confidence_score":82,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"turkey","name":"Turquia","driving_side":"right","scripts":["latin"],"latin_diacritics":["ı","ğ","ş","ö","ü","ç"],"stop_sign":"dur","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"mixed","road_line_exclusive":null,"bollard_type":"turkey_rectangular","chevron":"white_red","utility_pole_type":"metal_ladder_mesh","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["dur_stop_sign","dotless_i_letter","metal_ladder_mesh_poles","minarets_ubiquitous"],"confusable_with":["greece","bulgaria","north_macedonia"],"fuel_brands_exclusive":["Opet","PetrolOfisi"],"confidence_score":85,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"uganda","name":"Uganda","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"savanna","vegetation_exclusive":[],"soil_color":"red_intense","continent":"africa_sub","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_car_square_mirrors_kampala","block_pattern_blue_taxi_buses","very_red_soil"],"confusable_with":["rwanda","kenya","tanzania"],"fuel_brands_exclusive":[],"confidence_score":72,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"ukraine","name":"Ucrânia","driving_side":"right","scripts":["cyrillic"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"white_red","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["ua_exclusive_cyrillic","blue_yellow_flag_poles","red_google_car","blue_yellow_plate_stripe","є_ї_letters"],"confusable_with":["russia","belarus","bulgaria"],"fuel_brands_exclusive":["OKKO","WOG"],"confidence_score":83,"google_car_color":"red","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"united-arab-emirates","name":"Emirados Árabes Unidos","driving_side":"right","scripts":["arabic","latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"yellow","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":"dark_brown_wood_3_isolators","guardrail_color":null,"vegetation_dominant":"desert_hot","vegetation_exclusive":[],"soil_color":"beige_sandy","continent":"middle_east","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["white_gen3_car_middle_east","pickup_gen4_center_antenna","dark_brown_wood_3_isolator_poles","yellow_outside_lines"],"confusable_with":["qatar","oman","israel"],"fuel_brands_exclusive":["ADNOC"],"confidence_score":80,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"united-kingdom","name":"Reino Unido","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":"zigzag_uk","bollard_type":"uk_rounded_red","chevron":null,"utility_pole_type":"wood_north_america","guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"normal","continent":"europe_west","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["uk_rounded_red_bollard","zigzag_uk_lines","yellow_rear_plate","cats_eye_road_reflectors","belisha_beacons","square_farm_gates"],"confusable_with":["ireland","australia","new_zealand"],"fuel_brands_exclusive":["Tesco","Morrisons","Asda","Sainsbury's"],"confidence_score":88,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"united-states","name":"Estados Unidos","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"double_yellow","road_line_exclusive":null,"bollard_type":null,"chevron":"white_black","utility_pole_type":"wood_north_america","guardrail_color":null,"vegetation_dominant":"mixed","vegetation_exclusive":[],"soil_color":"normal","continent":"north_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["speed_limit_sign","fiber_optic_markers","yield_with_text","no_passing_zone_sign","rectangular_junction_sign"],"confusable_with":["canada","mexico"],"fuel_brands_exclusive":["Chevron","Valero","Sunoco","Marathon"],"confidence_score":82,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"},{"slug":"uruguay","name":"Uruguai","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":"black_gen3","road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"uruguay_yellow_side","chevron":"black_yellow","utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"temperate","vegetation_exclusive":[],"soil_color":"red_pink","continent":"south_america","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["triple_yellow_center_unique","green_stone_km_markers","trident_poles","smudgy_gen3_camera"],"confusable_with":["argentina","brazil"],"fuel_brands_exclusive":["ANCAP","DUCSA"],"confidence_score":80,"google_car_color":"black","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"us-minor-outlying-islands","name":"Ilhas Menores Distantes dos EUA","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tundra","vegetation_exclusive":[],"soil_color":"normal","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["midway_albatrosses","midway_gen2_runways","pacific_bird_islands","counts_as_usa"],"confusable_with":["hawaii","kiribati"],"fuel_brands_exclusive":[],"confidence_score":60,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"us-virgin-islands","name":"Ilhas Virgens Americanas","driving_side":"left","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"white","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":"yellow","vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"caribbean","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["blue_bright_plates","danish_toponym_gade","european_arch_architecture","red_pickup_st_croix","left_drive_us_territory"],"confusable_with":["puerto_rico","british_virgin_islands"],"fuel_brands_exclusive":[],"confidence_score":72,"google_car_color":"white","camera_blur":"slight_blur","google_car_type":"car"},{"slug":"vanuatu","name":"Vanuatu","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"trekker","gen2_abundant":false,"google_car_special":null,"road_line_outside":"absent","road_line_center":"absent","road_line_exclusive":null,"bollard_type":null,"chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"dark_volcanic","continent":"oceania","is_island":true,"is_microstate":false,"is_spillover":false,"exclusive_features":["volcano_trekker_unique","black_sand_beach","dark_volcanic_soil","trekker_only_ambrym"],"confusable_with":["solomon_islands","fiji"],"fuel_brands_exclusive":[],"confidence_score":65,"google_car_color":"white","camera_blur":"trekker","google_car_type":"trekker"},{"slug":"vietnam","name":"Vietnã","driving_side":"right","scripts":["latin"],"latin_diacritics":[],"stop_sign":"stop","camera_special":"none","gen2_abundant":false,"google_car_special":null,"road_line_outside":"white","road_line_center":"yellow","road_line_exclusive":null,"bollard_type":"white_red_top_square","chevron":null,"utility_pole_type":null,"guardrail_color":null,"vegetation_dominant":"tropical_dense","vegetation_exclusive":[],"soil_color":"normal","continent":"asia_southeast","is_island":false,"is_microstate":false,"is_spillover":false,"exclusive_features":["motorbike_coverage","red_white_striped_signposts","orange_yellow_warning_signs","white_red_bollards","address_on_shop_facades"],"confusable_with":["cambodia","thailand","philippines"],"fuel_brands_exclusive":["Petrolimex","PVOil"],"confidence_score":83,"google_car_color":"white","camera_blur":"sharp","google_car_type":"car"}];
+const QUESTIONS_BASE = [
+  {id:"q_script",phase:"general",text:"Você consegue ver texto nas placas ou sinais? Qual tipo de escrita?",attr:"scripts",options:[
+    {label:"Escrita asiática (kanji, hangul, thai, khmer...)",value:"asian",icon:"🈳",skip:false},
+    {label:"Cirílico (russo, búlgaro, sérvio...)",value:"cyrillic",icon:"Я",skip:false},
+    {label:"Árabe ou hebraico",value:"arabic",icon:"ع",skip:false},
+    {label:"Latino (letras normais A-Z)",value:"latin",icon:"A",skip:false},
+    {label:"Não consigo ver texto",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_stop",phase:"general",text:"Você consegue ver uma placa de PARE? O que ela diz?",attr:"stop_sign",options:[
+    {label:"STOP",value:"stop",icon:"🛑",skip:false},
+    {label:"PARE",value:"pare",icon:"🛑",skip:false},
+    {label:"ALTO ou DUR",value:"alto_dur",icon:"🛑",skip:false},
+    {label:"Só símbolo, sem texto",value:"symbol_only",icon:"🔴",skip:false},
+    {label:"Não consigo ver",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_camera_blur_base",phase:"general",text:"Como está a qualidade geral da imagem?",attr:"camera_blur",options:[
+    {label:"Muito borrada / câmera extremamente baixa (lowcam)",value:"lowcam",icon:"📷",skip:false},
+    {label:"Bastante borrada / difícil ver detalhes (shitcam)",value:"shitcam",icon:"📷",skip:false},
+    {label:"Boa qualidade / nítida",value:"sharp",icon:"📷",skip:false},
+    {label:"Câmera a pé / trekker (perspectiva de pedestre)",value:"trekker",icon:"🚶",skip:false},
+    {label:"Não consigo classificar",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_driving",phase:"general",text:"Em qual lado da pista os carros dirigem?",attr:"driving_side",options:[
+    {label:"Esquerda (volante à direita)",value:"left",icon:"←",skip:false},
+    {label:"Direita (volante à esquerda)",value:"right",icon:"→",skip:false},
+    {label:"Não consigo ver",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_line_out",phase:"general",text:"Qual a cor da linha na borda da pista (linha externa)?",attr:"road_line_outside",options:[
+    {label:"Branca",value:"white",icon:"⬜",skip:false},
+    {label:"Amarela",value:"yellow",icon:"🟨",skip:false},
+    {label:"Não há linha / não vejo",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_line_ctr",phase:"general",text:"Qual a cor da linha central da pista?",attr:"road_line_center",options:[
+    {label:"Branca (linha simples)",value:"white",icon:"⬜",skip:false},
+    {label:"Amarela (linha simples)",value:"yellow",icon:"🟨",skip:false},
+    {label:"Dupla amarela",value:"double_yellow",icon:"🟨",skip:false},
+    {label:"Tripla (3 linhas)",value:"triple",icon:"|||",skip:false},
+    {label:"Não consigo ver",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_veg",phase:"general",text:"Como é a vegetação dominante ao redor?",attr:"vegetation_dominant",options:[
+    {label:"Tropical densa (selva, floresta fechada)",value:"tropical_dense",icon:"🌴",skip:false},
+    {label:"Savana / cerrado (árvores esparsas, seco)",value:"savanna",icon:"🌾",skip:false},
+    {label:"Temperada (campos verdes, folhosas)",value:"temperate",icon:"🌳",skip:false},
+    {label:"Boreal / taiga (pinheiros, frio)",value:"boreal_taiga",icon:"🌲",skip:false},
+    {label:"Deserto ou árido",value:"desert_hot",icon:"🏜️",skip:false},
+    {label:"Mediterrâneo / maquis (colinas secas)",value:"mediterranean",icon:"🫒",skip:false},
+    {label:"Estepe / pastagem seca",value:"steppe",icon:"🌾",skip:false},
+    {label:"Tundra / neve",value:"tundra",icon:"❄️",skip:false},
+    {label:"Não consigo ver vegetação",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_bollard",phase:"general",text:"Você vê algum bollard (poste lateral na pista) característico?",attr:"bollard_type",options:[
+    {label:"Poste com barras horizontais em forma de pássaro (bird poles)",value:"bird_poles",icon:"🐦",skip:false},
+    {label:"Base preta com cilindro branco",value:"mexico_black_base",icon:"⚫",skip:false},
+    {label:"Faixa vermelha cobrindo a traseira",value:"nz_red_rear",icon:"🔴",skip:false},
+    {label:"Dois postes juntos (duplo)",value:"double_bollard_botswana",icon:"||",skip:false},
+    {label:"Não vejo bollard característico",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_exclusive",phase:"general",text:"Você vê alguma feature muito específica na imagem?",attr:"exclusive_features",options:[
+    {label:"Linha-Z (ziguezague) no centro da pista",value:"ligne_z",icon:"⚡",skip:false},
+    {label:"Carro Google completamente preto",value:"black_gen3",icon:"🚗",skip:false},
+    {label:"Caminhão cinza com snorkel frontal",value:"snorkel_truck",icon:"🚛",skip:false},
+    {label:"Placa de PARE escrito 'PARE' (não STOP)",value:"pare_sign",icon:"🛑",skip:false},
+    {label:"Nenhuma dessas / não vejo",value:null,icon:"—",skip:true}
+  ]},
+  {id:"q_soil",phase:"general",text:"Qual a cor do solo ou terra visível?",attr:"soil_color",options:[
+    {label:"Vermelho intenso (terra vermelha viva)",value:"red_intense",icon:"🔴",skip:false},
+    {label:"Laranja / avermelhado claro",value:"orange",icon:"🟠",skip:false},
+    {label:"Bege / arenoso (savanas, desertos)",value:"beige_sandy",icon:"🏜️",skip:false},
+    {label:"Escuro / vulcânico / quase negro",value:"dark_volcanic",icon:"⚫",skip:false},
+    {label:"Normal / cinza / não vejo",value:null,icon:"—",skip:true}
+  ]}
+];
+const QUESTIONS_EXT = [{"id":"q_chevron","group":1,"phase":"regional","text":"Você consegue ver os chevrons (setas de curva) na estrada? Qual é a combinação de cores?","attr":"chevron","context":"Útil em qualquer região. Chevron azul+amarelo é exclusivo da Suécia. Branco+vermelho cobre grande parte da Europa Oriental e América do Sul.","eliminates":"Isola grupos de 1 a 13 países dependendo da combinação — azul+amarelo confirma Suécia com 99% de confiança","options":[{"label":"Branco + seta vermelha","value":"white_red","icon":"🔴","skip":false,"countries_count":13},{"label":"Preto + seta amarela","value":"black_yellow","icon":"🟡","skip":false,"countries_count":11},{"label":"Preto + seta branca","value":"black_white","icon":"⬜","skip":false,"countries_count":9},{"label":"Branco + seta preta (estilo América do Norte)","value":"white_black","icon":"⬛","skip":false,"countries_count":6},{"label":"Azul + seta amarela (exclusivo Suécia)","value":"blue_yellow_sweden","icon":"🇸🇪","skip":false,"countries_count":1},{"label":"Não consigo ver chevrons","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_utility_pole","group":1,"phase":"regional","text":"Como são os postes de utilidade (luz/eletricidade) visíveis na imagem?","attr":"utility_pole_type","context":"Postes de madeira com braço horizontal são exclusivos da América do Norte e Reino Unido. Bird poles (com forma de pássaro/fork no topo) são exclusivos da África do Sul. Estrutura em escada/waffle é exclusiva da França.","eliminates":"Cada tipo específico elimina >130 países — poder de eliminação muito alto quando o tipo é identificável","options":[{"label":"Madeira com braço horizontal (estilo América do Norte)","value":"wood_north_america","icon":"🪵","skip":false,"countries_count":4},{"label":"Dois pilares de concreto paralelos (estilo Argentina)","value":"double_concrete_argentina","icon":"🏗️","skip":false,"countries_count":1},{"label":"Forma de pássaro / garfo no topo (Bird poles, África do Sul)","value":"bird_poles_sa","icon":"🐦","skip":false,"countries_count":1},{"label":"Estrutura em escada / trama (waffle, França)","value":"concrete_ladder_waffle","icon":"🪜","skip":false,"countries_count":1},{"label":"Octogonal (México / Colômbia)","value":"octagonal_concrete","icon":"🔷","skip":false,"countries_count":2},{"label":"Não consigo identificar o tipo","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_guardrail_color","group":1,"phase":"regional","text":"Qual é a cor ou aparência das proteções laterais da estrada (guardrails)?","attr":"guardrail_color","context":"Útil na Europa e América Latina. Guardrail prata/metálico é padrão europeu. Amarelo com refletores aparece em Andorra, Bélgica e Ilhas Faroe. Listras amarelo/preto são diagnósticas da Madeira e Peru.","eliminates":"Amarelo com refletores confirma grupo de 3 países europeus; prata filtra Europa ocidental","options":[{"label":"Prata / metálica lisa (sem cor)","value":"silver","icon":"🔩","skip":false,"countries_count":9},{"label":"Amarela com refletores (catadióptricos amarelos)","value":"yellow_reflectors","icon":"🟡","skip":false,"countries_count":3},{"label":"Listras amarelas e pretas","value":"yellow_black","icon":"🚧","skip":false,"countries_count":1},{"label":"Laranja","value":"orange","icon":"🟠","skip":false,"countries_count":1},{"label":"Vermelha com refletores","value":"red_reflectors","icon":"🔴","skip":false,"countries_count":2},{"label":"Não consigo ver / não há guardrail","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_road_line_exclusive","group":1,"phase":"regional","text":"Você vê algum padrão INCOMUM nas marcações do asfalto (linhas de faixa)?","attr":"road_line_exclusive","context":"Perguntar apenas quando as linhas são claramente visíveis e parecem diferentes do padrão. Cada padrão exclusivo confirma um único país com altíssima confiança.","eliminates":"Qualquer resposta afirmativa confirma um único país com 98-99% de confiança","options":[{"label":"Linha em Z / ziguezague no centro (França)","value":"ligne_z","icon":"⚡","skip":false,"countries_count":1},{"label":"Linha em Z similar, mais rara (Brasil)","value":"linha_z","icon":"⚡","skip":false,"countries_count":1},{"label":"Três linhas paralelas no centro (África do Sul / Lesoto)","value":"triple_sa","icon":"|||","skip":false,"countries_count":2},{"label":"Quadrados / retângulos demarcados no asfalto (Dinamarca)","value":"square_denmark","icon":"⬜","skip":false,"countries_count":1},{"label":"Ziguezague branco nas bordas (Reino Unido)","value":"zigzag_uk","icon":"〰️","skip":false,"countries_count":1},{"label":"Linhas parecem normais / não vejo padrão especial","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_latin_diacritics","group":2,"phase":"regional","text":"Você consegue ler alguma letra especial ou acento incomum nas placas ou sinais?","attr":"latin_diacritics","context":"Útil quando o script é latino mas há letras com acentos ou formas pouco comuns. Cada conjunto de diacríticos aponta para um idioma específico e elimina dezenas de países.","eliminates":"Dotless-i (ı) confirma Turquia com 99%; þ/ð confirmam Islândia; ő/ű confirmam Hungria","options":[{"label":"ã / õ / ô / ê (português)","value":"pt_diacritics","icon":"🇵🇹","skip":false,"countries_count":8},{"label":"ñ (espanhol)","value":"es_diacritics","icon":"🇪🇸","skip":false,"countries_count":16},{"label":"ı / ğ / ş (turco — i sem ponto, g com chapéu)","value":"tr_diacritics","icon":"🇹🇷","skip":false,"countries_count":1},{"label":"ő / ű (húngaro — vogais com acento duplo)","value":"hu_diacritics","icon":"🇭🇺","skip":false,"countries_count":1},{"label":"þ / ð (islandês — letras em forma de p e d)","value":"is_diacritics","icon":"🇮🇸","skip":false,"countries_count":1},{"label":"Não vejo letras especiais / não consigo ler","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_cyrillic_variant","group":2,"phase":"regional","text":"Você confirmou script cirílico — qual variante você consegue identificar?","attr":"scripts","context":"Usar apenas após confirmar que o script é cirílico. Sérvio mistura cirílico e latino no mesmo local. Ucraniano tem letras exclusivas є e ї que não existem em russo.","eliminates":"Separa os 9 países com cirílico; є/ї confirma Ucrânia com 99%; mistura latim+cirílico confirma Sérvia","options":[{"label":"Russo puro (СТОП, sem letras incomuns)","value":"russian_cyrillic","icon":"🇷🇺","skip":false,"countries_count":4},{"label":"Ucraniano (letras є ou ї visíveis)","value":"ukrainian_cyrillic","icon":"🇺🇦","skip":false,"countries_count":1},{"label":"Sérvio (placas com latim E cirílico ao mesmo tempo)","value":"serbian_mixed","icon":"🇷🇸","skip":false,"countries_count":1},{"label":"Búlgaro ou Macedônio (sem letras exclusivas óbvias)","value":"bg_mk_cyrillic","icon":"🇧🇬","skip":false,"countries_count":2},{"label":"Mongólico / asiático com cirílico","value":"mongolian_cyrillic","icon":"🇲🇳","skip":false,"countries_count":3},{"label":"Não consigo distinguir a variante","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_asian_script","group":2,"phase":"regional","text":"Você vê um script asiático nas placas ou sinais — qual é?","attr":"scripts","context":"Usar quando o script claramente não é latino, cirílico ou árabe. Cada script asiático identifica um único país ou grupo muito pequeno. Kanji + hiragana + katakana juntos confirmam Japão imediatamente.","eliminates":"Cada script confirma 1-2 países com 99% de confiança — poder de eliminação máximo","options":[{"label":"Japonês (kanji + caracteres curvos e angulosos misturados)","value":"kanji","icon":"🇯🇵","skip":false,"countries_count":1},{"label":"Coreano / hangul (blocos quadrados com círculos e linhas)","value":"hangul","icon":"🇰🇷","skip":false,"countries_count":1},{"label":"Tailandês (letras arredondadas com ganchos)","value":"thai","icon":"🇹🇭","skip":false,"countries_count":1},{"label":"Khmer / cambojano (letras muito elaboradas e angulosas)","value":"khmer","icon":"🇰🇭","skip":false,"countries_count":1},{"label":"Devanagari (hindi / nepali — letras com traço horizontal no topo)","value":"devanagari","icon":"🇮🇳","skip":false,"countries_count":2},{"label":"Laosiano (parecido com tailandês mas mais redondo)","value":"lao","icon":"🇱🇦","skip":false,"countries_count":1},{"label":"Cingalês / Sri Lanka (letras redondas e florais)","value":"sinhala","icon":"🇱🇰","skip":false,"countries_count":1},{"label":"Bengalês / Bangladesh (curvas com ganchos na parte superior)","value":"bengali","icon":"🇧🇩","skip":false,"countries_count":1},{"label":"Não consigo identificar o script","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_google_car_type","group":3,"phase":"regional","text":"Que tipo de veículo está fazendo a filmagem?","attr":"google_car_type","context":"Moto/trike identifica Japão (câmera muito baixa e estreita); trekker identifica ~21 países com cobertura a pé (Belarus, Antártida, Groenlândia, Ilhas Falkland etc.); caminhonete com snorkel identifica Quênia, Austrália, Cazaquistão ou Mongólia.","eliminates":"Trekker limita a ~21 países; snorkel limita a 4-5 países; moto/trike aponta Japão ou Vietnã","options":[{"label":"Carro comum (câmera alta no teto)","value":"car","icon":"🚗","skip":false,"countries_count":110},{"label":"Câmera a pé / trekker (sem veículo visível, perspectiva de pedestre)","value":"trekker","icon":"🚶","skip":false,"countries_count":21},{"label":"Caminhonete com estrutura alta / snorkel","value":"snorkel_truck","icon":"🛻","skip":false,"countries_count":5},{"label":"Moto / trike (câmera muito baixa e estreita)","value":"moto_trike","icon":"🛵","skip":false,"countries_count":2},{"label":"Não consigo identificar","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_google_car_color","group":3,"phase":"regional","text":"Qual a cor do carro Google visível na imagem?","attr":"google_car_color","context":"Carro preto (gen 3) identifica um grupo específico: Argentina, Peru, Uruguai, Rússia, Jordânia, Israel, Bermuda, Curaçao, Ilhas Faroe, Gibraltar, Colômbia, Rep. Dominicana. Cinza com estrutura alta = snorkel (Quênia/Austrália/Cazaquistão). Vermelho = Ucrânia (exclusivo).","eliminates":"Carro preto elimina ~124 países; cinza/snorkel elimina ~131; vermelho confirma Ucrânia","options":[{"label":"Branco (padrão global)","value":"white","icon":"⬜","skip":false,"countries_count":118},{"label":"Preto (carro gen 3 escuro)","value":"black","icon":"⬛","skip":false,"countries_count":12},{"label":"Cinza / prata com estrutura alta (snorkel)","value":"grey","icon":"🔲","skip":false,"countries_count":4},{"label":"Vermelho (exclusivo Ucrânia)","value":"red","icon":"🔴","skip":false,"countries_count":1},{"label":"Não consigo ver o carro","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_camera_blur","group":3,"phase":"regional","text":"Como está a nitidez geral da imagem?","attr":"camera_blur","context":"Extremamente borrada (lowcam) confirma Suíça, Liechtenstein, Japão ou Sri Lanka. Bastante borrada (shitcam) aponta Índia, Nepal, Bangladesh, Camboja, Nigéria ou ilhas remotas. Nítida = maioria dos países com gen 4.","eliminates":"Lowcam limita a 4 países; shitcam limita a ~10 países — ambos têm alto poder eliminatório","options":[{"label":"Muito nítida / alta qualidade (gen 4)","value":"sharp","icon":"🔭","skip":false,"countries_count":74},{"label":"Levemente borrada / qualidade média (gen 3 típico)","value":"slight_blur","icon":"👁️","skip":false,"countries_count":48},{"label":"Bastante borrada / difícil ver detalhes (shitcam)","value":"shitcam","icon":"🌫️","skip":false,"countries_count":10},{"label":"Extremamente borrada / quase indistinguível (lowcam)","value":"lowcam","icon":"💨","skip":false,"countries_count":4},{"label":"Não consigo classificar a nitidez","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_vegetation_exclusive","group":4,"phase":"regional","text":"Você consegue identificar alguma planta ou árvore muito específica na imagem?","attr":"vegetation_exclusive","context":"Vegetação exclusiva tem altíssimo poder de confirmação. Araucária = Brasil Sul garantido. Samambaia prateada = Nova Zelândia. Baobá = África (Madagáscar, Senegal ou Tanzânia). Palmeiras de óleo em fileiras retas = Malásia ou Indonésia.","eliminates":"Qualquer identificação positiva confirma 1-3 países com 95-99% de confiança","options":[{"label":"Araucária (pinheiro-candelabro — galhos horizontais em camadas)","value":"araucaria","icon":"🌲","skip":false,"countries_count":1},{"label":"Samambaia prateada / feto (New Zealand silver fern)","value":"silver_fern","icon":"🌿","skip":false,"countries_count":1},{"label":"Baobá (tronco enorme liso, copa esparsa)","value":"baobab","icon":"🌳","skip":false,"countries_count":3},{"label":"Eucalipto dominante (casca branca descamando, folhas longas)","value":"eucalyptus","icon":"🪴","skip":false,"countries_count":2},{"label":"Palmeiras de óleo em fileiras retas (plantação industrial)","value":"oil_palm_rows","icon":"🌴","skip":false,"countries_count":2},{"label":"Não identifico vegetação exclusiva","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_soil_color","group":4,"phase":"regional","text":"Qual é a cor do solo ou terra visível (nas bermas, cortes de morro, campo ao redor)?","attr":"soil_color","context":"Solo vermelho intenso aparece em Brasil Norte, Austrália (especialmente WA e NT), Quênia, Madagáscar e Havaí. Solo vulcânico escuro é exclusivo de Islândia, Açores, Madeira, Reunião e Antártida. Solo bege/arenoso domina desertos e savanas secas.","eliminates":"Vermelho intenso elimina ~126 países (deixa 10); vulcânico elimina ~129 (deixa 7)","options":[{"label":"Normal / sem cor marcante (bege neutro, castanho comum)","value":"normal","icon":"🟤","skip":false,"countries_count":86},{"label":"Bege / arenoso (savanas, desertos)","value":"beige_sandy","icon":"🏜️","skip":false,"countries_count":17},{"label":"Rosado / avermelhado claro (Mediterrâneo, Caribe)","value":"red_pink","icon":"🩷","skip":false,"countries_count":11},{"label":"Vermelho intenso (Brasil, Austrália, Quênia, Madagáscar)","value":"red_intense","icon":"🔴","skip":false,"countries_count":10},{"label":"Escuro / vulcânico / quase negro (Islândia, Açores, Reunião)","value":"dark_volcanic","icon":"⚫","skip":false,"countries_count":7},{"label":"Não consigo ver o solo","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_is_island","group":5,"phase":"regional","text":"Você consegue perceber que está em uma ilha ou arquipélago?","attr":"is_island","context":"Ver mar, encostas abruptas terminando em água ou informação visual de ilha. 43 dos 136 países são ilhas/arquipélagos. Confirmar ilha elimina ~93 países continentais.","eliminates":"Confirmar ilha restringe o universo de 136 para 43 países (~68% de eliminação)","options":[{"label":"Não — parece território continental ou não dá para ver","value":false,"icon":"🌍","skip":false,"countries_count":93},{"label":"Sim — vejo mar próximo / parece claramente uma ilha","value":true,"icon":"🏝️","skip":false,"countries_count":43},{"label":"Não tenho certeza","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_is_microstate","group":5,"phase":"regional","text":"O ambiente parece muito compacto / país minúsculo (microestado)?","attr":"is_microstate","context":"Microestados: Andorra, Bermuda, Gibraltar, Ilha de Man, Jersey, Liechtenstein, Macau, Mônaco, San Marino, BIOT, Ilhas Cocos. Indícios: paisagem extremamente densa ou restrita, vizinhança imediata de outro país bem definido.","eliminates":"Confirmar microestado restringe a 11 países (~92% de eliminação)","options":[{"label":"Não — parece país de tamanho normal","value":false,"icon":"🗺️","skip":false,"countries_count":125},{"label":"Sim — o espaço parece muito restrito / minúsculo","value":true,"icon":"🔬","skip":false,"countries_count":11},{"label":"Não tenho certeza","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_is_spillover","group":5,"phase":"regional","text":"A cobertura parece ser de um território que 'pertence' visualmente a outro país maior?","attr":"is_spillover","context":"Spillovers conhecidos: Belarus (cobertura é trekker em Minsk, visualmente russificado), Falkland Islands e Gibraltar (UK), Guam e Havaí (EUA), Hong Kong (China), Tanzânia (Quênia). Identificar spillover aponta diretamente ao país hospedeiro.","eliminates":"Confirmar spillover restringe a 7 países; combinado com continente, frequentemente confirma um único país","options":[{"label":"Não — parece cobertura normal deste país","value":false,"icon":"🏳️","skip":false,"countries_count":129},{"label":"Sim — parece cobertura de território de outro país","value":true,"icon":"🔀","skip":false,"countries_count":7},{"label":"Não tenho certeza","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_fuel_brand","group":5,"phase":"regional","text":"Você consegue ver algum posto de combustível com marca legível?","attr":"fuel_brands_exclusive","context":"Marcas exclusivas têm poder de confirmação próximo a 100%. Pemex (verde+vermelho) = México. YPF (azul+branco) = Argentina. ENEOS (amarelo) = Japão. Petrobras/Ipiranga = Brasil. ADNOC (verde) = Emirados Árabes.","eliminates":"Qualquer marca exclusiva identificada confirma 1-2 países com ~99% de confiança","options":[{"label":"Pemex (verde e vermelho — México)","value":"Pemex","icon":"🇲🇽","skip":false,"countries_count":1},{"label":"YPF (azul e branco — Argentina)","value":"YPF","icon":"🇦🇷","skip":false,"countries_count":1},{"label":"ENEOS (amarelo — Japão)","value":"ENEOS","icon":"🇯🇵","skip":false,"countries_count":1},{"label":"Petrobras / Ipiranga / BR (Brasil)","value":"Petrobras","icon":"🇧🇷","skip":false,"countries_count":1},{"label":"ADNOC (verde — Emirados Árabes)","value":"ADNOC","icon":"🇦🇪","skip":false,"countries_count":1},{"label":"Não vejo posto / não consigo ler a marca","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_plate_color","group":6,"phase":"regional","text":"Qual é a cor da placa de veículo visível?","attr":"plate_color","context":"Placa traseira amarela + dianteira branca é exclusivo do Reino Unido (e países que seguem o padrão britânico). Placa preta com texto claro aparece em Tunísia, Macau, Svalbard e Liechtenstein. Placa amarela em ambos os lados = Colômbia (única na América Latina).","eliminates":"Placa traseira amarela confirma UK com alta confiança; preta elimina ~132 países","options":[{"label":"Branca (padrão global)","value":"white","icon":"⬜","skip":false,"countries_count":110},{"label":"Traseira amarela + dianteira branca (Reino Unido)","value":"yellow_rear_white_front","icon":"🟡","skip":false,"countries_count":2},{"label":"Preta com texto claro (Tunísia, Macau, Svalbard)","value":"black","icon":"⬛","skip":false,"countries_count":4},{"label":"Amarela dos dois lados (Colômbia — única na América Latina)","value":"yellow_both","icon":"🇨🇴","skip":false,"countries_count":1},{"label":"Não consigo ver / não há veículo visível","value":null,"icon":"—","skip":true,"countries_count":null}]},{"id":"q_architecture","group":6,"phase":"regional","text":"Qual é o estilo arquitetônico dominante nas construções visíveis?","attr":"architecture_type","context":"Útil para diferenciar países com características visuais semelhantes em outros atributos. Madeira pintada/colorida em bairros densos = Escandinávia ou Groenlândia. Adobe/barro = África Ocidental ou América Central. Ultramoderno = EAU, Cingapura, Hong Kong.","eliminates":"Combinado com continente, reduz o universo para 5-20 países dependendo do estilo","options":[{"label":"Concreto simples / blocos sem acabamento (Ásia, África, América Latina)","value":"bare_concrete","icon":"🧱","skip":false,"countries_count":55},{"label":"Madeira pintada ou colorida (nórdica, caribenha, groenlândia)","value":"colored_wood","icon":"🏡","skip":false,"countries_count":18},{"label":"Colonial europeu (pedra, estuque, arcos, azulejo)","value":"european_colonial","icon":"🏛️","skip":false,"countries_count":22},{"label":"Adobe / tijolo de barro seco (África Ocidental, América Central)","value":"adobe_mud","icon":"🏚️","skip":false,"countries_count":8},{"label":"Ultramoderno (vidro, aço, arranha-céus, muito limpo)","value":"ultra_modern","icon":"🏙️","skip":false,"countries_count":6},{"label":"Não consigo classificar / sem construções visíveis","value":null,"icon":"—","skip":true,"countries_count":null}]}];
+const COMBOS = [{"id":"combo_africa_austral","conditions":{"driving_side":"left","road_line_outside":"yellow"},"result":"África Austral confirmada","countries":["south-africa","botswana","lesotho","eswatini","namibia"],"confidence":95,"note":"Única região do mundo com direção à esquerda E linha externa amarela combinadas"},{"id":"combo_turkey","conditions":{"stop_sign":"dur"},"result":"Turquia confirmada","countries":["turkey"],"confidence":99,"note":"DUR no sinal de pare é exclusivo da Turquia em todo o mundo"},{"id":"combo_central_america","conditions":{"stop_sign":"alto"},"result":"México ou América Central","countries":["mexico","guatemala","costa-rica","panama","dominican-republic","cuba","northern-mariana-islands"],"confidence":97,"note":"ALTO no sinal de pare aparece apenas no México e países da América Central hispanófona"},{"id":"combo_south_korea","conditions":{"scripts_contains":"hangul"},"result":"Coreia do Sul confirmada","countries":["south-korea"],"confidence":99,"note":"Script hangul aparece somente na Coreia do Sul em todo o mundo"},{"id":"combo_france_ligne_z","conditions":{"road_line_exclusive":"ligne_z"},"result":"França confirmada","countries":["france"],"confidence":99,"note":"Linha-Z central no asfalto é exclusiva da França — pista irrefutável"},{"id":"combo_uk_zigzag","conditions":{"road_line_exclusive":"zigzag_uk"},"result":"Reino Unido confirmado","countries":["united-kingdom"],"confidence":99,"note":"Linhas brancas em ziguezague nas bordas da pista (indicando faixa de pedestres ou proibição de estacionar) são exclusivas do Reino Unido"},{"id":"combo_sweden_chevron","conditions":{"chevron":"blue_yellow_sweden"},"result":"Suécia confirmada","countries":["sweden"],"confidence":99,"note":"Chevron azul com seta amarela é exclusivo da Suécia na Europa"},{"id":"combo_switzerland_lowcam","conditions":{"camera_special":"lowcam","continent":"europe_west"},"result":"Suíça ou Liechtenstein","countries":["switzerland","liechtenstein"],"confidence":98,"note":"Lowcam na Europa Ocidental é exclusivo da Suíça e Liechtenstein; Liechtenstein é muito menor e raramente aparece"},{"id":"combo_india_nepal_shitcam","conditions":{"camera_special":"shitcam","scripts_contains":"devanagari"},"result":"Índia ou Nepal","countries":["india","nepal"],"confidence":97,"note":"Shitcam + Devanagari aponta exclusivamente para Índia ou Nepal; Nepal tem paisagem montanhosa muito característica"},{"id":"combo_south_america_black_car","conditions":{"google_car_special":"black_gen3","continent":"south_america"},"result":"Argentina, Peru ou Uruguai","countries":["argentina","peru","uruguay"],"confidence":98,"note":"Carro gen 3 preto na América do Sul restringe a este trio; Argentina tem placas Mercosul modernas, Peru tem linhas negras nos postes de sinal, Uruguai tem câmera borrada"}];
+const ALL_QUESTIONS = [...QUESTIONS_BASE, ...QUESTIONS_EXT];
+
+// --- STATE ---
+let scores = {};
+let answers = [];
+let qIndex = 0;
+let showMore = false;
+let triggeredCombos = new Set();
+
+// --- WEIGHTS ---
+const W = {
+  q_script:70, q_stop:55, q_camera_blur_base:65, q_driving:45,
+  q_line_out:35, q_line_ctr:30, q_veg:35, q_bollard:80,
+  q_exclusive:90, q_soil:25,
+  q_chevron:75, q_utility_pole:85, q_guardrail_color:60,
+  q_road_line_exclusive:95, q_latin_diacritics:80,
+  q_cyrillic_variant:85, q_asian_script:90,
+  q_google_car_type:70, q_google_car_color:65, q_camera_blur:65,
+  q_vegetation_exclusive:95, q_soil_color:30,
+  q_is_island:30, q_is_microstate:60, q_is_spillover:55,
+  q_fuel_brand:90, q_plate_color:65, q_architecture:25
+};
+
+function matchScore(country, qid, value) {
+  if (!value) return 0;
+  const w = W[qid] || 30;
+
+  // q_script
+  if (qid === 'q_script') {
+    const asian = ["kanji","hangul","thai","khmer","lao","sinhala","chinese_simplified","burmese","bengali"];
+    const arabic = ["arabic","hebrew"];
+    const s = country.scripts || [];
+    if (value==='asian') return asian.some(x=>s.includes(x)) ? w : -w*0.8;
+    if (value==='cyrillic') return s.includes('cyrillic') ? w : -w*0.8;
+    if (value==='arabic') return arabic.some(x=>s.includes(x)) ? w : -w*0.8;
+    if (value==='latin') return s.includes('latin') ? w*0.4 : -w;
   }
+  // q_stop
+  if (qid === 'q_stop') {
+    const cv = country.stop_sign;
+    if (value==='alto_dur') return (cv==='alto'||cv==='dur') ? w : -w*0.6;
+    return cv===value ? w*0.7 : -w*0.5;
+  }
+  // q_camera_blur_base and q_camera_blur
+  if (qid==='q_camera_blur_base'||qid==='q_camera_blur') {
+    const cb = country.camera_blur;
+    if (value==='lowcam') return cb==='lowcam' ? w : -w*0.6;
+    if (value==='shitcam') return cb==='shitcam' ? w : -w*0.4;
+    if (value==='trekker') return cb==='trekker' ? w : -w*0.5;
+    if (value==='sharp') return cb==='sharp' ? w*0.3 : (cb==='lowcam'||cb==='shitcam' ? -w*0.5 : 0);
+    return 0;
+  }
+  // q_driving
+  if (qid==='q_driving') {
+    return country.driving_side===value ? w*0.6 : -w*0.8;
+  }
+  // road lines
+  if (qid==='q_line_out') {
+    return country.road_line_outside===value ? w*0.8 : -w*0.4;
+  }
+  if (qid==='q_line_ctr') {
+    return country.road_line_center===value ? w*0.7 : -w*0.3;
+  }
+  // q_veg
+  if (qid==='q_veg') {
+    return country.vegetation_dominant===value ? w*0.8 : -w*0.4;
+  }
+  // q_bollard
+  if (qid==='q_bollard') {
+    const bv = country.bollard_type;
+    if (value==='bird_poles') return bv==='bird_poles' ? w : (bv ? -w*0.2 : -w*0.1);
+    if (value==='mexico_black_base') return bv==='mexico_black_base' ? w : (bv ? -w*0.2 : -w*0.1);
+    if (value==='nz_red_rear') return bv==='nz_red_rear' ? w : (bv ? -w*0.2 : -w*0.1);
+    if (value==='double_bollard_botswana') return bv==='double_bollard_botswana' ? w : -w*0.1;
+    return 0;
+  }
+  // q_exclusive
+  if (qid==='q_exclusive') {
+    const feats = country.exclusive_features || [];
+    if (value==='ligne_z') return feats.includes('ligne_z') ? w : -w*0.05;
+    if (value==='black_gen3') return (feats.includes('black_gen3')||country.google_car_color==='black') ? w*0.7 : -w*0.1;
+    if (value==='snorkel_truck') return (feats.includes('snorkel_truck')||country.google_car_type==='snorkel_truck') ? w : -w*0.05;
+    if (value==='pare_sign') return (feats.includes('pare_sign')||country.stop_sign==='pare') ? w : -w*0.05;
+    return 0;
+  }
+  // q_soil / q_soil_color
+  if (qid==='q_soil'||qid==='q_soil_color') {
+    return country.soil_color===value ? w*0.8 : -w*0.2;
+  }
+  // q_chevron
+  if (qid==='q_chevron') {
+    return country.chevron===value ? w : (country.chevron ? -w*0.3 : -w*0.1);
+  }
+  // q_utility_pole
+  if (qid==='q_utility_pole') {
+    const slugMap = {
+      wood_north_america:'wood_north_america',
+      double_concrete_argentina:'double_concrete_argentina',
+      bird_poles_sa:'bird_poles_sa',
+      concrete_ladder_waffle:'waffle_france',
+      octagonal_concrete:'octagonal_mexico',
+      bamboo_poles:'bamboo_vietnam'
+    };
+    const mapped = slugMap[value] || value;
+    return country.utility_pole_type===mapped ? w : (country.utility_pole_type ? -w*0.3 : -w*0.1);
+  }
+  // q_guardrail_color
+  if (qid==='q_guardrail_color') {
+    return country.guardrail_color===value ? w : (country.guardrail_color ? -w*0.2 : -w*0.05);
+  }
+  // q_road_line_exclusive
+  if (qid==='q_road_line_exclusive') {
+    return country.road_line_exclusive===value ? w : (country.road_line_exclusive ? -w*0.3 : -w*0.1);
+  }
+  // q_latin_diacritics
+  if (qid==='q_latin_diacritics') {
+    const diac = country.latin_diacritics || [];
+    const diacMap = {
+      ao_tilde:['ã','ô','ê'],
+      n_tilde:['ñ'],
+      turkish:['ı','ğ','ş'],
+      hungarian:['ő','ű'],
+      czech:['ř','ě'],
+      icelandic:['þ','ð'],
+      polish:['ł'],
+      albanian:['ë','ç'],
+      romanian:['ț','ș'],
+      french_acute:['ï','ÿ']
+    };
+    const targets = diacMap[value] || [value];
+    return targets.some(d=>diac.includes(d)) ? w : -w*0.3;
+  }
+  // q_cyrillic_variant
+  if (qid==='q_cyrillic_variant') {
+    const s = country.scripts || [];
+    const slug = country.slug;
+    if (!s.includes('cyrillic')) return -w*0.8;
+    const cMap = {
+      russian:['russia'],
+      serbian:['serbia'],
+      bulgarian:['bulgaria','north-macedonia'],
+      ukrainian:['ukraine'],
+      kazakh:['kazakhstan','kyrgyzstan'],
+      mongolian:['mongolia']
+    };
+    return (cMap[value]||[]).includes(slug) ? w : -w*0.4;
+  }
+  // q_asian_script
+  if (qid==='q_asian_script') {
+    const scriptMap = {
+      kanji_jp:['kanji'],
+      hangul_kr:['hangul'],
+      thai_th:['thai'],
+      khmer_kh:['khmer'],
+      lao_la:['lao'],
+      devanagari_in:['devanagari'],
+      bengali_bd:['bengali'],
+      sinhala_lk:['sinhala'],
+      chinese_cn:['chinese_simplified']
+    };
+    const targets = scriptMap[value] || [];
+    const s = country.scripts || [];
+    return targets.some(x=>s.includes(x)) ? w : (s.some(x=>['kanji','hangul','thai','khmer','lao','devanagari','bengali','sinhala','chinese_simplified'].includes(x)) ? -w*0.5 : -w*0.1);
+  }
+  // q_google_car_type
+  if (qid==='q_google_car_type') {
+    return country.google_car_type===value ? w*0.8 : (value!=='car' ? -w*0.3 : -w*0.05);
+  }
+  // q_google_car_color
+  if (qid==='q_google_car_color') {
+    return country.google_car_color===value ? w*0.7 : (value!=='white' ? -w*0.2 : -w*0.05);
+  }
+  // q_vegetation_exclusive
+  if (qid==='q_vegetation_exclusive') {
+    const ve = country.vegetation_exclusive || [];
+    return ve.includes(value) ? w : (ve.length>0 ? -w*0.2 : -w*0.05);
+  }
+  // q_is_island
+  if (qid==='q_is_island') {
+    const is = value==='yes';
+    return country.is_island===is ? w*0.6 : -w*0.4;
+  }
+  // q_is_microstate
+  if (qid==='q_is_microstate') {
+    const is = value==='yes';
+    return country.is_microstate===is ? w*0.7 : -w*0.5;
+  }
+  // q_is_spillover
+  if (qid==='q_is_spillover') {
+    const is = value==='yes';
+    return country.is_spillover===is ? w*0.7 : -w*0.3;
+  }
+  // q_fuel_brand
+  if (qid==='q_fuel_brand') {
+    const fb = country.fuel_brands_exclusive || [];
+    const brandMap = {
+      pemex:['Pemex'],ypf:['YPF'],petrobras:['Petrobras'],
+      eneos:['ENEOS'],adnoc:['ADNOC'],petrol_si:['Petrol'],
+      shell_generic:[],bp_generic:[]
+    };
+    const targets = brandMap[value] || [value];
+    return targets.some(b=>fb.includes(b)) ? w : -w*0.1;
+  }
+  // q_plate_color
+  if (qid==='q_plate_color') {
+    // yellow plates: colombia, uk rear, netherlands rear, bermuda
+    const yellowSlugs = ['colombia','united-kingdom','netherlands','bermuda','australia'];
+    const blackSlugs = ['germany','austria','czechia'];
+    if (value==='yellow') return yellowSlugs.includes(country.slug) ? w : -w*0.1;
+    if (value==='black_dark') return blackSlugs.includes(country.slug) ? w : -w*0.1;
+    return 0;
+  }
+  // q_architecture
+  if (qid==='q_architecture') {
+    // soft scoring based on continent + known associations
+    const contMap = {
+      ultra_modern:['middle_east','asia_east'],
+      adobe_mud:['africa_sub','africa_north','central_america'],
+      colored_wood:['europe_north','caribbean'],
+      european_colonial:['europe_west','europe_central','south_america']
+    };
+    const targets = contMap[value] || [];
+    return targets.includes(country.continent) ? w*0.4 : -w*0.1;
+  }
+  return 0;
+}
+
+function checkCombos() {
+  const triggered = [];
+  for (const combo of COMBOS) {
+    if (triggeredCombos.has(combo.id)) continue;
+    const conds = combo.conditions;
+    let match = true;
+    for (const [k,v] of Object.entries(conds)) {
+      const ans = answers.find(a => {
+        if (k==='driving_side') return a.qid==='q_driving';
+        if (k==='road_line_outside') return a.qid==='q_line_out';
+        if (k==='stop_sign') return a.qid==='q_stop';
+        if (k==='road_line_exclusive') return a.qid==='q_road_line_exclusive';
+        if (k==='chevron') return a.qid==='q_chevron';
+        if (k==='camera_special') return a.qid==='q_camera_blur_base'||a.qid==='q_camera_blur';
+        if (k==='scripts_contains') return a.qid==='q_script'||a.qid==='q_asian_script';
+        if (k==='google_car_special') return a.qid==='q_exclusive';
+        if (k==='continent') return false;
+        return false;
+      });
+      if (!ans) { match=false; break; }
+      if (k==='scripts_contains') {
+        const scriptAns = ans.value;
+        if (v==='hangul' && scriptAns!=='asian') { match=false; break; }
+      } else if (ans.value !== v) { match=false; break; }
+    }
+    if (match) {
+      triggered.push(combo);
+      triggeredCombos.add(combo.id);
+      // Boost matching countries
+      for (const slug of combo.countries) {
+        if (scores[slug]!==undefined) scores[slug] += 60;
+      }
+    }
+  }
+  return triggered;
+}
+
+function applyAnswer(qid, value) {
+  COUNTRIES.forEach(c => {
+    scores[c.slug] = (scores[c.slug]||0) + matchScore(c, qid, value);
+  });
+}
+
+function getSorted() {
+  return [...COUNTRIES].sort((a,b)=>(scores[b.slug]||0)-(scores[a.slug]||0));
+}
+
+function getConfidence(sorted) {
+  if (!answers.length) return 0;
+  const top = scores[sorted[0].slug]||0;
+  const sec = sorted.length>1 ? (scores[sorted[1].slug]||0) : 0;
+  const gap = Math.max(0, top-sec);
+  const base = Math.min(97, 8 + answers.length*6 + gap*0.25);
+  const boost = sorted[0].confidence_score ? sorted[0].confidence_score*0.5 : 0;
+  return Math.round(Math.min(97, base + boost*0.3));
+}
+
+function getAlive(sorted) {
+  if (!answers.length) return sorted;
+  const top = scores[sorted[0].slug]||0;
+  return sorted.filter(c=>(scores[c.slug]||0) >= top-70);
+}
+
+function updatePrediction() {
+  const sorted = getSorted();
+  const conf = getConfidence(sorted);
+  const alive = getAlive(sorted);
+  const predName = document.getElementById('pred-name');
+  const confFill = document.getElementById('conf-fill');
+  const confPct = document.getElementById('conf-pct');
+  const aliveWrap = document.getElementById('alive-wrap');
+  const aliveLabel = document.getElementById('alive-label');
+  const aliveChips = document.getElementById('alive-chips');
+  const smBtn = document.getElementById('show-more-btn');
+
+  if (!answers.length) {
+    predName.textContent='Responda a primeira pergunta...';
+    predName.className='pred-name empty';
+    confFill.style.width='0%';
+    confPct.textContent='—';
+    aliveWrap.style.display='none';
+    return;
+  }
+
+  predName.textContent=sorted[0].name;
+  predName.className='pred-name';
+  confFill.style.width=conf+'%';
+  confPct.textContent=conf+'%';
+  aliveWrap.style.display='block';
+  aliveLabel.textContent=`${alive.length} país${alive.length!==1?'es':''} candidato${alive.length!==1?'s':''}`;
+
+  const toShow = showMore ? alive : alive.slice(0,12);
+  aliveChips.innerHTML = toShow.map((c,i)=>
+    `<div class="chip${i===0?' top':''}">${c.name}</div>`
+  ).join('');
+
+  if (alive.length>12) {
+    smBtn.style.display='block';
+    smBtn.textContent=showMore?'− mostrar menos':`+ ${alive.length-12} mais`;
+  } else {
+    smBtn.style.display='none';
+  }
+}
+
+function renderComboAlert(combos) {
+  const area = document.getElementById('combo-area');
+  if (!combos.length) return;
+  area.innerHTML = combos.map(c=>
+    `<div class="combo-alert">
+      <strong>🎯 ${c.result}</strong> — ${c.note} (${c.confidence}% de confiança)
+    </div>`
+  ).join('');
+  setTimeout(()=>{ area.innerHTML=''; }, 6000);
+}
+
+function renderQuestion() {
+  const area = document.getElementById('q-area');
+  const histArea = document.getElementById('hist-area');
+
+  if (qIndex >= ALL_QUESTIONS.length) {
+    const sorted = getSorted();
+    const conf = getConfidence(sorted);
+    area.innerHTML=`<div class="q-card"><div class="done-wrap">
+      <div class="done-sub">melhor estimativa</div>
+      <div class="done-country">${sorted[0].name}</div>
+      <div class="done-conf">${conf}% de confiança · ${answers.length} perguntas respondidas</div>
+      <button class="done-btn" onclick="reset()">↺ Nova rodada</button>
+    </div></div>`;
+    histArea.innerHTML='';
+    return;
+  }
+
+  const q = ALL_QUESTIONS[qIndex];
+  const isGeneral = qIndex < QUESTIONS_BASE.length;
+  const phaseLabel = isGeneral
+    ? `<div class="phase-badge"><div class="phase-dot"></div>fase geral · pergunta ${qIndex+1} de ${ALL_QUESTIONS.length}</div>`
+    : `<div class="phase-badge" style="--ph:var(--acc3)"><div class="phase-dot" style="background:var(--acc3)"></div>fase específica · pergunta ${qIndex+1} de ${ALL_QUESTIONS.length}</div>`;
+
+  area.innerHTML=`
+    ${phaseLabel}
+    <div class="q-card">
+      <div class="q-head">
+        <div class="q-num">pergunta ${qIndex+1}</div>
+        <div class="q-text">${q.text}</div>
+      </div>
+      <div class="q-opts">
+        ${q.options.map((o,i)=>`
+          <button class="opt${o.skip?' skip':''}" onclick="selectOpt(${i})">
+            <span class="opt-icon">${o.icon}</span>
+            <span>${o.label}</span>
+            ${o.countries_count!=null?`<span class="opt-count">${o.countries_count} países</span>`:''}
+          </button>
+        `).join('')}
+      </div>
+    </div>`;
+
+  if (answers.length) {
+    histArea.innerHTML=`<div class="hist-wrap">
+      ${[...answers].reverse().map((a,ri)=>{
+        const qi=answers.length-1-ri;
+        const qq=ALL_QUESTIONS[qi];
+        return `<div class="hist-item">
+          <div class="hist-q">${qq.text.substring(0,55)}...</div>
+          <div class="hist-a">${a.label}</div>
+          <button class="hist-undo" onclick="undoTo(${qi})" title="Desfazer">↩</button>
+        </div>`;
+      }).join('')}
+    </div>`;
+  } else {
+    histArea.innerHTML='';
+  }
+}
+
+function selectOpt(i) {
+  const q = ALL_QUESTIONS[qIndex];
+  const opt = q.options[i];
+  answers.push({qid:q.id, value:opt.value, label:opt.label});
+  applyAnswer(q.id, opt.value);
+  const newCombos = checkCombos();
+  qIndex++;
+  updatePrediction();
+  renderComboAlert(newCombos);
+  renderQuestion();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function undoTo(qi) {
+  answers = answers.slice(0, qi);
+  scores = {};
+  triggeredCombos = new Set();
+  answers.forEach(a=>applyAnswer(a.qid, a.value));
+  qIndex = qi;
+  showMore = false;
+  updatePrediction();
+  renderQuestion();
+}
+
+function toggleMore() {
+  showMore = !showMore;
+  updatePrediction();
+}
+
+function reset() {
+  scores={};
+  answers=[];
+  qIndex=0;
+  showMore=false;
+  triggeredCombos=new Set();
+  document.getElementById('combo-area').innerHTML='';
+  updatePrediction();
+  renderQuestion();
+}
+
+reset();
 </script>
 </body>
 </html>

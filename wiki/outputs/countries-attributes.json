@@ -1,0 +1,6267 @@
+[
+  {
+    "slug": "alaska",
+    "name": "Alasca",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_black",
+    "utility_pole_type": "wood_north_america",
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "north_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_plates_alaska",
+      "ursa_major_shield",
+      "alaska_pipeline",
+      "shitcam_usa"
+    ],
+    "confusable_with": [
+      "canada"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "albania",
+    "name": "Albânia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ë",
+      "ç"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_white",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "rruga_street_sign",
+      "red_stripe_plate_left",
+      "rifts_albania"
+    ],
+    "confusable_with": [
+      "montenegro",
+      "italy",
+      "greece"
+    ],
+    "fuel_brands_exclusive": [
+      "Kastrati"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "american-samoa",
+    "name": "Samoa Americana",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "rusted_black_truck_tutuila",
+      "different_car_per_island"
+    ],
+    "confusable_with": [
+      "samoa"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 6
+  },
+  {
+    "slug": "andorra",
+    "name": "Andorra",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "spain_wedge_yellow",
+    "chevron": "blue_white",
+    "utility_pole_type": null,
+    "guardrail_color": "yellow_reflectors",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "orange_dot_plate",
+      "cg_cs_road_markers",
+      "gen3_autumn_colors",
+      "yellow_turquoise_cones",
+      "cg_cs_signs"
+    ],
+    "confusable_with": [
+      "spain",
+      "france"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "antarctica",
+    "name": "Antártida",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "dark_volcanic",
+    "continent": "oceania",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "penguins",
+      "trekker_only",
+      "dark_soil",
+      "south_pole_sign"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "argentina",
+    "name": "Argentina",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": "double_concrete_argentina",
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_red_chevron_americas",
+      "black_center_dot_plate",
+      "ypf_fuel",
+      "a_frame_poles"
+    ],
+    "confusable_with": [
+      "brazil",
+      "uruguay",
+      "bolivia",
+      "chile"
+    ],
+    "fuel_brands_exclusive": [
+      "YPF"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "australia",
+    "name": "Austrália",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "grey_snorkel_truck",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_white",
+    "utility_pole_type": "stobie_sa_aus",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "eucalyptus_dominant",
+      "white_bollard_red_reflector_stops_middle",
+      "stobie_poles_sa",
+      "termite_mounds_nt",
+      "hungry_jacks"
+    ],
+    "confusable_with": [
+      "new-zealand",
+      "south-africa"
+    ],
+    "fuel_brands_exclusive": [
+      "Caltex",
+      "Hungry Jacks"
+    ],
+    "wiki_status": "complete",
+    "confidence_score": 9
+  },
+  {
+    "slug": "austria",
+    "name": "Áustria",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ä",
+      "ö",
+      "ü",
+      "ß"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_gas_poles",
+      "einbahn_sign",
+      "dashed_pedestrian_crossing_2lines",
+      "gen3_german_language",
+      "blue_road_markers_comma"
+    ],
+    "confusable_with": [
+      "germany",
+      "switzerland",
+      "slovenia"
+    ],
+    "fuel_brands_exclusive": [
+      "OMV"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "azores",
+    "name": "Açores",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ã",
+      "ô",
+      "ê",
+      "ç"
+    ],
+    "stop_sign": "pare",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_yellow_portugal",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [
+      "cryptomeria_japonica"
+    ],
+    "soil_color": "dark_volcanic",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "ceramic_tile_street_signs",
+      "dry_stone_walls_volcanic",
+      "japanese_cedar_trees",
+      "holstein_cows",
+      "ondulating_agricultural_landscape"
+    ],
+    "confusable_with": [
+      "madeira",
+      "portugal"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "bangladesh",
+    "name": "Bangladesh",
+    "driving_side": "left",
+    "scripts": [
+      "bengali"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_south",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "turquoise_plates",
+      "red_white_bollards",
+      "hazy_gen4",
+      "wire_nest_poles"
+    ],
+    "confusable_with": [
+      "india",
+      "sri-lanka"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "belarus",
+    "name": "Bielorrússia",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "russia",
+    "exclusive_features": [
+      "teal_street_signs_minsk",
+      "grey_rectangular_tiles",
+      "holy_spirit_cathedral_towers",
+      "pedestrian_only_coverage"
+    ],
+    "confusable_with": [
+      "russia",
+      "ukraine"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 6
+  },
+  {
+    "slug": "belgium",
+    "name": "Bélgica",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": "yellow_reflectors",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "red_text_plates",
+      "orange_signposts",
+      "yellow_rectangular_bollard_reflector",
+      "roadside_gutters",
+      "orange_priority_diamond"
+    ],
+    "confusable_with": [
+      "netherlands",
+      "france",
+      "germany"
+    ],
+    "fuel_brands_exclusive": [
+      "Dats24",
+      "OCTA+"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "bermuda",
+    "name": "Bermudas",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "absent",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_rooftops_pastel_houses",
+      "single_yellow_center_line_no_outside",
+      "black_google_car"
+    ],
+    "confusable_with": [
+      "caribbean"
+    ],
+    "fuel_brands_exclusive": [
+      "Rubis"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "bhutan",
+    "name": "Butão",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_south",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "red_plates_asia",
+      "dzongkha_script",
+      "stone_block_barriers",
+      "tin_roof_painted_wood_architecture",
+      "grey_car_left_drive"
+    ],
+    "confusable_with": [
+      "nepal",
+      "philippines"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "bolivia",
+    "name": "Bolívia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "curved_wooden_poles",
+      "mas_evo_graffiti",
+      "wiphala_flag",
+      "cobblestone_pattern_specific",
+      "tigo_telecom"
+    ],
+    "confusable_with": [
+      "peru",
+      "chile",
+      "argentina"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "botswana",
+    "name": "Botswana",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "botswana_double",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "africa_austral",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_yellow_signposts_africa",
+      "blue_old_road_signs",
+      "a_road_prefix_green",
+      "random_small_blurs",
+      "elephant_crossing_signs"
+    ],
+    "confusable_with": [
+      "south-africa",
+      "namibia"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "brazil",
+    "name": "Brasil",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ã",
+      "õ",
+      "ô",
+      "ê",
+      "ç"
+    ],
+    "stop_sign": "pare",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": "linha_z",
+    "bollard_type": null,
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [
+      "araucaria"
+    ],
+    "soil_color": "red_intense",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "ladder_poles",
+      "black_background_street_signs",
+      "araucaria_south",
+      "blue_road_markers",
+      "pare_stop_sign",
+      "transparent_parabolic_antennas"
+    ],
+    "confusable_with": [
+      "paraguay",
+      "argentina",
+      "colombia",
+      "portugal"
+    ],
+    "fuel_brands_exclusive": [
+      "Ipiranga",
+      "BR Distribuidora"
+    ],
+    "wiki_status": "complete",
+    "confidence_score": 10
+  },
+  {
+    "slug": "british-indian-ocean-territory",
+    "name": "Território Britânico do Oceano Índico",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "asia_south",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_only",
+      "coconut_palm_forests",
+      "mangroves_atolls"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 4
+  },
+  {
+    "slug": "bulgaria",
+    "name": "Bulgária",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "hook_up_isolators_pole_top",
+      "cyrillic_plus_latin_signs",
+      "pedestrian_sign_4stripes_hat",
+      "thin_road_lines"
+    ],
+    "confusable_with": [
+      "romania",
+      "russia",
+      "turkey",
+      "greece"
+    ],
+    "fuel_brands_exclusive": [
+      "EKO"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "cambodia",
+    "name": "Camboja",
+    "driving_side": "right",
+    "scripts": [
+      "khmer"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "asia_southeast",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "khmer_script",
+      "black_yellow_chevron_inverted_sea",
+      "striped_gen3_car",
+      "red_white_road_markers",
+      "stilt_house_colors_brown_blue_orange"
+    ],
+    "confusable_with": [
+      "thailand",
+      "laos",
+      "vietnam"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "canada",
+    "name": "Canadá",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "é",
+      "à",
+      "è",
+      "ê",
+      "î",
+      "ô",
+      "û",
+      "ç"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_black",
+    "utility_pole_type": "wood_north_america",
+    "guardrail_color": null,
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "north_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "maximum_speed_sign",
+      "diamond_t_junction",
+      "gen2_north_america",
+      "two_peak_mirror_gen3",
+      "no_text_yield_sign"
+    ],
+    "confusable_with": [
+      "usa"
+    ],
+    "fuel_brands_exclusive": [
+      "Petro-Canada",
+      "Irving"
+    ],
+    "wiki_status": "complete",
+    "confidence_score": 9
+  },
+  {
+    "slug": "chile",
+    "name": "Chile",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "all_yellow_road_lines_americas",
+      "red_bridge_balustrades",
+      "letter_road_system_north_south",
+      "white_car_black_section_gen3",
+      "copec_fuel"
+    ],
+    "confusable_with": [
+      "argentina",
+      "peru",
+      "bolivia"
+    ],
+    "fuel_brands_exclusive": [
+      "COPEC"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "china",
+    "name": "China",
+    "driving_side": "right",
+    "scripts": [
+      "chinese_simplified"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "tripod_only_no_car",
+      "blue_plates_white_text",
+      "simplified_chinese_characters",
+      "motion_blur_objects"
+    ],
+    "confusable_with": [
+      "taiwan",
+      "hong-kong"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "christmas-island",
+    "name": "Ilha Christmas",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "silver_pickup_truck_google",
+      "red_crabs",
+      "yellow_street_signs",
+      "dense_tropical_forest"
+    ],
+    "confusable_with": [
+      "cocos-islands",
+      "australia"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "cocos-islands",
+    "name": "Ilhas Cocos (Keeling)",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "grey_snorkel_truck",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "snorkel_car_west_island",
+      "cross_brick_pavement_bantam",
+      "white_sand_open_atoll",
+      "bilingual_english_malay_signs"
+    ],
+    "confusable_with": [
+      "christmas-island"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 6
+  },
+  {
+    "slug": "colombia",
+    "name": "Colômbia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "octagonal_mexico",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_vehicle_plates_south_america",
+      "pr_km_markers",
+      "black_yellow_signpost_stripes",
+      "pastel_yellow_taxis"
+    ],
+    "confusable_with": [
+      "ecuador",
+      "mexico",
+      "brazil"
+    ],
+    "fuel_brands_exclusive": [
+      "EcoPetrol",
+      "Terpel",
+      "Biomax"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "costa-rica",
+    "name": "Costa Rica",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "alto",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "central_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_spanish_unique",
+      "red_taxis_yellow_sign",
+      "white_blue_plates"
+    ],
+    "confusable_with": [
+      "mexico",
+      "guatemala",
+      "panama"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "croatia",
+    "name": "Croácia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "č",
+      "ć",
+      "đ",
+      "š",
+      "ž"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "red",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "gen3_autumn_mirrors_visible",
+      "yellow_sticker_mirror",
+      "triangular_bollard_black_rectangle",
+      "yellow_directional_signs_ex_yugo",
+      "pedestrian_sign_5stripes_belt"
+    ],
+    "confusable_with": [
+      "slovenia",
+      "hungary",
+      "serbia",
+      "montenegro"
+    ],
+    "fuel_brands_exclusive": [
+      "INA"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "curacao",
+    "name": "Curaçao",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_car_roof_rack",
+      "blue_street_signs_yellow_poles",
+      "bw_striped_traffic_poles",
+      "cactus_caribbean",
+      "pastel_bungalows"
+    ],
+    "confusable_with": [
+      "aruba",
+      "bonaire"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "cyprus",
+    "name": "Chipre",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "middle_east",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "left_drive_europe",
+      "greek_english_bilingual_signs",
+      "triangular_bollards",
+      "yellow_red_border_city_signs",
+      "horizontal_white_water_tanks_rooftops"
+    ],
+    "confusable_with": [
+      "greece",
+      "malta",
+      "turkey"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "czechia",
+    "name": "Chéquia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ř",
+      "ě",
+      "š",
+      "č",
+      "ž",
+      "ů"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_white",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "double_orange_bollard_reflector",
+      "widened_type_b_guardrail",
+      "bright_red_street_signs",
+      "filled_arrow_directional_signs",
+      "r_with_caron_unique"
+    ],
+    "confusable_with": [
+      "slovakia",
+      "poland",
+      "germany",
+      "hungary"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "denmark",
+    "name": "Dinamarca",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "æ",
+      "ø",
+      "å"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": "square_denmark",
+    "bollard_type": "white_orange_stripe_green_reflector",
+    "chevron": "red_white_denmark",
+    "utility_pole_type": "rare_high_tension_only",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "square_denmark_lines",
+      "parrot_plate_yellow_section",
+      "pipe_framed_direction_signs",
+      "green_bollard_reflectors"
+    ],
+    "confusable_with": [
+      "norway",
+      "netherlands",
+      "sweden",
+      "belgium"
+    ],
+    "fuel_brands_exclusive": [
+      "ok",
+      "uno_x",
+      "yx"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "dominican-republic",
+    "name": "República Dominicana",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "pare",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "square_concrete_inverted_L",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "white_grey",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "metal_bars_black_thick_stripes_car",
+      "yellow_top_white_bottom_plates",
+      "square_concrete_poles_inverted_L"
+    ],
+    "confusable_with": [
+      "puerto_rico",
+      "south_america",
+      "guatemala",
+      "curacao"
+    ],
+    "fuel_brands_exclusive": [
+      "isla",
+      "sunix"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "ecuador",
+    "name": "Equador",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "alto",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "round_two_red_stripes",
+    "chevron": null,
+    "utility_pole_type": "ladder_concrete",
+    "guardrail_color": "mixed",
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "shitcam_latin_america",
+      "gen4_pickup_black_bed_no_antenna",
+      "mixed_plate_sizes",
+      "teal_blue_sign_backs"
+    ],
+    "confusable_with": [
+      "colombia",
+      "panama",
+      "costa_rica",
+      "peru",
+      "bolivia"
+    ],
+    "fuel_brands_exclusive": [
+      "petroecuador"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "egypt",
+    "name": "Egito",
+    "driving_side": "right",
+    "scripts": [
+      "arabic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "other",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "africa_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "only_7_trekkers",
+      "pyramids",
+      "sandstone_monuments"
+    ],
+    "confusable_with": [
+      "turkey"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "estonia",
+    "name": "Estônia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "õ",
+      "ä",
+      "ö",
+      "ü"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "cylindrical_round_baton",
+    "chevron": "red_white_estonia",
+    "utility_pole_type": "wooden_round_trident_top",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "gen3_green_blur",
+      "tanav_tee_street_suffix",
+      "oval_blue_house_numbers",
+      "pedestrian_sign_3_stripes_detailed"
+    ],
+    "confusable_with": [
+      "latvia",
+      "lithuania",
+      "finland",
+      "russia"
+    ],
+    "fuel_brands_exclusive": [
+      "alexela",
+      "olerex"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "eswatini",
+    "name": "Essuatíni",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "dark_brown_wood_side_insulators",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "africa_austral",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "MR_road_codes",
+      "long_plates_green_base",
+      "concrete_bus_shelters"
+    ],
+    "confusable_with": [
+      "lesotho",
+      "south_africa"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "falkland-islands",
+    "name": "Ilhas Malvinas (Falkland)",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "dark_volcanic",
+    "continent": "south_america",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "united_kingdom",
+    "exclusive_features": [
+      "only_3_trekker_islands",
+      "subantarctic_open_plains",
+      "yellow_grass"
+    ],
+    "confusable_with": [
+      "faroe_islands"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 7
+  },
+  {
+    "slug": "faroe-islands",
+    "name": "Ilhas Faroé",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "æ",
+      "ø"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "yellow_wooden_stick",
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": "yellow_reflectors",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_wooden_stick_bollards",
+      "yellow_guardrail_reflectors",
+      "yellow_direction_signs_black_border",
+      "turf_roof_stone_base_houses",
+      "fjords_green_mountains"
+    ],
+    "confusable_with": [
+      "iceland",
+      "norway"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "finland",
+    "name": "Finlândia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ä",
+      "ö"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "black_white_diagonal_rectangular_reflector",
+    "chevron": "black_yellow",
+    "utility_pole_type": "wooden_black_cap_top",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "warning_sign_yellow_extra_border",
+      "gen3_autumn_foliage",
+      "k_market_s_market",
+      "road_lines_always_solid",
+      "snow_pole_orange_thin_top_band"
+    ],
+    "confusable_with": [
+      "sweden",
+      "norway",
+      "estonia"
+    ],
+    "fuel_brands_exclusive": [
+      "neste",
+      "abc_finland"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "france",
+    "name": "França",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": "ligne_z",
+    "bollard_type": "france_cone",
+    "chevron": "blue_white",
+    "utility_pole_type": "concrete_ladder_waffle",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "ligne_z",
+      "france_cone_bollard",
+      "pole_blue_plate",
+      "austrian_flag_road_markers",
+      "pole_arrow_isolator_top",
+      "ladder_waffle_pole"
+    ],
+    "confusable_with": [
+      "spain",
+      "belgium",
+      "switzerland",
+      "italy"
+    ],
+    "fuel_brands_exclusive": [
+      "systeme_u",
+      "e_leclerc"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 10
+  },
+  {
+    "slug": "germany",
+    "name": "Alemanha",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ä",
+      "ö",
+      "ü",
+      "ß"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "germany_wedge",
+    "chevron": "black_white",
+    "utility_pole_type": "wooden_white_stickers",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "germany_wedge_bollard",
+      "einbahnstrasse_sign",
+      "white_stickers_wooden_poles",
+      "H_yellow_green_bus_stop",
+      "blurred_buildings_privacy"
+    ],
+    "confusable_with": [
+      "austria",
+      "switzerland",
+      "poland",
+      "netherlands"
+    ],
+    "fuel_brands_exclusive": [
+      "aral"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "ghana",
+    "name": "Gana",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "uk_style_cylindrical_white",
+    "chevron": null,
+    "utility_pole_type": "wooden_3_insulators",
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "google_car_black_tape_rack",
+      "taxi_orange_yellow_fenders",
+      "gen3_black_tape_regional_variants"
+    ],
+    "confusable_with": [
+      "nigeria",
+      "togo",
+      "benin",
+      "ivory_coast"
+    ],
+    "fuel_brands_exclusive": [
+      "goil",
+      "alliedoil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "gibraltar",
+    "name": "Gibraltar",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "white_grey",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": true,
+    "is_spillover": true,
+    "spillover_from": "united_kingdom",
+    "exclusive_features": [
+      "rock_of_gibraltar",
+      "gen3_long_silver_tip_antenna",
+      "christmas_decorations_coverage",
+      "barbary_macaques"
+    ],
+    "confusable_with": [
+      "spain",
+      "malta",
+      "united_kingdom"
+    ],
+    "fuel_brands_exclusive": [
+      "cepsa"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "greece",
+    "name": "Grécia",
+    "driving_side": "right",
+    "scripts": [
+      "greek"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_white",
+    "utility_pole_type": "dark_brown_wood_tall_harp_top",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [
+      "olive_trees",
+      "citrus_south"
+    ],
+    "soil_color": "red_pink",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "harp_top_poles",
+      "roadside_miniature_churches",
+      "pedestrian_sign_two_dotted_lines",
+      "warning_sign_yellow_background",
+      "direction_sign_yellow_toponym"
+    ],
+    "confusable_with": [
+      "cyprus",
+      "albania",
+      "bulgaria",
+      "north_macedonia",
+      "italy"
+    ],
+    "fuel_brands_exclusive": [
+      "eko",
+      "revoil",
+      "elin",
+      "aegeanoil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "greenland",
+    "name": "Groenlândia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "north_america",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_unique_vehicle_per_locality",
+      "colored_wooden_houses_sparse",
+      "many_boat_trekkers",
+      "grey_car_nuuk"
+    ],
+    "confusable_with": [
+      "svalbard",
+      "norway"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "guam",
+    "name": "Guam",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "thick_concrete",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "united_states",
+    "exclusive_features": [
+      "antenna_rack_visible_car",
+      "green_street_signs",
+      "thick_concrete_poles",
+      "many_road_reflectors"
+    ],
+    "confusable_with": [
+      "northern_mariana_islands"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "guatemala",
+    "name": "Guatemala",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "alto",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "white_two_black_stripes",
+    "chevron": null,
+    "utility_pole_type": "painted_pink_green",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "central_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "pink_green_painted_poles",
+      "grey_car_rack_mirrors",
+      "thin_yellow_center_lines"
+    ],
+    "confusable_with": [
+      "mexico",
+      "laos"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 8
+  },
+  {
+    "slug": "hawaii",
+    "name": "Hawaii",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "yellow_band_poles",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "north_america",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "united_states",
+    "exclusive_features": [
+      "rainbow_license_plate",
+      "hawaiian_language_toponyms",
+      "guitar_shield_road_signs",
+      "smallcam_gen4",
+      "road_reflector_1_4_1_pattern"
+    ],
+    "confusable_with": [
+      "california",
+      "other_us_states"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "hong-kong",
+    "name": "Hong Kong",
+    "driving_side": "left",
+    "scripts": [
+      "latin",
+      "chinese_traditional"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "yellow_arrow_circle_blue",
+    "chevron": null,
+    "utility_pole_type": "cylindrical_wide_base",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "china",
+    "exclusive_features": [
+      "yellow_rear_white_front_plates",
+      "bilingual_english_traditional_chinese_signs",
+      "no_striped_curb",
+      "extremely_tall_residential_towers",
+      "yellow_pedestrian_crossings"
+    ],
+    "confusable_with": [
+      "singapore",
+      "taiwan",
+      "china"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "hungary",
+    "name": "Hungria",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ő",
+      "ű"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_holey_no_yellow_marker",
+    "guardrail_color": "silver",
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "o_u_double_acute_accent",
+      "utca_ut_street_suffix",
+      "wedge_bollard_red_reflector",
+      "abnormally_tall_sign_poles",
+      "gen3_winter_grey"
+    ],
+    "confusable_with": [
+      "slovakia",
+      "croatia",
+      "romania",
+      "poland"
+    ],
+    "fuel_brands_exclusive": [
+      "mol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 9
+  },
+  {
+    "slug": "iceland",
+    "name": "Islândia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "þ",
+      "ð",
+      "æ",
+      "ö"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "iceland_yellow",
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [
+      "volcanic_moss"
+    ],
+    "soil_color": "dark_volcanic",
+    "continent": "europe_north",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_bollards",
+      "yellow_pedestrian_sign",
+      "no_eu_strip_white_blue_plates"
+    ],
+    "confusable_with": [
+      "norway",
+      "finland",
+      "sweden"
+    ],
+    "fuel_brands_exclusive": [
+      "N1",
+      "Orkan"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "india",
+    "name": "Índia",
+    "driving_side": "left",
+    "scripts": [
+      "devanagari",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_trident_top",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_south",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "shitcam",
+      "black_white_striped_poles",
+      "multiple_regional_scripts"
+    ],
+    "confusable_with": [
+      "nepal",
+      "bangladesh",
+      "sri-lanka",
+      "cambodia"
+    ],
+    "fuel_brands_exclusive": [
+      "IndianOil",
+      "BharatPetroleum",
+      "HindustanPetroleum"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "indonesia",
+    "name": "Indonésia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "black_white",
+    "chevron": null,
+    "utility_pole_type": "steel_or_concrete_round",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_plate_3_white_sections",
+      "yellow_waystone_notched_top",
+      "motorcycle_front_plate",
+      "pertamina_fuel"
+    ],
+    "confusable_with": [
+      "malaysia",
+      "philippines",
+      "thailand"
+    ],
+    "fuel_brands_exclusive": [
+      "Pertamina"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "iraq",
+    "name": "Iraq",
+    "driving_side": "right",
+    "scripts": [
+      "arabic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "museum_trekker_only",
+      "gen1_5_overexposed_camera"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 70
+  },
+  {
+    "slug": "ireland",
+    "name": "Irlanda",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "green_white",
+    "chevron": "black_yellow",
+    "utility_pole_type": "wood_horizontal_metal_steps",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "irish_language_signs",
+      "yellow_diamond_warning_signs",
+      "yield_sign",
+      "rounded_gate_corners"
+    ],
+    "confusable_with": [
+      "united-kingdom",
+      "new-zealand"
+    ],
+    "fuel_brands_exclusive": [
+      "Maxol",
+      "Applegreen"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 88
+  },
+  {
+    "slug": "isle-of-man",
+    "name": "Ilha de Man",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "blue_urban",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [
+      "gorse_yellow_flowers"
+    ],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "red_strip_plates",
+      "blue_bollards_urban",
+      "blue_base_streetlamps"
+    ],
+    "confusable_with": [
+      "ireland",
+      "united-kingdom"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "israel-and-the-west-bank",
+    "name": "Israel & Cisjordânia",
+    "driving_side": "right",
+    "scripts": [
+      "hebrew",
+      "arabic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "symbol_only",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "israel_checkerboard",
+    "chevron": "white_black",
+    "utility_pole_type": "mesh_framework",
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "hand_stop_sign",
+      "hebrew_script",
+      "yellow_plates_blue_strip",
+      "black_white_striped_pole_bases",
+      "red_white_curbs"
+    ],
+    "confusable_with": [
+      "jordan",
+      "west-bank"
+    ],
+    "fuel_brands_exclusive": [
+      "Paz",
+      "Delek",
+      "Sonol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 87
+  },
+  {
+    "slug": "italy",
+    "name": "Itália",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "triangular_white_black_top",
+    "chevron": "white_black",
+    "utility_pole_type": "concrete_round_trident",
+    "guardrail_color": "red_reflector",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "passo_carrabile_sign",
+      "short_plate_double_blue_strips",
+      "double_guardrails"
+    ],
+    "confusable_with": [
+      "albania",
+      "spain",
+      "greece",
+      "france"
+    ],
+    "fuel_brands_exclusive": [
+      "Eni",
+      "Agip"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "japan",
+    "name": "Japão",
+    "driving_side": "left",
+    "scripts": [
+      "kanji",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "other",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "lowcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_round_spiral",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "lowcam",
+      "triple_script_jp",
+      "horizontal_traffic_lights",
+      "hexagonal_prefecture_shields",
+      "vending_machines_everywhere"
+    ],
+    "confusable_with": [
+      "taiwan",
+      "south-korea",
+      "hong-kong",
+      "switzerland"
+    ],
+    "fuel_brands_exclusive": [
+      "ENEOS",
+      "Idemitsu",
+      "CosmoOil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 92
+  },
+  {
+    "slug": "jersey",
+    "name": "Jersey",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_phone_boxes",
+      "french_street_names",
+      "red_granite_buildings",
+      "yellow_give_way_lines"
+    ],
+    "confusable_with": [
+      "united-kingdom",
+      "france"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "jordan",
+    "name": "Jordânia",
+    "driving_side": "right",
+    "scripts": [
+      "arabic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": "concrete_rounded",
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_car_no_antenna_no_brake_light",
+      "white_plates_green_taxi_strip",
+      "white_red_chevrons"
+    ],
+    "confusable_with": [
+      "israel-and-the-west-bank",
+      "uae"
+    ],
+    "fuel_brands_exclusive": [
+      "Manaseer",
+      "JoPetro"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "kazakhstan",
+    "name": "Cazaquistão",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "grey_snorkel_truck",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "kazakhstan_90deg",
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_pickup_truck",
+      "blue_ornamental_street_signs",
+      "90deg_bollards",
+      "kazakh_unique_letters"
+    ],
+    "confusable_with": [
+      "russia",
+      "kyrgyzstan"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "kenya",
+    "name": "Quênia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "grey_snorkel_truck",
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "grey_snorkel_truck",
+      "square_yellow_rear_plate",
+      "safaricom_brand"
+    ],
+    "confusable_with": [
+      "tanzania",
+      "uganda",
+      "mongolia"
+    ],
+    "fuel_brands_exclusive": [
+      "KenolKobil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "kyrgyzstan",
+    "name": "Quirguistão",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "blurred_car",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "white_black_diagonal",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "silver_car_4bar_rack",
+      "red_white_triangle_km_markers",
+      "red_strip_plates",
+      "winter_only_coverage"
+    ],
+    "confusable_with": [
+      "kazakhstan",
+      "russia"
+    ],
+    "fuel_brands_exclusive": [
+      "EcoPetrol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "laos",
+    "name": "Laos",
+    "driving_side": "right",
+    "scripts": [
+      "lao"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "concrete_black_white_square",
+    "chevron": null,
+    "utility_pole_type": "concrete_square_holes",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "orange",
+    "continent": "asia_southeast",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_plates",
+      "lao_script_2char_stop_sign",
+      "silver_car_2bar_rack"
+    ],
+    "confusable_with": [
+      "thailand",
+      "cambodia",
+      "guatemala"
+    ],
+    "fuel_brands_exclusive": [
+      "Lao State Fuel Company"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "latvia",
+    "name": "Letônia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ā",
+      "ē",
+      "ī",
+      "ū",
+      "ļ",
+      "ķ",
+      "ņ",
+      "ģ",
+      "č",
+      "š",
+      "ž"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "latvia_thin_curved",
+    "chevron": "white_red",
+    "utility_pole_type": "alternating_hook_insulators",
+    "guardrail_color": "white_red",
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "thin_curved_bollard",
+      "5stripe_long_legs_pedestrian_sign",
+      "5window_bus_stop_sign",
+      "macron_letters"
+    ],
+    "confusable_with": [
+      "estonia",
+      "lithuania"
+    ],
+    "fuel_brands_exclusive": [
+      "Dinaz",
+      "AstarteNafta"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "lebanon",
+    "name": "Líbano",
+    "driving_side": "right",
+    "scripts": [
+      "arabic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "metal_mesh_yellow",
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "shitcam_middle_east",
+      "trekker_coverage",
+      "arabic_french_english_trilingual",
+      "blue_strip_plates"
+    ],
+    "confusable_with": [
+      "israel-and-the-west-bank",
+      "jordan"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 75
+  },
+  {
+    "slug": "lesotho",
+    "name": "Lesoto",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": "triple_sa",
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "africa_austral",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "tabletop_treeless_mountains",
+      "white_blue_plates",
+      "agave_plants",
+      "round_thatched_huts"
+    ],
+    "confusable_with": [
+      "eswatini",
+      "south-africa",
+      "botswana"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "liechtenstein",
+    "name": "Liechtenstein",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "lowcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "swiss_cylindrical",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "lowcam",
+      "black_plates_yellow_red_emblem",
+      "liemobil_green_white_bus_stops",
+      "lego_button_road_dividers"
+    ],
+    "confusable_with": [
+      "switzerland",
+      "austria"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "lithuania",
+    "name": "Lituânia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ą",
+      "č",
+      "ę",
+      "ė",
+      "į",
+      "š",
+      "ų",
+      "ū",
+      "ž"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "lithuania_wedge_orange",
+    "chevron": "white_red",
+    "utility_pole_type": "concrete_square_diagonal_support",
+    "guardrail_color": "orange",
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "wedge_orange_bollard",
+      "random_blur_gen3",
+      "45deg_km_marker",
+      "gatve_street_word"
+    ],
+    "confusable_with": [
+      "latvia",
+      "estonia",
+      "russia"
+    ],
+    "fuel_brands_exclusive": [
+      "Viada"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 86
+  },
+  {
+    "slug": "luxembourg",
+    "name": "Luxemburgo",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "black_white_wedge",
+    "chevron": "black_yellow",
+    "utility_pole_type": "inverted_trident_top",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_long_plates",
+      "yellow_directional_signs_rectangular_frame",
+      "black_yellow_chevrons",
+      "white_sign_poles",
+      "6window_bus_stop_sign"
+    ],
+    "confusable_with": [
+      "netherlands",
+      "germany",
+      "belgium",
+      "denmark"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "macau",
+    "name": "Macau",
+    "driving_side": "left",
+    "scripts": [
+      "chinese_simplified",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "grey_cylindrical_black_base",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": true,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "gen2_extremely_faded",
+      "black_plates_white_text",
+      "portuguese_chinese_bilingual_signs",
+      "casinos"
+    ],
+    "confusable_with": [
+      "hong-kong",
+      "china"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "madagascar",
+    "name": "Madagáscar",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "baobab"
+    ],
+    "soil_color": "red_intense",
+    "continent": "africa_austral",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_with_walking_companions",
+      "boat_trekkers",
+      "malagasy_language",
+      "baobab_trees"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [
+      "Galana",
+      "Jovena"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "madeira",
+    "name": "Madeira",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "stone_cubic_cylindrical",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": "yellow_black",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [
+      "agapanthus"
+    ],
+    "soil_color": "dark_volcanic",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "stone_bollards",
+      "shitcam_white_car_visible",
+      "terrace_agriculture",
+      "many_tunnels",
+      "yellow_blue_taxis"
+    ],
+    "confusable_with": [
+      "azores",
+      "portugal"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "malaysia",
+    "name": "Malásia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "other",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "white_red_rectangle",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "berhenti_stop_sign",
+      "yellow_hexagonal_highway_shield",
+      "arrow_shaped_street_signs",
+      "blue_white_km_markers"
+    ],
+    "confusable_with": [
+      "indonesia",
+      "thailand",
+      "singapore",
+      "brunei"
+    ],
+    "fuel_brands_exclusive": [
+      "Petronas"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 86
+  },
+  {
+    "slug": "mali",
+    "name": "Mali",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "tripod_camera_trekker",
+      "mud_brick_mosques",
+      "extremely_limited_coverage"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "malta",
+    "name": "Malta",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "white_grey",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "limestone_walls",
+      "triq_street_word",
+      "maltese_script_letters",
+      "covered_colorful_balconies"
+    ],
+    "confusable_with": [
+      "cyprus",
+      "united-kingdom"
+    ],
+    "fuel_brands_exclusive": [
+      "Enemed"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "martinique",
+    "name": "Martinica",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "arret",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "only_3_trekkers",
+      "rum_distillery_trekker",
+      "french_caribbean_territory"
+    ],
+    "confusable_with": [
+      "france"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 70
+  },
+  {
+    "slug": "mexico",
+    "name": "México",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "alto",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "mexico_black_base",
+    "chevron": "white_black",
+    "utility_pole_type": "octagonal_concrete",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "cactus_diverse"
+    ],
+    "soil_color": "normal",
+    "continent": "north_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "mexico_black_base_bollard",
+      "alto_stop_sign",
+      "cacti_ubiquitous",
+      "rooftop_water_tanks"
+    ],
+    "confusable_with": [
+      "colombia",
+      "central-america",
+      "usa"
+    ],
+    "fuel_brands_exclusive": [
+      "Pemex",
+      "OXXO"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 87
+  },
+  {
+    "slug": "monaco",
+    "name": "Mônaco",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "arret",
+    "camera_dominant": "gen2",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "short_plates_no_eu_strip",
+      "dense_luxury_citystate",
+      "many_tunnels",
+      "harbor_boat_trekker"
+    ],
+    "confusable_with": [
+      "france",
+      "italy"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "mongolia",
+    "name": "Mongólia",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "other",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "mongolia_bowling",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "mongolia_bowling_bollard",
+      "zogs_stop_sign",
+      "yurts",
+      "red_mirror_pickup",
+      "snorkel_car"
+    ],
+    "confusable_with": [
+      "kazakhstan",
+      "russia",
+      "kenya"
+    ],
+    "fuel_brands_exclusive": [
+      "MagnaiTrade",
+      "Petrovis"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "montenegro",
+    "name": "Montenegro",
+    "driving_side": "right",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "white_black_top_red_reflector",
+    "chevron": "black_white",
+    "utility_pole_type": "concrete_round_or_wood",
+    "guardrail_color": "rusted",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "red_circle_on_blue_license_plate_strip",
+      "a_type_and_b_type_guardrails_both_present"
+    ],
+    "confusable_with": [
+      "slovenia",
+      "albania",
+      "serbia",
+      "croatia"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "namibia",
+    "name": "Namíbia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "small_stone_bollards",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [
+      "hyphaene_petersiana_palm"
+    ],
+    "soil_color": "beige_sandy",
+    "continent": "africa_austral",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_pickup_antenna_leaning_left",
+      "german_toponyms",
+      "road_codes_abcdmf",
+      "pink_dunes_sossusvlei",
+      "vineyards_aussenkehr"
+    ],
+    "confusable_with": [
+      "botswana",
+      "oman",
+      "south_africa"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "nepal",
+    "name": "Nepal",
+    "driving_side": "left",
+    "scripts": [
+      "devanagari"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "mixed",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "concrete_black_white_red_top",
+    "chevron": null,
+    "utility_pole_type": "concrete_square_trident_top",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "chir_pine",
+      "areca_palm_southeast",
+      "tea_plantations_east"
+    ],
+    "soil_color": "normal",
+    "continent": "asia_south",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_stupas_with_painted_eyes",
+      "concrete_trident_top_poles",
+      "devanagari_native_numerals_on_signs"
+    ],
+    "confusable_with": [
+      "india",
+      "bangladesh",
+      "sri_lanka"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "netherlands",
+    "name": "Países Baixos",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "none_underground",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_license_plates_europe",
+      "no_utility_poles",
+      "red_cycling_lanes",
+      "IJ_capital_dutch",
+      "canals_everywhere",
+      "brick_row_houses"
+    ],
+    "confusable_with": [
+      "belgium",
+      "luxembourg",
+      "germany",
+      "denmark"
+    ],
+    "fuel_brands_exclusive": [
+      "tango",
+      "argos"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 90
+  },
+  {
+    "slug": "new-zealand",
+    "name": "Nova Zelândia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "nz_red_rear",
+    "chevron": null,
+    "utility_pole_type": "concrete_single_long_notch",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [
+      "silver_fern"
+    ],
+    "soil_color": "normal",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "nz_red_rear_bollard",
+      "silver_fern",
+      "give_way_red_text",
+      "blue_street_signs_rural",
+      "red_highway_shield"
+    ],
+    "confusable_with": [
+      "australia",
+      "chile",
+      "tasmania",
+      "ireland"
+    ],
+    "fuel_brands_exclusive": [
+      "z_energy"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 88
+  },
+  {
+    "slug": "nigeria",
+    "name": "Nigéria",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "mixed",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_with_notches_horizontal_supports",
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "police_car_following_streetview",
+      "shitcam_only_african_continental",
+      "short_plates_greenish_tint",
+      "flag_colored_concrete_dividers"
+    ],
+    "confusable_with": [
+      "ghana",
+      "cameroon",
+      "brazil"
+    ],
+    "fuel_brands_exclusive": [
+      "oando",
+      "forteoil",
+      "mrsoilnigeria"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "north-macedonia",
+    "name": "Macedônia do Norte",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_cylindrical_or_wood",
+    "guardrail_color": null,
+    "vegetation_dominant": "steppe",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "gen3_no_antenna",
+      "white_plates_red_block",
+      "bilingual_yellow_directional_signs_cyrillic_latin",
+      "cyrillic_gje_kje_letters",
+      "yellow_warning_signs"
+    ],
+    "confusable_with": [
+      "serbia",
+      "bulgaria",
+      "greece",
+      "albania"
+    ],
+    "fuel_brands_exclusive": [
+      "makpetrol",
+      "okta"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "northern-mariana-islands",
+    "name": "Ilhas Marianas do Norte (CNMI)",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "blurred_car",
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "wood_with_crossbar",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [
+      "flame_tree_red_flowers"
+    ],
+    "soil_color": "normal",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "fully_blurred_car_no_rack",
+      "wood_utility_poles",
+      "blue_street_signs",
+      "flame_tree_red_flowers_vs_guam",
+      "cup_shaped_route_markers"
+    ],
+    "confusable_with": [
+      "guam"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 75
+  },
+  {
+    "slug": "norway",
+    "name": "Noruega",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "æ",
+      "ø",
+      "å"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "parallelogram_black_reflector",
+    "chevron": "black_yellow",
+    "utility_pole_type": "wood_with_black_metal_cap",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_background_warning_signs_nordic",
+      "grass_roof_houses",
+      "guardrails_wood_posts",
+      "fjords",
+      "yellow_orange_center_lines"
+    ],
+    "confusable_with": [
+      "sweden",
+      "finland",
+      "denmark",
+      "iceland"
+    ],
+    "fuel_brands_exclusive": [
+      "yxenergi",
+      "beststasjon"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "oman",
+    "name": "Omã",
+    "driving_side": "right",
+    "scripts": [
+      "arabic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "black_yellow_many_arrows",
+    "utility_pole_type": "wood_triangle_metal_top",
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [
+      "date_palm_north_coast",
+      "coconut_palm_salalah"
+    ],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "wood_pole_metal_triangle_top",
+      "beah_3leaf_bins",
+      "orange_panel_taxis",
+      "white_pickup_antenna_right",
+      "black_yellow_curbs"
+    ],
+    "confusable_with": [
+      "uae",
+      "namibia",
+      "qatar"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "pakistan",
+    "name": "Paquistão",
+    "driving_side": "left",
+    "scripts": [
+      "arabic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "tall_pines_patriata"
+    ],
+    "soil_color": "normal",
+    "continent": "asia_south",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_mughal_gardens_fortresses",
+      "urdu_script_soft_curves",
+      "short_plates_green_strip_left",
+      "mughal_architecture_red_brick"
+    ],
+    "confusable_with": [
+      "india",
+      "bangladesh"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "panama",
+    "name": "Panamá",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "alto",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "concrete_round_with_isolators",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "orange",
+    "continent": "central_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "eye_sign_ocular_octagon",
+      "white_pickup_white_metal_frame",
+      "turquoise_stripe_plates",
+      "checkered_yellow_taxis",
+      "alto_thick_font"
+    ],
+    "confusable_with": [
+      "costa_rica",
+      "ecuador",
+      "mexico",
+      "guatemala"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "peru",
+    "name": "Peru",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "pare",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "peru_triangular",
+    "chevron": null,
+    "utility_pole_type": "metal_with_concrete_base_black_white_stripes",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "eucalyptus_andean_abundant"
+    ],
+    "soil_color": "red_pink",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_white_striped_signal_poles",
+      "concrete_base_signal_poles",
+      "tuk_tuks_south_america",
+      "orange_bridges",
+      "sol_currency_symbol"
+    ],
+    "confusable_with": [
+      "bolivia",
+      "argentina",
+      "uruguay",
+      "chile"
+    ],
+    "fuel_brands_exclusive": [
+      "petroperu",
+      "primax",
+      "pecsa"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 84
+  },
+  {
+    "slug": "philippines",
+    "name": "Filipinas",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "mixed",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "red_white",
+    "utility_pole_type": "octagonal_metal",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "concrete_roads",
+      "orange_yellow_lines",
+      "square_yellow_road_markers",
+      "english_signs_southeast_asia",
+      "colored_signal_poles_red_orange_yellow",
+      "municipal_abbreviation_black_box_poles"
+    ],
+    "confusable_with": [
+      "thailand",
+      "vietnam",
+      "indonesia"
+    ],
+    "fuel_brands_exclusive": [
+      "petron",
+      "phoenix_petroleum",
+      "seaoil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 86
+  },
+  {
+    "slug": "pitcairn-islands",
+    "name": "Ilhas Pitcairn",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_only_dirt_trails_dense_forest",
+      "intense_red_soil",
+      "atv_landing_cais",
+      "counts_as_uk"
+    ],
+    "confusable_with": [],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 65
+  },
+  {
+    "slug": "poland",
+    "name": "Polônia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ą",
+      "ć",
+      "ę",
+      "ł",
+      "ń",
+      "ó",
+      "ś",
+      "ź",
+      "ż"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "red_band_around",
+    "chevron": "white_red",
+    "utility_pole_type": "concrete_holey_thin",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_warning_sign_thin_red_border_unique_europe",
+      "holey_poles_thin",
+      "red_band_bollard",
+      "b_type_guardrails_circular_red_reflectors"
+    ],
+    "confusable_with": [
+      "germany",
+      "czech_republic",
+      "slovakia",
+      "ukraine"
+    ],
+    "fuel_brands_exclusive": [
+      "orlen",
+      "lotos"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "portugal",
+    "name": "Portugal",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ã",
+      "ô",
+      "ê",
+      "â"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "portugal_diamond",
+    "chevron": "black_yellow_portugal",
+    "utility_pole_type": "ladder_high_steps_holes",
+    "guardrail_color": "red_reflectors",
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [
+      "eucalyptus_northwest",
+      "stone_pine_umbrella",
+      "cork_oak_montado"
+    ],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_yellow_portugal_chevron",
+      "portugal_diamond_bollard",
+      "yellow_stripe_right_license_plate",
+      "red_guardrail_reflectors",
+      "decorative_chimneys_algarve",
+      "azulejos_tile_facades"
+    ],
+    "confusable_with": [
+      "spain",
+      "brazil",
+      "galicia_spain"
+    ],
+    "fuel_brands_exclusive": [
+      "galp"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 88
+  },
+  {
+    "slug": "puerto-rico",
+    "name": "Porto Rico",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "pare",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "smallcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "american_signs_in_spanish",
+      "tall_green_km_markers_km_top",
+      "green_bottom_stripe_license_plate",
+      "smallcam_blur_antenna",
+      "counts_as_usa"
+    ],
+    "confusable_with": [
+      "guam",
+      "cnmi",
+      "dominican_republic"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "qatar",
+    "name": "Qatar",
+    "driving_side": "right",
+    "scripts": [
+      "arabic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "mixed",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red_white_blue",
+    "utility_pole_type": "round_poles_3_y_isolators",
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "long_white_plate_brown_stripe",
+      "pedestrian_sign_thobe_man",
+      "rusted_clips_rack",
+      "numbered_zones_street_signs"
+    ],
+    "confusable_with": [
+      "uae",
+      "oman",
+      "saudi_arabia"
+    ],
+    "fuel_brands_exclusive": [
+      "woqod"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "reunion",
+    "name": "Reunião",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "dark_volcanic",
+    "continent": "africa_austral",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_tape_rear_right_bar",
+      "french_infrastructure_tropical_island",
+      "volcanic_mountainous_island",
+      "route_du_volcan_martian_landscape",
+      "6_bus_stop_types",
+      "counts_as_france"
+    ],
+    "confusable_with": [
+      "ghana",
+      "madagascar",
+      "mauritius"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "romania",
+    "name": "Romênia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ă",
+      "â",
+      "î",
+      "ș",
+      "ț"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red_yellow_romania",
+    "utility_pole_type": "concrete_holey_wide_tall_holes",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_red_yellow_chevron",
+      "yield_sign_very_thick_red_border",
+      "giant_yellow_sticker_poles",
+      "color_coded_marco_bollards",
+      "dacia_dominant_car",
+      "haystack_with_stick"
+    ],
+    "confusable_with": [
+      "bulgaria",
+      "hungary",
+      "ukraine",
+      "turkey"
+    ],
+    "fuel_brands_exclusive": [
+      "petrom",
+      "rompetrol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "russia",
+    "name": "Rússia",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "mixed",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "wood_with_concrete_base_blocks",
+    "guardrail_color": "black_white",
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "cyrillic_exclusive_chars",
+      "black_gen3_car",
+      "white_plates_no_blue_strip",
+      "yellow_white_crosswalks",
+      "black_socks_signal_poles",
+      "black_white_guardrails"
+    ],
+    "confusable_with": [
+      "kazakhstan",
+      "ukraine",
+      "bulgaria",
+      "belarus",
+      "mongolia"
+    ],
+    "fuel_brands_exclusive": [
+      "lukoil",
+      "rosneft",
+      "gazprom",
+      "tatneft"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "rwanda",
+    "name": "Ruanda",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "cylindrical_red_white",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "red_motorcycle_vest_helmet",
+      "white_front_yellow_rear_plate",
+      "red_white_cylindrical_bollards",
+      "very_clean_streets"
+    ],
+    "confusable_with": [
+      "senegal",
+      "uganda"
+    ],
+    "fuel_brands_exclusive": [
+      "MountMeru"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "saint-pierre-and-miquelon",
+    "name": "Saint-Pierre e Miquelon",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "north_america",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "trekker_only",
+      "colorful_wooden_houses",
+      "atlantic_subarctic_landscape",
+      "counts_as_france"
+    ],
+    "confusable_with": [
+      "canada",
+      "france"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 65
+  },
+  {
+    "slug": "san-marino",
+    "name": "San Marino",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "italian_rounded_concrete",
+    "chevron": "yellow_bordeaux_sanmarino",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": true,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "monte_titano_three_towers",
+      "yellow_bordeaux_chevrons",
+      "short_blue_letter_plates",
+      "blue_pedestrian_crossings",
+      "lime_green_bins"
+    ],
+    "confusable_with": [
+      "italy"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "sao-tome-and-principe",
+    "name": "São Tomé e Príncipe",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "shitcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "wooden_blue_base_cst",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "africa_sub",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "shitcam_dark_variant",
+      "blue_cst_wooden_poles",
+      "yellow_taxis_minibuses",
+      "blue_roof_car_principe"
+    ],
+    "confusable_with": [
+      "india",
+      "nigeria",
+      "angola"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 70
+  },
+  {
+    "slug": "senegal",
+    "name": "Senegal",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [
+      "baobab"
+    ],
+    "soil_color": "beige_sandy",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "all_blue_plates",
+      "gen3_rack_right_mirror",
+      "pink_outline_city_signs",
+      "white_red_top_km_markers",
+      "orange_yellow_taxis_black_fenders"
+    ],
+    "confusable_with": [
+      "rwanda",
+      "morocco",
+      "algeria"
+    ],
+    "fuel_brands_exclusive": [
+      "Petrosen"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 75
+  },
+  {
+    "slug": "serbia",
+    "name": "Sérvia",
+    "driving_side": "right",
+    "scripts": [
+      "latin",
+      "cyrillic"
+    ],
+    "latin_diacritics": [
+      "č",
+      "ć",
+      "đ",
+      "š",
+      "ž"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "offcenter_reflector",
+    "chevron": "black_white",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "gen3_no_antenna",
+      "b_profile_guardrails",
+      "offcenter_reflector_bollard",
+      "nis_fuel_brand"
+    ],
+    "confusable_with": [
+      "montenegro",
+      "north_macedonia",
+      "croatia",
+      "bulgaria"
+    ],
+    "fuel_brands_exclusive": [
+      "NIS"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "singapore",
+    "name": "Singapura",
+    "driving_side": "left",
+    "scripts": [
+      "latin",
+      "chinese_simplified"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "concrete_yellow_black_stripes",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "green_rounded_street_signs",
+      "square_white_background_traffic_signs",
+      "perforated_plate_traffic_lights",
+      "hump_ahead_asphalt_text",
+      "lime_green_buses"
+    ],
+    "confusable_with": [
+      "malaysia",
+      "indonesia"
+    ],
+    "fuel_brands_exclusive": [
+      "SPC"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "slovakia",
+    "name": "Eslováquia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "á",
+      "é",
+      "í",
+      "ó",
+      "ú",
+      "ý",
+      "č",
+      "š",
+      "ž",
+      "ľ",
+      "ŕ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "double_orange_reflector",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "bold_font_signs",
+      "white_blue_red_border_street_signs",
+      "km_marker_black_horizontal_line",
+      "ľ_ô_letters"
+    ],
+    "confusable_with": [
+      "czechia",
+      "hungary",
+      "poland"
+    ],
+    "fuel_brands_exclusive": [
+      "Slovnaft"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "slovenia",
+    "name": "Eslovênia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "č",
+      "š",
+      "ž"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "white_black_top_bright_red_reflector",
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_central",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "kozolec_wooden_barn",
+      "long_dashed_edge_lines",
+      "a_type_guardrails",
+      "yellow_rectangle_km_marker"
+    ],
+    "confusable_with": [
+      "croatia",
+      "austria",
+      "serbia"
+    ],
+    "fuel_brands_exclusive": [
+      "Petrol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 78
+  },
+  {
+    "slug": "south-africa",
+    "name": "África do Sul",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "mixed",
+    "camera_special": "smallcam",
+    "gen2_abundant": true,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "mixed",
+    "road_line_exclusive": "triple_sa",
+    "bollard_type": "bird_poles",
+    "chevron": "white_red",
+    "utility_pole_type": "bird_poles_sa",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [
+      "fynbos"
+    ],
+    "soil_color": "red_pink",
+    "continent": "africa_austral",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "bird_poles_sa",
+      "gen2_africa",
+      "yellow_outside_line",
+      "triple_sa_lines",
+      "n_r_road_codes",
+      "camouflage_car_kruger"
+    ],
+    "confusable_with": [
+      "botswana",
+      "lesotho",
+      "eswatini",
+      "namibia"
+    ],
+    "fuel_brands_exclusive": [
+      "Engen",
+      "Sasol"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 88
+  },
+  {
+    "slug": "south-georgia-and-sandwich-islands",
+    "name": "Geórgia do Sul e Ilhas Sandwich do Sul",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "south_america",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "grytviken_abandoned_machinery",
+      "seals_prion_island",
+      "boat_trekker_hercules_bay",
+      "counts_as_uk"
+    ],
+    "confusable_with": [
+      "falkland_islands"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 65
+  },
+  {
+    "slug": "south-korea",
+    "name": "Coreia do Sul",
+    "driving_side": "right",
+    "scripts": [
+      "hangul"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "white_black_stripe_yellow_dot",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "hangul_script",
+      "yellow_center_line",
+      "diagonal_black_yellow_pole_stripes",
+      "pentagonal_blue_pedestrian_sign",
+      "blue_house_address_plates"
+    ],
+    "confusable_with": [
+      "taiwan",
+      "japan"
+    ],
+    "fuel_brands_exclusive": [
+      "SK Energy",
+      "GS Caltex",
+      "Hyundai Oilbank",
+      "S-Oil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "spain",
+    "name": "Espanha",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ñ"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "spain_wedge_yellow",
+    "chevron": "black_white",
+    "utility_pole_type": "ladder_pole_concrete",
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "coto_caza_hunting_signs",
+      "8_stripe_pedestrian_crossing",
+      "spain_wedge_bollard",
+      "ladder_poles"
+    ],
+    "confusable_with": [
+      "portugal",
+      "france",
+      "andorra"
+    ],
+    "fuel_brands_exclusive": [
+      "Repsol",
+      "Cepsa"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "sri-lanka",
+    "name": "Sri Lanka",
+    "driving_side": "left",
+    "scripts": [
+      "sinhala",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "lowcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": "short_wide_stone_black_base",
+    "chevron": null,
+    "utility_pole_type": "holey_poles",
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "asia_south",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "sinhala_script",
+      "lowcam_gen4",
+      "blue_white_red_car_front_gen3",
+      "holey_poles",
+      "short_wide_stone_bollards"
+    ],
+    "confusable_with": [
+      "india",
+      "ghana",
+      "thailand"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "svalbard",
+    "name": "Svalbard",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "mixed",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "black_yellow_text_plates",
+      "arctic_treeless_landscape",
+      "russian_settlement_signs",
+      "counts_as_norway"
+    ],
+    "confusable_with": [
+      "norway",
+      "iceland"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 75
+  },
+  {
+    "slug": "sweden",
+    "name": "Suécia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ä",
+      "ö",
+      "å"
+    ],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": "black_white_wedge_grey_reflector",
+    "chevron": "blue_yellow_sweden",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "boreal_taiga",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "yellow_blue_chevrons",
+      "blue_white_electricity_markers",
+      "falun_red_wooden_houses",
+      "volvo_30pct"
+    ],
+    "confusable_with": [
+      "norway",
+      "finland",
+      "denmark"
+    ],
+    "fuel_brands_exclusive": [
+      "Preem"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "switzerland",
+    "name": "Suíça",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "lowcam",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "swiss_cylindrical",
+    "chevron": "black_white",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "lowcam_always",
+      "yellow_pedestrian_crossings",
+      "7_stripe_blue_rectangle_pedestrian_sign",
+      "plates_no_eu_stripe",
+      "round_grey_metal_border_signs"
+    ],
+    "confusable_with": [
+      "austria",
+      "germany",
+      "liechtenstein"
+    ],
+    "fuel_brands_exclusive": [
+      "Migrol",
+      "Agrola"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "taiwan",
+    "name": "Taiwan",
+    "driving_side": "right",
+    "scripts": [
+      "chinese_simplified"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "red",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "circular_reflectors_black_rectangle",
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_east",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "chinese_traditional_script",
+      "black_yellow_pole_stripes_to_ground",
+      "red_edge_lines",
+      "orange_cap_traffic_mirrors",
+      "blue_coordinate_plates_on_poles"
+    ],
+    "confusable_with": [
+      "hong_kong",
+      "japan",
+      "china"
+    ],
+    "fuel_brands_exclusive": [
+      "CPC Corporation",
+      "Formosa Petrochemical"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "tanzania",
+    "name": "Tanzânia",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [
+      "baobab"
+    ],
+    "soil_color": "red_intense",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": true,
+    "spillover_from": "kenya",
+    "exclusive_features": [
+      "gombe_chimps_forest",
+      "lake_tanganyika_boat_trekker",
+      "kilimanjaro_tripods"
+    ],
+    "confusable_with": [
+      "kenya",
+      "madagascar"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 60
+  },
+  {
+    "slug": "thailand",
+    "name": "Tailândia",
+    "driving_side": "left",
+    "scripts": [
+      "thai"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "other",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "square_pointed_black_white",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "thai_script",
+      "thai_stop_3_chars",
+      "white_black_base_signposts",
+      "yellow_center_line",
+      "unique_green_village_signs"
+    ],
+    "confusable_with": [
+      "laos",
+      "cambodia",
+      "malaysia"
+    ],
+    "fuel_brands_exclusive": [
+      "PTT",
+      "Bangchak"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "tunisia",
+    "name": "Tunísia",
+    "driving_side": "right",
+    "scripts": [
+      "arabic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "mediterranean",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "africa_north",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "follow_car_escort",
+      "black_plates_white_text",
+      "arabic_latin_stop_sign",
+      "rounded_top_km_markers",
+      "traditional_blue_doors"
+    ],
+    "confusable_with": [
+      "morocco",
+      "algeria",
+      "jordan"
+    ],
+    "fuel_brands_exclusive": [
+      "Agil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "turkey",
+    "name": "Turquia",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [
+      "ı",
+      "ğ",
+      "ş",
+      "ö",
+      "ü",
+      "ç"
+    ],
+    "stop_sign": "dur",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "mixed",
+    "road_line_exclusive": null,
+    "bollard_type": "turkey_rectangular",
+    "chevron": "white_red",
+    "utility_pole_type": "metal_ladder_mesh",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "dur_stop_sign",
+      "dotless_i_letter",
+      "metal_ladder_mesh_poles",
+      "minarets_ubiquitous"
+    ],
+    "confusable_with": [
+      "greece",
+      "bulgaria",
+      "north_macedonia"
+    ],
+    "fuel_brands_exclusive": [
+      "Opet",
+      "PetrolOfisi"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 85
+  },
+  {
+    "slug": "uganda",
+    "name": "Uganda",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "savanna",
+    "vegetation_exclusive": [],
+    "soil_color": "red_intense",
+    "continent": "africa_sub",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_car_square_mirrors_kampala",
+      "block_pattern_blue_taxi_buses",
+      "very_red_soil"
+    ],
+    "confusable_with": [
+      "rwanda",
+      "kenya",
+      "tanzania"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "ukraine",
+    "name": "Ucrânia",
+    "driving_side": "right",
+    "scripts": [
+      "cyrillic"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_red",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "ua_exclusive_cyrillic",
+      "blue_yellow_flag_poles",
+      "red_google_car",
+      "blue_yellow_plate_stripe",
+      "є_ї_letters"
+    ],
+    "confusable_with": [
+      "russia",
+      "belarus",
+      "bulgaria"
+    ],
+    "fuel_brands_exclusive": [
+      "OKKO",
+      "WOG"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  },
+  {
+    "slug": "united-arab-emirates",
+    "name": "Emirados Árabes Unidos",
+    "driving_side": "right",
+    "scripts": [
+      "arabic",
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "yellow",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": "dark_brown_wood_3_isolators",
+    "guardrail_color": null,
+    "vegetation_dominant": "desert_hot",
+    "vegetation_exclusive": [],
+    "soil_color": "beige_sandy",
+    "continent": "middle_east",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "white_gen3_car_middle_east",
+      "pickup_gen4_center_antenna",
+      "dark_brown_wood_3_isolator_poles",
+      "yellow_outside_lines"
+    ],
+    "confusable_with": [
+      "qatar",
+      "oman",
+      "israel"
+    ],
+    "fuel_brands_exclusive": [
+      "ADNOC"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "united-kingdom",
+    "name": "Reino Unido",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": "zigzag_uk",
+    "bollard_type": "uk_rounded_red",
+    "chevron": null,
+    "utility_pole_type": "wood_north_america",
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "europe_west",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "uk_rounded_red_bollard",
+      "zigzag_uk_lines",
+      "yellow_rear_plate",
+      "cats_eye_road_reflectors",
+      "belisha_beacons",
+      "square_farm_gates"
+    ],
+    "confusable_with": [
+      "ireland",
+      "australia",
+      "new_zealand"
+    ],
+    "fuel_brands_exclusive": [
+      "Tesco",
+      "Morrisons",
+      "Asda",
+      "Sainsbury's"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 88
+  },
+  {
+    "slug": "united-states",
+    "name": "Estados Unidos",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "double_yellow",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": "white_black",
+    "utility_pole_type": "wood_north_america",
+    "guardrail_color": null,
+    "vegetation_dominant": "mixed",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "north_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "speed_limit_sign",
+      "fiber_optic_markers",
+      "yield_with_text",
+      "no_passing_zone_sign",
+      "rectangular_junction_sign"
+    ],
+    "confusable_with": [
+      "canada",
+      "mexico"
+    ],
+    "fuel_brands_exclusive": [
+      "Chevron",
+      "Valero",
+      "Sunoco",
+      "Marathon"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 82
+  },
+  {
+    "slug": "uruguay",
+    "name": "Uruguai",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": "black_gen3",
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "uruguay_yellow_side",
+    "chevron": "black_yellow",
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "temperate",
+    "vegetation_exclusive": [],
+    "soil_color": "red_pink",
+    "continent": "south_america",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "triple_yellow_center_unique",
+      "green_stone_km_markers",
+      "trident_poles",
+      "smudgy_gen3_camera"
+    ],
+    "confusable_with": [
+      "argentina",
+      "brazil"
+    ],
+    "fuel_brands_exclusive": [
+      "ANCAP",
+      "DUCSA"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 80
+  },
+  {
+    "slug": "us-minor-outlying-islands",
+    "name": "Ilhas Menores Distantes dos EUA",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tundra",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "midway_albatrosses",
+      "midway_gen2_runways",
+      "pacific_bird_islands",
+      "counts_as_usa"
+    ],
+    "confusable_with": [
+      "hawaii",
+      "kiribati"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 60
+  },
+  {
+    "slug": "us-virgin-islands",
+    "name": "Ilhas Virgens Americanas",
+    "driving_side": "left",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "white",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": "yellow",
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "caribbean",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "blue_bright_plates",
+      "danish_toponym_gade",
+      "european_arch_architecture",
+      "red_pickup_st_croix",
+      "left_drive_us_territory"
+    ],
+    "confusable_with": [
+      "puerto_rico",
+      "british_virgin_islands"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 72
+  },
+  {
+    "slug": "vanuatu",
+    "name": "Vanuatu",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3",
+    "camera_special": "trekker",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "absent",
+    "road_line_center": "absent",
+    "road_line_exclusive": null,
+    "bollard_type": null,
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "dark_volcanic",
+    "continent": "oceania",
+    "is_island": true,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "volcano_trekker_unique",
+      "black_sand_beach",
+      "dark_volcanic_soil",
+      "trekker_only_ambrym"
+    ],
+    "confusable_with": [
+      "solomon_islands",
+      "fiji"
+    ],
+    "fuel_brands_exclusive": [],
+    "wiki_status": "draft",
+    "confidence_score": 65
+  },
+  {
+    "slug": "vietnam",
+    "name": "Vietnã",
+    "driving_side": "right",
+    "scripts": [
+      "latin"
+    ],
+    "latin_diacritics": [],
+    "stop_sign": "stop",
+    "camera_dominant": "gen3_gen4",
+    "camera_special": "none",
+    "gen2_abundant": false,
+    "google_car_special": null,
+    "road_line_outside": "white",
+    "road_line_center": "yellow",
+    "road_line_exclusive": null,
+    "bollard_type": "white_red_top_square",
+    "chevron": null,
+    "utility_pole_type": null,
+    "guardrail_color": null,
+    "vegetation_dominant": "tropical_dense",
+    "vegetation_exclusive": [],
+    "soil_color": "normal",
+    "continent": "asia_southeast",
+    "is_island": false,
+    "is_microstate": false,
+    "is_spillover": false,
+    "spillover_from": null,
+    "exclusive_features": [
+      "motorbike_coverage",
+      "red_white_striped_signposts",
+      "orange_yellow_warning_signs",
+      "white_red_bollards",
+      "address_on_shop_facades"
+    ],
+    "confusable_with": [
+      "cambodia",
+      "thailand",
+      "philippines"
+    ],
+    "fuel_brands_exclusive": [
+      "Petrolimex",
+      "PVOil"
+    ],
+    "wiki_status": "draft",
+    "confidence_score": 83
+  }
+]

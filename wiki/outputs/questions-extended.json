@@ -1,0 +1,1135 @@
+{
+  "meta": {
+    "version": "1.0",
+    "date_created": "2026-04-18",
+    "source": "wiki/outputs/countries-attributes.json",
+    "total_questions": 20,
+    "total_combos": 10,
+    "groups": {
+      "1": "Infraestrutura visual (alta observabilidade)",
+      "2": "Identificadores de script e idioma",
+      "3": "Carro Google e imagem",
+      "4": "Vegetação e paisagem exclusiva",
+      "5": "Contexto geográfico e país",
+      "6": "Arquitetura e infraestrutura urbana"
+    }
+  },
+  "questions": [
+    {
+      "id": "q_chevron",
+      "group": 1,
+      "phase": "regional",
+      "text": "Você consegue ver os chevrons (setas de curva) na estrada? Qual é a combinação de cores?",
+      "attr": "chevron",
+      "context": "Útil em qualquer região. Chevron azul+amarelo é exclusivo da Suécia. Branco+vermelho cobre grande parte da Europa Oriental e América do Sul.",
+      "eliminates": "Isola grupos de 1 a 13 países dependendo da combinação — azul+amarelo confirma Suécia com 99% de confiança",
+      "options": [
+        {
+          "label": "Branco + seta vermelha",
+          "value": "white_red",
+          "icon": "🔴",
+          "skip": false,
+          "countries_count": 13
+        },
+        {
+          "label": "Preto + seta amarela",
+          "value": "black_yellow",
+          "icon": "🟡",
+          "skip": false,
+          "countries_count": 11
+        },
+        {
+          "label": "Preto + seta branca",
+          "value": "black_white",
+          "icon": "⬜",
+          "skip": false,
+          "countries_count": 9
+        },
+        {
+          "label": "Branco + seta preta (estilo América do Norte)",
+          "value": "white_black",
+          "icon": "⬛",
+          "skip": false,
+          "countries_count": 6
+        },
+        {
+          "label": "Azul + seta amarela (exclusivo Suécia)",
+          "value": "blue_yellow_sweden",
+          "icon": "🇸🇪",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não consigo ver chevrons",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_utility_pole",
+      "group": 1,
+      "phase": "regional",
+      "text": "Como são os postes de utilidade (luz/eletricidade) visíveis na imagem?",
+      "attr": "utility_pole_type",
+      "context": "Postes de madeira com braço horizontal são exclusivos da América do Norte e Reino Unido. Bird poles (com forma de pássaro/fork no topo) são exclusivos da África do Sul. Estrutura em escada/waffle é exclusiva da França.",
+      "eliminates": "Cada tipo específico elimina >130 países — poder de eliminação muito alto quando o tipo é identificável",
+      "options": [
+        {
+          "label": "Madeira com braço horizontal (estilo América do Norte)",
+          "value": "wood_north_america",
+          "icon": "🪵",
+          "skip": false,
+          "countries_count": 4
+        },
+        {
+          "label": "Dois pilares de concreto paralelos (estilo Argentina)",
+          "value": "double_concrete_argentina",
+          "icon": "🏗️",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Forma de pássaro / garfo no topo (Bird poles, África do Sul)",
+          "value": "bird_poles_sa",
+          "icon": "🐦",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Estrutura em escada / trama (waffle, França)",
+          "value": "concrete_ladder_waffle",
+          "icon": "🪜",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Octogonal (México / Colômbia)",
+          "value": "octagonal_concrete",
+          "icon": "🔷",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Não consigo identificar o tipo",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_guardrail_color",
+      "group": 1,
+      "phase": "regional",
+      "text": "Qual é a cor ou aparência das proteções laterais da estrada (guardrails)?",
+      "attr": "guardrail_color",
+      "context": "Útil na Europa e América Latina. Guardrail prata/metálico é padrão europeu. Amarelo com refletores aparece em Andorra, Bélgica e Ilhas Faroe. Listras amarelo/preto são diagnósticas da Madeira e Peru.",
+      "eliminates": "Amarelo com refletores confirma grupo de 3 países europeus; prata filtra Europa ocidental",
+      "options": [
+        {
+          "label": "Prata / metálica lisa (sem cor)",
+          "value": "silver",
+          "icon": "🔩",
+          "skip": false,
+          "countries_count": 9
+        },
+        {
+          "label": "Amarela com refletores (catadióptricos amarelos)",
+          "value": "yellow_reflectors",
+          "icon": "🟡",
+          "skip": false,
+          "countries_count": 3
+        },
+        {
+          "label": "Listras amarelas e pretas",
+          "value": "yellow_black",
+          "icon": "🚧",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Laranja",
+          "value": "orange",
+          "icon": "🟠",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Vermelha com refletores",
+          "value": "red_reflectors",
+          "icon": "🔴",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Não consigo ver / não há guardrail",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_road_line_exclusive",
+      "group": 1,
+      "phase": "regional",
+      "text": "Você vê algum padrão INCOMUM nas marcações do asfalto (linhas de faixa)?",
+      "attr": "road_line_exclusive",
+      "context": "Perguntar apenas quando as linhas são claramente visíveis e parecem diferentes do padrão. Cada padrão exclusivo confirma um único país com altíssima confiança.",
+      "eliminates": "Qualquer resposta afirmativa confirma um único país com 98-99% de confiança",
+      "options": [
+        {
+          "label": "Linha em Z / ziguezague no centro (França)",
+          "value": "ligne_z",
+          "icon": "⚡",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Linha em Z similar, mais rara (Brasil)",
+          "value": "linha_z",
+          "icon": "⚡",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Três linhas paralelas no centro (África do Sul / Lesoto)",
+          "value": "triple_sa",
+          "icon": "|||",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Quadrados / retângulos demarcados no asfalto (Dinamarca)",
+          "value": "square_denmark",
+          "icon": "⬜",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Ziguezague branco nas bordas (Reino Unido)",
+          "value": "zigzag_uk",
+          "icon": "〰️",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Linhas parecem normais / não vejo padrão especial",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_latin_diacritics",
+      "group": 2,
+      "phase": "regional",
+      "text": "Você consegue ler alguma letra especial ou acento incomum nas placas ou sinais?",
+      "attr": "latin_diacritics",
+      "context": "Útil quando o script é latino mas há letras com acentos ou formas pouco comuns. Cada conjunto de diacríticos aponta para um idioma específico e elimina dezenas de países.",
+      "eliminates": "Dotless-i (ı) confirma Turquia com 99%; þ/ð confirmam Islândia; ő/ű confirmam Hungria",
+      "options": [
+        {
+          "label": "ã / õ / ô / ê (português)",
+          "value": "pt_diacritics",
+          "icon": "🇵🇹",
+          "skip": false,
+          "countries_count": 8
+        },
+        {
+          "label": "ñ (espanhol)",
+          "value": "es_diacritics",
+          "icon": "🇪🇸",
+          "skip": false,
+          "countries_count": 16
+        },
+        {
+          "label": "ı / ğ / ş (turco — i sem ponto, g com chapéu)",
+          "value": "tr_diacritics",
+          "icon": "🇹🇷",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "ő / ű (húngaro — vogais com acento duplo)",
+          "value": "hu_diacritics",
+          "icon": "🇭🇺",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "þ / ð (islandês — letras em forma de p e d)",
+          "value": "is_diacritics",
+          "icon": "🇮🇸",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não vejo letras especiais / não consigo ler",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_cyrillic_variant",
+      "group": 2,
+      "phase": "regional",
+      "text": "Você confirmou script cirílico — qual variante você consegue identificar?",
+      "attr": "scripts",
+      "context": "Usar apenas após confirmar que o script é cirílico. Sérvio mistura cirílico e latino no mesmo local. Ucraniano tem letras exclusivas є e ї que não existem em russo.",
+      "eliminates": "Separa os 9 países com cirílico; є/ї confirma Ucrânia com 99%; mistura latim+cirílico confirma Sérvia",
+      "options": [
+        {
+          "label": "Russo puro (СТОП, sem letras incomuns)",
+          "value": "russian_cyrillic",
+          "icon": "🇷🇺",
+          "skip": false,
+          "countries_count": 4
+        },
+        {
+          "label": "Ucraniano (letras є ou ї visíveis)",
+          "value": "ukrainian_cyrillic",
+          "icon": "🇺🇦",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Sérvio (placas com latim E cirílico ao mesmo tempo)",
+          "value": "serbian_mixed",
+          "icon": "🇷🇸",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Búlgaro ou Macedônio (sem letras exclusivas óbvias)",
+          "value": "bg_mk_cyrillic",
+          "icon": "🇧🇬",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Mongólico / asiático com cirílico",
+          "value": "mongolian_cyrillic",
+          "icon": "🇲🇳",
+          "skip": false,
+          "countries_count": 3
+        },
+        {
+          "label": "Não consigo distinguir a variante",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_asian_script",
+      "group": 2,
+      "phase": "regional",
+      "text": "Você vê um script asiático nas placas ou sinais — qual é?",
+      "attr": "scripts",
+      "context": "Usar quando o script claramente não é latino, cirílico ou árabe. Cada script asiático identifica um único país ou grupo muito pequeno. Kanji + hiragana + katakana juntos confirmam Japão imediatamente.",
+      "eliminates": "Cada script confirma 1-2 países com 99% de confiança — poder de eliminação máximo",
+      "options": [
+        {
+          "label": "Japonês (kanji + caracteres curvos e angulosos misturados)",
+          "value": "kanji",
+          "icon": "🇯🇵",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Coreano / hangul (blocos quadrados com círculos e linhas)",
+          "value": "hangul",
+          "icon": "🇰🇷",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Tailandês (letras arredondadas com ganchos)",
+          "value": "thai",
+          "icon": "🇹🇭",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Khmer / cambojano (letras muito elaboradas e angulosas)",
+          "value": "khmer",
+          "icon": "🇰🇭",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Devanagari (hindi / nepali — letras com traço horizontal no topo)",
+          "value": "devanagari",
+          "icon": "🇮🇳",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Laosiano (parecido com tailandês mas mais redondo)",
+          "value": "lao",
+          "icon": "🇱🇦",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Cingalês / Sri Lanka (letras redondas e florais)",
+          "value": "sinhala",
+          "icon": "🇱🇰",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Bengalês / Bangladesh (curvas com ganchos na parte superior)",
+          "value": "bengali",
+          "icon": "🇧🇩",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não consigo identificar o script",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_google_car_type",
+      "group": 3,
+      "phase": "regional",
+      "text": "Que tipo de veículo está fazendo a filmagem?",
+      "attr": "google_car_type",
+      "context": "Moto/trike identifica Japão (câmera muito baixa e estreita); trekker identifica ~21 países com cobertura a pé (Belarus, Antártida, Groenlândia, Ilhas Falkland etc.); caminhonete com snorkel identifica Quênia, Austrália, Cazaquistão ou Mongólia.",
+      "eliminates": "Trekker limita a ~21 países; snorkel limita a 4-5 países; moto/trike aponta Japão ou Vietnã",
+      "options": [
+        {
+          "label": "Carro comum (câmera alta no teto)",
+          "value": "car",
+          "icon": "🚗",
+          "skip": false,
+          "countries_count": 110
+        },
+        {
+          "label": "Câmera a pé / trekker (sem veículo visível, perspectiva de pedestre)",
+          "value": "trekker",
+          "icon": "🚶",
+          "skip": false,
+          "countries_count": 21
+        },
+        {
+          "label": "Caminhonete com estrutura alta / snorkel",
+          "value": "snorkel_truck",
+          "icon": "🛻",
+          "skip": false,
+          "countries_count": 5
+        },
+        {
+          "label": "Moto / trike (câmera muito baixa e estreita)",
+          "value": "moto_trike",
+          "icon": "🛵",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Não consigo identificar",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_google_car_color",
+      "group": 3,
+      "phase": "regional",
+      "text": "Qual a cor do carro Google visível na imagem?",
+      "attr": "google_car_color",
+      "context": "Carro preto (gen 3) identifica um grupo específico: Argentina, Peru, Uruguai, Rússia, Jordânia, Israel, Bermuda, Curaçao, Ilhas Faroe, Gibraltar, Colômbia, Rep. Dominicana. Cinza com estrutura alta = snorkel (Quênia/Austrália/Cazaquistão). Vermelho = Ucrânia (exclusivo).",
+      "eliminates": "Carro preto elimina ~124 países; cinza/snorkel elimina ~131; vermelho confirma Ucrânia",
+      "options": [
+        {
+          "label": "Branco (padrão global)",
+          "value": "white",
+          "icon": "⬜",
+          "skip": false,
+          "countries_count": 118
+        },
+        {
+          "label": "Preto (carro gen 3 escuro)",
+          "value": "black",
+          "icon": "⬛",
+          "skip": false,
+          "countries_count": 12
+        },
+        {
+          "label": "Cinza / prata com estrutura alta (snorkel)",
+          "value": "grey",
+          "icon": "🔲",
+          "skip": false,
+          "countries_count": 4
+        },
+        {
+          "label": "Vermelho (exclusivo Ucrânia)",
+          "value": "red",
+          "icon": "🔴",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não consigo ver o carro",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_camera_blur",
+      "group": 3,
+      "phase": "regional",
+      "text": "Como está a nitidez geral da imagem?",
+      "attr": "camera_blur",
+      "context": "Extremamente borrada (lowcam) confirma Suíça, Liechtenstein, Japão ou Sri Lanka. Bastante borrada (shitcam) aponta Índia, Nepal, Bangladesh, Camboja, Nigéria ou ilhas remotas. Nítida = maioria dos países com gen 4.",
+      "eliminates": "Lowcam limita a 4 países; shitcam limita a ~10 países — ambos têm alto poder eliminatório",
+      "options": [
+        {
+          "label": "Muito nítida / alta qualidade (gen 4)",
+          "value": "sharp",
+          "icon": "🔭",
+          "skip": false,
+          "countries_count": 74
+        },
+        {
+          "label": "Levemente borrada / qualidade média (gen 3 típico)",
+          "value": "slight_blur",
+          "icon": "👁️",
+          "skip": false,
+          "countries_count": 48
+        },
+        {
+          "label": "Bastante borrada / difícil ver detalhes (shitcam)",
+          "value": "shitcam",
+          "icon": "🌫️",
+          "skip": false,
+          "countries_count": 10
+        },
+        {
+          "label": "Extremamente borrada / quase indistinguível (lowcam)",
+          "value": "lowcam",
+          "icon": "💨",
+          "skip": false,
+          "countries_count": 4
+        },
+        {
+          "label": "Não consigo classificar a nitidez",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_capture_year",
+      "group": 3,
+      "phase": "regional",
+      "text": "Você consegue ver o ano da captura? (veja no canto inferior esquerdo da tela do GeoGuessr — clique na miniatura da imagem)",
+      "attr": "capture_year",
+      "context": "Campo de metadado — não está no JSON de países, use como filtro de contexto. Imagens muito antigas (antes de 2015) em países desenvolvidos indicam gen 2 (Canadá rural, Jersey). Países com cobertura recente tendem a gen 4. O ano é visível clicando na miniatura no canto inferior esquerdo da tela.",
+      "eliminates": "Imagem anterior a 2015 em contexto norte-americano = forte indicador de Canadá ou Jersey (gen 2); 2023+ em país obscuro = cobertura recente (Butão, Quirguistão)",
+      "options": [
+        {
+          "label": "2023 ou mais recente",
+          "value": "2023_plus",
+          "icon": "🆕",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "2019 a 2022",
+          "value": "2019_2022",
+          "icon": "📅",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "2015 a 2018",
+          "value": "2015_2018",
+          "icon": "📆",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Antes de 2015 (imagem muito antiga)",
+          "value": "before_2015",
+          "icon": "⏮️",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Não consigo ver o ano (canto inferior esquerdo da tela — clique na miniatura)",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_vegetation_exclusive",
+      "group": 4,
+      "phase": "regional",
+      "text": "Você consegue identificar alguma planta ou árvore muito específica na imagem?",
+      "attr": "vegetation_exclusive",
+      "context": "Vegetação exclusiva tem altíssimo poder de confirmação. Araucária = Brasil Sul garantido. Samambaia prateada = Nova Zelândia. Baobá = África (Madagáscar, Senegal ou Tanzânia). Palmeiras de óleo em fileiras retas = Malásia ou Indonésia.",
+      "eliminates": "Qualquer identificação positiva confirma 1-3 países com 95-99% de confiança",
+      "options": [
+        {
+          "label": "Araucária (pinheiro-candelabro — galhos horizontais em camadas)",
+          "value": "araucaria",
+          "icon": "🌲",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Samambaia prateada / feto (New Zealand silver fern)",
+          "value": "silver_fern",
+          "icon": "🌿",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Baobá (tronco enorme liso, copa esparsa)",
+          "value": "baobab",
+          "icon": "🌳",
+          "skip": false,
+          "countries_count": 3
+        },
+        {
+          "label": "Eucalipto dominante (casca branca descamando, folhas longas)",
+          "value": "eucalyptus",
+          "icon": "🪴",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Palmeiras de óleo em fileiras retas (plantação industrial)",
+          "value": "oil_palm_rows",
+          "icon": "🌴",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Não identifico vegetação exclusiva",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_soil_color",
+      "group": 4,
+      "phase": "regional",
+      "text": "Qual é a cor do solo ou terra visível (nas bermas, cortes de morro, campo ao redor)?",
+      "attr": "soil_color",
+      "context": "Solo vermelho intenso aparece em Brasil Norte, Austrália (especialmente WA e NT), Quênia, Madagáscar e Havaí. Solo vulcânico escuro é exclusivo de Islândia, Açores, Madeira, Reunião e Antártida. Solo bege/arenoso domina desertos e savanas secas.",
+      "eliminates": "Vermelho intenso elimina ~126 países (deixa 10); vulcânico elimina ~129 (deixa 7)",
+      "options": [
+        {
+          "label": "Normal / sem cor marcante (bege neutro, castanho comum)",
+          "value": "normal",
+          "icon": "🟤",
+          "skip": false,
+          "countries_count": 86
+        },
+        {
+          "label": "Bege / arenoso (savanas, desertos)",
+          "value": "beige_sandy",
+          "icon": "🏜️",
+          "skip": false,
+          "countries_count": 17
+        },
+        {
+          "label": "Rosado / avermelhado claro (Mediterrâneo, Caribe)",
+          "value": "red_pink",
+          "icon": "🩷",
+          "skip": false,
+          "countries_count": 11
+        },
+        {
+          "label": "Vermelho intenso (Brasil, Austrália, Quênia, Madagáscar)",
+          "value": "red_intense",
+          "icon": "🔴",
+          "skip": false,
+          "countries_count": 10
+        },
+        {
+          "label": "Escuro / vulcânico / quase negro (Islândia, Açores, Reunião)",
+          "value": "dark_volcanic",
+          "icon": "⚫",
+          "skip": false,
+          "countries_count": 7
+        },
+        {
+          "label": "Não consigo ver o solo",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_is_island",
+      "group": 5,
+      "phase": "regional",
+      "text": "Você consegue perceber que está em uma ilha ou arquipélago?",
+      "attr": "is_island",
+      "context": "Ver mar, encostas abruptas terminando em água ou informação visual de ilha. 43 dos 136 países são ilhas/arquipélagos. Confirmar ilha elimina ~93 países continentais.",
+      "eliminates": "Confirmar ilha restringe o universo de 136 para 43 países (~68% de eliminação)",
+      "options": [
+        {
+          "label": "Não — parece território continental ou não dá para ver",
+          "value": false,
+          "icon": "🌍",
+          "skip": false,
+          "countries_count": 93
+        },
+        {
+          "label": "Sim — vejo mar próximo / parece claramente uma ilha",
+          "value": true,
+          "icon": "🏝️",
+          "skip": false,
+          "countries_count": 43
+        },
+        {
+          "label": "Não tenho certeza",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_is_microstate",
+      "group": 5,
+      "phase": "regional",
+      "text": "O ambiente parece muito compacto / país minúsculo (microestado)?",
+      "attr": "is_microstate",
+      "context": "Microestados: Andorra, Bermuda, Gibraltar, Ilha de Man, Jersey, Liechtenstein, Macau, Mônaco, San Marino, BIOT, Ilhas Cocos. Indícios: paisagem extremamente densa ou restrita, vizinhança imediata de outro país bem definido.",
+      "eliminates": "Confirmar microestado restringe a 11 países (~92% de eliminação)",
+      "options": [
+        {
+          "label": "Não — parece país de tamanho normal",
+          "value": false,
+          "icon": "🗺️",
+          "skip": false,
+          "countries_count": 125
+        },
+        {
+          "label": "Sim — o espaço parece muito restrito / minúsculo",
+          "value": true,
+          "icon": "🔬",
+          "skip": false,
+          "countries_count": 11
+        },
+        {
+          "label": "Não tenho certeza",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_is_spillover",
+      "group": 5,
+      "phase": "regional",
+      "text": "A cobertura parece ser de um território que 'pertence' visualmente a outro país maior?",
+      "attr": "is_spillover",
+      "context": "Spillovers conhecidos: Belarus (cobertura é trekker em Minsk, visualmente russificado), Falkland Islands e Gibraltar (UK), Guam e Havaí (EUA), Hong Kong (China), Tanzânia (Quênia). Identificar spillover aponta diretamente ao país hospedeiro.",
+      "eliminates": "Confirmar spillover restringe a 7 países; combinado com continente, frequentemente confirma um único país",
+      "options": [
+        {
+          "label": "Não — parece cobertura normal deste país",
+          "value": false,
+          "icon": "🏳️",
+          "skip": false,
+          "countries_count": 129
+        },
+        {
+          "label": "Sim — parece cobertura de território de outro país",
+          "value": true,
+          "icon": "🔀",
+          "skip": false,
+          "countries_count": 7
+        },
+        {
+          "label": "Não tenho certeza",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_fuel_brand",
+      "group": 5,
+      "phase": "regional",
+      "text": "Você consegue ver algum posto de combustível com marca legível?",
+      "attr": "fuel_brands_exclusive",
+      "context": "Marcas exclusivas têm poder de confirmação próximo a 100%. Pemex (verde+vermelho) = México. YPF (azul+branco) = Argentina. ENEOS (amarelo) = Japão. Petrobras/Ipiranga = Brasil. ADNOC (verde) = Emirados Árabes.",
+      "eliminates": "Qualquer marca exclusiva identificada confirma 1-2 países com ~99% de confiança",
+      "options": [
+        {
+          "label": "Pemex (verde e vermelho — México)",
+          "value": "Pemex",
+          "icon": "🇲🇽",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "YPF (azul e branco — Argentina)",
+          "value": "YPF",
+          "icon": "🇦🇷",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "ENEOS (amarelo — Japão)",
+          "value": "ENEOS",
+          "icon": "🇯🇵",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Petrobras / Ipiranga / BR (Brasil)",
+          "value": "Petrobras",
+          "icon": "🇧🇷",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "ADNOC (verde — Emirados Árabes)",
+          "value": "ADNOC",
+          "icon": "🇦🇪",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não vejo posto / não consigo ler a marca",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_plate_color",
+      "group": 6,
+      "phase": "regional",
+      "text": "Qual é a cor da placa de veículo visível?",
+      "attr": "plate_color",
+      "context": "Placa traseira amarela + dianteira branca é exclusivo do Reino Unido (e países que seguem o padrão britânico). Placa preta com texto claro aparece em Tunísia, Macau, Svalbard e Liechtenstein. Placa amarela em ambos os lados = Colômbia (única na América Latina).",
+      "eliminates": "Placa traseira amarela confirma UK com alta confiança; preta elimina ~132 países",
+      "options": [
+        {
+          "label": "Branca (padrão global)",
+          "value": "white",
+          "icon": "⬜",
+          "skip": false,
+          "countries_count": 110
+        },
+        {
+          "label": "Traseira amarela + dianteira branca (Reino Unido)",
+          "value": "yellow_rear_white_front",
+          "icon": "🟡",
+          "skip": false,
+          "countries_count": 2
+        },
+        {
+          "label": "Preta com texto claro (Tunísia, Macau, Svalbard)",
+          "value": "black",
+          "icon": "⬛",
+          "skip": false,
+          "countries_count": 4
+        },
+        {
+          "label": "Amarela dos dois lados (Colômbia — única na América Latina)",
+          "value": "yellow_both",
+          "icon": "🇨🇴",
+          "skip": false,
+          "countries_count": 1
+        },
+        {
+          "label": "Não consigo ver / não há veículo visível",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_architecture",
+      "group": 6,
+      "phase": "regional",
+      "text": "Qual é o estilo arquitetônico dominante nas construções visíveis?",
+      "attr": "architecture_type",
+      "context": "Útil para diferenciar países com características visuais semelhantes em outros atributos. Madeira pintada/colorida em bairros densos = Escandinávia ou Groenlândia. Adobe/barro = África Ocidental ou América Central. Ultramoderno = EAU, Cingapura, Hong Kong.",
+      "eliminates": "Combinado com continente, reduz o universo para 5-20 países dependendo do estilo",
+      "options": [
+        {
+          "label": "Concreto simples / blocos sem acabamento (Ásia, África, América Latina)",
+          "value": "bare_concrete",
+          "icon": "🧱",
+          "skip": false,
+          "countries_count": 55
+        },
+        {
+          "label": "Madeira pintada ou colorida (nórdica, caribenha, groenlândia)",
+          "value": "colored_wood",
+          "icon": "🏡",
+          "skip": false,
+          "countries_count": 18
+        },
+        {
+          "label": "Colonial europeu (pedra, estuque, arcos, azulejo)",
+          "value": "european_colonial",
+          "icon": "🏛️",
+          "skip": false,
+          "countries_count": 22
+        },
+        {
+          "label": "Adobe / tijolo de barro seco (África Ocidental, América Central)",
+          "value": "adobe_mud",
+          "icon": "🏚️",
+          "skip": false,
+          "countries_count": 8
+        },
+        {
+          "label": "Ultramoderno (vidro, aço, arranha-céus, muito limpo)",
+          "value": "ultra_modern",
+          "icon": "🏙️",
+          "skip": false,
+          "countries_count": 6
+        },
+        {
+          "label": "Não consigo classificar / sem construções visíveis",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    },
+    {
+      "id": "q_urban_density",
+      "group": 6,
+      "phase": "regional",
+      "text": "Como você descreveria o ambiente ao redor na imagem?",
+      "attr": "urban_density",
+      "context": "Contexto urbano/rural é útil para filtrar microestados (sempre densos), países insulares pequenos e spillovers. Rodovia isolada sem construção elimina microestados e ilhas pequenas.",
+      "eliminates": "Filtra microestados e ilhas pequenas quando combinado com outros atributos; reduz incerteza em ~30%",
+      "options": [
+        {
+          "label": "Área rural / vegetação ao redor (estrada entre campo ou floresta)",
+          "value": "rural",
+          "icon": "🌾",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Subúrbio / zona residencial (casas com jardim, ruas largas)",
+          "value": "suburban",
+          "icon": "🏘️",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Cidade densa / área urbana intensa (prédios, trânsito, calçadas)",
+          "value": "dense_urban",
+          "icon": "🌆",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Rodovia isolada / sem construção visível (apenas asfalto e natureza)",
+          "value": "highway_isolated",
+          "icon": "🛣️",
+          "skip": false,
+          "countries_count": null
+        },
+        {
+          "label": "Não consigo classificar",
+          "value": null,
+          "icon": "—",
+          "skip": true,
+          "countries_count": null
+        }
+      ]
+    }
+  ],
+  "combos": [
+    {
+      "id": "combo_africa_austral",
+      "conditions": {
+        "driving_side": "left",
+        "road_line_outside": "yellow"
+      },
+      "result": "África Austral confirmada",
+      "countries": [
+        "south-africa",
+        "botswana",
+        "lesotho",
+        "eswatini",
+        "namibia"
+      ],
+      "confidence": 95,
+      "note": "Única região do mundo com direção à esquerda E linha externa amarela combinadas"
+    },
+    {
+      "id": "combo_turkey",
+      "conditions": {
+        "stop_sign": "dur"
+      },
+      "result": "Turquia confirmada",
+      "countries": [
+        "turkey"
+      ],
+      "confidence": 99,
+      "note": "DUR no sinal de pare é exclusivo da Turquia em todo o mundo"
+    },
+    {
+      "id": "combo_central_america",
+      "conditions": {
+        "stop_sign": "alto"
+      },
+      "result": "México ou América Central",
+      "countries": [
+        "mexico",
+        "guatemala",
+        "costa-rica",
+        "panama",
+        "dominican-republic",
+        "cuba",
+        "northern-mariana-islands"
+      ],
+      "confidence": 97,
+      "note": "ALTO no sinal de pare aparece apenas no México e países da América Central hispanófona"
+    },
+    {
+      "id": "combo_south_korea",
+      "conditions": {
+        "scripts_contains": "hangul"
+      },
+      "result": "Coreia do Sul confirmada",
+      "countries": [
+        "south-korea"
+      ],
+      "confidence": 99,
+      "note": "Script hangul aparece somente na Coreia do Sul em todo o mundo"
+    },
+    {
+      "id": "combo_france_ligne_z",
+      "conditions": {
+        "road_line_exclusive": "ligne_z"
+      },
+      "result": "França confirmada",
+      "countries": [
+        "france"
+      ],
+      "confidence": 99,
+      "note": "Linha-Z central no asfalto é exclusiva da França — pista irrefutável"
+    },
+    {
+      "id": "combo_uk_zigzag",
+      "conditions": {
+        "road_line_exclusive": "zigzag_uk"
+      },
+      "result": "Reino Unido confirmado",
+      "countries": [
+        "united-kingdom"
+      ],
+      "confidence": 99,
+      "note": "Linhas brancas em ziguezague nas bordas da pista (indicando faixa de pedestres ou proibição de estacionar) são exclusivas do Reino Unido"
+    },
+    {
+      "id": "combo_sweden_chevron",
+      "conditions": {
+        "chevron": "blue_yellow_sweden"
+      },
+      "result": "Suécia confirmada",
+      "countries": [
+        "sweden"
+      ],
+      "confidence": 99,
+      "note": "Chevron azul com seta amarela é exclusivo da Suécia na Europa"
+    },
+    {
+      "id": "combo_switzerland_lowcam",
+      "conditions": {
+        "camera_special": "lowcam",
+        "continent": "europe_west"
+      },
+      "result": "Suíça ou Liechtenstein",
+      "countries": [
+        "switzerland",
+        "liechtenstein"
+      ],
+      "confidence": 98,
+      "note": "Lowcam na Europa Ocidental é exclusivo da Suíça e Liechtenstein; Liechtenstein é muito menor e raramente aparece"
+    },
+    {
+      "id": "combo_india_nepal_shitcam",
+      "conditions": {
+        "camera_special": "shitcam",
+        "scripts_contains": "devanagari"
+      },
+      "result": "Índia ou Nepal",
+      "countries": [
+        "india",
+        "nepal"
+      ],
+      "confidence": 97,
+      "note": "Shitcam + Devanagari aponta exclusivamente para Índia ou Nepal; Nepal tem paisagem montanhosa muito característica"
+    },
+    {
+      "id": "combo_south_america_black_car",
+      "conditions": {
+        "google_car_special": "black_gen3",
+        "continent": "south_america"
+      },
+      "result": "Argentina, Peru ou Uruguai",
+      "countries": [
+        "argentina",
+        "peru",
+        "uruguay"
+      ],
+      "confidence": 98,
+      "note": "Carro gen 3 preto na América do Sul restringe a este trio; Argentina tem placas Mercosul modernas, Peru tem linhas negras nos postes de sinal, Uruguai tem câmera borrada"
+    }
+  ]
+}
